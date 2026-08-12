@@ -53,14 +53,16 @@ outright. Along
 the way we identify a number-theoretic confound---grid alignment of the
 phases $s/r$---that reverses naive cross-dimension Shor comparisons and
 predicts the winner in every biased instance tested (three instances
-$\times$ two noise models), and we reduce the mechanism to a
-quantitative law: accumulated channel damage fixes end-state fidelity
-on a single exponential across algorithms and bases, with amplitude
-${\approx}1$ and $R^2=0.97$--$0.99$ (the first-order expectation; in
-log fidelity the law holds within a factor of two until states
-approach their $1/\!\dim$ floor); the algorithm enters only through
-its decoder's error tolerance, which we reduce to an exact
-number-theoretic law verified outcome-for-outcome against the decoder.
+$\times$ two noise models). Accumulated channel damage fixes end-state
+fidelity on a single exponential across algorithms and bases
+($R^2=0.97$--$0.99$), as first-order composition of incoherent channels
+requires; what the algorithm contributes is its decoder. For
+continued-fraction order recovery we derive that contribution
+exactly---the acceptance set of a decoder required to return $r$ itself
+is a totient sum over the denominators it admits---prove it, and verify
+it outcome-for-outcome on 42 instance/size combinations. Being
+base-independent at matched control dimension, it places the entire
+cross-base difference in the quantum state.
 The qubit branch of our predictions is anchored on hardware: the
 shallow compiled circuit reproduces its predicted success band on a
 commercial trapped-ion processor ($0.617\pm0.007$ vs $0.60$--$0.70$),
@@ -201,8 +203,8 @@ models), and a within-modulus control---two orders
 hosted on identical registers---prices it at ${\approx}0.2$ in
 floor-corrected signal.
 
-\emph{(ii) The mechanism is width-and-depth compression, and it reduces
-to a quantitative law with a stated boundary}
+\emph{(ii) The mechanism is width-and-depth compression, and what
+survives it is the decoder}
 (Secs.~\ref{sec:grover}--\ref{sec:mechanism}). Grover search holds the
 oracle count fixed across bases, delivering roughly half of Shor's
 exposure compression: the qudit advantage survives (confirming a
@@ -211,14 +213,22 @@ of Shor's. Counted in \emph{damage
 units}---the per-carrier-layer entanglement infidelity $1-\mathrm{tr}\,
 S/d^2$ of the actual channel---accumulated exposure places end-state
 fidelity for both algorithm families on a single exponential
-($R^2=0.97$--$0.99$, amplitude ${\approx}1$). What exposure does not
+($R^2=0.97$--$0.99$, amplitude ${\approx}1$)---what first-order
+composition of incoherent channels requires, rather than a discovery.
+What exposure does \emph{not}
 determine is the measured success probability, because the classical
 decoder intervenes: continued-fraction order recovery gains error
 tolerance with register size, and we observe it decoding correct orders
 from states with fidelity $3\times10^{-4}$ to the ideal state. That
-tolerance itself obeys an exact law---a totient sum over the
-denominators the decoder admits---which we derive and verify
-outcome-for-outcome against the decoder (Sec.~\ref{sec:decoder}).
+tolerance obeys an exact law we derive and prove---the acceptance set
+of a decoder required to return $r$ itself is a totient sum over the
+denominators it admits, including the deeper convergents $kr\le N$ that
+window bounds do not count---verified outcome-for-outcome against the
+decoder on 42 instance/size combinations
+(Sec.~\ref{sec:decoder}, Appendix~\ref{app:decoder}). Because it turns
+on $r$ and $N$ and not on the base, at matched control dimension the
+whole cross-base difference in decoded success sits in the quantum
+state.
 
 \emph{(iii) Standing reviewer objections are pre-empted with data}
 (Sec.~\ref{sec:robustness}): $d$-dependent readout error is structurally
