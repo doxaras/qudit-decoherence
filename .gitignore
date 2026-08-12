@@ -10,5 +10,6 @@ paper/*.log
 paper/*.out
 paper/*Notes.bib
 paper/*.synctex.gz
+paper/arxiv-submission.tar.gz
 .omc/
 .venv-braket/

@@ -10,7 +10,9 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue!60!black,citecolor=blue!60!black,urlcolor=blue!60!black}
 
-\graphicspath{{../results/}}
+% ./ first so an arXiv/journal tarball with the figures alongside main.tex
+% builds unchanged; ../results/ is the in-repo location.
+\graphicspath{{./}{../results/}}
 
 \newcommand{\Fe}{F_{\mathrm{e}}}
 
