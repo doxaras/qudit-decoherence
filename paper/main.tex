@@ -1,5 +1,5 @@
 % Build: latexmk -pdf main.tex
-\documentclass[aps,prx,reprint,superscriptaddress,nofootinbib]{revtex4-2}
+\documentclass[aps,prx,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
 
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
@@ -18,8 +18,8 @@
 
 \begin{document}
 
-\title{Native gates or nothing: the condition for a qudit advantage\\
-in uncorrected quantum algorithms under decoherence}
+\title{Native gates or nothing: the condition for a qudit advantage%
+\texorpdfstring{\\}{ }in uncorrected quantum algorithms under decoherence}
 
 \author{John Doxaras}
 \email{john@ai-employee.cloud}
@@ -39,13 +39,14 @@ demo-size $d=7$ check) under two decoherence
 channels---a ladder channel calibrated to published per-level transmon
 coherence data and a depolarizing channel representative of trapped-ion
 qudits---three entangling-gate cost models, and registers to
-$5.3\times10^{5}$ Hilbert dimensions (19.0 qubit-equivalents). One condition governs all three algorithms: \emph{qudits
+Hilbert-space dimension $5.3\times10^{5}$ (19.0 qubit-equivalents).
+One condition organizes all three algorithms: \emph{qudits
 outperform qubits only with a native two-qudit entangling gate whose
 cost grows no faster than linearly in $d$}. Gates compiled by two-level
-decomposition forfeit the advantage in every case tested but
-one---Shor at $d=3$ under per-particle noise, where width compression
-alone survives the depth surcharge; whether linear cost suffices is
-set by the level and structure of the operating dephasing---the
+decomposition forfeit the advantage in every case tested but one:
+Shor at $d=3$ under per-particle noise, where width compression
+alone survives the depth surcharge. Whether linear cost suffices is
+set by the level and structure of the operating dephasing: the
 advantage holds on per-particle and refocused-ladder hardware,
 free-evolution ladder dephasing splits the linear-cost cells, and
 unmitigated Zeeman-structured dephasing reverses the verdict
@@ -60,7 +61,7 @@ requires; what the algorithm contributes is its decoder. For
 continued-fraction order recovery we derive that contribution
 exactly---the acceptance set of a decoder required to return $r$ itself
 is a totient sum over the denominators it admits---prove it, and verify
-it outcome-for-outcome on 42 instance/size combinations. Being
+it outcome-for-outcome on 27 instance/size combinations. Being
 base-independent at matched control dimension, it places the entire
 cross-base difference in the quantum state.
 The qubit branch of our predictions is anchored on hardware: the
@@ -139,7 +140,7 @@ qudits~\cite{ringbauer2022,low2023}---under three entangling-gate cost
 models spanning native gates, the measured trapped-ion
 $2(d{-}1)$ M{\o}lmer--S{\o}rensen cost~\cite{ringbauer2022}, and
 $O(d^2)$ two-level decomposition~\cite{pavlidis2017}, with registers
-to $5.3\times10^{5}$ Hilbert dimensions (19.0 qubit-equivalents; the
+to Hilbert-space dimension $5.3\times10^{5}$ (19.0 qubit-equivalents; the
 widest qubit register is 17 qubits) reached by quantum
 trajectories; a demo-size $d=7$ run (Sec.~\ref{sec:cost}) extends the
 cost grid one prime higher.
@@ -224,7 +225,8 @@ tolerance obeys an exact law we derive and prove---the acceptance set
 of a decoder required to return $r$ itself is a totient sum over the
 denominators it admits, including the deeper convergents $kr\le N$ that
 window bounds do not count---verified outcome-for-outcome against the
-decoder on 42 instance/size combinations
+decoder on 27 instance/size combinations, with the underlying
+acceptance lemma checked on 42
 (Sec.~\ref{sec:decoder}, Appendix~\ref{app:decoder}). Because it turns
 on $r$ and $N$ and not on the base, at matched control dimension the
 whole cross-base difference in decoded success sits in the quantum
@@ -296,7 +298,7 @@ subsections below specify each stage.
    \texttt{ion} $d{-}1$ ~/~ \texttt{pavlidis} $d^2\!/4$}};
 \node[box, below=of cost] (noise) {\textbf{noisy evolution}\\[-1pt]
   {\scriptsize channel per carrier-layer; exact DM to
-   $3{\times}10^3$ dims, trajectories to $4{\times}10^5$}};
+   $3{\times}10^3$ dims, trajectories to $5.3{\times}10^5$}};
 \node[box, below=of noise] (meas) {\textbf{outcome distribution}
   $p(y)$};
 \node[box, below=of meas] (dec) {\textbf{classical decoder}\\[-1pt]
@@ -488,7 +490,9 @@ quantify how the winner changes under \texttt{ion} and
 Raw success probabilities have base- and instance-dependent random
 floors: a uniformly random outcome passes continued fractions with
 probability $0.12$--$0.13$ on the $N=21$ benchmark at demo size,
-$0.20$--$0.26$ on $N=29$, and up to $0.59$ on small-order instances.
+$0.20$--$0.26$ on $N=29$, and up to $0.59$ on the scorable
+small-order instances (at $r=2$ the floor reaches $0.72$--$0.80$,
+meeting or exceeding the noiseless baseline).
 All comparisons therefore use the floor-corrected signal
 \begin{equation}
 \mathrm{signal} \;=\;
@@ -568,49 +572,71 @@ worth knowing in itself. A consequence is that the ${\approx}0.2$
 alignment price is measured only in the ququint-aligned direction and
 has no converse check.)
 
+\begin{table}[t]
+\caption{Multiplicative-group ensembles: mean floor-corrected signal
+by order class for $d=2/3/5$, under the calibrated ladder and
+per-particle depolarizing channels (\texttt{uniform} cost, marked
+operating points; exact density matrices at $N=21$, 400 trajectories
+per point at $N=33,55$). ``mult.''\ is the class multiplicity among
+the units $a\neq1$; the aligned column names the base whose grid the
+order divides. Dashes mark unscorable classes---floor meeting or
+exceeding the noiseless baseline (Sec.~\ref{sec:setup})---which
+include \emph{every} base-2-aligned class at all three moduli.}
+\label{tab:ensemble}
+\begin{ruledtabular}
+\begin{tabular}{llccc}
+$N$ & class (mult.) & aligned & ladder $d{=}2/3/5$ & depol.\ $d{=}2/3/5$ \\
+\hline
+21 & $r{=}6$ (6/11)   & ---  & 0.52/0.73/0.76 & 0.33/0.67/0.79 \\
+   & $r{=}3$ (2/11)   & 3    & ---            & ---            \\
+   & $r{=}2$ (3/11)   & 2    & ---            & ---            \\
+33 & $r{=}5$ (4/19)   & 5    & 0.40/0.68/1.00 & 0.22/0.55/0.97 \\
+   & $r{=}10$ (12/19) & ---  & 0.45/0.60/0.82 & 0.23/0.51/0.78 \\
+   & $r{=}2$ (3/19)   & 2    & ---            & ---            \\
+55 & $r{=}5$ (4/39)   & 5    & 0.39/0.64/1.00 & 0.23/0.54/0.99 \\
+   & $r{=}10$ (12/39) & ---  & 0.44/0.58/0.82 & 0.23/0.49/0.81 \\
+   & $r{=}4,2$ (7/39) & 2    & ---            & ---            \\
+   & $r{=}20$ (16/39) & ---  & ---            & ---            \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
 \emph{Ensemble over the multiplicative group.} Shor draws $a$
-uniformly from the units of $\mathbb{Z}_N$, so we also score the full
-ensemble at $N=21$: all $a\neq1$ in $\mathbb{Z}_{21}^{\times}$
-(eleven values; orders $r=6,3,2$ with multiplicity $6,2,3$), exact
-density-matrix evolution, \texttt{uniform} cost, both marked
-operating points, on the demo registers $D=64/81/125$. Every $r=2$
-and $r=3$ instance falls below the $0.15$ span rule of
+uniformly from the units of $\mathbb{Z}_N$, so we also score full
+ensembles---every $a\neq1$---at $N=21$ (eleven values), $N=33$
+(nineteen), and $N=55$ (thirty-nine), on the demo registers;
+Table~\ref{tab:ensemble} scores each order class. At $N=21$ every
+$r=2$ and $r=3$ instance falls below the $0.15$ span rule of
 Sec.~\ref{sec:setup} in every base---small orders collapse the
 metric, as disclosed there---so the scorable ensemble is precisely
 the unbiased $r=6$ class, where the ensemble-mean signal preserves
-the qudit ordering: $0.52/0.73/0.76$ for $d=2/3/5$ on the calibrated
-ladder and $0.33/0.67/0.79$ under depolarizing. Raw success needs no
-span but carries base-dependent floors ($0.38/0.36/0.39$ on average
-here): subtracting them, the full-ensemble excess is
+the qudit ordering. Raw success needs no span but carries
+base-dependent floors ($0.38/0.36/0.39$ on average here):
+subtracting them, the full-ensemble excess is
 $-0.006/{+}0.030/{+}0.019$ (ladder) and $-0.006/{+}0.028/{+}0.025$
 (depolarizing)---so the ensemble-robust statement is that both
 qudits clear the qubit, while the $d{=}5>d{=}3$ ordering is a
-property of the scorable class rather than of the full ensemble. The ensemble a
-Shor user actually samples thus reproduces the fixed-instance
-conclusions. The same test at $N=33$ (all $a\neq1$, nineteen values;
-orders $r=10,5,2$ with multiplicity $12,4,3$; 400 trajectories per
-point)
-adds alignment gifts in both directions and closes the loop
-quantitatively. The $r=2$ class---base-2 aligned---is unscorable in
-every base, floors meeting or exceeding baselines, the converse
-collapse documented above; the scorable ensemble splits into the
-base-5-aligned $r=5$ class, where the ququint scores $1.00$/$0.97$
-(ladder/depolarizing), and the unbiased $r=10$ class, where the
-ordering $d{=}5>d{=}3>d{=}2$ holds without any gift ($0.82/0.60/0.45$
-and $0.78/0.51/0.23$). The ququint's aligned-over-unaligned excess,
-$+0.19$/$+0.18$, independently reproduces the ${\approx}0.2$
-alignment price measured by the within-modulus control: the ensemble
-structure is predicted class by class. At $N=55$ (all $a\neq1$,
-thirty-nine values; adds the base-2-aligned $r=4$ class and $r=20$)
-the scorable pattern replicates---the ququint scores $1.00$/$0.99$ on
-its aligned class, the unbiased $r=10$ ordering is $0.82/0.58/0.44$
-and $0.81/0.49/0.23$, the aligned excess is again $+0.18$, and every
-base-2-aligned class ($r=2,4$) is unscorable, the converse collapse
-now observed at all three moduli. The modal class, $r=20$ (sixteen of
-the thirty-nine), is unscorable in \emph{every} base, and for $d=2$
-maximally so: at $D=64$ the noiseless baseline is exactly zero---the
-$r=20$ acceptance window contains no outcome at all---the decoder law
-of Sec.~\ref{sec:decoder} deciding scorability before noise enters.
+property of the scorable class rather than of the full ensemble.
+The ensemble a Shor user actually samples thus reproduces the
+qudit-over-qubit conclusion.
+
+The larger moduli add alignment gifts in both directions and close
+the loop quantitatively. The base-5-aligned $r=5$ class hands the
+ququint $1.00$/$0.97$ at $N=33$ and $1.00$/$0.99$ at $N=55$
+(ladder/depolarizing), while the unbiased $r=10$ class gives the
+strict ordering $d{=}5>d{=}3>d{=}2$ at both moduli without any
+gift. The ququint's aligned-over-unaligned excess---$+0.19$/$+0.18$
+at $N=33$, $+0.18$ at $N=55$---independently reproduces the
+${\approx}0.2$ alignment price measured by the within-modulus
+control: the ensemble structure is predicted class by class. Every
+base-2-aligned class ($r=2$ at $N=33$; $r=2,4$ at $N=55$) is
+unscorable, floors meeting or exceeding baselines---the converse
+collapse documented above, now observed at all three moduli. The
+modal class at $N=55$, $r=20$ (sixteen of the thirty-nine), is
+unscorable in \emph{every} base, and for $d=2$ maximally so: at
+$D=64$ the noiseless baseline is exactly zero---the $r=20$
+acceptance window contains no outcome at all---the decoder law of
+Sec.~\ref{sec:decoder} deciding scorability before noise enters.
 
 \begin{figure*}[t]
 \includegraphics[width=\linewidth]{fair_demo.png}
@@ -621,7 +647,7 @@ ladder, calibrated ladder, and per-particle depolarizing channels. The
 best qudit leads the qubit at every strength under all three models;
 the single exception to a uniform qudit lead is the deepest
 depolarizing point ($s=0.05$), where the qutrit alone dips marginally
-below the qubit with all signals within $0.08$ of zero.}
+below the qubit with all signals within $0.09$ of zero.}
 \label{fig:fairdemo}
 \end{figure*}
 
@@ -759,14 +785,14 @@ $d=7$ register wins.
 \caption{Register-size scaling on the unbiased instance: floor-corrected
 signal vs phase-estimation precision (bits), four noise regimes (ladder
 regimes at strength $0.003$, depolarizing at $0.005$), \texttt{uniform}
-cost model, registers to $5.3\times10^{5}$ Hilbert dimensions, quantum
+cost model, registers to Hilbert-space dimension $5.3\times10^{5}$, quantum
 trajectories (1000 per point).}
 \label{fig:scaling}
 \end{figure*}
 
 Figure~\ref{fig:scaling} sweeps precision from 6 to 14.3 bits (control
 dimensions $64$ to $19683$; the largest register is the qutrit's sixth
-size, $m=9$, at $5.3\times10^{5}$ Hilbert dimensions) at fixed
+size, $m=9$, at Hilbert-space dimension $5.3\times10^{5}$) at fixed
 per-layer strength. Both qudits stay above the
 qubit at every precision on the measured overlap in all four regimes,
 and the gap over the qutrit widens with size under ladder noise
@@ -798,7 +824,8 @@ with $m$---the confound of Sec.~\ref{sec:alignment} returning in a new
 form. It is not. Residual misalignment is \emph{exactly constant}
 across the entire sweep for all three bases, on both benchmark
 instances ($0.267$ for $d=2$ and $0.300$ for $d=3,5$ at $N=21$;
-$0.286$ for every base at $N=29$; spread ${<}10^{-13}$ over the
+$0.286$ for every base at $N=29$; constant to numerical precision,
+spread ${<}10^{-11}$, over the
 sizes), because $d^m \bmod r$ is periodic in $m$ and the multiset of
 phase offsets it induces therefore repeats. Alignment does not vary
 with register size here, so it can explain neither a size-dependent
@@ -971,7 +998,7 @@ Grover's fidelity equals its signal to better than $0.006$ under the
 ladder and $0.025$ under depolarizing at every point, while Shor's
 $d=3$ family loses two thirds of its fidelity ($0.55\to0.18$) with
 signal flat, and at $d=2$, $m=12$ under depolarizing, continued
-fractions decode a signal of $0.093\pm0.025$ from a state with
+fractions decode a signal of $0.131\pm0.018$ from a state with
 fidelity $3\times10^{-4}$. The mechanism claim, in the form the data
 support: \emph{accumulated channel damage is the law for the quantum
 state; the residual algorithm dependence of decoded success sits in
@@ -1236,19 +1263,37 @@ $1$--$25\times$ that reference at $d=3$ and $1$--$49\times$ at $d=5$.
 The encoding is no strawman: over all $\binom{8}{d}$ level subsets of
 the $S_{1/2}$/$D_{5/2}$ manifold, the chosen levels exactly minimize
 the worst pair rate at $d=5$ and $d=7$; only $d=3$ admits a gentler
-choice ($9\times$, via $\{S_{-1/2},D_{-3/2},D_{-1/2}\}$). The verdict
-reverses outright: the qubit wins at every strength under both cost
-models ($0.72$ against $0.24$/$0.23$ at $s=0.003$, \texttt{uniform}).
-Nor is the missing correlation structure doing the work: repeating
-the study with genuinely common-mode dephasing---one global jump
-coupling to the total Zeeman shift, exact as an elementwise mask on
-the density matrix---preserves the reversal ($0.87$ against
-$0.45$/$0.34$ at the same point; its decoherence-free pairs soften
-every base, the qubit most). Unmitigated Zeeman-structured dephasing
+choice ($9\times$, via $\{S_{-1/2},D_{-3/2},D_{-1/2}\}$).
+
+\begin{table}[t]
+\caption{Zeeman-structured dephasing on the demo instance:
+floor-corrected signal at $s=0.003$, \texttt{uniform} cost. Both
+variants reverse the qudit ordering of Table~\ref{tab:cost}; the
+reversal persists under \texttt{ion} cost.}
+\label{tab:zeeman}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+dephasing structure & $d{=}2$ & $d{=}3$ & $d{=}5$ \\
+\hline
+per-carrier Zeeman & \textbf{0.72} & 0.24 & 0.23 \\
+common-mode Zeeman & \textbf{0.87} & 0.45 & 0.34 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The verdict reverses outright (Table~\ref{tab:zeeman}): the qubit
+wins at every strength under both cost models. Nor is the missing
+correlation structure doing the work: repeating the study with
+genuinely common-mode dephasing---one global jump coupling to the
+total Zeeman shift, exact as an elementwise mask on the density
+matrix---preserves the reversal; its decoherence-free pairs soften
+every base, the qubit most. Unmitigated Zeeman-structured dephasing
 on a sensitivity-ordered encoding is therefore a regime with no qudit
 advantage at all---the sharpest failure mode we found, and one the
 condition's ``operating dephasing level'' clause must be read to
-include. Measured devices are engineered away from this regime: shielding
+include.
+
+Measured devices are engineered away from this regime: shielding
 makes coherence times of order $100$\,ms achievable across all
 transitions~\cite{ringbauer2022}. The device's randomized
 benchmarking---per-pulse error rising only $1.6\times$ from $d=3$ to
@@ -1258,8 +1303,9 @@ residual, though a few-microsecond pulse cannot resolve slow
 dephasing; the direct evidence the convention needs is $d$-resolved
 Ramsey or echo coherence across the encoding's transitions, and
 pending that, the per-particle convention is a statement about
-mitigated hardware whose price of failure the following sweep fixes.
-The mechanism mirrors the refocusing result above---structured, slow
+mitigated hardware whose price of failure the following sweep
+fixes. The mechanism mirrors the refocusing result
+above---structured, slow
 dephasing is exactly the part echoes remove---and the price is
 quantitative: composing the Zeeman component with the depolarizing
 operating point ($s=0.005$; the two channels commute, so the product
@@ -1362,7 +1408,8 @@ models. \emph{Second, the deep ion circuit fails coherently, not by
 decoherence.} At $m=7$ the interference peak is destroyed
 ($0.011$, below the random floor of $0.031$) while the work qubit
 remains at $0.99$; no relabeling of the outcome bits recovers the
-peak (the best of 10{,}080 reinterpretations reaches only $0.21$, not
+peak (the best over 10{,}080 reinterpretations---every ordering of
+the control bits in both polarities---reaches only $0.15$, not
 significant over so large a hypothesis set), and a 500-shot raw $m=4$
 probe caught the mechanism directly, unmitigated---a
 nearly pure output state ($71\%$ of shots on one outcome) whose phase
@@ -1523,7 +1570,7 @@ direction. The schedule is serial (every carrier idles during every
 gate), matching single-addressed ion strings; platforms that execute
 gates concurrently would cut idle exposure most for the widest
 register, i.e.\ for $d=2$, softening the qudit advantage there. The scaling trends are measured
-to $5.3\times10^{5}$ Hilbert dimensions and stated as slopes with error
+to Hilbert-space dimension $5.3\times10^{5}$ and stated as slopes with error
 bars, not theorems: the
 Shor sweep uses two instances ($N=21$, $r=6$ and $N=29$, $r=7$) at one
 noise strength per regime, with 3--6 sizes per base. The ordering, the
@@ -1559,6 +1606,19 @@ is out of scope, and per Ref.~\cite{keppens2025} its
 dimension-dependence may differ in sign. Finally, $d=5$ entangling
 gates exist today only on trapped ions---our deep-register results are
 one to two hardware generations ahead of experiment.
+
+\emph{Summary.} In bare, uncorrected circuits the qudit question has
+a determinate answer, and it is conditional. Width-and-depth
+compression is the entire mechanism of the advantage: a native
+entangling gate of at-most-linear cost preserves it, two-level
+decomposition spends it back, and unmitigated structured dephasing
+overwhelms it. What the algorithm itself adds is classical---a
+decoder whose error tolerance obeys an exact totient law, identical
+across bases at matched control dimension---so the quantum state
+carries the whole cross-base difference. Every cross-dimension
+benchmark inherits these terms, and the cheapest decisive test,
+eigenstate QPE at $d=5$ on a trapped-ion qudit processor, is within
+reach of current hardware.
 
 % =====================================================================
 \section{Methods}
@@ -1637,7 +1697,8 @@ local simulator to $10^{-15}$ before submission. IQM Garnet:
 5{,}000 shots per circuit, server-side routing, native
 controlled-phase support. Success windows, floors, and the
 digit-reversed scoring are identical to the simulation pipeline;
-per-task records and scoring code ship with the repository.
+per-task records, raw outcome histograms, and scoring code ship with
+the repository.
 
 \emph{Reproducibility.} All code, calibration fits, result files, and
 the exact scripts that produce every figure and table are available at

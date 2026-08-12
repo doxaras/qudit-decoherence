@@ -1,0 +1,17 @@
+{
+ "phi": 0.6180339887498949,
+ "probe_m4": {
+  "shots": 500,
+  "top_outcome_bits": "11011",
+  "top_share": 0.714,
+  "ideal_peak": 10,
+  "top_control_plain": 13,
+  "top_control_bitreversed": 11,
+  "off_by": 1
+ },
+ "main_m7_reinterpretation": {
+  "hypotheses": 10080,
+  "best_success": 0.14697637164597516,
+  "scored_success": 0.011413696435722867
+ }
+}
