@@ -750,7 +750,7 @@ $d=7$ register wins.
 signal vs phase-estimation precision (bits), four noise regimes (ladder
 regimes at strength $0.003$, depolarizing at $0.005$), \texttt{uniform}
 cost model, registers to 17 qubits, quantum trajectories (1000 per
-point; 500 at $d{=}2$, $m{=}12$ and at $d{=}3$, $m{=}8$).}
+point; 500 at $d{=}2$, $m{=}12$).}
 \label{fig:scaling}
 \end{figure*}
 
@@ -759,18 +759,25 @@ dimensions $64$ to $6561$; the largest register is the qutrit's fifth
 size, $m=8$) at fixed per-layer strength. Both qudits stay above the
 qubit at every precision on the measured overlap in all four regimes,
 and the gap over the qutrit widens with size under ladder noise
-because the qubit decays roughly $4\times$ faster per precision bit:
+because the qubit decays roughly $3\times$ faster per precision bit:
 slopes $-0.050\pm0.006$/bit ($d{=}2$, $R^2=0.97$, $n=4$ sizes) against
-$-0.012\pm0.004$/bit ($d{=}3$, $R^2=0.72$, $n=5$) under the calibrated
+$-0.018\pm0.008$/bit ($d{=}3$, $R^2=0.66$, $n=5$) under the calibrated
 ladder, while the ququint decays at a rate comparable to the qubit's
 ($-0.040\pm0.004$/bit, $R^2=0.99$, $n=3$) from a higher starting
 point. Two readings deserve emphasis. First, the qutrit's size
 dependence is the shallowest in every regime, and whether it is flat
 at all depends on the channel: the fifth size resolves the
 calibrated-ladder trend to \emph{slow, not flat}
-($-0.012\pm0.004$/bit, $2.7\sigma$ from zero), while under
+($-0.018\pm0.008$/bit, $2.4\sigma$ from zero), while under
 depolarizing the trend remains flat to the largest size
-($+0.003\pm0.004$/bit, with signal $0.68\pm0.02$ at 12.7 bits). We
+($-0.001\pm0.004$/bit, with signal $0.65\pm0.04$ at 12.7 bits). The
+calibrated-ladder decline is moreover not uniform, and we quote its
+slope as a summary rather than a model: the first three sizes are flat
+to $\chi^2/\mathrm{dof}=0.01$ ($0.738$--$0.742$ from 6.3 to 9.5 bits)
+and the entire fall is carried by the two largest, the 12.7-bit point
+sitting $3.9\sigma$ below the 9.5-bit one. Five sizes cannot separate a
+constant slope from an onset; the depolarizing family, flat across the
+same span to $0.5\sigma$, shows no such structure. We
 report the depolarizing flatness as an observation with a mechanism
 (Sec.~\ref{sec:decoder}), not a law. One objection must be met first: $D=d^m$ changes across the
 sweep, so the flatness could be residual grid misalignment drifting
@@ -783,8 +790,8 @@ sizes), because $d^m \bmod r$ is periodic in $m$ and the multiset of
 phase offsets it induces therefore repeats. Alignment does not vary
 with register size here, so it can explain neither a size-dependent
 nor a size-independent signal. On the fitted curves the qutrit
-overtakes the ququint at 7.4
-bits (calibrated ladder) and 10.5 bits (depolarizing), and from the
+overtakes the ququint at 7.3
+bits (calibrated ladder) and 10.8 bits (depolarizing), and from the
 smallest common size under the idealized ladder---the story is not
 monotonic in $d$, and the best base depends on the target precision.
 Second, for eigenstate QPE the qudit advantage is decisive and grows
@@ -804,12 +811,13 @@ replicates every claim above except one. Both qudits again clear the
 qubit at every size in all four regimes, and the qubit again decays
 fastest ($-0.040\pm0.009$/bit under the calibrated ladder, matching
 $-0.050\pm0.006$ at $N=21$; the ququint matches at
-$-0.038\pm0.001$ vs $-0.040\pm0.004$). What does not replicate is the
-qutrit's slope magnitude: $-0.025\pm0.004$/bit on $N=29$ against
-$-0.012\pm0.004$ at $N=21$ (five sizes)---the shallowest slope in
-every regime on both instances, but with instance-dependent
-magnitude, so strict flatness survives only in the depolarizing
-channel at $N=21$. What is instance-robust is the ordering, the
+$-0.038\pm0.001$ vs $-0.040\pm0.004$). The qutrit's calibrated-ladder
+slope agrees between the instances within $0.7\sigma$
+($-0.025\pm0.004$/bit on $N=29$ against $-0.018\pm0.008$ at $N=21$,
+five sizes), and is the shallowest in every regime on both. What does
+not replicate is strict flatness: the $N=29$ qutrit declines under
+depolarizing as well ($-0.029\pm0.016$/bit), so a flat qutrit family
+survives only in the depolarizing channel at $N=21$. What is instance-robust is the ordering, the
 qubit's fastest decay,
 and the late qutrit-over-ququint crossing, which recurs near 11 bits
 on $N=29$ under the calibrated ladder (7.4 at $N=21$) and moves
@@ -1498,12 +1506,14 @@ register, i.e.\ for $d=2$, softening the qudit advantage there. The scaling tren
 to 17 qubits and stated as slopes with error bars, not theorems: the
 Shor sweep uses two instances ($N=21$, $r=6$ and $N=29$, $r=7$) at one
 noise strength per regime, with 3--5 sizes per base. The ordering and
-the qubit's fastest decay replicate across the instances; the qutrit's
-slope magnitude does not ($-0.012$ vs $-0.025$/bit under the
-calibrated ladder), so individual per-base slopes carry
+the qubit's fastest decay replicate across the instances, as does the
+qutrit's calibrated-ladder slope within $0.7\sigma$ ($-0.018$ vs
+$-0.025$/bit); individual per-base slopes nonetheless carry
 instance-level variance of order $0.01$/bit. A fifth qutrit size
 ($m=8$, 12.7 bits) resolves the $N=21$ calibrated-ladder trend to
-slow rather than flat; strict flatness persists only under
+slow rather than flat, and locates the fall in the two largest sizes
+rather than spreading it across the sweep---a shape five sizes can
+report but not fit; strict flatness persists only under
 depolarizing. The qutrit's decoder account
 is derived and verified exactly (Sec.~\ref{sec:decoder}) and grid
 alignment is excluded as a confound. Statistical error
@@ -1579,7 +1589,7 @@ on 27 instance/size combinations. The external
 reproduction of Ref.~\cite{jankovic2023}
 (Sec.~\ref{sec:robustness}) runs separately from the test suite.
 Statistics: 1000 trajectories per Shor and QPE scaling point (500 at
-$d{=}2$, $m{=}12$, and at the fifth qutrit size $d{=}3$, $m{=}8$);
+$d{=}2$, $m{=}12$);
 400 per point for the $N=29$ instance-robustness
 sweep (200 at the three deepest configurations, whose work registers
 are wider than at $N=21$); 400 trajectories per point for the grid-alignment

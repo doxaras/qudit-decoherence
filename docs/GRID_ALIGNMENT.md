@@ -260,7 +260,17 @@ The headline surprise is the **qutrit's flatness**: its slope is
 −0.000/bit under calibrated ladder noise and −0.005 to −0.009 elsewhere,
 against −0.05 for the qubit. Under the noise model this project was built
 to interrogate, the qutrit's Shor performance is essentially *independent
-of problem size* over the range we can simulate. The ququint starts higher
+of problem size* over the range we can simulate.
+
+> **Superseded (Aug 12, 2026).** The four sizes above stop at 11.1 bits.
+> A fifth size (d = 3, m = 8, 12.7 bits, 1000 trajectories) puts the
+> calibrated-ladder slope at **−0.018 ± 0.008/bit**, not −0.000: the
+> first three sizes are flat (0.738–0.742) and the fall is carried by
+> the two largest, with m = 8 sitting 3.9σ below m = 6. Flatness
+> survives only under **depolarizing** noise (−0.001 ± 0.004/bit,
+> 0.5σ across the same span). The paper carries the corrected figures;
+> the ordering, the qubit's fastest decay, and the qutrit-over-ququint
+> crossing are unaffected. The ququint starts higher
 but decays faster than the qutrit, so d = 3 overtakes d = 5 above ≈ 9 bits
 in three of the four regimes — the story is not monotonic in d, and the
 best base depends on the target precision. This reverses the earlier

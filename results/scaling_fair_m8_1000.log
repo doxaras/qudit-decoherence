@@ -1,1 +1,7 @@
 baseline d=3 m=8: success=0.3328 floor=0.1424 layers=68
+depolarizing           success=0.2660±0.0067 signal= 0.649 (4948.8s)
+transmon               success=0.2699±0.0060 signal= 0.670 (4949.1s)
+transmon_cal           success=0.2583±0.0051 signal= 0.609 (4932.4s)
+transmon_cal_lowcharge success=0.2929±0.0050 signal= 0.791 (4953.5s)
+
+wrote results/scaling_fair_m8.json

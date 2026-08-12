@@ -30,7 +30,7 @@ def main():
     with open(_scaling_fair_path()) as f:
         data = json.load(f)
     runs, bl = data["runs"], data["baselines"]
-    # fifth qutrit size (d=3, m=8), measured separately at 500 traj
+    # fifth qutrit size (d=3, m=8), measured separately at 1000 traj
     m8_path = "results/scaling_fair_m8.json"
     if os.path.exists(m8_path):
         with open(m8_path) as f:
