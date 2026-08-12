@@ -1,0 +1,196 @@
+{
+ "N": 21,
+ "a": 2,
+ "floor": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "baseline": {
+  "2": 0.289109048265707,
+  "3": 0.28760065666458684,
+  "5": 0.32734242057805996
+ },
+ "runs": [
+  {
+   "d": 2,
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "strength": 0.005,
+   "success": 0.171293263350989,
+   "layers": 57.0,
+   "elapsed": 24.7,
+   "signal": 0.28208842742196716
+  },
+  {
+   "d": 3,
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "strength": 0.005,
+   "success": 0.21839798393131538,
+   "layers": 26.0,
+   "elapsed": 11.5,
+   "signal": 0.578402323574295
+  },
+  {
+   "d": 5,
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "strength": 0.005,
+   "success": 0.25386543717845855,
+   "layers": 15.0,
+   "elapsed": 12.4,
+   "signal": 0.6314031745650006
+  },
+  {
+   "d": 2,
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "strength": 0.005,
+   "success": 0.171293263350989,
+   "layers": 57.0,
+   "elapsed": 24.6,
+   "signal": 0.28208842742196716
+  },
+  {
+   "d": 3,
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "strength": 0.005,
+   "success": 0.184856451708445,
+   "layers": 44.0,
+   "elapsed": 11.7,
+   "signal": 0.3740600418328949
+  },
+  {
+   "d": 5,
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "strength": 0.005,
+   "success": 0.17909822948253706,
+   "layers": 42.0,
+   "elapsed": 12.5,
+   "signal": 0.25633394705632984
+  },
+  {
+   "d": 2,
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "strength": 0.005,
+   "success": 0.171293263350989,
+   "layers": 57.0,
+   "elapsed": 25.1,
+   "signal": 0.28208842742196716
+  },
+  {
+   "d": 3,
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "strength": 0.005,
+   "success": 0.1652516044816402,
+   "layers": 58.5,
+   "elapsed": 11.2,
+   "signal": 0.25462306474735535
+  },
+  {
+   "d": 5,
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "strength": 0.005,
+   "success": 0.13571891176723616,
+   "layers": 93.75,
+   "elapsed": 12.1,
+   "signal": 0.03872187236842311
+  },
+  {
+   "d": 2,
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "strength": 0.005,
+   "success": 0.17928488827437242,
+   "layers": 57.0,
+   "elapsed": 25.3,
+   "signal": 0.3307854676390567
+  },
+  {
+   "d": 3,
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "strength": 0.005,
+   "success": 0.23297489868846893,
+   "layers": 26.0,
+   "elapsed": 11.8,
+   "signal": 0.6672080466532074
+  },
+  {
+   "d": 5,
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "strength": 0.005,
+   "success": 0.2839644667171672,
+   "layers": 15.0,
+   "elapsed": 12.9,
+   "signal": 0.7823947670791601
+  },
+  {
+   "d": 2,
+   "noise": "depolarizing",
+   "cost": "ion",
+   "strength": 0.005,
+   "success": 0.17928488827437242,
+   "layers": 57.0,
+   "elapsed": 23.8,
+   "signal": 0.3307854676390567
+  },
+  {
+   "d": 3,
+   "noise": "depolarizing",
+   "cost": "ion",
+   "strength": 0.005,
+   "success": 0.20505827866600596,
+   "layers": 44.0,
+   "elapsed": 11.5,
+   "signal": 0.49713394878572587
+  },
+  {
+   "d": 5,
+   "noise": "depolarizing",
+   "cost": "ion",
+   "strength": 0.005,
+   "success": 0.2281330428905692,
+   "layers": 42.0,
+   "elapsed": 12.4,
+   "signal": 0.50231678034309
+  },
+  {
+   "d": 2,
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "strength": 0.005,
+   "success": 0.17928488827437242,
+   "layers": 57.0,
+   "elapsed": 20.2,
+   "signal": 0.3307854676390567
+  },
+  {
+   "d": 3,
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "strength": 0.005,
+   "success": 0.18814389667380021,
+   "layers": 58.5,
+   "elapsed": 10.7,
+   "signal": 0.3940878688521363
+  },
+  {
+   "d": 5,
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "strength": 0.005,
+   "success": 0.1709414040826373,
+   "layers": 93.75,
+   "elapsed": 11.5,
+   "signal": 0.2154152837018551
+  }
+ ]
+}

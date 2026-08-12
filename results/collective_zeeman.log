@@ -1,0 +1,12 @@
+collective-B (common-mode) Zeeman dephasing, floor-corrected signal
+    cost      s      d=2      d=3      d=5
+ uniform  0.001    0.965    0.738    0.640
+ uniform  0.003    0.873    0.450    0.341
+ uniform  0.005    0.781    0.321    0.214
+ uniform   0.01    0.606    0.177    0.091
+     ion  0.001    0.965    0.600    0.342
+     ion  0.003    0.873    0.320    0.109
+     ion  0.005    0.781    0.215    0.050
+     ion   0.01    0.606    0.096    0.012
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/collective_zeeman.json

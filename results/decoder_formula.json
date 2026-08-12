@@ -1,0 +1,642 @@
+{
+ "characterization_checks": [
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 64,
+   "enumeration": 8,
+   "characterization": 8
+  },
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 81,
+   "enumeration": 10,
+   "characterization": 10
+  },
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 125,
+   "enumeration": 16,
+   "characterization": 16
+  },
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 243,
+   "enumeration": 36,
+   "characterization": 36
+  },
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 256,
+   "enumeration": 36,
+   "characterization": 36
+  },
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 625,
+   "enumeration": 88,
+   "characterization": 88
+  },
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 729,
+   "enumeration": 100,
+   "characterization": 100
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 64,
+   "enumeration": 14,
+   "characterization": 14
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 81,
+   "enumeration": 16,
+   "characterization": 16
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 125,
+   "enumeration": 32,
+   "characterization": 32
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 243,
+   "enumeration": 60,
+   "characterization": 60
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 256,
+   "enumeration": 64,
+   "characterization": 64
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 625,
+   "enumeration": 162,
+   "characterization": 162
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 729,
+   "enumeration": 196,
+   "characterization": 196
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 64,
+   "enumeration": 24,
+   "characterization": 24
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 81,
+   "enumeration": 30,
+   "characterization": 30
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 125,
+   "enumeration": 64,
+   "characterization": 64
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 243,
+   "enumeration": 98,
+   "characterization": 98
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 256,
+   "enumeration": 98,
+   "characterization": 98
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 625,
+   "enumeration": 248,
+   "characterization": 248
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 729,
+   "enumeration": 298,
+   "characterization": 298
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 64,
+   "enumeration": 4,
+   "characterization": 4
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 81,
+   "enumeration": 6,
+   "characterization": 6
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 125,
+   "enumeration": 10,
+   "characterization": 10
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 243,
+   "enumeration": 22,
+   "characterization": 22
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 256,
+   "enumeration": 22,
+   "characterization": 22
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 625,
+   "enumeration": 62,
+   "characterization": 62
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 729,
+   "enumeration": 70,
+   "characterization": 70
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 64,
+   "enumeration": 24,
+   "characterization": 24
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 81,
+   "enumeration": 34,
+   "characterization": 34
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 125,
+   "enumeration": 64,
+   "characterization": 64
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 243,
+   "enumeration": 114,
+   "characterization": 114
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 256,
+   "enumeration": 114,
+   "characterization": 114
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 625,
+   "enumeration": 286,
+   "characterization": 286
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 729,
+   "enumeration": 350,
+   "characterization": 350
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 64,
+   "enumeration": 4,
+   "characterization": 4
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 81,
+   "enumeration": 8,
+   "characterization": 8
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 125,
+   "enumeration": 10,
+   "characterization": 10
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 243,
+   "enumeration": 28,
+   "characterization": 28
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 256,
+   "enumeration": 24,
+   "characterization": 24
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 625,
+   "enumeration": 70,
+   "characterization": 70
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 729,
+   "enumeration": 88,
+   "characterization": 88
+  }
+ ],
+ "exact_vs_enumeration": {
+  "N": 21,
+  "a": 2,
+  "r": 6,
+  "rows": [
+   {
+    "d": 2,
+    "m": 6,
+    "D": 64,
+    "enumeration": 8,
+    "exact_formula": 8,
+    "law": 9.036585465077804,
+    "law_over_enum": 1.1295731831347255
+   },
+   {
+    "d": 2,
+    "m": 8,
+    "D": 256,
+    "enumeration": 36,
+    "exact_formula": 36,
+    "law": 36.14634186031122,
+    "law_over_enum": 1.0040650516753116
+   },
+   {
+    "d": 2,
+    "m": 10,
+    "D": 1024,
+    "enumeration": 148,
+    "exact_formula": 148,
+    "law": 144.58536744124487,
+    "law_over_enum": 0.9769281583867897
+   },
+   {
+    "d": 2,
+    "m": 12,
+    "D": 4096,
+    "enumeration": 582,
+    "exact_formula": 582,
+    "law": 578.3414697649795,
+    "law_over_enum": 0.9937138655755661
+   },
+   {
+    "d": 3,
+    "m": 4,
+    "D": 81,
+    "enumeration": 10,
+    "exact_formula": 10,
+    "law": 11.436928479239096,
+    "law_over_enum": 1.1436928479239097
+   },
+   {
+    "d": 3,
+    "m": 5,
+    "D": 243,
+    "enumeration": 36,
+    "exact_formula": 36,
+    "law": 34.310785437717286,
+    "law_over_enum": 0.9530773732699246
+   },
+   {
+    "d": 3,
+    "m": 6,
+    "D": 729,
+    "enumeration": 100,
+    "exact_formula": 100,
+    "law": 102.93235631315187,
+    "law_over_enum": 1.0293235631315187
+   },
+   {
+    "d": 3,
+    "m": 7,
+    "D": 2187,
+    "enumeration": 308,
+    "exact_formula": 308,
+    "law": 308.7970689394556,
+    "law_over_enum": 1.0025878861670636
+   },
+   {
+    "d": 5,
+    "m": 3,
+    "D": 125,
+    "enumeration": 16,
+    "exact_formula": 16,
+    "law": 17.649580986480085,
+    "law_over_enum": 1.1030988116550053
+   },
+   {
+    "d": 5,
+    "m": 4,
+    "D": 625,
+    "enumeration": 88,
+    "exact_formula": 88,
+    "law": 88.24790493240043,
+    "law_over_enum": 1.0028171015045504
+   },
+   {
+    "d": 5,
+    "m": 5,
+    "D": 3125,
+    "enumeration": 442,
+    "exact_formula": 442,
+    "law": 441.23952466200217,
+    "law_over_enum": 0.9982794675610909
+   }
+  ],
+  "law_fraction": 0.1411966478918407,
+  "law_fraction_mu_exact": 0.1422783846723939
+ },
+ "pairs_exact": [
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 625,
+   "enumeration": 248,
+   "exact_formula": 248
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 3125,
+   "enumeration": 1276,
+   "exact_formula": 1276
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 1024,
+   "enumeration": 418,
+   "exact_formula": 418
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 2187,
+   "enumeration": 890,
+   "exact_formula": 890
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 625,
+   "enumeration": 62,
+   "exact_formula": 62
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 3125,
+   "enumeration": 300,
+   "exact_formula": 300
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 1024,
+   "enumeration": 96,
+   "exact_formula": 96
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 2187,
+   "enumeration": 210,
+   "exact_formula": 210
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 625,
+   "enumeration": 286,
+   "exact_formula": 286
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 3125,
+   "enumeration": 1508,
+   "exact_formula": 1508
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 1024,
+   "enumeration": 490,
+   "exact_formula": 490
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 2187,
+   "enumeration": 1044,
+   "exact_formula": 1044
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 625,
+   "enumeration": 70,
+   "exact_formula": 70
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 3125,
+   "enumeration": 382,
+   "exact_formula": 382
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 1024,
+   "enumeration": 120,
+   "exact_formula": 120
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 2187,
+   "enumeration": 266,
+   "exact_formula": 266
+  }
+ ],
+ "law_rows": [
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "D": 16384,
+   "measured_fraction": 0.1422119140625,
+   "law": 0.1411966478918407,
+   "mu_exact_law": 0.1422783846723939,
+   "envelope": 0.1388888888888889
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "D": 16384,
+   "measured_fraction": 0.26953125,
+   "law": 0.27112899919861805,
+   "mu_exact_law": 0.2695667823898591,
+   "envelope": 0.12244897959183673
+  },
+  {
+   "N": 33,
+   "a": 4,
+   "r": 5,
+   "D": 15625,
+   "measured_fraction": 0.407936,
+   "law": 0.41095926171865205,
+   "mu_exact_law": 0.4080607281341157,
+   "envelope": 0.16
+  },
+  {
+   "N": 33,
+   "a": 2,
+   "r": 10,
+   "D": 15625,
+   "measured_fraction": 0.095744,
+   "law": 0.09550027821048135,
+   "mu_exact_law": 0.09593761276693169,
+   "envelope": 0.09
+  },
+  {
+   "N": 55,
+   "a": 16,
+   "r": 5,
+   "D": 15625,
+   "measured_fraction": 0.477824,
+   "law": 0.4978339335048658,
+   "mu_exact_law": 0.4950450078489026,
+   "envelope": 0.16
+  },
+  {
+   "N": 55,
+   "a": 4,
+   "r": 10,
+   "D": 15625,
+   "measured_fraction": 0.120448,
+   "law": 0.12045357671063939,
+   "mu_exact_law": 0.12090255318449761,
+   "envelope": 0.09
+  }
+ ],
+ "per_peak_ratio_N33": 9.68225806451613,
+ "per_peak_ratio_N55": 9.2992369423515
+}

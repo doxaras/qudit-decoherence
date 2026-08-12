@@ -1,0 +1,57 @@
+baseline d=2 m=6: success=0.2891 floor=0.1250 layers=57
+baseline d=2 m=8: success=0.3236 floor=0.1406 layers=84
+baseline d=2 m=10: success=0.3309 floor=0.1445 layers=115
+baseline d=2 m=12: success=0.3327 floor=0.1421 layers=150
+baseline d=3 m=4: success=0.2876 floor=0.1235 layers=26
+baseline d=3 m=5: success=0.3202 floor=0.1481 layers=35
+baseline d=3 m=6: success=0.3285 floor=0.1372 layers=45
+baseline d=3 m=7: success=0.3318 floor=0.1408 layers=56
+baseline d=5 m=3: success=0.3273 floor=0.1280 layers=15
+baseline d=5 m=4: success=0.3323 floor=0.1408 layers=22
+baseline d=5 m=5: success=0.3331 floor=0.1414 layers=30
+depolarizing           d=2 m= 6 success=0.1800±0.0030 signal= 0.335 (22.1s)
+depolarizing           d=2 m= 8 success=0.1861±0.0039 signal= 0.248 (143.2s)
+depolarizing           d=2 m=10 success=0.1736±0.0035 signal= 0.156 (2699.6s)
+depolarizing           d=2 m=12 success=0.1599±0.0048 signal= 0.093 (9986.6s)
+depolarizing           d=3 m= 4 success=0.2336±0.0033 signal= 0.671 (8.6s)
+depolarizing           d=3 m= 5 success=0.2572±0.0039 signal= 0.634 (26.8s)
+depolarizing           d=3 m= 6 success=0.2654±0.0050 signal= 0.670 (176.2s)
+depolarizing           d=3 m= 7 success=0.2679±0.0059 signal= 0.665 (1846.9s)
+depolarizing           d=5 m= 3 success=0.2871±0.0029 signal= 0.798 (8.8s)
+depolarizing           d=5 m= 4 success=0.2787±0.0036 signal= 0.720 (46.6s)
+depolarizing           d=5 m= 5 success=0.2611±0.0043 signal= 0.624 (900.9s)
+transmon               d=2 m= 6 success=0.2089±0.0029 signal= 0.511 (25.9s)
+transmon               d=2 m= 8 success=0.2178±0.0043 signal= 0.422 (222.5s)
+transmon               d=2 m=10 success=0.2034±0.0046 signal= 0.316 (2656.8s)
+transmon               d=2 m=12 success=0.1807±0.0065 signal= 0.203 (9322.8s)
+transmon               d=3 m= 4 success=0.2456±0.0029 signal= 0.744 (15.4s)
+transmon               d=3 m= 5 success=0.2695±0.0035 signal= 0.706 (57.4s)
+transmon               d=3 m= 6 success=0.2796±0.0045 signal= 0.744 (185.8s)
+transmon               d=3 m= 7 success=0.2701±0.0054 signal= 0.677 (1326.4s)
+transmon               d=5 m= 3 success=0.2692±0.0034 signal= 0.708 (8.2s)
+transmon               d=5 m= 4 success=0.2515±0.0039 signal= 0.578 (44.6s)
+transmon               d=5 m= 5 success=0.2362±0.0044 signal= 0.494 (626.0s)
+transmon_cal           d=2 m= 6 success=0.2075±0.0030 signal= 0.503 (26.4s)
+transmon_cal           d=2 m= 8 success=0.2181±0.0042 signal= 0.423 (193.1s)
+transmon_cal           d=2 m=10 success=0.2089±0.0047 signal= 0.345 (2370.6s)
+transmon_cal           d=2 m=12 success=0.1798±0.0065 signal= 0.198 (8009.4s)
+transmon_cal           d=3 m= 4 success=0.2445±0.0026 signal= 0.738 (14.9s)
+transmon_cal           d=3 m= 5 success=0.2752±0.0032 signal= 0.738 (52.7s)
+transmon_cal           d=3 m= 6 success=0.2792±0.0039 signal= 0.742 (186.5s)
+transmon_cal           d=3 m= 7 success=0.2756±0.0047 signal= 0.706 (1549.1s)
+transmon_cal           d=5 m= 3 success=0.2786±0.0035 signal= 0.756 (9.4s)
+transmon_cal           d=5 m= 4 success=0.2703±0.0041 signal= 0.676 (45.2s)
+transmon_cal           d=5 m= 5 success=0.2504±0.0047 signal= 0.569 (542.1s)
+transmon_cal_lowcharge d=2 m= 6 success=0.2232±0.0028 signal= 0.598 (25.2s)
+transmon_cal_lowcharge d=2 m= 8 success=0.2401±0.0040 signal= 0.544 (170.7s)
+transmon_cal_lowcharge d=2 m=10 success=0.2291±0.0043 signal= 0.454 (2211.8s)
+transmon_cal_lowcharge d=2 m=12 success=0.2118±0.0066 signal= 0.366 (6351.9s)
+transmon_cal_lowcharge d=3 m= 4 success=0.2571±0.0021 signal= 0.814 (13.2s)
+transmon_cal_lowcharge d=3 m= 5 success=0.2879±0.0027 signal= 0.812 (43.3s)
+transmon_cal_lowcharge d=3 m= 6 success=0.3021±0.0037 signal= 0.862 (150.7s)
+transmon_cal_lowcharge d=3 m= 7 success=0.2949±0.0043 signal= 0.807 (1015.3s)
+transmon_cal_lowcharge d=5 m= 3 success=0.3069±0.0020 signal= 0.898 (7.1s)
+transmon_cal_lowcharge d=5 m= 4 success=0.3055±0.0022 signal= 0.860 (38.0s)
+transmon_cal_lowcharge d=5 m= 5 success=0.3009±0.0024 signal= 0.832 (435.9s)
+
+wrote results/scaling_fair_1000.json

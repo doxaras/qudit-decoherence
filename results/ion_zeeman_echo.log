@@ -1,0 +1,22 @@
+depol residual 0.005, Zeeman = eps * 0.003
+    cost   eps      d=2      d=3      d=5
+ uniform   1.0    0.231    0.150    0.179
+ uniform   0.5    0.277    0.293    0.353
+ uniform   0.2    0.308    0.472    0.560
+ uniform   0.1    0.319    0.559    0.660
+ uniform  0.05    0.325    0.611    0.718
+ uniform  0.02    0.328    0.644    0.756
+ uniform   0.0    0.331    0.667    0.782
+     ion   1.0    0.231    0.045    0.012
+     ion   0.5    0.277    0.119    0.057
+     ion   0.2    0.308    0.265    0.187
+     ion   0.1    0.319    0.360    0.299
+     ion  0.05    0.325    0.422    0.385
+     ion  0.02    0.328    0.466    0.451
+     ion   0.0    0.331    0.497    0.502
+eps* uniform d=3: 0.580
+eps* uniform d=5: 0.794
+eps* ion d=3: 0.149
+eps* ion d=5: 0.087
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/ion_zeeman_echo.json

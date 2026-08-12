@@ -1,0 +1,11 @@
+    cost      s      d=2      d=3      d=5   (floor-corrected signal)
+ uniform  0.001    0.896    0.574    0.583
+ uniform  0.003    0.721    0.236    0.232
+ uniform  0.005    0.580    0.127    0.108
+ uniform   0.01    0.338    0.050    0.023
+     ion  0.001    0.896    0.384    0.217
+     ion  0.003    0.721    0.111    0.025
+     ion  0.005    0.580    0.054    0.003
+     ion   0.01    0.338    0.016   -0.003
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/ion_zeeman_demo.json

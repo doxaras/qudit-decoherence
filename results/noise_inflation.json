@@ -1,0 +1,723 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "factors": [
+  1.0,
+  1.5,
+  2.0,
+  2.5,
+  3.0,
+  4.0,
+  5.0,
+  6.0
+ ],
+ "runs": [
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.289109048265707,
+   "elapsed_s": 5.1
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.28760065666458684,
+   "elapsed_s": 3.0
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.32734242057805996,
+   "elapsed_s": 3.4
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 25.4
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.24247437262956514,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "uniform",
+   "success": 0.22402658525699876,
+   "elapsed_s": 12.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "uniform",
+   "success": 0.20785263621409455,
+   "elapsed_s": 12.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "uniform",
+   "success": 0.19365904810177814,
+   "elapsed_s": 12.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "uniform",
+   "success": 0.1811914651469788,
+   "elapsed_s": 12.7
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.012,
+   "cost": "uniform",
+   "success": 0.16058049665042085,
+   "elapsed_s": 12.3
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.015,
+   "cost": "uniform",
+   "success": 0.14457868627881224,
+   "elapsed_s": 12.6
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.018000000000000002,
+   "cost": "uniform",
+   "success": 0.13209454317713398,
+   "elapsed_s": 12.9
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.27941398758591257,
+   "elapsed_s": 13.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "uniform",
+   "success": 0.2598331699873056,
+   "elapsed_s": 14.6
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "uniform",
+   "success": 0.24269771420182407,
+   "elapsed_s": 13.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "uniform",
+   "success": 0.22770444243706783,
+   "elapsed_s": 13.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "uniform",
+   "success": 0.21458745890681596,
+   "elapsed_s": 13.5
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.012,
+   "cost": "uniform",
+   "success": 0.19307845379686644,
+   "elapsed_s": 13.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.015,
+   "cost": "uniform",
+   "success": 0.17662950171780303,
+   "elapsed_s": 13.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.018000000000000002,
+   "cost": "uniform",
+   "success": 0.16405618896614063,
+   "elapsed_s": 13.6
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.17928488827437242,
+   "elapsed_s": 26.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.23297489868846893,
+   "elapsed_s": 12.6
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "uniform",
+   "success": 0.21241451845326698,
+   "elapsed_s": 12.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.19535260084728004,
+   "elapsed_s": 12.6
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "uniform",
+   "success": 0.1811991182119547,
+   "elapsed_s": 12.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "uniform",
+   "success": 0.16946593830048595,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.1517114028896473,
+   "elapsed_s": 12.6
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.025,
+   "cost": "uniform",
+   "success": 0.1396085594941668,
+   "elapsed_s": 12.5
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.03,
+   "cost": "uniform",
+   "success": 0.13144046608423157,
+   "elapsed_s": 12.4
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.2839644667171672,
+   "elapsed_s": 13.2
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "uniform",
+   "success": 0.2658913009980931,
+   "elapsed_s": 13.4
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.2498730907169989,
+   "elapsed_s": 13.4
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "uniform",
+   "success": 0.2356798473578174,
+   "elapsed_s": 13.7
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "uniform",
+   "success": 0.22310707553563633,
+   "elapsed_s": 13.5
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.20211587437804063,
+   "elapsed_s": 13.2
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.025,
+   "cost": "uniform",
+   "success": 0.18567403018559997,
+   "elapsed_s": 13.3
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.03,
+   "cost": "uniform",
+   "success": 0.17281337800982063,
+   "elapsed_s": 13.2
+  },
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "ion",
+   "success": 0.289109048265707,
+   "elapsed_s": 5.2
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "ion",
+   "success": 0.28760065666458684,
+   "elapsed_s": 3.1
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "ion",
+   "success": 0.32734242057805996,
+   "elapsed_s": 3.7
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 25.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.2167410420146751,
+   "elapsed_s": 12.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "ion",
+   "success": 0.19193690837327076,
+   "elapsed_s": 12.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "ion",
+   "success": 0.17220913073524013,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "ion",
+   "success": 0.15646700013067255,
+   "elapsed_s": 12.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "ion",
+   "success": 0.14385975037892504,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.012,
+   "cost": "ion",
+   "success": 0.12553010877956394,
+   "elapsed_s": 12.6
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.015,
+   "cost": "ion",
+   "success": 0.11342912833065402,
+   "elapsed_s": 12.3
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.018000000000000002,
+   "cost": "ion",
+   "success": 0.10520096592670052,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.21610941998932176,
+   "elapsed_s": 12.9
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "ion",
+   "success": 0.1865643582345013,
+   "elapsed_s": 12.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "ion",
+   "success": 0.1668764070704846,
+   "elapsed_s": 13.1
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "ion",
+   "success": 0.15373408816812237,
+   "elapsed_s": 13.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "ion",
+   "success": 0.14494095079040306,
+   "elapsed_s": 13.2
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.012,
+   "cost": "ion",
+   "success": 0.13505099932505404,
+   "elapsed_s": 13.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.015,
+   "cost": "ion",
+   "success": 0.13045343596505043,
+   "elapsed_s": 13.3
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.018000000000000002,
+   "cost": "ion",
+   "success": 0.12814167134524912,
+   "elapsed_s": 12.7
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.17928488827437242,
+   "elapsed_s": 25.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.20505827866600596,
+   "elapsed_s": 12.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "ion",
+   "success": 0.1798346441484671,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.1615332746724954,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "ion",
+   "success": 0.1482888241364437,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "ion",
+   "success": 0.13874689765111967,
+   "elapsed_s": 12.4
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.12708550434708646,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.025,
+   "cost": "ion",
+   "success": 0.1214106268720819,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.03,
+   "cost": "ion",
+   "success": 0.11893992198299916,
+   "elapsed_s": 12.3
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.2281330428905692,
+   "elapsed_s": 13.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "ion",
+   "success": 0.19906264302681462,
+   "elapsed_s": 13.0
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.17849042549362623,
+   "elapsed_s": 12.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "ion",
+   "success": 0.16392920643770084,
+   "elapsed_s": 13.2
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "ion",
+   "success": 0.15362200695112432,
+   "elapsed_s": 13.0
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.14116340103358163,
+   "elapsed_s": 13.1
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.025,
+   "cost": "ion",
+   "success": 0.13492546722007512,
+   "elapsed_s": 13.4
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.03,
+   "cost": "ion",
+   "success": 0.1318020903306356,
+   "elapsed_s": 12.2
+  }
+ ],
+ "crossings": {
+  "transmon_cal_uniform_d3": {
+   "f_star": 2.045168572280838,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signals": [
+    0.7250809001522195,
+    0.6126929823987172,
+    0.514157780421789,
+    0.42768736631856147,
+    0.35173214960825383,
+    0.22616566375120606,
+    0.12867916785707537,
+    0.052623063143896455
+   ]
+  },
+  "transmon_cal_uniform_d5": {
+   "f_star": 2.4589198173011506,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signals": [
+    0.7595673171161317,
+    0.661340268694497,
+    0.5753803624397643,
+    0.5001667088617741,
+    0.4343654434200543,
+    0.32646565446606757,
+    0.24394958974003397,
+    0.18087564534223904
+   ]
+  },
+  "transmon_cal_ion_d3": {
+   "f_star": 1.2050185297493003,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signals": [
+    0.5683078744087204,
+    0.41719571795669075,
+    0.29700982217064636,
+    0.2011053516821129,
+    0.1242992545832093,
+    0.012631106478703797,
+    -0.061090688334005445,
+    -0.11121843649382931
+   ]
+  },
+  "transmon_cal_ion_d5": {
+   "f_star": null,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signals": [
+    0.4420003516252038,
+    0.29378773501733535,
+    0.19502325173813712,
+    0.1290948915614538,
+    0.08498417316934906,
+    0.03537129379992133,
+    0.012307646099289228,
+    0.0007106934130642818
+   ]
+  },
+  "depolarizing_uniform_d3": {
+   "f_star": 2.6468452056734866,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signals": [
+    0.6672080466532074,
+    0.5419497554452927,
+    0.4380048565860247,
+    0.3517787737382757,
+    0.28029769949095545,
+    0.17213322289511598,
+    0.09840007860825448,
+    0.048638283775131456
+   ]
+  },
+  "depolarizing_uniform_d5": {
+   "f_star": 4.497285977845764,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signals": [
+    0.7823947670791601,
+    0.691730844835892,
+    0.6113755936322391,
+    0.5401752775227857,
+    0.4771040466943342,
+    0.3718018180130295,
+    0.28932140995556715,
+    0.22480602914256417
+   ]
+  },
+  "depolarizing_ion_d3": {
+   "f_star": 1.5568659185273668,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signals": [
+    0.49713394878572587,
+    0.34346610210308115,
+    0.23197019389998144,
+    0.15128213156088094,
+    0.09315064796424538,
+    0.022106913283417854,
+    -0.012465669869316555,
+    -0.027517739380933975
+   ]
+  },
+  "depolarizing_ion_d5": {
+   "f_star": 1.6245142194159352,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signals": [
+    0.50231678034309,
+    0.3564853021285923,
+    0.2532849021658931,
+    0.18023863828638229,
+    0.1285326368407926,
+    0.0660341185554482,
+    0.03474156278424035,
+    0.019073162248206772
+   ]
+  }
+ }
+}

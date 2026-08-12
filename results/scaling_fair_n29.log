@@ -1,0 +1,57 @@
+baseline d=2 m=6: success=0.7587 floor=0.2188 layers=57
+baseline d=2 m=8: success=0.8300 floor=0.2500 layers=84
+baseline d=2 m=10: success=0.8505 floor=0.2656 layers=115
+baseline d=2 m=12: success=0.8555 floor=0.2686 layers=150
+baseline d=3 m=4: success=0.7640 floor=0.1975 layers=30
+baseline d=3 m=5: success=0.8275 floor=0.2469 layers=40
+baseline d=3 m=6: success=0.8479 floor=0.2689 layers=51
+baseline d=3 m=7: success=0.8540 floor=0.2698 layers=63
+baseline d=5 m=3: success=0.7944 floor=0.2560 layers=18
+baseline d=5 m=4: success=0.8462 floor=0.2592 layers=26
+baseline d=5 m=5: success=0.8550 floor=0.2675 layers=35
+depolarizing           d=2 m= 6 success=0.3827±0.0111 signal= 0.304 (8.5s)
+depolarizing           d=2 m= 8 success=0.3489±0.0101 signal= 0.171 (44.3s)
+depolarizing           d=2 m=10 success=0.3440±0.0092 signal= 0.134 (553.6s)
+depolarizing           d=2 m=12 success=0.2944±0.0090 signal= 0.044 (2711.1s)
+depolarizing           d=3 m= 4 success=0.4991±0.0140 signal= 0.532 (9.3s)
+depolarizing           d=3 m= 5 success=0.5772±0.0136 signal= 0.569 (34.7s)
+depolarizing           d=3 m= 6 success=0.5684±0.0138 signal= 0.517 (257.4s)
+depolarizing           d=3 m= 7 success=0.5030±0.0199 signal= 0.399 (799.8s)
+depolarizing           d=5 m= 3 success=0.6410±0.0128 signal= 0.715 (14.5s)
+depolarizing           d=5 m= 4 success=0.6195±0.0154 signal= 0.614 (120.9s)
+depolarizing           d=5 m= 5 success=0.5754±0.0228 signal= 0.524 (466.5s)
+transmon               d=2 m= 6 success=0.4703±0.0132 signal= 0.466 (11.2s)
+transmon               d=2 m= 8 success=0.4354±0.0134 signal= 0.320 (65.9s)
+transmon               d=2 m=10 success=0.4133±0.0131 signal= 0.253 (605.0s)
+transmon               d=2 m=12 success=0.3926±0.0165 signal= 0.211 (2735.9s)
+transmon               d=3 m= 4 success=0.5376±0.0135 signal= 0.600 (19.7s)
+transmon               d=3 m= 5 success=0.5608±0.0130 signal= 0.541 (64.7s)
+transmon               d=3 m= 6 success=0.5810±0.0135 signal= 0.539 (398.2s)
+transmon               d=3 m= 7 success=0.5259±0.0201 signal= 0.438 (839.5s)
+transmon               d=5 m= 3 success=0.5991±0.0138 signal= 0.637 (15.6s)
+transmon               d=5 m= 4 success=0.5520±0.0163 signal= 0.499 (139.4s)
+transmon               d=5 m= 5 success=0.5020±0.0227 signal= 0.399 (460.1s)
+transmon_cal           d=2 m= 6 success=0.4893±0.0128 signal= 0.501 (16.4s)
+transmon_cal           d=2 m= 8 success=0.4502±0.0133 signal= 0.345 (105.1s)
+transmon_cal           d=2 m=10 success=0.4463±0.0128 signal= 0.309 (881.7s)
+transmon_cal           d=2 m=12 success=0.4133±0.0179 signal= 0.247 (2695.8s)
+transmon_cal           d=3 m= 4 success=0.5594±0.0131 signal= 0.639 (20.3s)
+transmon_cal           d=3 m= 5 success=0.5920±0.0133 signal= 0.594 (57.9s)
+transmon_cal           d=3 m= 6 success=0.6043±0.0130 signal= 0.579 (415.7s)
+transmon_cal           d=3 m= 7 success=0.5696±0.0199 signal= 0.513 (866.6s)
+transmon_cal           d=5 m= 3 success=0.6212±0.0134 signal= 0.678 (19.0s)
+transmon_cal           d=5 m= 4 success=0.6088±0.0152 signal= 0.596 (153.0s)
+transmon_cal           d=5 m= 5 success=0.5622±0.0228 signal= 0.502 (476.2s)
+transmon_cal_lowcharge d=2 m= 6 success=0.5348±0.0121 signal= 0.585 (16.6s)
+transmon_cal_lowcharge d=2 m= 8 success=0.5674±0.0130 signal= 0.547 (98.2s)
+transmon_cal_lowcharge d=2 m=10 success=0.5351±0.0131 signal= 0.461 (781.3s)
+transmon_cal_lowcharge d=2 m=12 success=0.4775±0.0179 signal= 0.356 (2115.8s)
+transmon_cal_lowcharge d=3 m= 4 success=0.6188±0.0107 signal= 0.744 (18.8s)
+transmon_cal_lowcharge d=3 m= 5 success=0.6851±0.0103 signal= 0.755 (63.2s)
+transmon_cal_lowcharge d=3 m= 6 success=0.7001±0.0099 signal= 0.745 (384.8s)
+transmon_cal_lowcharge d=3 m= 7 success=0.6710±0.0165 signal= 0.687 (797.7s)
+transmon_cal_lowcharge d=5 m= 3 success=0.7422±0.0068 signal= 0.903 (18.9s)
+transmon_cal_lowcharge d=5 m= 4 success=0.7614±0.0092 signal= 0.856 (140.9s)
+transmon_cal_lowcharge d=5 m= 5 success=0.7297±0.0153 signal= 0.787 (445.5s)
+
+wrote results/scaling_fair_n29.json

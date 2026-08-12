@@ -1,0 +1,38 @@
+N=33 a= 4 r= 5 d=2: m=6 w=6 layers=63 grid=False floor=0.375 noiseless=0.750 span=0.375
+N=33 a= 4 r= 5 d=3: m=4 w=4 layers=30 grid=False floor=0.370 noiseless=0.757 span=0.387
+N=33 a= 4 r= 5 d=5: m=3 w=3 layers=18 grid=True  floor=0.512 noiseless=0.800 span=0.288
+N=33 a= 2 r=10 d=2: m=6 w=6 layers=63 grid=False floor=0.062 noiseless=0.291 span=0.229
+N=33 a= 2 r=10 d=3: m=4 w=4 layers=30 grid=False floor=0.074 noiseless=0.342 span=0.268
+N=33 a= 2 r=10 d=5: m=3 w=3 layers=18 grid=False floor=0.080 noiseless=0.325 span=0.245
+N=55 a=16 r= 5 d=2: m=6 w=6 layers=63 grid=False floor=0.375 noiseless=0.750 span=0.375
+N=55 a=16 r= 5 d=3: m=4 w=4 layers=30 grid=False floor=0.420 noiseless=0.760 span=0.340
+N=55 a=16 r= 5 d=5: m=3 w=3 layers=18 grid=True  floor=0.512 noiseless=0.800 span=0.288
+N=55 a= 4 r=10 d=2: m=6 w=6 layers=63 grid=False floor=0.062 noiseless=0.291 span=0.229
+N=55 a= 4 r=10 d=3: m=4 w=4 layers=30 grid=False floor=0.099 noiseless=0.342 span=0.244
+N=55 a= 4 r=10 d=5: m=3 w=3 layers=18 grid=False floor=0.080 noiseless=0.325 span=0.245
+N=33 a= 4 r= 5 transmon_cal  d=2 grid=False signal= 0.401±0.029 (14.7s)
+N=33 a= 4 r= 5 transmon_cal  d=3 grid=False signal= 0.674±0.023 (12.0s)
+N=33 a= 4 r= 5 transmon_cal  d=5 grid=True  signal= 1.012±0.015 (17.0s)
+N=33 a= 4 r= 5 depolarizing  d=2 grid=False signal= 0.204±0.027 (15.1s)
+N=33 a= 4 r= 5 depolarizing  d=3 grid=False signal= 0.588±0.028 (12.5s)
+N=33 a= 4 r= 5 depolarizing  d=5 grid=True  signal= 0.990±0.018 (17.9s)
+N=33 a= 2 r=10 transmon_cal  d=2 grid=False signal= 0.457±0.024 (15.8s)
+N=33 a= 2 r=10 transmon_cal  d=3 grid=False signal= 0.619±0.024 (15.7s)
+N=33 a= 2 r=10 transmon_cal  d=5 grid=False signal= 0.834±0.020 (17.9s)
+N=33 a= 2 r=10 depolarizing  d=2 grid=False signal= 0.204±0.020 (16.5s)
+N=33 a= 2 r=10 depolarizing  d=3 grid=False signal= 0.548±0.025 (15.4s)
+N=33 a= 2 r=10 depolarizing  d=5 grid=False signal= 0.770±0.023 (18.3s)
+N=55 a=16 r= 5 transmon_cal  d=2 grid=False signal= 0.342±0.030 (34.8s)
+N=55 a=16 r= 5 transmon_cal  d=3 grid=False signal= 0.702±0.022 (12.5s)
+N=55 a=16 r= 5 transmon_cal  d=5 grid=True  signal= 0.996±0.013 (17.3s)
+N=55 a=16 r= 5 depolarizing  d=2 grid=False signal= 0.232±0.026 (35.9s)
+N=55 a=16 r= 5 depolarizing  d=3 grid=False signal= 0.437±0.031 (12.7s)
+N=55 a=16 r= 5 depolarizing  d=5 grid=True  signal= 1.002±0.016 (18.0s)
+N=55 a= 4 r=10 transmon_cal  d=2 grid=False signal= 0.460±0.024 (24.6s)
+N=55 a= 4 r=10 transmon_cal  d=3 grid=False signal= 0.610±0.025 (16.0s)
+N=55 a= 4 r=10 transmon_cal  d=5 grid=False signal= 0.853±0.020 (17.7s)
+N=55 a= 4 r=10 depolarizing  d=2 grid=False signal= 0.242±0.020 (34.9s)
+N=55 a= 4 r=10 depolarizing  d=3 grid=False signal= 0.542±0.025 (16.1s)
+N=55 a= 4 r=10 depolarizing  d=5 grid=False signal= 0.810±0.021 (17.4s)
+
+wrote results/same_n_control.json

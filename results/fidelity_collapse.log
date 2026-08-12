@@ -1,0 +1,71 @@
+shor   transmon_cal d=5 size= 5 F=0.2550±0.0290 (157.5s)
+shor   depolarizing d=5 size= 5 F=0.4063±0.0339 (158.9s)
+shor   transmon_cal d=3 size= 7 F=0.1833±0.0251 (346.3s)
+shor   depolarizing d=3 size= 7 F=0.1073±0.0199 (353.8s)
+shor   transmon_cal d=3 size= 6 F=0.2814±0.0298 (44.1s)
+shor   depolarizing d=3 size= 6 F=0.1739±0.0239 (44.2s)
+shor   transmon_cal d=5 size= 4 F=0.3701±0.0334 (11.2s)
+shor   depolarizing d=5 size= 4 F=0.5574±0.0345 (11.3s)
+grover transmon_cal d=5 size= 4 F=0.0143±0.0014 (92.8s)
+shor   transmon_cal d=2 size=10 F=0.0872±0.0170 (597.6s)
+grover depolarizing d=5 size= 4 F=0.0143±0.0000 (91.6s)
+shor   transmon_cal d=2 size= 8 F=0.1930±0.0244 (52.8s)
+grover transmon_cal d=2 size= 8 F=0.0337±0.0021 (18.1s)
+grover depolarizing d=2 size= 8 F=0.0053±0.0000 (19.3s)
+shor   transmon_cal d=3 size= 5 F=0.4010±0.0330 (13.1s)
+shor   depolarizing d=3 size= 5 F=0.3547±0.0318 (13.6s)
+shor   depolarizing d=2 size= 8 F=0.0194±0.0064 (72.2s)
+grover transmon_cal d=3 size= 5 F=0.0902±0.0072 (7.8s)
+shor   transmon_cal d=5 size= 3 F=0.6607±0.0329 (2.2s)
+shor   depolarizing d=5 size= 3 F=0.6866±0.0322 (2.6s)
+grover transmon_cal d=5 size= 3 F=0.2853±0.0084 (0.6s)
+grover depolarizing d=3 size= 5 F=0.0313±0.0000 (8.4s)
+grover depolarizing d=5 size= 3 F=0.3206±0.0000 (0.6s)
+shor   depolarizing d=3 size= 4 F=0.5562±0.0337 (3.6s)
+grover transmon_cal d=3 size= 4 F=0.3673±0.0102 (0.6s)
+shor   transmon_cal d=3 size= 4 F=0.5545±0.0336 (4.4s)
+grover depolarizing d=3 size= 4 F=0.2479±0.0000 (0.4s)
+shor   depolarizing d=2 size= 6 F=0.1557±0.0239 (6.5s)
+grover transmon_cal d=2 size= 6 F=0.3477±0.0124 (0.4s)
+grover depolarizing d=2 size= 6 F=0.1268±0.0000 (0.4s)
+grover transmon_cal d=3 size= 3 F=0.7218±0.0059 (0.0s)
+grover depolarizing d=3 size= 3 F=0.6337±0.0000 (0.0s)
+grover transmon_cal d=5 size= 2 F=0.7720±0.0052 (0.0s)
+grover depolarizing d=5 size= 2 F=0.8058±0.0000 (0.0s)
+grover transmon_cal d=2 size= 4 F=0.7661±0.0076 (0.0s)
+grover depolarizing d=2 size= 4 F=0.6037±0.0000 (0.0s)
+shor   transmon_cal d=2 size= 6 F=0.4265±0.0322 (7.8s)
+shor   depolarizing d=2 size=10 F=0.0058±0.0028 (575.0s)
+shor   transmon_cal d=2 size=12 F=0.0145±0.0063 (2080.5s)
+shor   depolarizing d=2 size=12 F=0.0003±0.0001 (2081.9s)
+
+total 2082s
+wrote results/fidelity_collapse.json
+
+=== transmon_cal: fidelity vs damage-unit exposure (20 points) ===
+pooled: A = 0.989  k = 0.6512  R^2 = 0.968
+  shared_A_shared_k      R^2 = 0.968
+  per_alg_A_shared_k     R^2 = 0.982
+  shared_A_per_alg_k     R^2 = 0.988
+  per_alg_A_per_alg_k    R^2 = 0.988
+family           k(fid)  R^2 loglin       fid range       sig range
+grover d=       2   0.4572       0.998  0.0337..0.7661    0.036..0.762
+grover d=       3   0.4820       0.998  0.0902..0.7218    0.089..0.720
+grover d=       5   0.4287       0.998  0.0143..0.7720    0.014..0.773
+shor d=       2   0.7676       0.987  0.0145..0.4265    0.190..0.499
+shor d=       3   0.6647       0.999  0.1833..0.5545    0.716..0.756
+shor d=       5   0.8181       0.955  0.2550..0.6607    0.607..0.795
+
+=== depolarizing: fidelity vs damage-unit exposure (20 points) ===
+pooled: A = 0.975  k = 0.8066  R^2 = 0.989
+  shared_A_shared_k      R^2 = 0.989
+  per_alg_A_shared_k     R^2 = 0.991
+  shared_A_per_alg_k     R^2 = 0.992
+  per_alg_A_per_alg_k    R^2 = 0.992
+family           k(fid)  R^2 loglin       fid range       sig range
+grover d=       2   0.4048       0.985  0.0053..0.6037    0.002..0.580
+grover d=       3   0.6889       0.999  0.0313..0.6337    0.028..0.621
+grover d=       5   0.7696       1.000  0.0143..0.8058    0.013..0.798
+shor d=       2   0.8441       0.983  0.0003..0.1557    0.134..0.311
+shor d=       3   1.0007       0.984  0.1073..0.5562    0.591..0.767
+shor d=       5   0.8117       0.999  0.4063..0.6866    0.657..0.766

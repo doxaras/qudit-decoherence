@@ -1,0 +1,12 @@
+N=29 a=16 r=7
+  d=2: m=6 w=5 D=64 aligned=False residual=0.2857
+  d=3: m=4 w=4 D=81 aligned=False residual=0.2857
+  d=4: m=3 w=3 D=64 aligned=False residual=0.2857
+  d=5: m=3 w=3 D=125 aligned=False residual=0.2857
+  d=6: m=3 w=2 D=216 aligned=False residual=0.2857
+
+        model            d=2            d=3            d=4            d=5            d=6   (signal ± err)
+ transmon_cal    0.452±0.016    0.644±0.014    0.767±0.013    0.696±0.016    0.771±0.013
+ depolarizing    0.288±0.013    0.526±0.016    0.718±0.014    0.713±0.016    0.839±0.011
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/composite_control.json

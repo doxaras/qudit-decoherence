@@ -1,0 +1,6 @@
+{
+ "m": 5,
+ "bits": 4,
+ "shots": 1000,
+ "task_arn": "arn:aws:braket:us-east-1:<ACCOUNT>:quantum-task/407d4106-1446-4a92-bfdb-bc9ce401508b"
+}

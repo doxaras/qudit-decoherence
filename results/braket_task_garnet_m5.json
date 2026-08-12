@@ -1,0 +1,10 @@
+{
+ "label": "garnet_m5",
+ "m": 5,
+ "bits": 4,
+ "shots": 5000,
+ "aqft_cutoff": null,
+ "debias": false,
+ "device": "iqm-garnet",
+ "task_arn": "arn:aws:braket:eu-north-1:<ACCOUNT>:quantum-task/f38e3137-a394-4f4e-8153-ed2bdf2b6880"
+}

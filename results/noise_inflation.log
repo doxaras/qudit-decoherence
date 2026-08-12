@@ -1,0 +1,14 @@
+74 exact-DM runs
+all runs done in 238 s
+
+        model     cost  d f=1.0  f=1.5  f=2.0  f=2.5  f=3.0  f=4.0  f=5.0  f=6.0   f*
+ transmon_cal  uniform  3  0.73  0.61  0.51  0.43  0.35  0.23  0.13  0.05  2.05   (qubit 0.51)
+ transmon_cal  uniform  5  0.76  0.66  0.58  0.50  0.43  0.33  0.24  0.18  2.46   (qubit 0.51)
+ transmon_cal      ion  3  0.57  0.42  0.30  0.20  0.12  0.01 -0.06 -0.11  1.21   (qubit 0.51)
+ transmon_cal      ion  5  0.44  0.29  0.20  0.13  0.08  0.04  0.01  0.00  >6.0   (qubit 0.51)
+ depolarizing  uniform  3  0.67  0.54  0.44  0.35  0.28  0.17  0.10  0.05  2.65   (qubit 0.33)
+ depolarizing  uniform  5  0.78  0.69  0.61  0.54  0.48  0.37  0.29  0.22  4.50   (qubit 0.33)
+ depolarizing      ion  3  0.50  0.34  0.23  0.15  0.09  0.02 -0.01 -0.03  1.56   (qubit 0.33)
+ depolarizing      ion  5  0.50  0.36  0.25  0.18  0.13  0.07  0.03  0.02  1.62   (qubit 0.33)
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/noise_inflation.json

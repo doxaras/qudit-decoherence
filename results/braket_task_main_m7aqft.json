@@ -1,0 +1,9 @@
+{
+ "label": "main_m7aqft",
+ "m": 7,
+ "bits": 5,
+ "shots": 5000,
+ "aqft_cutoff": 5,
+ "debias": true,
+ "task_arn": "arn:aws:braket:us-east-1:<ACCOUNT>:quantum-task/51118b36-fa81-4f49-b65a-29e7f206a090"
+}

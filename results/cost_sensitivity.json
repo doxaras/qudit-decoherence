@@ -1,0 +1,1123 @@
+{
+ "costs": [
+  "uniform",
+  "ion",
+  "pavlidis"
+ ],
+ "noise": [
+  "depolarizing",
+  "transmon_cal"
+ ],
+ "strengths": [
+  0.002,
+  0.005,
+  0.01
+ ],
+ "qpe_m": {
+  "2": 6,
+  "3": 4,
+  "5": 3
+ },
+ "shor_floor": {
+  "2": 0.28125,
+  "3": 0.2962962962962963,
+  "5": 0.288
+ },
+ "shor_base": {
+  "2": 0.49999999999999906,
+  "3": 0.4907555632874088,
+  "5": 0.49271697501330014
+ },
+ "qpe_floor": {
+  "2": 0.03125,
+  "3": 0.037037037037037035,
+  "5": 0.032
+ },
+ "qpe_base": {
+  "2": 0.8157542251114636,
+  "3": 0.995295536114127,
+  "5": 0.948321446898753
+ },
+ "runs": [
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.48411416677235053,
+   "elapsed_s": 4.2,
+   "signal": 0.9273790481021779
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.4649034497172602,
+   "elapsed_s": 13.0,
+   "signal": 0.8670564073897793
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.47399753899583463,
+   "elapsed_s": 13.9,
+   "signal": 0.9085594342323134
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.45769036189560136,
+   "elapsed_s": 4.3,
+   "signal": 0.8065845115227526
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.43054638191096306,
+   "elapsed_s": 12.5,
+   "signal": 0.6903763841751109
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.4488317052028336,
+   "elapsed_s": 13.7,
+   "signal": 0.785629551200552
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.4150182673886026,
+   "elapsed_s": 4.1,
+   "signal": 0.6115120794907574
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.38463929930118773,
+   "elapsed_s": 12.9,
+   "signal": 0.4543008125651786
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.4136535503990243,
+   "elapsed_s": 14.0,
+   "signal": 0.6137915548569473
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.48411416677235053,
+   "elapsed_s": 4.2,
+   "signal": 0.9273790481021779
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.4494240927646071,
+   "elapsed_s": 12.3,
+   "signal": 0.7874543540026265
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.44393149571136964,
+   "elapsed_s": 13.6,
+   "signal": 0.7616930432917887
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.45769036189560136,
+   "elapsed_s": 4.3,
+   "signal": 0.8065845115227526
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.3993679096683951,
+   "elapsed_s": 12.3,
+   "signal": 0.5300421778140794
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.39087309981948304,
+   "elapsed_s": 13.8,
+   "signal": 0.5025137745064842
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.4150182673886026,
+   "elapsed_s": 4.1,
+   "signal": 0.6115120794907574
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.3438458359148747,
+   "elapsed_s": 12.6,
+   "signal": 0.2445218495076998
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.3380594198696612,
+   "elapsed_s": 13.3,
+   "signal": 0.2445298923863492
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.48411416677235053,
+   "elapsed_s": 4.1,
+   "signal": 0.9273790481021779
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.43596605842357355,
+   "elapsed_s": 12.6,
+   "signal": 0.7182468816652521
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.3991681161127642,
+   "elapsed_s": 13.9,
+   "signal": 0.5430332101455768
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.45769036189560136,
+   "elapsed_s": 4.1,
+   "signal": 0.8065845115227526
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.37545154523470475,
+   "elapsed_s": 12.5,
+   "signal": 0.40705310764143804
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.32913332045279414,
+   "elapsed_s": 13.1,
+   "signal": 0.2009277464661726
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.4150182673886026,
+   "elapsed_s": 4.1,
+   "signal": 0.6115120794907574
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.31903478135804797,
+   "elapsed_s": 12.4,
+   "signal": 0.11693186657332673
+  },
+  {
+   "algo": "shor",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.29175138026521474,
+   "elapsed_s": 13.1,
+   "signal": 0.0183247152072809
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.48296683654543654,
+   "elapsed_s": 4.1,
+   "signal": 0.9221341099219996
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.46241425055487895,
+   "elapsed_s": 12.5,
+   "signal": 0.8542557874918598
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.45274828142701135,
+   "elapsed_s": 13.7,
+   "signal": 0.8047612144342594
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.4605066496717533,
+   "elapsed_s": 4.1,
+   "signal": 0.8194589699280187
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.424097652099619,
+   "elapsed_s": 12.3,
+   "signal": 0.6572140159777714
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.4049946813459786,
+   "elapsed_s": 13.2,
+   "signal": 0.5714947738866191
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.4307264822197285,
+   "elapsed_s": 4.0,
+   "signal": 0.6833210615759046
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.3724389580921813,
+   "elapsed_s": 12.5,
+   "signal": 0.3915609833053881
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.3496240529194926,
+   "elapsed_s": 13.2,
+   "signal": 0.30102072832743354
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.48296683654543654,
+   "elapsed_s": 4.2,
+   "signal": 0.9221341099219996
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.44466285345176243,
+   "elapsed_s": 12.3,
+   "signal": 0.7629698468535676
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.39543596643057033,
+   "elapsed_s": 13.3,
+   "signal": 0.5248024323512518
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.4605066496717533,
+   "elapsed_s": 4.1,
+   "signal": 0.8194589699280187
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.388194756194667,
+   "elapsed_s": 12.3,
+   "signal": 0.4725846256664681
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.3216947593581392,
+   "elapsed_s": 13.3,
+   "signal": 0.16459191699149572
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.4307264822197285,
+   "elapsed_s": 4.0,
+   "signal": 0.6833210615759046
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.3261917969731984,
+   "elapsed_s": 12.6,
+   "signal": 0.1537365698198813
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.28053968211747726,
+   "elapsed_s": 13.8,
+   "signal": -0.03644210687481109
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.48296683654543654,
+   "elapsed_s": 4.1,
+   "signal": 0.9221341099219996
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.4301047787046263,
+   "elapsed_s": 12.7,
+   "signal": 0.688105455084563
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.3302169309113081,
+   "elapsed_s": 13.6,
+   "signal": 0.2062209590023756
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.4605066496717533,
+   "elapsed_s": 4.2,
+   "signal": 0.8194589699280187
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.3617948501549268,
+   "elapsed_s": 12.5,
+   "signal": 0.3368240293820712
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.2712613606151801,
+   "elapsed_s": 13.4,
+   "signal": -0.08176478469229244
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.4307264822197285,
+   "elapsed_s": 4.1,
+   "signal": 0.6833210615759046
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.29726796514551573,
+   "elapsed_s": 12.5,
+   "signal": 0.0049967731764815415
+  },
+  {
+   "algo": "shor",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.2671466579537576,
+   "elapsed_s": 13.6,
+   "signal": -0.1018642545147396
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.5670476842614237,
+   "elapsed_s": 4.4,
+   "signal": 0.6829761613907137
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.8444967430225003,
+   "elapsed_s": 12.4,
+   "signal": 0.8426324491388674
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.8781473540285206,
+   "elapsed_s": 13.2,
+   "signal": 0.9234176029517444
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.34197561418493255,
+   "elapsed_s": 4.3,
+   "signal": 0.3960789556497088
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.664326824930261,
+   "elapsed_s": 12.7,
+   "signal": 0.6546143744066703
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.7834219394715068,
+   "elapsed_s": 13.2,
+   "signal": 0.8200418554151049
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.1659518262508356,
+   "elapsed_s": 4.1,
+   "signal": 0.17170312401019505
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.45374014047038935,
+   "elapsed_s": 12.6,
+   "signal": 0.4348545865595599
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.6498215072704155,
+   "elapsed_s": 13.7,
+   "signal": 0.6742410202897722
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.5670476842614237,
+   "elapsed_s": 4.1,
+   "signal": 0.6829761613907137
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.7595402634360254,
+   "elapsed_s": 12.2,
+   "signal": 0.7539752865169886
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.7721038773888601,
+   "elapsed_s": 13.7,
+   "signal": 0.8076902269325977
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.34197561418493255,
+   "elapsed_s": 4.3,
+   "signal": 0.3960789556497088
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.5170629097794611,
+   "elapsed_s": 12.3,
+   "signal": 0.5009356798867348
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.5745459167150924,
+   "elapsed_s": 13.6,
+   "signal": 0.5920912563503927
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.1659518262508356,
+   "elapsed_s": 4.2,
+   "signal": 0.17170312401019505
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.289720111273661,
+   "elapsed_s": 12.5,
+   "signal": 0.2636898858502022
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.3638974258706124,
+   "elapsed_s": 13.0,
+   "signal": 0.362206327259832
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.5670476842614237,
+   "elapsed_s": 4.3,
+   "signal": 0.6829761613907137
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.6913552696298271,
+   "elapsed_s": 12.4,
+   "signal": 0.6828201714077899
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.5941894379153273,
+   "elapsed_s": 13.5,
+   "signal": 0.613528625590977
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.34197561418493255,
+   "elapsed_s": 4.1,
+   "signal": 0.3960789556497088
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.4151627187086427,
+   "elapsed_s": 12.2,
+   "signal": 0.39459674193944844
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.31313972411182595,
+   "elapsed_s": 13.3,
+   "signal": 0.3068134278241879
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.1659518262508356,
+   "elapsed_s": 4.0,
+   "signal": 0.17170312401019505
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.1985106377515619,
+   "elapsed_s": 12.5,
+   "signal": 0.168507350438365
+  },
+  {
+   "algo": "qpe",
+   "noise": "depolarizing",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.1298538188217197,
+   "elapsed_s": 13.3,
+   "signal": 0.10678983794704508
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.5728980688448135,
+   "elapsed_s": 4.0,
+   "signal": 0.6904335904218429
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.8016361128605124,
+   "elapsed_s": 12.3,
+   "signal": 0.7979048206302054
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.8272747930130087,
+   "elapsed_s": 13.6,
+   "signal": 0.8678993553022021
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.3510492474212613,
+   "elapsed_s": 4.2,
+   "signal": 0.40764502877702635
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.5858598350903487,
+   "elapsed_s": 12.2,
+   "signal": 0.572729382084155
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.6778195203750476,
+   "elapsed_s": 13.1,
+   "signal": 0.7047958143518233
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.17580508436049833,
+   "elapsed_s": 4.2,
+   "signal": 0.18426297747467163
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.35835077266751736,
+   "elapsed_s": 12.1,
+   "signal": 0.335310081715885
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.4937710260765129,
+   "elapsed_s": 13.4,
+   "signal": 0.5039399957726137
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.5728980688448135,
+   "elapsed_s": 4.1,
+   "signal": 0.6904335904218429
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.6965690893890653,
+   "elapsed_s": 12.8,
+   "signal": 0.6882611038537424
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.6614185685106904,
+   "elapsed_s": 13.2,
+   "signal": 0.6868971261569049
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.3510492474212613,
+   "elapsed_s": 4.2,
+   "signal": 0.40764502877702635
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.4225090357598441,
+   "elapsed_s": 12.3,
+   "signal": 0.4022630627268735
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.4057561979750513,
+   "elapsed_s": 13.6,
+   "signal": 0.40788764602205013
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.17580508436049833,
+   "elapsed_s": 4.1,
+   "signal": 0.18426297747467163
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.20271670743743192,
+   "elapsed_s": 12.0,
+   "signal": 0.17289663546940928
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.2060676224543378,
+   "elapsed_s": 13.3,
+   "signal": 0.18996349266238557
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.002,
+   "success": 0.5728980688448135,
+   "elapsed_s": 4.2,
+   "signal": 0.6904335904218429
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.002,
+   "success": 0.6167109843753681,
+   "elapsed_s": 12.6,
+   "signal": 0.6049243997278624
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.002,
+   "success": 0.424549828943142,
+   "elapsed_s": 13.1,
+   "signal": 0.42839751298161644
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.005,
+   "success": 0.3510492474212613,
+   "elapsed_s": 4.1,
+   "signal": 0.40764502877702635
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.005,
+   "success": 0.3189246995838414,
+   "elapsed_s": 12.0,
+   "signal": 0.29416661873418676
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.005,
+   "success": 0.16141758877389517,
+   "elapsed_s": 12.3,
+   "signal": 0.14123601407770486
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 2,
+   "strength": 0.01,
+   "success": 0.17580508436049833,
+   "elapsed_s": 4.0,
+   "signal": 0.18426297747467163
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 3,
+   "strength": 0.01,
+   "success": 0.12594435375478683,
+   "elapsed_s": 10.4,
+   "signal": 0.09278009723198644
+  },
+  {
+   "algo": "qpe",
+   "noise": "transmon_cal",
+   "cost": "pavlidis",
+   "d": 5,
+   "strength": 0.01,
+   "success": 0.06229587751140329,
+   "elapsed_s": 10.8,
+   "signal": 0.03306249964348021
+  }
+ ]
+}

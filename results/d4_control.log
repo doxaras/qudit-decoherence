@@ -1,0 +1,11 @@
+ d  m    D  resid         model   succ  signal
+ 2  6   64  0.267  transmon_cal  0.208   0.506
+ 3  4   81  0.300  transmon_cal  0.242   0.725
+ 4  3   64  0.267  transmon_cal  0.261   0.829
+ 5  3  125  0.300  transmon_cal  0.279   0.760
+ 2  6   64  0.267  depolarizing  0.179   0.331
+ 3  4   81  0.300  depolarizing  0.233   0.667
+ 4  3   64  0.267  depolarizing  0.249   0.753
+ 5  3  125  0.300  depolarizing  0.284   0.782
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/d4_control.json

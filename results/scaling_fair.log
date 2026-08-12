@@ -1,0 +1,57 @@
+baseline d=2 m=6: success=0.2891 floor=0.1250 layers=57
+baseline d=2 m=8: success=0.3236 floor=0.1406 layers=84
+baseline d=2 m=10: success=0.3309 floor=0.1445 layers=115
+baseline d=2 m=12: success=0.3327 floor=0.1421 layers=150
+baseline d=3 m=4: success=0.2876 floor=0.1235 layers=26
+baseline d=3 m=5: success=0.3202 floor=0.1481 layers=35
+baseline d=3 m=6: success=0.3285 floor=0.1372 layers=45
+baseline d=3 m=7: success=0.3318 floor=0.1408 layers=56
+baseline d=5 m=3: success=0.3273 floor=0.1280 layers=15
+baseline d=5 m=4: success=0.3323 floor=0.1408 layers=22
+baseline d=5 m=5: success=0.3331 floor=0.1414 layers=30
+depolarizing           d=2 m= 6 success=0.1760±0.0046 signal= 0.311 (8.8s)
+depolarizing           d=2 m= 8 success=0.1729±0.0060 signal= 0.176 (65.4s)
+depolarizing           d=2 m=10 success=0.1840±0.0067 signal= 0.212 (826.8s)
+depolarizing           d=2 m=12 success=0.1677±0.0066 signal= 0.134 (3244.2s)
+depolarizing           d=3 m= 4 success=0.2365±0.0052 signal= 0.689 (3.4s)
+depolarizing           d=3 m= 5 success=0.2538±0.0066 signal= 0.614 (10.9s)
+depolarizing           d=3 m= 6 success=0.2840±0.0085 signal= 0.767 (76.8s)
+depolarizing           d=3 m= 7 success=0.2537±0.0089 signal= 0.591 (582.0s)
+depolarizing           d=5 m= 3 success=0.2807±0.0049 signal= 0.766 (4.3s)
+depolarizing           d=5 m= 4 success=0.2798±0.0058 signal= 0.726 (25.1s)
+depolarizing           d=5 m= 5 success=0.2674±0.0068 signal= 0.657 (297.5s)
+transmon               d=2 m= 6 success=0.2029±0.0049 signal= 0.475 (11.5s)
+transmon               d=2 m= 8 success=0.2281±0.0069 signal= 0.478 (79.1s)
+transmon               d=2 m=10 success=0.1976±0.0070 signal= 0.285 (774.3s)
+transmon               d=2 m=12 success=0.1808±0.0098 signal= 0.203 (3058.7s)
+transmon               d=3 m= 4 success=0.2426±0.0047 signal= 0.726 (4.4s)
+transmon               d=3 m= 5 success=0.2669±0.0056 signal= 0.690 (15.2s)
+transmon               d=3 m= 6 success=0.2946±0.0069 signal= 0.822 (56.0s)
+transmon               d=3 m= 7 success=0.2627±0.0082 signal= 0.639 (419.1s)
+transmon               d=5 m= 3 success=0.2615±0.0054 signal= 0.670 (2.8s)
+transmon               d=5 m= 4 success=0.2408±0.0061 signal= 0.522 (15.8s)
+transmon               d=5 m= 5 success=0.2279±0.0071 signal= 0.451 (202.5s)
+transmon_cal           d=2 m= 6 success=0.2068±0.0048 signal= 0.499 (11.5s)
+transmon_cal           d=2 m= 8 success=0.2176±0.0065 signal= 0.420 (78.6s)
+transmon_cal           d=2 m=10 success=0.1929±0.0070 signal= 0.259 (690.0s)
+transmon_cal           d=2 m=12 success=0.1783±0.0095 signal= 0.190 (2731.5s)
+transmon_cal           d=3 m= 4 success=0.2434±0.0042 signal= 0.731 (4.8s)
+transmon_cal           d=3 m= 5 success=0.2713±0.0052 signal= 0.716 (19.2s)
+transmon_cal           d=3 m= 6 success=0.2818±0.0060 signal= 0.756 (52.4s)
+transmon_cal           d=3 m= 7 success=0.2778±0.0072 signal= 0.718 (408.7s)
+transmon_cal           d=5 m= 3 success=0.2865±0.0055 signal= 0.795 (3.0s)
+transmon_cal           d=5 m= 4 success=0.2683±0.0064 signal= 0.666 (17.4s)
+transmon_cal           d=5 m= 5 success=0.2578±0.0075 signal= 0.607 (188.1s)
+transmon_cal_lowcharge d=2 m= 6 success=0.2280±0.0041 signal= 0.628 (10.3s)
+transmon_cal_lowcharge d=2 m= 8 success=0.2572±0.0066 signal= 0.637 (66.8s)
+transmon_cal_lowcharge d=2 m=10 success=0.2225±0.0069 signal= 0.418 (728.5s)
+transmon_cal_lowcharge d=2 m=12 success=0.2076±0.0102 signal= 0.344 (2344.5s)
+transmon_cal_lowcharge d=3 m= 4 success=0.2609±0.0030 signal= 0.837 (4.9s)
+transmon_cal_lowcharge d=3 m= 5 success=0.2850±0.0048 signal= 0.795 (18.1s)
+transmon_cal_lowcharge d=3 m= 6 success=0.3042±0.0061 signal= 0.873 (59.6s)
+transmon_cal_lowcharge d=3 m= 7 success=0.2907±0.0068 signal= 0.785 (425.6s)
+transmon_cal_lowcharge d=5 m= 3 success=0.3079±0.0029 signal= 0.902 (2.9s)
+transmon_cal_lowcharge d=5 m= 4 success=0.3064±0.0035 signal= 0.865 (17.4s)
+transmon_cal_lowcharge d=5 m= 5 success=0.2987±0.0039 signal= 0.820 (194.8s)
+
+wrote results/scaling_fair.json

@@ -1,0 +1,8 @@
+ d  m    D  floor  transmon_cal  depolarizing
+ 2  6   64  0.125         0.506         0.331
+ 2  7  128  0.156         0.466         0.301
+ 3  4   81  0.123         0.725         0.667
+ 3  5  243  0.148         0.711         0.658
+ 5  3  125  0.128         0.760         0.782
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/matched_D.json

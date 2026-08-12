@@ -1,0 +1,9 @@
+{
+ "label": "probe_m4",
+ "m": 4,
+ "bits": 3,
+ "shots": 500,
+ "aqft_cutoff": null,
+ "debias": false,
+ "task_arn": "arn:aws:braket:us-east-1:<ACCOUNT>:quantum-task/b82d4406-9c2a-41ce-8205-2426fab4723f"
+}

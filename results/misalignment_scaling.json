@@ -1,0 +1,211 @@
+{
+ "instances": [
+  {
+   "N": 21,
+   "a": 2,
+   "r": 6,
+   "per_base": {
+    "2": {
+     "rows": [
+      {
+       "m": 6,
+       "D": 64,
+       "exact_grid": false,
+       "residual": 0.2666666666666675
+      },
+      {
+       "m": 8,
+       "D": 256,
+       "exact_grid": false,
+       "residual": 0.26666666666667
+      },
+      {
+       "m": 10,
+       "D": 1024,
+       "exact_grid": false,
+       "residual": 0.26666666666667993
+      },
+      {
+       "m": 12,
+       "D": 4096,
+       "exact_grid": false,
+       "residual": 0.26666666666671973
+      }
+     ],
+     "min": 0.2666666666666675,
+     "max": 0.26666666666671973,
+     "spread": 5.2235993308613615e-14,
+     "constant_in_m": true
+    },
+    "3": {
+     "rows": [
+      {
+       "m": 4,
+       "D": 81,
+       "exact_grid": false,
+       "residual": 0.3
+      },
+      {
+       "m": 5,
+       "D": 243,
+       "exact_grid": false,
+       "residual": 0.3
+      },
+      {
+       "m": 6,
+       "D": 729,
+       "exact_grid": false,
+       "residual": 0.3
+      },
+      {
+       "m": 7,
+       "D": 2187,
+       "exact_grid": false,
+       "residual": 0.3
+      },
+      {
+       "m": 8,
+       "D": 6561,
+       "exact_grid": false,
+       "residual": 0.3
+      }
+     ],
+     "min": 0.3,
+     "max": 0.3,
+     "spread": 0.0,
+     "constant_in_m": true
+    },
+    "5": {
+     "rows": [
+      {
+       "m": 3,
+       "D": 125,
+       "exact_grid": false,
+       "residual": 0.3000000000000007
+      },
+      {
+       "m": 4,
+       "D": 625,
+       "exact_grid": false,
+       "residual": 0.2999999999999915
+      },
+      {
+       "m": 5,
+       "D": 3125,
+       "exact_grid": false,
+       "residual": 0.2999999999999773
+      }
+     ],
+     "min": 0.2999999999999773,
+     "max": 0.3000000000000007,
+     "spread": 2.3425705819590803e-14,
+     "constant_in_m": true
+    }
+   }
+  },
+  {
+   "N": 29,
+   "a": 16,
+   "r": 7,
+   "per_base": {
+    "2": {
+     "rows": [
+      {
+       "m": 6,
+       "D": 64,
+       "exact_grid": false,
+       "residual": 0.28571428571428586
+      },
+      {
+       "m": 8,
+       "D": 256,
+       "exact_grid": false,
+       "residual": 0.2857142857142823
+      },
+      {
+       "m": 10,
+       "D": 1024,
+       "exact_grid": false,
+       "residual": 0.2857142857142965
+      },
+      {
+       "m": 12,
+       "D": 4096,
+       "exact_grid": false,
+       "residual": 0.2857142857142965
+      }
+     ],
+     "min": 0.2857142857142823,
+     "max": 0.2857142857142965,
+     "spread": 1.4210854715202004e-14,
+     "constant_in_m": true
+    },
+    "3": {
+     "rows": [
+      {
+       "m": 4,
+       "D": 81,
+       "exact_grid": false,
+       "residual": 0.2857142857142862
+      },
+      {
+       "m": 5,
+       "D": 243,
+       "exact_grid": false,
+       "residual": 0.28571428571428115
+      },
+      {
+       "m": 6,
+       "D": 729,
+       "exact_grid": false,
+       "residual": 0.2857142857142918
+      },
+      {
+       "m": 7,
+       "D": 2187,
+       "exact_grid": false,
+       "residual": 0.28571428571425866
+      },
+      {
+       "m": 8,
+       "D": 6561,
+       "exact_grid": false,
+       "residual": 0.2857142857144292
+      }
+     ],
+     "min": 0.28571428571425866,
+     "max": 0.2857142857144292,
+     "spread": 1.7053025658242404e-13,
+     "constant_in_m": true
+    },
+    "5": {
+     "rows": [
+      {
+       "m": 3,
+       "D": 125,
+       "exact_grid": false,
+       "residual": 0.2857142857142865
+      },
+      {
+       "m": 4,
+       "D": 625,
+       "exact_grid": false,
+       "residual": 0.28571428571430363
+      },
+      {
+       "m": 5,
+       "D": 3125,
+       "exact_grid": false,
+       "residual": 0.2857142857143155
+      }
+     ],
+     "min": 0.2857142857142865,
+     "max": 0.2857142857143155,
+     "spread": 2.9032332093947844e-14,
+     "constant_in_m": true
+    }
+   }
+  }
+ ],
+ "note": "residual misalignment in grid units; 0 = exact alignment, 0.5 = worst case"
+}

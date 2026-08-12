@@ -1,0 +1,22 @@
+N = 21: 11 bases a, 99 exact-DM runs
+all runs done in 209 s
+
+        model  d  mean sig  mean sig(usable)  mean succ  n_usable
+ transmon_cal  2     0.536             0.518      0.376         6
+ transmon_cal  3     0.849             0.730      0.391         6
+ transmon_cal  5     0.775             0.758      0.410         6
+ depolarizing  2     0.347             0.329      0.376         6
+ depolarizing  3     0.801             0.667      0.389         6
+ depolarizing  5     0.811             0.789      0.416         6
+
+per r-class (signal, usable instances only; * = r | D exact alignment):
+  transmon_cal @ 0.003
+    r=2 (n_a=3):  d=2:   ----  d=3:   ----  d=5:   ----
+    r=3 (n_a=2):  d=2:   ----  d=3:   ----  d=5:   ----
+    r=6 (n_a=6):  d=2: 0.518   d=3: 0.730   d=5: 0.758 
+  depolarizing @ 0.005
+    r=2 (n_a=3):  d=2:   ----  d=3:   ----  d=5:   ----
+    r=3 (n_a=2):  d=2:   ----  d=3:   ----  d=5:   ----
+    r=6 (n_a=6):  d=2: 0.329   d=3: 0.667   d=5: 0.789 
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/ensemble_a.json
