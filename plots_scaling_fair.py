@@ -3,6 +3,7 @@
 Run: python3 plots_scaling_fair.py
 """
 
+import glob
 import json
 import os
 
@@ -29,14 +30,24 @@ PANELS = [
 def main():
     with open(_scaling_fair_path()) as f:
         data = json.load(f)
-    runs, bl = data["runs"], data["baselines"]
-    # fifth qutrit size (d=3, m=8), measured separately at 1000 traj
-    m8_path = "results/scaling_fair_m8.json"
-    if os.path.exists(m8_path):
-        with open(m8_path) as f:
-            m8 = json.load(f)
-        bl[f"{m8['d']},{m8['m']}"] = m8["baseline"]
-        runs = runs + m8["runs"]
+    runs, bl = list(data["runs"]), dict(data["baselines"])
+    # Points measured outside the main sweep: the fifth qutrit size
+    # (d=3, m=8, 1000 traj) and any scaling_fair_d<d>_m<m>.json. Merged by
+    # override on (d, m, regime) so a re-measurement at higher statistics
+    # REPLACES the original point -- appending would double-count it into
+    # every fit drawn from these runs.
+    extra = ["results/scaling_fair_m8.json"]
+    extra += sorted(glob.glob("results/scaling_fair_d*_m*.json"))
+    for path in extra:
+        if not os.path.exists(path):
+            continue
+        with open(path) as f:
+            sup = json.load(f)
+        bl[f"{sup['d']},{sup['m']}"] = sup["baseline"]
+        replaced = {(r["d"], r["m"], r["regime"]) for r in sup["runs"]}
+        runs = [r for r in runs
+                if (r["d"], r["m"], r["regime"]) not in replaced]
+        runs += sup["runs"]
 
     def signal(r):
         b = bl[f"{r['d']},{r['m']}"]

@@ -1,0 +1,7 @@
+baseline d=3 m=9: success=0.3332 floor=0.1424 layers=81 dim=531441 traj=1000
+depolarizing           success=0.2545±0.0068 signal= 0.588 (13776.1s)
+transmon               success=0.2572±0.0062 signal= 0.602 (13813.8s)
+transmon_cal           success=0.2560±0.0055 signal= 0.596 (13753.9s)
+transmon_cal_lowcharge success=0.2824±0.0056 signal= 0.734 (13739.5s)
+
+wrote results/scaling_fair_d3_m9.json

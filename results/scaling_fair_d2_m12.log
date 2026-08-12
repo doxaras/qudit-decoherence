@@ -1,0 +1,7 @@
+baseline d=2 m=12: success=0.3327 floor=0.1421 layers=150 dim=131072 traj=1000
+depolarizing           success=0.1670±0.0035 signal= 0.131 (20564.7s)
+transmon               success=0.1850±0.0048 signal= 0.225 (20608.9s)
+transmon_cal           success=0.1854±0.0046 signal= 0.227 (20632.1s)
+transmon_cal_lowcharge success=0.2125±0.0046 signal= 0.370 (20596.9s)
+
+wrote results/scaling_fair_d2_m12.json
