@@ -1,5 +1,7 @@
 # ai-qutrits — prime-base quantum information vs. decoherence
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21901534.svg)](https://doi.org/10.5281/zenodo.21901534)
+
 Can storing quantum information in a **prime base** — qutrits (d = 3),
 ququints (d = 5) — instead of qubits buy you resilience against
 decoherence? This repo answers the question quantitatively across three
