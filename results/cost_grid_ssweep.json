@@ -1,0 +1,1326 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "strengths": [
+  0.001,
+  0.002,
+  0.003,
+  0.005,
+  0.01,
+  0.02,
+  0.05
+ ],
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "runs": [
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.289109048265707,
+   "elapsed_s": 5.9
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.28760065666458684,
+   "elapsed_s": 3.8
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.32734242057805996,
+   "elapsed_s": 4.4
+  },
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "ion",
+   "success": 0.289109048265707,
+   "elapsed_s": 6.0
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "ion",
+   "success": 0.28760065666458684,
+   "elapsed_s": 3.3
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "ion",
+   "success": 0.32734242057805996,
+   "elapsed_s": 4.0
+  },
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "pavlidis",
+   "success": 0.289109048265707,
+   "elapsed_s": 5.7
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "pavlidis",
+   "success": 0.28760065666458684,
+   "elapsed_s": 3.4
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "pavlidis",
+   "success": 0.32734242057805996,
+   "elapsed_s": 4.3
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "uniform",
+   "success": 0.2576730011729165,
+   "elapsed_s": 30.4
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "uniform",
+   "success": 0.2749873726618821,
+   "elapsed_s": 14.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "uniform",
+   "success": 0.3178133422302284,
+   "elapsed_s": 15.8
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "uniform",
+   "success": 0.2319379976229729,
+   "elapsed_s": 30.7
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "uniform",
+   "success": 0.26328152194102655,
+   "elapsed_s": 13.8
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "uniform",
+   "success": 0.30873119455816767,
+   "elapsed_s": 15.6
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.21083563492773394,
+   "elapsed_s": 30.5
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.25241730615206864,
+   "elapsed_s": 14.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.30007532181035385,
+   "elapsed_s": 16.2
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.17928488827437242,
+   "elapsed_s": 29.9
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.23297489868846893,
+   "elapsed_s": 13.5
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.2839644667171672,
+   "elapsed_s": 14.8
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.13841334736534747,
+   "elapsed_s": 29.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.19535260084728004,
+   "elapsed_s": 13.7
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.2498730907169989,
+   "elapsed_s": 15.2
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.11923217023985548,
+   "elapsed_s": 29.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.1517114028896473,
+   "elapsed_s": 13.8
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.20211587437804063,
+   "elapsed_s": 14.3
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "uniform",
+   "success": 0.12287634407643379,
+   "elapsed_s": 24.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "uniform",
+   "success": 0.11900225455060533,
+   "elapsed_s": 12.8
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "uniform",
+   "success": 0.14411211397441615,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "ion",
+   "success": 0.2576730011729165,
+   "elapsed_s": 22.9
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "ion",
+   "success": 0.26662071822475664,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "ion",
+   "success": 0.3016546536965741,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "ion",
+   "success": 0.2319379976229729,
+   "elapsed_s": 22.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "ion",
+   "success": 0.2481640520827393,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "ion",
+   "success": 0.2792953511761052,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.21083563492773394,
+   "elapsed_s": 22.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.23192442003664307,
+   "elapsed_s": 9.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.25983137217124225,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.17928488827437242,
+   "elapsed_s": 22.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.20505827866600596,
+   "elapsed_s": 9.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.2281330428905692,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.13841334736534747,
+   "elapsed_s": 22.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.1615332746724954,
+   "elapsed_s": 9.8
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.17849042549362623,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.11923217023985548,
+   "elapsed_s": 22.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.12708550434708646,
+   "elapsed_s": 9.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.14116340103358163,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "ion",
+   "success": 0.12287634407643379,
+   "elapsed_s": 22.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "ion",
+   "success": 0.11928861536683846,
+   "elapsed_s": 9.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "ion",
+   "success": 0.12878247492206443,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "pavlidis",
+   "success": 0.2576730011729165,
+   "elapsed_s": 22.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "pavlidis",
+   "success": 0.2605045846113982,
+   "elapsed_s": 9.8
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.001,
+   "cost": "pavlidis",
+   "success": 0.2747739740538177,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "pavlidis",
+   "success": 0.2319379976229729,
+   "elapsed_s": 22.8
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "pavlidis",
+   "success": 0.23761980949891356,
+   "elapsed_s": 9.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.002,
+   "cost": "pavlidis",
+   "success": 0.23602987229196096,
+   "elapsed_s": 11.7
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "pavlidis",
+   "success": 0.21083563492773394,
+   "elapsed_s": 23.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "pavlidis",
+   "success": 0.21828557276315078,
+   "elapsed_s": 10.7
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.003,
+   "cost": "pavlidis",
+   "success": 0.2074756139465452,
+   "elapsed_s": 11.5
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "pavlidis",
+   "success": 0.17928488827437242,
+   "elapsed_s": 23.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "pavlidis",
+   "success": 0.18814389667380021,
+   "elapsed_s": 10.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "pavlidis",
+   "success": 0.1709414040826373,
+   "elapsed_s": 11.8
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "pavlidis",
+   "success": 0.13841334736534747,
+   "elapsed_s": 22.9
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "pavlidis",
+   "success": 0.14541541458384682,
+   "elapsed_s": 10.5
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "pavlidis",
+   "success": 0.13718387811133292,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "pavlidis",
+   "success": 0.11923217023985548,
+   "elapsed_s": 22.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "pavlidis",
+   "success": 0.12048676343739952,
+   "elapsed_s": 9.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "pavlidis",
+   "success": 0.12880043561549512,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "pavlidis",
+   "success": 0.12287634407643379,
+   "elapsed_s": 22.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "pavlidis",
+   "success": 0.12109350958295567,
+   "elapsed_s": 10.0
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.05,
+   "cost": "pavlidis",
+   "success": 0.12812812111625355,
+   "elapsed_s": 11.1
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "uniform",
+   "success": 0.25786924831131025,
+   "elapsed_s": 22.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "uniform",
+   "success": 0.27120195483828435,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "uniform",
+   "success": 0.3099298238694513,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "uniform",
+   "success": 0.23108840211038426,
+   "elapsed_s": 22.0
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "uniform",
+   "success": 0.256201465731409,
+   "elapsed_s": 9.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "uniform",
+   "success": 0.2939951555017596,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 22.7
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.24247437262956514,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.27941398758591257,
+   "elapsed_s": 11.5
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.171293263350989,
+   "elapsed_s": 23.6
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.21839798393131538,
+   "elapsed_s": 10.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.25386543717845855,
+   "elapsed_s": 11.7
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.11495499133385194,
+   "elapsed_s": 23.6
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.17372840677176665,
+   "elapsed_s": 10.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "uniform",
+   "success": 0.2067688223948669,
+   "elapsed_s": 11.8
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.0703377255650537,
+   "elapsed_s": 23.9
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.12530757958811206,
+   "elapsed_s": 10.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "uniform",
+   "success": 0.1573684239771136,
+   "elapsed_s": 11.8
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "uniform",
+   "success": 0.03316834931330498,
+   "elapsed_s": 24.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "uniform",
+   "success": 0.08547225458835689,
+   "elapsed_s": 10.6
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "uniform",
+   "success": 0.1250522715718351,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "ion",
+   "success": 0.25786924831131025,
+   "elapsed_s": 24.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "ion",
+   "success": 0.26019186587938686,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "ion",
+   "success": 0.27982815054940013,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "ion",
+   "success": 0.23108840211038426,
+   "elapsed_s": 24.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "ion",
+   "success": 0.2367747278216697,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "ion",
+   "success": 0.24365898348449913,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 24.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.2167410420146751,
+   "elapsed_s": 10.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.21610941998932176,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.171293263350989,
+   "elapsed_s": 24.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.184856451708445,
+   "elapsed_s": 10.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.17909822948253706,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.11495499133385194,
+   "elapsed_s": 24.0
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.1368614673224405,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "ion",
+   "success": 0.14075204856735055,
+   "elapsed_s": 11.7
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.0703377255650537,
+   "elapsed_s": 24.4
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.10111347035720464,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "ion",
+   "success": 0.12717274848751503,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "ion",
+   "success": 0.03316834931330498,
+   "elapsed_s": 24.4
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "ion",
+   "success": 0.0719111200048675,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "ion",
+   "success": 0.1172665320289546,
+   "elapsed_s": 12.0
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "pavlidis",
+   "success": 0.25786924831131025,
+   "elapsed_s": 24.4
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "pavlidis",
+   "success": 0.2526549230962351,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.001,
+   "cost": "pavlidis",
+   "success": 0.24005768925623466,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "pavlidis",
+   "success": 0.23108840211038426,
+   "elapsed_s": 23.7
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "pavlidis",
+   "success": 0.22402658525699876,
+   "elapsed_s": 10.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.002,
+   "cost": "pavlidis",
+   "success": 0.19002147484824036,
+   "elapsed_s": 11.4
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "pavlidis",
+   "success": 0.20809600776489762,
+   "elapsed_s": 23.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "pavlidis",
+   "success": 0.2005250428411361,
+   "elapsed_s": 10.3
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "pavlidis",
+   "success": 0.16140672560826008,
+   "elapsed_s": 11.1
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "pavlidis",
+   "success": 0.171293263350989,
+   "elapsed_s": 22.7
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "pavlidis",
+   "success": 0.1652516044816402,
+   "elapsed_s": 10.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.005,
+   "cost": "pavlidis",
+   "success": 0.13571891176723616,
+   "elapsed_s": 11.3
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "pavlidis",
+   "success": 0.11495499133385194,
+   "elapsed_s": 22.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "pavlidis",
+   "success": 0.1182040398610962,
+   "elapsed_s": 10.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.01,
+   "cost": "pavlidis",
+   "success": 0.12245883521017294,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "pavlidis",
+   "success": 0.0703377255650537,
+   "elapsed_s": 21.9
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "pavlidis",
+   "success": 0.08858387079698629,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.02,
+   "cost": "pavlidis",
+   "success": 0.11095957488063833,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "pavlidis",
+   "success": 0.03316834931330498,
+   "elapsed_s": 20.8
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "pavlidis",
+   "success": 0.05525467218788653,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.05,
+   "cost": "pavlidis",
+   "success": 0.0698201435946533,
+   "elapsed_s": 9.0
+  }
+ ],
+ "cells": [
+  {
+   "model": "depolarizing",
+   "cost": "uniform",
+   "tabulated_winner": 5,
+   "tabulated_verdict": "qudit",
+   "live_strengths": [
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.01,
+    0.02
+   ],
+   "verdict_by_live_strength": [
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit"
+   ],
+   "best_qudit_by_live_strength": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "qudit_margin_by_live_strength": [
+    0.1437532814073087,
+    0.25500922630336587,
+    0.3401745368798489,
+    0.4516092994401034,
+    0.5296412376835649,
+    0.40694814188181394
+   ],
+   "verdict_stable": true,
+   "best_qudit_stable": true,
+   "qudit_near_tie_at_table_s": false
+  },
+  {
+   "model": "depolarizing",
+   "cost": "ion",
+   "tabulated_winner": 5,
+   "tabulated_verdict": "qudit",
+   "live_strengths": [
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.01
+   ],
+   "verdict_by_live_strength": [
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit"
+   ],
+   "best_qudit_by_live_strength": [
+    3,
+    3,
+    5,
+    5,
+    5
+   ],
+   "qudit_margin_by_live_strength": [
+    0.06374151235459535,
+    0.1081159848271861,
+    0.13829101644094377,
+    0.17153131270403332,
+    0.17155054621721882
+   ],
+   "verdict_stable": true,
+   "best_qudit_stable": false,
+   "qudit_near_tie_at_table_s": true
+  },
+  {
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "tabulated_winner": 3,
+   "tabulated_verdict": "qudit",
+   "live_strengths": [
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.01
+   ],
+   "verdict_by_live_strength": [
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit"
+   ],
+   "best_qudit_by_live_strength": [
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "qudit_margin_by_live_strength": [
+    0.026480701200095713,
+    0.043878174386771995,
+    0.05467725686115177,
+    0.06330240121307962,
+    0.05204234203649104
+   ],
+   "verdict_stable": true,
+   "best_qudit_stable": true,
+   "qudit_near_tie_at_table_s": false
+  },
+  {
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "tabulated_winner": 5,
+   "tabulated_verdict": "qudit",
+   "live_strengths": [
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.01,
+    0.02
+   ],
+   "verdict_by_live_strength": [
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit"
+   ],
+   "best_qudit_by_live_strength": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "qudit_margin_by_live_strength": [
+    0.10300982734814468,
+    0.18626299708614313,
+    0.253221026993494,
+    0.34931474714303345,
+    0.456352655498714,
+    0.48041158799715805
+   ],
+   "verdict_stable": true,
+   "best_qudit_stable": true,
+   "qudit_near_tie_at_table_s": false
+  },
+  {
+   "model": "transmon_cal",
+   "cost": "ion",
+   "tabulated_winner": 3,
+   "tabulated_verdict": "qudit",
+   "live_strengths": [
+    0.001,
+    0.002,
+    0.003,
+    0.005
+   ],
+   "verdict_by_live_strength": [
+    "qudit",
+    "qudit",
+    "qudit",
+    "qudit"
+   ],
+   "best_qudit_by_live_strength": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "qudit_margin_by_live_strength": [
+    0.023379717179189075,
+    0.04390677180125746,
+    0.06196158428608278,
+    0.09197161441092772
+   ],
+   "verdict_stable": true,
+   "best_qudit_stable": true,
+   "qudit_near_tie_at_table_s": false
+  },
+  {
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "tabulated_winner": 3,
+   "tabulated_verdict": "qubit",
+   "live_strengths": [
+    0.001,
+    0.002,
+    0.003,
+    0.005
+   ],
+   "verdict_by_live_strength": [
+    "qubit",
+    "qubit",
+    "qubit",
+    "qubit"
+   ],
+   "best_qudit_by_live_strength": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "qudit_margin_by_live_strength": [
+    -0.022536971284240037,
+    -0.03375767484120418,
+    -0.036829796197669296,
+    -0.027465362674611804
+   ],
+   "verdict_stable": true,
+   "best_qudit_stable": true,
+   "qudit_near_tie_at_table_s": false
+  }
+ ],
+ "live_cutoff": 0.1
+}

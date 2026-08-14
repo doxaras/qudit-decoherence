@@ -1,0 +1,496 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "strength": 0.003,
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "configs": [
+  {
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1
+  },
+  {
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6
+  },
+  {
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0
+  },
+  {
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6
+  },
+  {
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6
+  }
+ ],
+ "runs": [
+  {
+   "label": null,
+   "damping": 0.0,
+   "dephase": 0.0,
+   "d": 2,
+   "cost": "uniform",
+   "success": 0.289109048265707,
+   "elapsed_s": 4.6
+  },
+  {
+   "label": null,
+   "damping": 0.0,
+   "dephase": 0.0,
+   "d": 3,
+   "cost": "uniform",
+   "success": 0.28760065666458684,
+   "elapsed_s": 2.7
+  },
+  {
+   "label": null,
+   "damping": 0.0,
+   "dephase": 0.0,
+   "d": 5,
+   "cost": "uniform",
+   "success": 0.32734242057805996,
+   "elapsed_s": 3.0
+  },
+  {
+   "label": null,
+   "damping": 0.0,
+   "dephase": 0.0,
+   "d": 2,
+   "cost": "ion",
+   "success": 0.289109048265707,
+   "elapsed_s": 4.6
+  },
+  {
+   "label": null,
+   "damping": 0.0,
+   "dephase": 0.0,
+   "d": 3,
+   "cost": "ion",
+   "success": 0.28760065666458684,
+   "elapsed_s": 2.6
+  },
+  {
+   "label": null,
+   "damping": 0.0,
+   "dephase": 0.0,
+   "d": 5,
+   "cost": "ion",
+   "success": 0.32734242057805996,
+   "elapsed_s": 2.9
+  },
+  {
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "d": 2,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 22.4
+  },
+  {
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "d": 3,
+   "cost": "uniform",
+   "success": 0.24247437262956514,
+   "elapsed_s": 10.0
+  },
+  {
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "d": 5,
+   "cost": "uniform",
+   "success": 0.27941398758591257,
+   "elapsed_s": 11.5
+  },
+  {
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "d": 2,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 22.7
+  },
+  {
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "d": 3,
+   "cost": "ion",
+   "success": 0.2167410420146751,
+   "elapsed_s": 9.7
+  },
+  {
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "d": 5,
+   "cost": "ion",
+   "success": 0.21610941998932176,
+   "elapsed_s": 11.0
+  },
+  {
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "d": 2,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 25.3
+  },
+  {
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "d": 3,
+   "cost": "uniform",
+   "success": 0.2378093220697113,
+   "elapsed_s": 10.6
+  },
+  {
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "d": 5,
+   "cost": "uniform",
+   "success": 0.2607523415566582,
+   "elapsed_s": 12.0
+  },
+  {
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "d": 2,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 27.9
+  },
+  {
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "d": 3,
+   "cost": "ion",
+   "success": 0.2101869878488986,
+   "elapsed_s": 13.7
+  },
+  {
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "d": 5,
+   "cost": "ion",
+   "success": 0.18750576340519956,
+   "elapsed_s": 14.9
+  },
+  {
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "d": 2,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 30.3
+  },
+  {
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "d": 3,
+   "cost": "uniform",
+   "success": 0.23296151055785724,
+   "elapsed_s": 14.1
+  },
+  {
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "d": 5,
+   "cost": "uniform",
+   "success": 0.23884452706430798,
+   "elapsed_s": 15.5
+  },
+  {
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "d": 2,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 30.7
+  },
+  {
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "d": 3,
+   "cost": "ion",
+   "success": 0.20363409434265695,
+   "elapsed_s": 14.0
+  },
+  {
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "d": 5,
+   "cost": "ion",
+   "success": 0.16374754980751038,
+   "elapsed_s": 16.3
+  },
+  {
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "d": 2,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 30.0
+  },
+  {
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "d": 3,
+   "cost": "uniform",
+   "success": 0.22341610696879746,
+   "elapsed_s": 14.4
+  },
+  {
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "d": 5,
+   "cost": "uniform",
+   "success": 0.19610199466596806,
+   "elapsed_s": 15.1
+  },
+  {
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "d": 2,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 29.3
+  },
+  {
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "d": 3,
+   "cost": "ion",
+   "success": 0.19149872930533515,
+   "elapsed_s": 14.1
+  },
+  {
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "d": 5,
+   "cost": "ion",
+   "success": 0.13904268586908822,
+   "elapsed_s": 14.6
+  },
+  {
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "d": 2,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 29.0
+  },
+  {
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "d": 3,
+   "cost": "uniform",
+   "success": 0.22258479086914754,
+   "elapsed_s": 14.0
+  },
+  {
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "d": 5,
+   "cost": "uniform",
+   "success": 0.19335658267855577,
+   "elapsed_s": 14.9
+  },
+  {
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "d": 2,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 27.8
+  },
+  {
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "d": 3,
+   "cost": "ion",
+   "success": 0.1907582150821764,
+   "elapsed_s": 13.8
+  },
+  {
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "d": 5,
+   "cost": "ion",
+   "success": 0.1378889598821392,
+   "elapsed_s": 13.5
+  }
+ ],
+ "table": [
+  {
+   "cost": "uniform",
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.7250809001522195,
+    "5": 0.7595673171161317
+   },
+   "best_d": 5,
+   "qudit_wins": true
+  },
+  {
+   "cost": "uniform",
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.6966604013656571,
+    "5": 0.665951287095333
+   },
+   "best_d": 3,
+   "qudit_wins": true
+  },
+  {
+   "cost": "uniform",
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.6671264832607163,
+    "5": 0.5560508733809755
+   },
+   "best_d": 3,
+   "qudit_wins": true
+  },
+  {
+   "cost": "uniform",
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.608973816394739,
+    "5": 0.3416332282335269
+   },
+   "best_d": 3,
+   "qudit_wins": true
+  },
+  {
+   "cost": "uniform",
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.6039092585945143,
+    "5": 0.3278608862530741
+   },
+   "best_d": 3,
+   "qudit_wins": true
+  },
+  {
+   "cost": "ion",
+   "label": "paper (0.7 / 1.1)",
+   "damping": 0.7,
+   "dephase": 1.1,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.5683078744087204,
+    "5": 0.4420003516252038
+   },
+   "best_d": 3,
+   "qudit_wins": true
+  },
+  {
+   "cost": "ion",
+   "label": "dephase 1.6",
+   "damping": 0.7,
+   "dephase": 1.6,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.5283791563646977,
+    "5": 0.29851028813958774
+   },
+   "best_d": 3,
+   "qudit_wins": true
+  },
+  {
+   "cost": "ion",
+   "label": "dephase 2.0",
+   "damping": 0.7,
+   "dephase": 2.0,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.488457509310041,
+    "5": 0.17932735894270982
+   },
+   "best_d": 2,
+   "qudit_wins": false
+  },
+  {
+   "cost": "ion",
+   "label": "dephase 2.6",
+   "damping": 0.7,
+   "dephase": 2.6,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.4145262361346221,
+    "5": 0.05539556426106524
+   },
+   "best_d": 2,
+   "qudit_wins": false
+  },
+  {
+   "cost": "ion",
+   "label": "Peterer worst (1.0/2.6)",
+   "damping": 1.0,
+   "dephase": 2.6,
+   "signal": {
+    "2": 0.5063462901226377,
+    "3": 0.4100148630400131,
+    "5": 0.04960790509848759
+   },
+   "best_d": 2,
+   "qudit_wins": false
+  }
+ ]
+}

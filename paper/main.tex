@@ -57,9 +57,11 @@ the qutrit retains a diminished advantage in the matched
 trapped-ion pairing and straddles break-even elsewhere. Whether
 linear cost suffices is further set by the level and structure of the
 operating dephasing: free-evolution ladder dephasing splits the
-linear-cost cells, and unmitigated Zeeman-structured dephasing---a
-regime measured devices shield and refocus away---reverses the
-verdict outright. Along
+linear-cost cells; steepening the per-level dephasing exponent to the
+range the deepest published transmon ladder data require leaves only
+$d=3$ in advantage, and only with a native gate; and unmitigated
+Zeeman-structured dephasing---a regime measured devices shield and
+refocus away---reverses the verdict outright. Along
 the way we identify a number-theoretic confound---grid alignment of the
 phases $s/r$---that reverses naive cross-dimension Shor comparisons and
 predicts the winner in every biased instance tested (three instances
@@ -773,7 +775,20 @@ ladder & \texttt{uniform}  & 0.282 & 0.578 & \textbf{0.631} & 57/26/15 \\
 \end{ruledtabular}
 \end{table}
 
-Table~\ref{tab:cost} is the paper's central result in one table. One
+Table~\ref{tab:cost} is the paper's central result in one table. Its
+cells are exact density matrices, so they carry no statistical
+uncertainty; the axis that matters is the strength they are evaluated
+at. Sweeping it across the full demo range
+($0.001$--$0.05$; \texttt{results/cost\_grid\_ssweep.json}) leaves the
+qudit-versus-qubit verdict of \emph{every} cell unchanged wherever the
+metric still has dynamic range---we judge only strengths at which the
+best base clears $0.10$ signal, beyond which all three bases sit at the
+random floor and the ranking is decided by third-decimal noise. One
+piece of over-precision in the table should be read down, however: in
+the depolarizing/\texttt{ion} cell the two qudits are tied rather than
+ordered ($0.502$ against $0.497$, and the ordering reverses to $d=3$ at
+$s\le0.002$), so that cell establishes that a qudit wins, not which.
+One
 direction of the condition holds with a single, instructive
 exception: under $d^2$ decomposition (\texttt{pavlidis}) qubits win
 in every algorithm, dimension, and channel tested \emph{except} Shor
@@ -791,7 +806,8 @@ Grover in both channels---decomposition forfeits the advantage. Under a native q
 (\texttt{uniform}) the width-and-depth compression is untouched and
 qudits win on both hardware classes. The intermediate linear cost
 (\texttt{ion}) is where dephasing level decides: on per-particle
-hardware the ququint advantage survives ($0.502$ vs $0.331$), while at
+hardware the qudit advantage survives (the tied qutrit/ququint pair at
+$0.497$/$0.502$ against $0.331$), while at
 free-evolution ladder dephasing the verdict splits---the qutrit still
 wins Shor but the ququint loses ($0.256$ vs $0.282$), eigenstate QPE is
 a dead heat (advantage $+0.00$), and Grover passes to the qubit for
@@ -1434,6 +1450,68 @@ depol. & \texttt{uniform} & 3 & $2.7\pm0.8$ & 2.65 & 0.32 (0.33) \\
 \end{tabular}
 \end{ruledtabular}
 \end{table}
+
+\emph{Ladder-exponent sensitivity.} The calibrated ladder fixes
+relaxation at $\Gamma_k\propto k^{0.7}$ and dephasing at
+$\max(j,k)^{1.1}$. Both exponents are constrained mainly by $d=3$ pair
+data (Blok's $1:2.0:2.3$, which the channel realizes as
+$1:2.14:2.14$), and are then applied at $d=5$ and $7$. Peterer
+\emph{et al.}~\cite{peterer2015}, who measured the sequential ladder to
+the fourth level, disagree in both places: their $T_1$ series gives
+$\Gamma_{21}/\Gamma_{10}=2.05$ (i.e.\ $k^{1.0}$, not $k^{0.7}$), and
+their $T_2$ series gives pair rates $1:2.25:6.0:{>}36$ against
+$1:2.14:3.35:4.59$ under the max-level law. No power law fits that
+escalation---exponent $1.6$ matches the $2{\leftrightarrow}3$ pair,
+$2.6$ matches $3{\leftrightarrow}4$, neither matches both---so rather
+than refit we sweep the exponent across the range Peterer admits and
+ask what survives (Table~\ref{tab:exponent}). The $d=2$ column is a
+control: the channel is normalized on the $0{\leftrightarrow}1$
+subspace, so every $d=2$ cell must be invariant, and is.
+
+\begin{table}[t]
+\caption{Sensitivity of the ladder verdicts to the per-level
+exponents: floor-corrected signal on the demo instance at $s=0.003$,
+exact density matrices. ``paper'' is the calibration used throughout;
+the remaining rows steepen dephasing toward the range Peterer
+\emph{et al.} require, the last also moving relaxation to their
+$k^{1.0}$. Boldface marks the best base in each row.}
+\label{tab:exponent}
+\begin{ruledtabular}
+\begin{tabular}{llccc}
+cost & exponents ($\Gamma_k$ / $\Gamma_\phi$) & $d{=}2$ & $d{=}3$ & $d{=}5$ \\
+\hline
+\texttt{uniform} & $0.7$ / $1.1$ (paper) & 0.506 & 0.725 & \textbf{0.760} \\
+                 & $0.7$ / $1.6$         & 0.506 & \textbf{0.697} & 0.666 \\
+                 & $0.7$ / $2.0$         & 0.506 & \textbf{0.667} & 0.556 \\
+                 & $0.7$ / $2.6$         & 0.506 & \textbf{0.609} & 0.342 \\
+                 & $1.0$ / $2.6$         & 0.506 & \textbf{0.604} & 0.328 \\
+\hline
+\texttt{ion}     & $0.7$ / $1.1$ (paper) & 0.506 & \textbf{0.568} & 0.442 \\
+                 & $0.7$ / $1.6$         & 0.506 & \textbf{0.528} & 0.299 \\
+                 & $0.7$ / $2.0$         & \textbf{0.506} & 0.488 & 0.179 \\
+                 & $0.7$ / $2.6$         & \textbf{0.506} & 0.415 & 0.055 \\
+                 & $1.0$ / $2.6$         & \textbf{0.506} & 0.410 & 0.050 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Two things survive and one does not. Under native-gate cost the
+\emph{qutrit} advantage is robust: it holds at every exponent tested,
+degrading only from $0.725$ to $0.604$ across the full range while the
+qubit sits at $0.506$. The \emph{ququint} advantage is not robust: it
+is already gone at the first steepening ($0.666$ against the qutrit's
+$0.697$ at exponent $1.6$) and falls below the qubit by exponent
+$2.6$. Under linear \texttt{ion} cost even the qutrit advantage fails
+once dephasing reaches exponent $2.0$. A trajectory run extending the
+same sweep to $d=7$ (1000 per point, which reproduces the $d=2,3,5$
+columns within its error bars) shows the pattern continuing: $d=7$
+falls from $0.690$ to $0.073$ under \texttt{uniform} cost across the
+range, and is below the qubit from exponent $2.0$ on. The dimension
+at which qudits help is therefore bounded by the very exponent the
+data constrain least: on the calibrated ladder as published, $d=5$
+leads; on a Peterer-consistent reading, only $d=3$ survives, and only
+with a native gate. We report the paper's grid at the published
+calibration and flag every $d\ge5$ ladder result as conditional on it.
 
 \emph{Zeeman-structured dephasing.} The per-particle convention
 flattens pair structure the ion encoding really has, so we also test

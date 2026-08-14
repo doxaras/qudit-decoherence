@@ -30,11 +30,12 @@ from qudit_shor import (
 
 
 def _kraus_sets(d: int, noise_model: str, strength: float,
-                costs: set[int], dephase_ratio: float = 1.0):
+                costs: set[int], dephase_ratio: float = 1.0, **noise_kw):
     """For each gate cost c, the Kraus ops (and K^dag K) of E^c."""
     sets = {}
     for c in costs:
-        Ec = noise_superop_pow(d, noise_model, strength, c, dephase_ratio)
+        Ec = noise_superop_pow(d, noise_model, strength, c, dephase_ratio,
+                               **noise_kw)
         sets[c] = [(K, K.conj().T @ K) for K in kraus_from_superop(Ec)]
     return sets
 
@@ -68,7 +69,7 @@ def run_success(dims: list[int], d: int, gates, psi0: np.ndarray,
                 noise_model: str | None = None, strength: float = 0.0,
                 n_traj: int = 400, seed: int = 0,
                 dephase_ratio: float = 1.0, readout_eps: float = 0.0,
-                m: int | None = None) -> dict:
+                m: int | None = None, **noise_kw) -> dict:
     """Generic trajectory driver: run any gate list from psi0 and score the
     probability of landing in the `good` set of control-register outcomes.
 
@@ -80,7 +81,7 @@ def run_success(dims: list[int], d: int, gates, psi0: np.ndarray,
     if noise_model and strength > 0:
         costs = {cost for _, _, cost in gates}
         kraus_sets = _kraus_sets(d, noise_model, strength, costs,
-                                 dephase_ratio)
+                                 dephase_ratio, **noise_kw)
 
     C = None
     if readout_eps > 0:
@@ -114,7 +115,7 @@ def shor_trajectories(d: int, m: int, noise_model: str | None = None,
                       seed: int = 0, a: int = 7, N: int = 15,
                       dephase_ratio: float = 1.0,
                       cost_model: str = "uniform",
-                      readout_eps: float = 0.0) -> dict:
+                      readout_eps: float = 0.0, **noise_kw) -> dict:
     """Monte Carlo estimate of Shor success probability at register size m."""
     _, w = shor_config(d, N)
     dims = [d] * (m + w)
@@ -127,7 +128,8 @@ def shor_trajectories(d: int, m: int, noise_model: str | None = None,
     psi0 = psi0.reshape(dims)
 
     out = run_success(dims, d, gates, psi0, Dc, Dw, good, noise_model,
-                      strength, n_traj, seed, dephase_ratio, readout_eps, m)
+                      strength, n_traj, seed, dephase_ratio, readout_eps, m,
+                      **noise_kw)
     out.update({
         "d": d, "m": m, "w": w, "D": Dc,
         "n_qudits": len(dims),
