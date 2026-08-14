@@ -1,0 +1,385 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "hrmo_eps": {
+  "2": [
+   0.004,
+   0.001
+  ],
+  "3": [
+   0.013,
+   0.002
+  ],
+  "5": [
+   0.063,
+   0.003
+  ]
+ },
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "noiseless": {
+  "2": 0.289109048265707,
+  "3": 0.28760065666458684,
+  "5": 0.32734242057805996
+ },
+ "runs": [
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.289109048265707,
+   "elapsed_s": 4.3
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.28760065666458684,
+   "elapsed_s": 2.6
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.32734242057805996,
+   "elapsed_s": 2.7
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "success": 0.20809600776489762,
+   "elapsed_s": 21.4
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "success": 0.17928488827437242,
+   "elapsed_s": 21.8
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.005811696602889895,
+   "cost": "uniform",
+   "success": 0.20976870243762455,
+   "elapsed_s": 9.4
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0082265625,
+   "cost": "uniform",
+   "success": 0.18741888958955072,
+   "elapsed_s": 9.6
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.010641428397110105,
+   "cost": "uniform",
+   "success": 0.1692661356227129,
+   "elapsed_s": 9.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.027519627688579712,
+   "cost": "uniform",
+   "success": 0.14066619812042586,
+   "elapsed_s": 10.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.036914062500000004,
+   "cost": "uniform",
+   "success": 0.13070738642162394,
+   "elapsed_s": 11.2
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.04630849731142029,
+   "cost": "uniform",
+   "success": 0.12615611003847305,
+   "elapsed_s": 11.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0029058483014449475,
+   "cost": "ion",
+   "success": 0.2184974738217351,
+   "elapsed_s": 10.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.00411328125,
+   "cost": "ion",
+   "success": 0.197795890476759,
+   "elapsed_s": 10.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.005320714198555052,
+   "cost": "ion",
+   "success": 0.18059007684739004,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.006879906922144928,
+   "cost": "ion",
+   "success": 0.1585343465760265,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.009228515625000001,
+   "cost": "ion",
+   "success": 0.14388371833727417,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.011577124327855072,
+   "cost": "ion",
+   "success": 0.13602303395418286,
+   "elapsed_s": 11.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.009686161004816491,
+   "cost": "uniform",
+   "success": 0.19732375606851718,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.013710937500000001,
+   "cost": "uniform",
+   "success": 0.17524037983911778,
+   "elapsed_s": 10.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.01773571399518351,
+   "cost": "uniform",
+   "success": 0.15892378762675458,
+   "elapsed_s": 11.4
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.04586604614763285,
+   "cost": "uniform",
+   "success": 0.1479364877538325,
+   "elapsed_s": 11.5
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0615234375,
+   "cost": "uniform",
+   "success": 0.1368850524042321,
+   "elapsed_s": 12.2
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.07718082885236716,
+   "cost": "uniform",
+   "success": 0.13200435075366634,
+   "elapsed_s": 11.8
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.004843080502408246,
+   "cost": "ion",
+   "success": 0.20692688701342413,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0068554687500000005,
+   "cost": "ion",
+   "success": 0.18558625377550955,
+   "elapsed_s": 11.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.008867856997591754,
+   "cost": "ion",
+   "success": 0.16909660804161894,
+   "elapsed_s": 11.3
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.011466511536908213,
+   "cost": "ion",
+   "success": 0.16934624437542878,
+   "elapsed_s": 11.5
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.015380859375,
+   "cost": "ion",
+   "success": 0.15234147383565622,
+   "elapsed_s": 11.7
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.01929520721309179,
+   "cost": "ion",
+   "success": 0.14244311537939605,
+   "elapsed_s": 11.3
+  }
+ ],
+ "cells": [
+  {
+   "channel": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "f_central": 2.7421875,
+   "f_sigma": 0.8049552990367016,
+   "f_star": 2.05,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.5258308710093673,
+    "central": 0.38967096860769235,
+    "hi": 0.2790804582867403
+   },
+   "verdict": "lost (survives at -1 sigma)"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "f_central": 12.3046875,
+   "f_sigma": 3.1314782704734303,
+   "f_star": 2.46,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.0635399032664296,
+    "central": 0.013581586968659078,
+    "hi": -0.009249862403496364
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "f_central": 1.37109375,
+   "f_sigma": 0.4024776495183508,
+   "f_star": 1.21,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.5790084375431942,
+    "central": 0.45288990639607496,
+    "hi": 0.34806836178443
+   },
+   "verdict": "lost (survives at -1 sigma)"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "f_central": 3.076171875,
+   "f_sigma": 0.7828695676183576,
+   "f_star": null,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.15317535769597837,
+    "central": 0.07968057321273628,
+    "hi": 0.040247499407890144
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "f_central": 2.7421875,
+   "f_sigma": 0.8049552990367016,
+   "f_star": 2.65,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.45001356128376147,
+    "central": 0.3154768484918406,
+    "hi": 0.21607263342009014
+   },
+   "verdict": "lost (survives at -1 sigma)"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "f_central": 12.3046875,
+   "f_sigma": 3.1314782704734303,
+   "f_star": 4.5,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.10001126552000318,
+    "central": 0.04457180954493739,
+    "hi": 0.0200878003891715
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "f_central": 1.37109375,
+   "f_sigma": 0.4024776495183508,
+   "f_star": 1.56,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.5085179157093389,
+    "central": 0.37850615415157646,
+    "hi": 0.2780476595311957
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "f_central": 3.076171875,
+   "f_sigma": 0.7828695676183576,
+   "f_star": 1.62,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.207413175055924,
+    "central": 0.12210885051495801,
+    "hi": 0.07245379752846087
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  }
+ ]
+}

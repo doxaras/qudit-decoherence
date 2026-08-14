@@ -1,0 +1,90 @@
+{
+ "cost_model": "ion",
+ "noise_model": "depolarizing",
+ "eps": {
+  "2": 0.004,
+  "3": 0.013
+ },
+ "s": {
+  "2": 0.0026666666666666666,
+  "3": 0.00365625
+ },
+ "phi": 0.6180339887498949,
+ "rows": [
+  {
+   "bits": 4,
+   "qutrit": {
+    "d": 3,
+    "m": 3,
+    "D": 27,
+    "bits": 4,
+    "s": 0.00365625,
+    "floor": 0.07407407407407407,
+    "noiseless": 0.8658150917583581,
+    "success": 0.6549751910544317,
+    "signal": 0.7337009249304786,
+    "entangling_gates": 6,
+    "entangling_layers": 24.0
+   },
+   "qubit_refs": [
+    {
+     "d": 2,
+     "m": 5,
+     "D": 32,
+     "bits": 4,
+     "s": 0.0026666666666666666,
+     "floor": 0.0625,
+     "noiseless": 0.9168045203614581,
+     "success": 0.6566058881105343,
+     "signal": 0.6954263660681168,
+     "entangling_gates": 15,
+     "entangling_layers": 30.0
+    }
+   ]
+  },
+  {
+   "bits": 5,
+   "qutrit": {
+    "d": 3,
+    "m": 4,
+    "D": 81,
+    "bits": 5,
+    "s": 0.00365625,
+    "floor": 0.037037037037037035,
+    "noiseless": 0.995295536114127,
+    "success": 0.612274210480891,
+    "signal": 0.6002943610704957,
+    "entangling_gates": 10,
+    "entangling_layers": 36.0
+   },
+   "qubit_refs": [
+    {
+     "d": 2,
+     "m": 7,
+     "D": 128,
+     "bits": 5,
+     "s": 0.0026666666666666666,
+     "floor": 0.03125,
+     "noiseless": 0.9885323951511288,
+     "success": 0.5327650078644456,
+     "signal": 0.5238945272625326,
+     "entangling_gates": 28,
+     "entangling_layers": 49.0
+    },
+    {
+     "d": 2,
+     "m": 6,
+     "D": 64,
+     "bits": 5,
+     "s": 0.0026666666666666666,
+     "floor": 0.03125,
+     "noiseless": 0.8157542251114636,
+     "success": 0.5046113341110243,
+     "signal": 0.6033891456018206,
+     "entangling_gates": 21,
+     "entangling_layers": 39.0
+    }
+   ]
+  }
+ ]
+}

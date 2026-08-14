@@ -1,5 +1,16 @@
 # arXiv submission — field-by-field
 
+> **⚠️ 2026-08-14 (evening): STALE FIELDS after the referee-driven
+> revision.** The paper was revised in response to the three-referee
+> review (`reviews/`): new title ("Native gates are necessary but not
+> sufficient: …"), rewritten abstract, four new references (Hrmo 2023,
+> Meth 2025, Agrawal 2025, Sutherland 2023 → 52 bib entries), a new
+> table (measured-fidelity inflation analysis) and a new numbered
+> equation (exact decoder formula) — now **21 pages**. The tarball
+> `paper/arxiv-submission.tar.gz` predates all of this: **rebuild with
+> `./paper/make_arxiv.sh` and update the Title/Abstract/Comments fields
+> below before submitting.**
+
 Everything needed to submit `paper/main.tex` to arXiv. Rebuild the package
 with `./paper/make_arxiv.sh`; it refuses to write the tarball unless a
 standalone pdflatex-only build of exactly the shipped files is clean.
@@ -76,7 +87,7 @@ John Doxaras
 **Comments:**
 
 ```
-18 pages, 6 figures, 5 tables, 47 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence (archived at https://doi.org/10.5281/zenodo.21901533)
+19 pages, 6 figures, 7 tables, 48 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence (archived at https://doi.org/10.5281/zenodo.21901533)
 ```
 
 **Leave these three empty:**
@@ -105,12 +116,12 @@ If it errors on a missing `.bbl`, the tarball is stale: re-run
 
 Download the generated PDF and check, in this order:
 
-1. **18 pages** — a shorter PDF means a float or the bibliography was dropped
-2. **All five figure PNGs render** — they land on pages 5, 7, 8, 10, and 11 — not grey boxes
+1. **19 pages** — a shorter PDF means a float or the bibliography was dropped
+2. **All five figure PNGs render** — Figs. 2-6, landing on pages 6, 7, 8, 10, and 12 — not grey boxes
 3. **The TikZ pipeline diagram (Fig. 1, page 3)** draws: it is vector, not a
    PNG, so it is the one element sensitive to a TeX Live version gap
 4. **No `[?]` citation marks** anywhere — those mean the `.bbl` did not load
-5. Bibliography lists **47 entries**
+5. Bibliography lists **48 entries**
 
 ## Page 8 — Review and submit
 
