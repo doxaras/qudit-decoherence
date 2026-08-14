@@ -60,8 +60,15 @@ operating dephasing: free-evolution ladder dephasing splits the
 linear-cost cells; steepening the per-level dephasing exponent to the
 range the deepest published transmon ladder data require leaves only
 $d=3$ in advantage, and only with a native gate; and unmitigated
-Zeeman-structured dephasing---a regime measured devices shield and
-refocus away---reverses the verdict outright. Along
+Zeeman-structured dephasing reverses the verdict under a Markovian
+generator but not under the quasi-static field noise laboratories
+actually have, whose damage grows with the square of circuit depth and
+so favors the shallower qudit schedule. Refocusing is where that
+regime turns $d$-dependent instead: on the $^{40}$Ca$^{+}$ encoding a
+single echo cancels the qubit's dephasing exactly but cannot cancel
+any $d\ge3$, for which exact refocusing needs a $d$-interval pulse
+sequence---and charging those pulses returns the advantage to $d=3$.
+Along
 the way we identify a number-theoretic confound---grid alignment of the
 phases $s/r$---that reverses naive cross-dimension Shor comparisons and
 predicts the winner in every biased instance tested (three instances
@@ -543,7 +550,13 @@ decides the winner. Multi-qudit gates in Grover (oracle and reflection)
 are applied as exact unitaries but charged their $n-1$-layer
 decomposition depth; charging them one layer would hand the largest free
 ride to the base packing the most carriers into the gate, which is
-$d=2$. Unless a figure states otherwise, plotted results use the
+$d=2$. All three models charge a \emph{single}-qudit gate one layer at
+every $d$, which matches the per-pulse benchmarking of
+Ref.~\cite{ringbauer2022} but not its per-Clifford figures; since the
+single-qudit share of the schedule grows with $d$ ($21\%/31\%/40\%$ at
+$d=2/3/5$), that omission favors qudits, and
+Sec.~\ref{sec:robustness} charges it and reports the threshold at
+which each cell fails. Unless a figure states otherwise, plotted results use the
 \texttt{uniform} (native-entangler) cost model---the most
 qudit-favorable of the three; Table~\ref{tab:cost} and
 Secs.~\ref{sec:cost}, \ref{sec:grover}, and~\ref{sec:robustness}
@@ -916,12 +929,20 @@ dependence is the shallowest in every regime, but it is flat in none of
 them: the family holds a plateau and then falls, and a single slope is
 therefore a summary rather than a model. Under the calibrated ladder the
 first three sizes agree within $0.004$ ($0.738$--$0.742$
-from 6.3 to 9.5 bits; the fit's $\chi^2/\mathrm{dof}=0.01$ indicates
-the trajectory error bars are conservative for these points, so we
-quote the raw spread rather than a significance) and the whole
+from 6.3 to 9.5 bits) and the whole
 decline is carried by the last
-three, the 14.3-bit point sitting $4.1\sigma$ below the 9.5-bit one
-on the same conservative bars.
+three, the 14.3-bit point sitting $4.1\sigma$ below the 9.5-bit one.
+Because both statements are spent on the same error bars, we
+characterized the trajectory estimator rather than assuming it
+(Sec.~\ref{sec:methods}): across $24$ independent $1000$-trajectory
+replicas at five grid points the empirical standard error of the mean
+agrees with the quoted one to a ratio of $0.995$ (range
+$0.84$--$1.17$; no point departs at $p<0.2$), so the bars are
+calibrated, not conservative. A constant fit to the plateau then gives
+$\chi^2/\mathrm{dof}=0.015$, a low $1.5\%$ fluctuation on
+correctly-sized bars rather than evidence for flatness; we therefore
+quote the raw spread there and reserve significance for the fall,
+which the same calibration leaves at $4.15\sigma$.
 The same shape appears under depolarizing, where four sizes hold near
 $0.67$ before falling to $0.59\pm0.04$ at 14.3 bits, a $1.9\sigma$ drop
 from 9.5 bits that turns a slope consistent with zero over the first
@@ -1513,6 +1534,63 @@ leads; on a Peterer-consistent reading, only $d=3$ survives, and only
 with a native gate. We report the paper's grid at the published
 calibration and flag every $d\ge5$ ladder result as conditional on it.
 
+\emph{Concurrent schedules.} Every result here is an exposure budget,
+and the budget charges every carrier an idle channel through every
+gate. That serial convention is not neutral: concurrent execution
+shortens the schedule most for the register with the most carriers,
+which is $d=2$, so the assumption runs \emph{against} the conclusion it
+supports and deserves a measurement rather than a disclaimer. Packing
+the gate list by as-soon-as-possible list scheduling on carrier
+availability---exact, since gates on disjoint carriers
+commute---compresses the demo circuits by
+$26.3\%/23.1\%/20.0\%$ at $d=2/3/5$ under \texttt{uniform} cost and
+$26.3\%/15.9\%/7.1\%$ under \texttt{ion}, confirming the predicted
+direction: the qubit gains most, and under linear cost the ququint
+gains almost nothing. The effect on verdicts is nonetheless
+nil. Re-running the six cells of Table~\ref{tab:cost} under the
+parallel schedule leaves \emph{all six} qudit-vs-qubit verdicts
+unchanged, while every margin erodes: $+0.452\to+0.385$ and
+$+0.172\to+0.113$ (depolarizing, \texttt{uniform}/\texttt{ion}),
+$+0.349\to+0.268$ and $+0.092\to+0.023$ (ladder), and the
+\texttt{pavlidis} qubit win deepens from $-0.027$ to $-0.055$. Two
+readings follow. The serial convention inflates the qudit margin by up
+to a factor of four but does not create it; and the ladder/\texttt{ion}
+cell, at $+0.023$ under concurrency, is thin enough that it should be
+read as a tie rather than a win. The depolarizing/\texttt{ion} cell
+independently reproduces the near-tie found in the strength sweep
+above: under concurrency its best qudit switches from $d=5$ to $d=3$.
+
+\emph{Single-qudit gate cost.} Both \texttt{uniform} and \texttt{ion}
+charge a single-qudit gate one layer at every $d$. Per laser pulse that
+matches Ref.~\cite{ringbauer2022}; per \emph{operation} it does not,
+since the same device's randomized benchmarking gives a per-Clifford
+error rising $5\times$ from $d=3$ to $d=5$ on ${\sim}3\times$ the
+pulses. The omission matters more than it looks, because the
+single-qudit share of the schedule \emph{grows} with $d$: the
+order-finding circuit spends $2m$ of its layers on single-qudit
+Fourier rotations, which is $21\%/31\%/40\%$ of the serial schedule at
+$d=2/3/5$. A $d$-dependent charge therefore hits the qudit twice.
+Charging single-qudit gates $\mu_1(d)=(d/2)^\alpha$ layers, normalized
+to $1$ at $d=2$ like every other multiplier here, and sweeping
+$\alpha$, the measurement pins the $d{=}3:d{=}5$ ratio to
+$\alpha=2.15$ (pulse count) or $\alpha=3.15$ (per-Clifford error);
+the $d=2$ end is an extrapolation, which is why this is reported as a
+threshold rather than a table row. Three of the six cells survive the
+steeper calibration: depolarizing under \texttt{uniform}
+($\alpha^\ast$ beyond the swept range) and \texttt{ion}
+($\alpha^\ast=3.55$), and the ladder under \texttt{uniform}
+($\alpha^\ast=3.84$). Two do not, and both matter. The
+ladder/\texttt{ion} cell has $\alpha^\ast=2.14$---it fails at
+\emph{exactly} the measured pulse-count charge, margin
+$+0.092\to-0.001$. And the depolarizing/\texttt{pavlidis} exception,
+the one cell where a qudit beats the qubit under the harshest
+entangling cost, has $\alpha^\ast=1.16$ and does not survive any
+measured charge ($+0.063\to-0.069$ at $\alpha=2.15$). Across the whole
+swept range the best qudit is $d=3$ in every cell from
+$\alpha\ge1.5$---by $\alpha=3.15$ the ququint has fallen below the
+qubit even under native-gate cost---which is the same conclusion the
+ladder-exponent and measured-fidelity analyses reach independently.
+
 \emph{Zeeman-structured dephasing.} The per-particle convention
 flattens pair structure the ion encoding really has, so we also test
 its worst case: magnetic-field dephasing carrying the collective-$B$
@@ -1530,10 +1608,12 @@ the worst pair rate at $d=5$ and $d=7$; only $d=3$ admits a gentler
 choice ($9\times$, via $\{S_{-1/2},D_{-3/2},D_{-1/2}\}$).
 
 \begin{table}[t]
-\caption{Zeeman-structured dephasing on the demo instance:
-floor-corrected signal at $s=0.003$, \texttt{uniform} cost. Both
-variants reverse the qudit ordering of Table~\ref{tab:cost}; the
-reversal persists under \texttt{ion} cost.}
+\caption{Zeeman-structured dephasing on the demo instance under a
+\emph{Markovian} generator: floor-corrected signal at $s=0.003$,
+\texttt{uniform} cost. Both variants reverse the qudit ordering of
+Table~\ref{tab:cost}, and the reversal persists under \texttt{ion}
+cost---but it does not survive replacing the generator with
+quasi-static field noise (Table~\ref{tab:quasistatic}).}
 \label{tab:zeeman}
 \begin{ruledtabular}
 \begin{tabular}{lccc}
@@ -1551,23 +1631,91 @@ correlation structure doing the work: repeating the study with
 genuinely common-mode dephasing---one global jump coupling to the
 total Zeeman shift, exact as an elementwise mask on the density
 matrix---preserves the reversal; its decoherence-free pairs soften
-every base, the qubit most. Unmitigated Zeeman-structured dephasing
-on a sensitivity-ordered encoding is therefore a regime with no qudit
-advantage at all---the sharpest failure mode we found, and one the
-condition's ``operating dephasing level'' clause must be read to
-include. Two caveats bound what this worst case establishes. First,
-the Markovian generator is a stand-in: laboratory field noise is
-quasi-static, decays as a Gaussian rather than an exponential at
-short times, and is removed to first order by a single spin
-echo---properties the Lindblad substitution erases, so the unmitigated
-row overstates the persistence of an error that refocusing is
-routinely applied against. Second, mitigation with overhead
-\emph{constant in $d$} has been proposed: passive dynamical
-decoupling by rotation of the quantization axis decouples every
-magnetically sensitive sublevel simultaneously~\cite{sutherland2023}.
-The operational content of this subsection is therefore not the
-unmitigated reversal but the suppression bar computed next---how
-much mitigation the qudit ordering requires.
+every base, the qubit most. Unmitigated \emph{Markovian}
+Zeeman-structured dephasing on a sensitivity-ordered encoding is
+therefore a regime with no qudit advantage at all---the sharpest
+failure mode we found, and one the condition's ``operating dephasing
+level'' clause must be read to include. That qualifier carries the
+weight, however: the Lindblad generator is a stand-in for noise that
+is quasi-static, and replacing it with the real thing changes the
+answer in the qudit's favor.
+
+\emph{Refocusing is $d$-dependent on this encoding.} A static field
+offset is removed by permuting levels: a sequence
+$\pi_1,\dots,\pi_L$, each held for an equal share of the idle window
+and undone at the end, leaves level $j$ with mean coefficient
+$\tilde c_j=L^{-1}\sum_l c_{\pi_l(j)}$, and refocuses exactly iff
+$\tilde c$ is constant in $j$. For the $^{40}$Ca$^{+}$ coefficients
+this has a sharp answer. At $d=2$ the level swap gives $\tilde c$
+constant: one $\pi$-pulse cancels the qubit's dephasing exactly, as
+the standard argument says. At $d\ge3$ \emph{no} two-interval echo
+refocuses, for any permutation; the best leaves a residual pair
+splitting of $1.5\times$ ($d=3$) or $1.0\times$ ($d=5$, $d=7$) the
+\emph{unrefocused qubit} splitting. Exact refocusing needs $L=d$
+intervals---the cyclic shift---and $d$ is minimal over all
+permutation sequences, not merely over powers of one pulse
+(exhaustive search, $d=3$ and $d=5$). The mitigation that dismisses
+this regime is therefore free for the qubit and costs $d$ pulses for
+the qudit, which is the opposite of the $d$-independence the
+constant-overhead passive-decoupling
+construction~\cite{sutherland2023} would supply, and the reason that
+construction is the right thing to reach for here.
+
+\begin{table}[t]
+\caption{Quasi-static versus Markovian field noise, with and without
+refocusing: floor-corrected signal on the demo instance at the
+depolarizing operating point $s=0.005$, with a common-mode Zeeman
+component in both cases. The field width $\sigma$ is fixed once by
+matching the Markovian $0{\leftrightarrow}1$ damage over the $d=2$
+circuit and then held fixed across bases, so the rows differ only in
+the time statistics of the same field. ``echo'' is the best
+two-interval sequence, ``$d$-pulse'' the exact $d$-interval one, and
+``charged'' pays its pulses as exposure.}
+\label{tab:quasistatic}
+\begin{ruledtabular}
+\begin{tabular}{llccc|ccc}
+ & & \multicolumn{3}{c|}{\texttt{uniform}} & \multicolumn{3}{c}{\texttt{ion}} \\
+field & mitigation & $d{=}2$ & $d{=}3$ & $d{=}5$ & $d{=}2$ & $d{=}3$ & $d{=}5$ \\
+\hline
+Markovian     & none      & 0.275 & \textbf{0.299} & 0.264 & \textbf{0.275} & 0.160 & 0.052 \\
+quasi-static  & none      & 0.296 & 0.539 & \textbf{0.605} & 0.296 & \textbf{0.304} & 0.181 \\
+quasi-static  & echo      & 0.331 & 0.622 & \textbf{0.778} & 0.331 & 0.402 & \textbf{0.479} \\
+quasi-static  & $d$-pulse & 0.331 & 0.667 & \textbf{0.782} & 0.331 & 0.497 & \textbf{0.502} \\
+quasi-static  & charged   & 0.173 & \textbf{0.387} & 0.361 & 0.173 & \textbf{0.283} & 0.232 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\emph{The Markovian stand-in was not conservative.} Simulating the
+field as it is---one offset per shot, drawn from a Gaussian and held
+fixed, integrated over that Gaussian by quadrature rather than
+sampled---moves every unmitigated cell toward the qudit
+(Table~\ref{tab:quasistatic}). Under native-gate cost the verdict goes
+from near-parity ($0.275$ vs $0.299$) to a clear ququint win ($0.296$
+vs $0.605$); under linear cost it goes from an outright qubit win
+($0.275$ vs $0.160$) to a tie ($0.296$ vs $0.304$). The mechanism is
+the exponent, not the scale: quasi-static damage accumulates as the
+\emph{square} of circuit depth, and once $\sigma$ is pinned on the
+qubit's $57$-layer schedule the shallower qudit schedules ($26$ and
+$15$ layers under \texttt{uniform}) are rewarded superlinearly. The
+reversal reported above is thus an artifact of the substitution the
+manuscript flagged, and we withdraw it as a claim about laboratory
+field noise while retaining it as what it is---a Markovian worst case.
+Two internal checks support the arithmetic: the $d$-pulse rows
+reproduce the pure-depolarizing signals of Table~\ref{tab:cost}
+exactly, as they must once the Zeeman component is cancelled, and the
+quadrature is converged to $2\times10^{-14}$ under halving of its node
+spacing.
+
+\emph{Charging the pulses returns the advantage to $d=3$.} Idealizing
+refocusing pulses as free---the most generous reading of the passive
+constructions---the ququint leads in every mitigated cell. Charging
+each pulse one layer of exposure, which is what the naive
+$d$-interval sequence costs, reverses that: $d=3$ overtakes $d=5$
+under both cost models ($0.387$ vs $0.361$ and $0.283$ vs $0.232$),
+while both stay above the qubit's $0.173$. This is the fourth
+independent route in this paper to the same place---the qutrit, not
+the ququint, is what survives realistic accounting.
 
 Measured devices are engineered away from this regime: shielding
 makes coherence times of order $100$\,ms achievable across all
@@ -1870,8 +2018,11 @@ fidelity would soften the ion penalty, and the inflation threshold of
 Sec.~\ref{sec:robustness} bounds the tolerance in the opposite
 direction. The schedule is serial (every carrier idles during every
 gate), matching single-addressed ion strings; platforms that execute
-gates concurrently would cut idle exposure most for the widest
-register, i.e.\ for $d=2$, softening the qudit advantage there. The scaling trends are measured
+gates concurrently cut idle exposure most for the widest register,
+i.e.\ for $d=2$. That bias is now measured rather than asserted
+(Sec.~\ref{sec:robustness}): under an exact as-soon-as-possible
+schedule no cell of Table~\ref{tab:cost} changes verdict, though
+margins shrink by up to $4\times$. The scaling trends are measured
 to Hilbert-space dimension $5.3\times10^{5}$ and stated as slopes with error
 bars, not theorems: the
 Shor sweep uses two instances ($N=21$, $r=6$ and $N=29$, $r=7$) at one
@@ -1956,7 +2107,20 @@ with probability $\mathrm{tr}(K^\dagger K\rho_q)$ from the carrier's
 reduced state. Averaging $\lvert\psi\rangle\langle\psi\rvert$ over
 trajectories reproduces the channel exactly; each trajectory contributes
 its full outcome distribution, so statistical error is well below
-Bernoulli. Fractional gate costs are exact: both channel families form
+Bernoulli---measured as a variance ratio $p(1{-}p)/\mathrm{var}(S_k)$
+of $7.7$--$26.6$ over the five points characterized below.
+That estimator is checked rather than asserted, on both counts a
+$\sigma$-claim depends on. Unbiasedness: at $d=3$, $m=4$ under the
+calibrated ladder, $8000$ trajectories give $0.24294\pm0.00092$
+against an exact density matrix's $0.242474$, a $0.51\sigma$
+agreement. Calibration: $24$ independent $1000$-trajectory replicas at
+each of $(d,m)=(3,4)$, $(3,6)$, $(2,8)$, $(5,3)$ put the empirical
+standard error of the mean against the quoted one at a ratio of
+$0.995$ (range $0.84$--$1.17$; smallest Bartlett $p=0.22$), with
+realized $1\sigma$ coverage $0.58$--$0.79$ around the nominal $0.68$.
+The quoted bars are therefore neither conservative nor optimistic, and
+every $\sigma$ and $\chi^2$ in Sec.~\ref{sec:scaling} is computed from
+them. Fractional gate costs are exact: both channel families form
 one-parameter semigroups, so $E^t$ is evaluated by scaling the Lindblad
 rate (ladder) or as $1-q=(1-p)^t$ (depolarizing). End-state fidelity is
 estimated as the trajectory average of

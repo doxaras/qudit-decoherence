@@ -1,0 +1,476 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "strength": 0.005,
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "depth": {
+  "2_uniform": {
+   "carriers": 11,
+   "serial": 57.0,
+   "parallel": 42.0
+  },
+  "3_uniform": {
+   "carriers": 7,
+   "serial": 26.0,
+   "parallel": 20.0
+  },
+  "5_uniform": {
+   "carriers": 5,
+   "serial": 15.0,
+   "parallel": 12.0
+  },
+  "2_ion": {
+   "carriers": 11,
+   "serial": 57.0,
+   "parallel": 42.0
+  },
+  "3_ion": {
+   "carriers": 7,
+   "serial": 44.0,
+   "parallel": 37.0
+  },
+  "5_ion": {
+   "carriers": 5,
+   "serial": 42.0,
+   "parallel": 39.0
+  },
+  "2_pavlidis": {
+   "carriers": 11,
+   "serial": 57.0,
+   "parallel": 42.0
+  },
+  "3_pavlidis": {
+   "carriers": 7,
+   "serial": 58.5,
+   "parallel": 45.0
+  },
+  "5_pavlidis": {
+   "carriers": 5,
+   "serial": 93.75,
+   "parallel": 75.0
+  }
+ },
+ "runs": [
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "cost": "uniform",
+   "parallel": false,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.17928488827437242,
+   "elapsed_s": 23.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "cost": "uniform",
+   "parallel": false,
+   "serial_layers": 26.0,
+   "makespan": 20.0,
+   "success": 0.23297489868846893,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "cost": "uniform",
+   "parallel": false,
+   "serial_layers": 15.0,
+   "makespan": 12.0,
+   "success": 0.2839644667171672,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "cost": "uniform",
+   "parallel": true,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.19708014580931554,
+   "elapsed_s": 14.9
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "cost": "uniform",
+   "parallel": true,
+   "serial_layers": 26.0,
+   "makespan": 20.0,
+   "success": 0.24333094549784703,
+   "elapsed_s": 8.2
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "cost": "uniform",
+   "parallel": true,
+   "serial_layers": 15.0,
+   "makespan": 12.0,
+   "success": 0.29224550039867225,
+   "elapsed_s": 9.6
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "cost": "ion",
+   "parallel": false,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.17928488827437242,
+   "elapsed_s": 23.4
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "cost": "ion",
+   "parallel": false,
+   "serial_layers": 44.0,
+   "makespan": 37.0,
+   "success": 0.20505827866600596,
+   "elapsed_s": 10.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "cost": "ion",
+   "parallel": false,
+   "serial_layers": 42.0,
+   "makespan": 39.0,
+   "success": 0.2281330428905692,
+   "elapsed_s": 12.1
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "cost": "ion",
+   "parallel": true,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.19708014580931554,
+   "elapsed_s": 15.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "cost": "ion",
+   "parallel": true,
+   "serial_layers": 44.0,
+   "makespan": 37.0,
+   "success": 0.21416459275384556,
+   "elapsed_s": 8.3
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "cost": "ion",
+   "parallel": true,
+   "serial_layers": 42.0,
+   "makespan": 39.0,
+   "success": 0.2335159756169232,
+   "elapsed_s": 9.6
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "parallel": false,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.17928488827437242,
+   "elapsed_s": 23.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "parallel": false,
+   "serial_layers": 58.5,
+   "makespan": 45.0,
+   "success": 0.18814389667380021,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "parallel": false,
+   "serial_layers": 93.75,
+   "makespan": 75.0,
+   "success": 0.1709414040826373,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "parallel": true,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.19708014580931554,
+   "elapsed_s": 15.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "parallel": true,
+   "serial_layers": 58.5,
+   "makespan": 45.0,
+   "success": 0.20351861081774814,
+   "elapsed_s": 8.3
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "parallel": true,
+   "serial_layers": 93.75,
+   "makespan": 75.0,
+   "success": 0.1879268086517013,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "parallel": false,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.171293263350989,
+   "elapsed_s": 23.0
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "parallel": false,
+   "serial_layers": 26.0,
+   "makespan": 20.0,
+   "success": 0.21839798393131538,
+   "elapsed_s": 11.1
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "parallel": false,
+   "serial_layers": 15.0,
+   "makespan": 12.0,
+   "success": 0.25386543717845855,
+   "elapsed_s": 11.9
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "parallel": true,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.1929941792756098,
+   "elapsed_s": 14.7
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "parallel": true,
+   "serial_layers": 26.0,
+   "makespan": 20.0,
+   "success": 0.23003023724644414,
+   "elapsed_s": 8.3
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "parallel": true,
+   "serial_layers": 15.0,
+   "makespan": 12.0,
+   "success": 0.26408677704964423,
+   "elapsed_s": 9.6
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "cost": "ion",
+   "parallel": false,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.171293263350989,
+   "elapsed_s": 23.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "cost": "ion",
+   "parallel": false,
+   "serial_layers": 44.0,
+   "makespan": 37.0,
+   "success": 0.184856451708445,
+   "elapsed_s": 11.2
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "cost": "ion",
+   "parallel": false,
+   "serial_layers": 42.0,
+   "makespan": 39.0,
+   "success": 0.17909822948253706,
+   "elapsed_s": 11.7
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "cost": "ion",
+   "parallel": true,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.1929941792756098,
+   "elapsed_s": 14.8
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "cost": "ion",
+   "parallel": true,
+   "serial_layers": 44.0,
+   "makespan": 37.0,
+   "success": 0.19530292712730718,
+   "elapsed_s": 8.3
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "cost": "ion",
+   "parallel": true,
+   "serial_layers": 42.0,
+   "makespan": 39.0,
+   "success": 0.18354253643594345,
+   "elapsed_s": 9.7
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "parallel": false,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.171293263350989,
+   "elapsed_s": 22.8
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "parallel": false,
+   "serial_layers": 58.5,
+   "makespan": 45.0,
+   "success": 0.1652516044816402,
+   "elapsed_s": 11.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "parallel": false,
+   "serial_layers": 93.75,
+   "makespan": 75.0,
+   "success": 0.13571891176723616,
+   "elapsed_s": 11.8
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "parallel": true,
+   "serial_layers": 57.0,
+   "makespan": 42.0,
+   "success": 0.1929941792756098,
+   "elapsed_s": 14.9
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "parallel": true,
+   "serial_layers": 58.5,
+   "makespan": 45.0,
+   "success": 0.18247729569554308,
+   "elapsed_s": 8.1
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "parallel": true,
+   "serial_layers": 93.75,
+   "makespan": 75.0,
+   "success": 0.14443142142910423,
+   "elapsed_s": 8.9
+  }
+ ],
+ "cells": [
+  {
+   "model": "depolarizing",
+   "cost": "uniform",
+   "serial_verdict": "qudit",
+   "parallel_verdict": "qudit",
+   "serial_margin": 0.4516092994401034,
+   "parallel_margin": 0.3847154868553966,
+   "flipped": false
+  },
+  {
+   "model": "depolarizing",
+   "cost": "ion",
+   "serial_verdict": "qudit",
+   "parallel_verdict": "qudit",
+   "serial_margin": 0.17153131270403332,
+   "parallel_margin": 0.11339055363051598,
+   "flipped": false
+  },
+  {
+   "model": "depolarizing",
+   "cost": "pavlidis",
+   "serial_verdict": "qudit",
+   "parallel_verdict": "qudit",
+   "serial_margin": 0.06330240121307962,
+   "parallel_margin": 0.04853292501220985,
+   "flipped": false
+  },
+  {
+   "model": "transmon_cal",
+   "cost": "uniform",
+   "serial_verdict": "qudit",
+   "parallel_verdict": "qudit",
+   "serial_margin": 0.34931474714303345,
+   "parallel_margin": 0.2683553029256093,
+   "flipped": false
+  },
+  {
+   "model": "transmon_cal",
+   "cost": "ion",
+   "serial_verdict": "qudit",
+   "parallel_verdict": "qudit",
+   "serial_margin": 0.09197161441092772,
+   "parallel_margin": 0.023379074657166876,
+   "flipped": false
+  },
+  {
+   "model": "transmon_cal",
+   "cost": "pavlidis",
+   "serial_verdict": "qubit",
+   "parallel_verdict": "qubit",
+   "serial_margin": -0.027465362674611804,
+   "parallel_margin": -0.05475745095312967,
+   "flipped": false
+  }
+ ]
+}
