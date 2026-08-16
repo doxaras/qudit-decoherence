@@ -13,3 +13,8 @@ paper/*.synctex.gz
 paper/arxiv-submission.tar.gz
 .omc/
 .venv-braket/
+
+# Pre-reseed snapshot of results/, kept locally as the comparison base
+# for compare_prehash.py. Every paired old/new value it supports is
+# preserved in results/prehash_comparison.json, which IS tracked.
+results_prehash/

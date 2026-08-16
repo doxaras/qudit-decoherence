@@ -18,6 +18,7 @@ Writes results/interpolation.json. Run: python3 interpolation_experiment.py
 import json
 import os
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from qpe_generic import control_work_entropy, qpe_superposition_trajectories
@@ -36,7 +37,7 @@ def one(args):
     t0 = time.time()
     r = qpe_superposition_trajectories(d, M[d], K, nm, STRENGTH,
                                        n_traj=N_TRAJ,
-                                       seed=hash((d, K, nm, cm)) % (2 ** 32),
+                                       seed=zlib.crc32(f"{d},{K},{nm},{cm}".encode()) % (2 ** 32),
                                        cost_model=cm)
     r["elapsed_s"] = round(time.time() - t0, 1)
     return r

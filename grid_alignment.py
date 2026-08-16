@@ -28,6 +28,7 @@ Run: python3 grid_alignment.py
 import json
 import os
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from qudit_shor import multiplicative_order, shor_config
@@ -41,7 +42,7 @@ N_TRAJ = 400
 
 def one(args):
     d, a, N, model, s = args
-    seed = hash((d, a, N, model)) % (2 ** 32)
+    seed = zlib.crc32(f"{d},{a},{N},{model}".encode()) % (2 ** 32)
     t0 = time.time()
     res = shor_trajectories(d, m_for(d, N), model, s, n_traj=N_TRAJ,
                             seed=seed, a=a, N=N)

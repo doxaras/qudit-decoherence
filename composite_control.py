@@ -21,6 +21,7 @@ Writes results/composite_control.json. Run: python3 composite_control.py
 import json
 import os
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 import numpy as np
@@ -44,7 +45,7 @@ def residual(D: int, r: int) -> float:
 def one(args):
     d, model, s = args
     m, _ = shor_config(d, N)
-    seed = hash((d, N, model, "composite")) % (2 ** 32)
+    seed = zlib.crc32(f"{d},{N},{model},composite".encode()) % (2 ** 32)
     t0 = time.time()
     if model is None:
         res = shor_trajectories(d, m, a=A, N=N)

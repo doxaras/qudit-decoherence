@@ -21,6 +21,7 @@ import json
 import os
 import sys
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 from math import gcd
 
@@ -44,7 +45,7 @@ def residual(D: int, r: int) -> float:
 def one(args):
     a, d, N, model, s = args
     m, _ = shor_config(d, N)
-    seed = hash((a, d, N, model)) % (2 ** 32)
+    seed = zlib.crc32(f"{a},{d},{N},{model}".encode()) % (2 ** 32)
     t0 = time.time()
     res = shor_trajectories(d, m, model, s, n_traj=N_TRAJ, seed=seed,
                             a=a, N=N)

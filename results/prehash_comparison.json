@@ -1,0 +1,12542 @@
+{
+ "per_file": [
+  {
+   "file": "collective_zeeman.json",
+   "n_rows": 24,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "composite_control.json",
+   "n_rows": 10,
+   "n_with_errors": 10,
+   "regenerated": true,
+   "max_abs_delta": 0.018475162765601905,
+   "mean_z": -0.2610857208864711,
+   "sd_z": 0.8132291050917849,
+   "max_abs_z": 1.8005096139934158
+  },
+  {
+   "file": "cost_fair.json",
+   "n_rows": 54,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "cost_grid_ssweep.json",
+   "n_rows": 135,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "cost_sensitivity.json",
+   "n_rows": 108,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "d4_control.json",
+   "n_rows": 8,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "d7_demo.json",
+   "n_rows": 36,
+   "n_with_errors": 36,
+   "regenerated": true,
+   "max_abs_delta": 0.009490002181685359,
+   "mean_z": -0.13729499372316634,
+   "sd_z": 0.8918797185542574,
+   "max_abs_z": 2.5201767918033666
+  },
+  {
+   "file": "dd.json",
+   "n_rows": 60,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "ensemble_a.json",
+   "n_rows": 66,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "ensemble_a_n33.json",
+   "n_rows": 114,
+   "n_with_errors": 114,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": 0.0,
+   "sd_z": 0.0,
+   "max_abs_z": 0.0
+  },
+  {
+   "file": "ensemble_a_n55.json",
+   "n_rows": 234,
+   "n_with_errors": 202,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": 0.0,
+   "sd_z": 0.0,
+   "max_abs_z": 0.0
+  },
+  {
+   "file": "fair_demo.json",
+   "n_rows": 63,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "fair_shor.json",
+   "n_rows": 18,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "grid_alignment.json",
+   "n_rows": 30,
+   "n_with_errors": 30,
+   "regenerated": true,
+   "max_abs_delta": 0.03372051526978359,
+   "mean_z": 0.01730626223721066,
+   "sd_z": 1.0498459915732796,
+   "max_abs_z": 1.8586060455135998
+  },
+  {
+   "file": "grover_cost.json",
+   "n_rows": 54,
+   "n_with_errors": 51,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": 0.0,
+   "sd_z": 0.0,
+   "max_abs_z": 0.0
+  },
+  {
+   "file": "hrmo_reanalysis.json",
+   "n_rows": 29,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "interpolation.json",
+   "n_rows": 48,
+   "n_with_errors": 48,
+   "regenerated": true,
+   "max_abs_delta": 0.04136872547463777,
+   "mean_z": 0.09816836115518836,
+   "sd_z": 0.909813798047191,
+   "max_abs_z": 2.4602351996296017
+  },
+  {
+   "file": "ion_zeeman_demo.json",
+   "n_rows": 24,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "ion_zeeman_echo.json",
+   "n_rows": 42,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity.json",
+   "n_rows": 36,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "n_rows": 48,
+   "n_with_errors": 40,
+   "regenerated": true,
+   "max_abs_delta": 0.013717663650268136,
+   "mean_z": -0.42774837339765426,
+   "sd_z": 1.0013219597473704,
+   "max_abs_z": 2.402729154330001
+  },
+  {
+   "file": "matched_D.json",
+   "n_rows": 10,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "noise_inflation.json",
+   "n_rows": 74,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "order_confound.json",
+   "n_rows": 36,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "parallel_schedule.json",
+   "n_rows": 36,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "n_rows": 44,
+   "n_with_errors": 44,
+   "regenerated": true,
+   "max_abs_delta": 0.03729125412343459,
+   "mean_z": 0.04844360873984197,
+   "sd_z": 0.9025796127686897,
+   "max_abs_z": 2.073139367687625
+  },
+  {
+   "file": "results.json",
+   "n_rows": 39,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "same_n_control.json",
+   "n_rows": 24,
+   "n_with_errors": 24,
+   "regenerated": true,
+   "max_abs_delta": 0.04864907314394673,
+   "mean_z": -0.06454548430853015,
+   "sd_z": 1.3745091096577278,
+   "max_abs_z": 3.32603037812969
+  },
+  {
+   "file": "scaling_fair.json",
+   "n_rows": 44,
+   "n_with_errors": 44,
+   "regenerated": true,
+   "max_abs_delta": 0.026556760664148138,
+   "mean_z": -0.03923342046928236,
+   "sd_z": 0.9472121575213118,
+   "max_abs_z": 3.0443776816908072
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "n_rows": 44,
+   "n_with_errors": 44,
+   "regenerated": true,
+   "max_abs_delta": 0.015160191042094262,
+   "mean_z": -0.15341257665060096,
+   "sd_z": 0.9382033720093554,
+   "max_abs_z": 3.1056686163469274
+  },
+  {
+   "file": "scaling_fair_d2_m12.json",
+   "n_rows": 4,
+   "n_with_errors": 4,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": 0.0,
+   "sd_z": 0.0,
+   "max_abs_z": 0.0
+  },
+  {
+   "file": "scaling_fair_d3_m9.json",
+   "n_rows": 4,
+   "n_with_errors": 4,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": 0.0,
+   "sd_z": 0.0,
+   "max_abs_z": 0.0
+  },
+  {
+   "file": "scaling_fair_m8.json",
+   "n_rows": 4,
+   "n_with_errors": 4,
+   "regenerated": true,
+   "max_abs_delta": 0.011526747402419046,
+   "mean_z": -0.385455469040744,
+   "sd_z": 1.2285423178284092,
+   "max_abs_z": 1.3873909238354933
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "n_rows": 44,
+   "n_with_errors": 44,
+   "regenerated": true,
+   "max_abs_delta": 0.05362516736253364,
+   "mean_z": -0.07256639945667792,
+   "sd_z": 0.9995833409046905,
+   "max_abs_z": 2.4643915491125656
+  },
+  {
+   "file": "single_qudit_cost.json",
+   "n_rows": 198,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "spam.json",
+   "n_rows": 60,
+   "n_with_errors": 0,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": null,
+   "sd_z": null,
+   "max_abs_z": null
+  },
+  {
+   "file": "trajectory_variance.json",
+   "n_rows": 120,
+   "n_with_errors": 120,
+   "regenerated": false,
+   "max_abs_delta": 0.0,
+   "mean_z": 0.0,
+   "sd_z": 0.0,
+   "max_abs_z": 0.0
+  }
+ ],
+ "n_paired": 368,
+ "mean_z": -0.08712196434951863,
+ "sd_z": 0.9830427954524786,
+ "se_mean": 0.05212860351426869,
+ "se_sd": 0.03691067352627811,
+ "verdict": "consistent with honest error bars",
+ "rows": [
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "2"
+    ],
+    [
+     "model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.46287706426307157,
+   "new": 0.45543453950336366,
+   "delta": -0.007442524759707914,
+   "se": 0.011973291814800242,
+   "z": -0.6215938669855331
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "3"
+    ],
+    [
+     "model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.562402629955496,
+   "new": 0.5491384651146803,
+   "delta": -0.013264164840815607,
+   "se": 0.011427991958657823,
+   "z": -1.160673273905019
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "4"
+    ],
+    [
+     "model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6330337651421903,
+   "new": 0.6145586023765884,
+   "delta": -0.018475162765601905,
+   "se": 0.010261074210331579,
+   "z": -1.8005096139934158
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "5"
+    ],
+    [
+     "model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6305031006187333,
+   "new": 0.6375183864816866,
+   "delta": 0.007015285862953302,
+   "se": 0.011822381427594102,
+   "z": 0.5933902493265215
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "6"
+    ],
+    [
+     "model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6890721928391758,
+   "new": 0.6904741677494144,
+   "delta": 0.0014019749102386347,
+   "se": 0.010887079908634979,
+   "z": 0.12877419124357417
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "2"
+    ],
+    [
+     "model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.37403407299218894,
+   "new": 0.3685361017095968,
+   "delta": -0.005497971282592162,
+   "se": 0.010079008684837307,
+   "z": -0.5454873048044119
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "3"
+    ],
+    [
+     "model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4956377520826589,
+   "new": 0.4977218163427517,
+   "delta": 0.0020840642600927772,
+   "se": 0.012500720869456397,
+   "z": 0.16671552639695122
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "4"
+    ],
+    [
+     "model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6063521104716886,
+   "new": 0.6101276744200365,
+   "delta": 0.003775563948347882,
+   "se": 0.01071494561132432,
+   "z": 0.3523642662597929
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "5"
+    ],
+    [
+     "model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6396313410645293,
+   "new": 0.6486006491827477,
+   "delta": 0.008969308118218389,
+   "se": 0.01162831347250704,
+   "z": 0.7713335333988571
+  },
+  {
+   "file": "composite_control.json",
+   "sig": [
+    [
+     "d",
+     "6"
+    ],
+    [
+     "model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.7286194299129702,
+   "new": 0.7239754439140333,
+   "delta": -0.004643985998936895,
+   "se": 0.009378551628814945,
+   "z": -0.49517091580202766
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17552906819139566,
+   "new": 0.17848110535505585,
+   "delta": 0.002952037163660187,
+   "se": 0.004262766033270632,
+   "z": 0.6925168166912551
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17570595898059435,
+   "new": 0.17961942292615238,
+   "delta": 0.003913463945558027,
+   "se": 0.004224989465678146,
+   "z": 0.9262659652406691
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17623515339288678,
+   "new": 0.18048613809093922,
+   "delta": 0.004250984698052435,
+   "se": 0.0043756756089993265,
+   "z": 0.9715036209058908
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.16904303967243098,
+   "new": 0.16420650997808042,
+   "delta": -0.004836529694350555,
+   "se": 0.004384806677962553,
+   "z": -1.1030200530067382
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17487975041917353,
+   "new": 0.16538974823748817,
+   "delta": -0.009490002181685359,
+   "se": 0.004357207391382658,
+   "z": -2.178001028928285
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17305282159256666,
+   "new": 0.17252123380347348,
+   "delta": -0.0005315877890931797,
+   "se": 0.004419247564418408,
+   "z": -0.12028920791251009
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20476840663089782,
+   "new": 0.20909911912492912,
+   "delta": 0.004330712494031302,
+   "se": 0.004302828667628905,
+   "z": 1.006480347826111
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2084378373247058,
+   "new": 0.2060429854587914,
+   "delta": -0.002394851865914399,
+   "se": 0.004228695624200207,
+   "z": -0.5663334698787521
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2097472664581817,
+   "new": 0.20528378453837626,
+   "delta": -0.004463481919805445,
+   "se": 0.004276347208205905,
+   "z": -1.0437604110443712
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2328363785141844,
+   "new": 0.23704216946688467,
+   "delta": 0.004205790952700267,
+   "se": 0.0045938725987226875,
+   "z": 0.9155218962471172
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2115708094848452,
+   "new": 0.2098244360095685,
+   "delta": -0.0017463734752767024,
+   "se": 0.005071380826766322,
+   "z": -0.344358575096449
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.1855186998783837,
+   "new": 0.18667560855101828,
+   "delta": 0.0011569086726345712,
+   "se": 0.005274674086234576,
+   "z": 0.21933273103143552
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2253061680945557,
+   "new": 0.2207112319741138,
+   "delta": -0.0045949361204419,
+   "se": 0.0042734109073884535,
+   "z": -1.0752385436414622
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.18342613459243473,
+   "new": 0.18490394594756815,
+   "delta": 0.0014778113551334182,
+   "se": 0.004451881398633129,
+   "z": 0.3319520945879542
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.1670078794769741,
+   "new": 0.1665350370765186,
+   "delta": -0.0004728424004555032,
+   "se": 0.004447755669758114,
+   "z": -0.10631033617033603
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.24412398464276416,
+   "new": 0.24342561106274135,
+   "delta": -0.0006983735800228097,
+   "se": 0.0036994997552674395,
+   "z": -0.1887751388626119
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.21424150045509063,
+   "new": 0.21477074564388385,
+   "delta": 0.0005292451887932148,
+   "se": 0.004356681208390895,
+   "z": 0.12147897986520047
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20064724863007816,
+   "new": 0.20025347916916322,
+   "delta": -0.00039376946091493337,
+   "se": 0.004427766097038796,
+   "z": -0.0889318568969302
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.279953968678191,
+   "new": 0.2841375131034951,
+   "delta": 0.004183544425304109,
+   "se": 0.0043033981436157035,
+   "z": 0.9721490519092677
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.22810924652049483,
+   "new": 0.22337781711772317,
+   "delta": -0.004731429402771659,
+   "se": 0.005466761187108858,
+   "z": -0.8654904139454306
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.16857296476847342,
+   "new": 0.16825892541266785,
+   "delta": -0.00031403935580556763,
+   "se": 0.005218234373413538,
+   "z": -0.060181151963118316
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.25743097022138295,
+   "new": 0.25644754884219256,
+   "delta": -0.0009834213791903856,
+   "se": 0.005379184218163472,
+   "z": -0.18281979930520753
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.1752500801427259,
+   "new": 0.18015203156071316,
+   "delta": 0.004901951417987271,
+   "se": 0.005364230517706334,
+   "z": 0.9138219175717441
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.13370319937164532,
+   "new": 0.13782023316128708,
+   "delta": 0.004117033789641761,
+   "se": 0.00439191594138139,
+   "z": 0.9374117912527328
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2817018992416813,
+   "new": 0.28182187950312765,
+   "delta": 0.00011998026144632856,
+   "se": 0.004951674435678108,
+   "z": 0.02423024029646203
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.214588189073607,
+   "new": 0.22256001305149026,
+   "delta": 0.007971823977883263,
+   "se": 0.005583243226417197,
+   "z": 1.4278124119981843
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.16606179899178822,
+   "new": 0.16183109229739348,
+   "delta": -0.004230706694394737,
+   "se": 0.005783068920960462,
+   "z": -0.7315677458141193
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.29401496818830763,
+   "new": 0.2878763015619785,
+   "delta": -0.0061386666263291145,
+   "se": 0.0046931133287935,
+   "z": -1.3080158513681654
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2128744080613481,
+   "new": 0.21303893318873712,
+   "delta": 0.0001645251273890147,
+   "se": 0.006329889798948863,
+   "z": 0.02599178384058687
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.14686667598303038,
+   "new": 0.14521383020789802,
+   "delta": -0.001652845775132361,
+   "se": 0.005627974540196166,
+   "z": -0.29368394674272114
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.24225666170490212,
+   "new": 0.23974103086055853,
+   "delta": -0.002515630844343586,
+   "se": 0.006136926286796398,
+   "z": -0.4099170703346996
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.1533871413882053,
+   "new": 0.14936510144652917,
+   "delta": -0.004022039941676131,
+   "se": 0.004663100107096959,
+   "z": -0.8625248974506954
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.13037489275214775,
+   "new": 0.12243241233623325,
+   "delta": -0.007942480415914499,
+   "se": 0.003151556843847882,
+   "z": -2.5201767918033666
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.26897516671019084,
+   "new": 0.26563748928643,
+   "delta": -0.003337677423760843,
+   "se": 0.005455493004615259,
+   "z": -0.6118012470985156
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.17803129181188926,
+   "new": 0.1791715199355949,
+   "delta": 0.00114022812370565,
+   "se": 0.005447064425335957,
+   "z": 0.20932892190554997
+  },
+  {
+   "file": "d7_demo.json",
+   "sig": [
+    [
+     "cost_model",
+     "pavlidis"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.13212554234686025,
+   "new": 0.13221107094547146,
+   "delta": 8.552859861121753e-05,
+   "se": 0.0037546809555261454,
+   "z": 0.02277919206033642
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5715400739692827,
+   "new": 0.5763892279284069,
+   "delta": 0.004849153959124108,
+   "se": 0.011154784590807057,
+   "z": 0.43471515919011294
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.657957616070583,
+   "new": 0.6657776181997206,
+   "delta": 0.007820002129137582,
+   "se": 0.007450059084748145,
+   "z": 1.0496563906649798
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6330898003275587,
+   "new": 0.6277333313504525,
+   "delta": -0.005356468977106177,
+   "se": 0.007492585577288972,
+   "z": -0.7149026089661692
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5524413191232862,
+   "new": 0.5644159359455547,
+   "delta": 0.011974616822268525,
+   "se": 0.010799105787239756,
+   "z": 1.1088526270774897
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6587872491026144,
+   "new": 0.666986281344302,
+   "delta": 0.00819903224168761,
+   "se": 0.009332632923148586,
+   "z": 0.8785336688160955
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6435535485524315,
+   "new": 0.6381703784256192,
+   "delta": -0.005383170126812331,
+   "se": 0.006526228310557819,
+   "z": -0.8248516402810635
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "15"
+    ],
+    [
+     "a",
+     "7"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.47301964434243543,
+   "new": 0.49276783739798474,
+   "delta": 0.019748193055549312,
+   "se": 0.011100305104084732,
+   "z": 1.7790675905189577
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "15"
+    ],
+    [
+     "a",
+     "7"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.45403823386844144,
+   "new": 0.4514873679287041,
+   "delta": -0.0025508659397373568,
+   "se": 0.006076971616077656,
+   "z": -0.419759396767398
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "15"
+    ],
+    [
+     "a",
+     "7"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4444595137428458,
+   "new": 0.4270044231192248,
+   "delta": -0.017455090623620995,
+   "se": 0.009414142904981304,
+   "z": -1.8541348691854875
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "15"
+    ],
+    [
+     "a",
+     "7"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.46350142322729565,
+   "new": 0.43979108825413626,
+   "delta": -0.023710334973159386,
+   "se": 0.014944488195905069,
+   "z": -1.5865605206644844
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "15"
+    ],
+    [
+     "a",
+     "7"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.43137761818152015,
+   "new": 0.4204190285428933,
+   "delta": -0.010958589638626837,
+   "se": 0.008906690327028136,
+   "z": -1.2303773047292361
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "15"
+    ],
+    [
+     "a",
+     "7"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4420560335837333,
+   "new": 0.4531699527132605,
+   "delta": 0.011113919129527194,
+   "se": 0.008492095514246062,
+   "z": 1.3087369437711631
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5288146052503372,
+   "new": 0.5350535287057437,
+   "delta": 0.006238923455406553,
+   "se": 0.0156918710303521,
+   "z": 0.3975895190152198
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6348603579468872,
+   "new": 0.6181126483025543,
+   "delta": -0.01674770964433292,
+   "se": 0.013339917085137619,
+   "z": -1.2554583013856975
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.8012827547908805,
+   "new": 0.8004781775824407,
+   "delta": -0.0008045772084398495,
+   "se": 0.005324114438494143,
+   "z": -0.15111944300495045
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.45958134786657756,
+   "new": 0.47051412318328345,
+   "delta": 0.01093277531670589,
+   "se": 0.013782514256177991,
+   "z": 0.7932351901472033
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5722844962574447,
+   "new": 0.5877483378445324,
+   "delta": 0.01546384158708769,
+   "se": 0.015772213006134263,
+   "z": 0.9804484368219831
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.8013846002020003,
+   "new": 0.7992398074846487,
+   "delta": -0.0021447927173515735,
+   "se": 0.006679119173702001,
+   "z": -0.3211190969306796
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20712608311812924,
+   "new": 0.21062720337629998,
+   "delta": 0.0035011202581707312,
+   "se": 0.006669530240830181,
+   "z": 0.5249425569341049
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.23729640565618942,
+   "new": 0.24275512800365778,
+   "delta": 0.005458722347468359,
+   "se": 0.006063306103025786,
+   "z": 0.900288102681189
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.28713265334174504,
+   "new": 0.2813283742280301,
+   "delta": -0.00580427911371495,
+   "se": 0.007812993012835185,
+   "z": -0.742900845320056
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.1829988975946484,
+   "new": 0.1807369280040874,
+   "delta": -0.0022619695905610193,
+   "se": 0.007064744354004979,
+   "z": -0.3201771327052643
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.24135364617393634,
+   "new": 0.23209928416579778,
+   "delta": -0.009254362008138561,
+   "se": 0.0078021465605439405,
+   "z": -1.1861302445840465
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "21"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.28756133013799823,
+   "new": 0.2907125924269177,
+   "delta": 0.0031512622889194875,
+   "se": 0.0065050299515016586,
+   "z": 0.48443470858916365
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "29"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.47269437661704106,
+   "new": 0.45935769191727116,
+   "delta": -0.013336684699769896,
+   "se": 0.018287594276049327,
+   "z": -0.7292749663216513
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "29"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5449297513835889,
+   "new": 0.5758969826540128,
+   "delta": 0.03096723127042389,
+   "se": 0.018130966265484952,
+   "z": 1.7079746780718863
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "29"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6190615998421516,
+   "new": 0.620990314103183,
+   "delta": 0.0019287142610313612,
+   "se": 0.01896526567099542,
+   "z": 0.1016971918290101
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "29"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3617579879733724,
+   "new": 0.37909091017697505,
+   "delta": 0.017332922203602663,
+   "se": 0.01589745951978297,
+   "z": 1.090295099165586
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "29"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5028639623019505,
+   "new": 0.5062250613766109,
+   "delta": 0.003361099074660423,
+   "se": 0.01930640674158846,
+   "z": 0.17409242018195895
+  },
+  {
+   "file": "grid_alignment.json",
+   "sig": [
+    [
+     "N",
+     "29"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.660863946711782,
+   "new": 0.6271434314419984,
+   "delta": -0.03372051526978359,
+   "se": 0.01814290626632789,
+   "z": -1.8586060455135998
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3424984922238815,
+   "new": 0.3637090620442672,
+   "delta": 0.02121056982038566,
+   "se": 0.014879076250270113,
+   "z": 1.4255300170264673
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5808813779750078,
+   "new": 0.5713441783506155,
+   "delta": -0.009537199624392367,
+   "se": 0.018694133998953873,
+   "z": -0.510170710498067
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6928289250330336,
+   "new": 0.6852220161524186,
+   "delta": -0.007606908880614993,
+   "se": 0.016723085848988035,
+   "z": -0.4548747132740044
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.37095058177028445,
+   "new": 0.3787039051643319,
+   "delta": 0.00775332339404744,
+   "se": 0.014474587806642984,
+   "z": 0.5356507209475851
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5780853214011623,
+   "new": 0.5751435513579642,
+   "delta": -0.0029417700431980665,
+   "se": 0.016513666178920274,
+   "z": -0.17814154720853212
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.7094831118849053,
+   "new": 0.6935859750520238,
+   "delta": -0.01589713683288152,
+   "se": 0.016822203264290996,
+   "z": -0.9450091990403455
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.40975161513833175,
+   "new": 0.4053401849805623,
+   "delta": -0.004411430157769458,
+   "se": 0.01399509938232374,
+   "z": -0.31521249240582283
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5906774369026414,
+   "new": 0.6011394497613601,
+   "delta": 0.010462012858718728,
+   "se": 0.0164877582043697,
+   "z": 0.6345321619252041
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6898232100175945,
+   "new": 0.7203668321358746,
+   "delta": 0.0305436221182801,
+   "se": 0.016554934015634706,
+   "z": 1.844986037965134
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4396263287110381,
+   "new": 0.4385408429737645,
+   "delta": -0.0010854857372735727,
+   "se": 0.013925335400514278,
+   "z": -0.07795041958080841
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.590773225416127,
+   "new": 0.581443600438899,
+   "delta": -0.009329624977228002,
+   "se": 0.015403666804444077,
+   "z": -0.6056755898236083
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.7164688571215961,
+   "new": 0.7235285076876885,
+   "delta": 0.007059650566092368,
+   "se": 0.016540833536122415,
+   "z": 0.4268013791853519
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3351938824060692,
+   "new": 0.35673694951738794,
+   "delta": 0.02154306711131876,
+   "se": 0.014830577205925566,
+   "z": 1.4526115074409385
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4296118462330254,
+   "new": 0.4350507933150939,
+   "delta": 0.00543894708206849,
+   "se": 0.017823753057232182,
+   "z": 0.3051516178777835
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.380815923965551,
+   "new": 0.42218464944018874,
+   "delta": 0.04136872547463777,
+   "se": 0.016814947400503006,
+   "z": 2.4602351996296017
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.38988716028222337,
+   "new": 0.3958890225381613,
+   "delta": 0.0060018622559379065,
+   "se": 0.014736881633090016,
+   "z": 0.40726813211700075
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.41017481381313575,
+   "new": 0.4248946896845622,
+   "delta": 0.014719875871426424,
+   "se": 0.01578074661738629,
+   "z": 0.9327743628561236
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4096124803369031,
+   "new": 0.41889261138645456,
+   "delta": 0.009280131049551443,
+   "se": 0.016512556300390446,
+   "z": 0.5620045061909652
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.41368390193807025,
+   "new": 0.4002730921766062,
+   "delta": -0.013410809761464026,
+   "se": 0.01380101742667076,
+   "z": -0.9717261667641511
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.44742398383669996,
+   "new": 0.44867689693759594,
+   "delta": 0.0012529131008959804,
+   "se": 0.01587080115351199,
+   "z": 0.07894454027727062
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4154387560881218,
+   "new": 0.4141287137319638,
+   "delta": -0.0013100423561580032,
+   "se": 0.016265758381820646,
+   "z": -0.08053988786788856
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4378078457491748,
+   "new": 0.4319295665030763,
+   "delta": -0.005878279246098517,
+   "se": 0.01416381953078148,
+   "z": -0.41502076705535274
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.433966157154698,
+   "new": 0.4417822404010241,
+   "delta": 0.0078160832463261,
+   "se": 0.015046918077701405,
+   "z": 0.5194474513627511
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.42986567255083696,
+   "new": 0.40986522648073187,
+   "delta": -0.020000446070105093,
+   "se": 0.01631140124251245,
+   "z": -1.2261635755717832
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3443740871470028,
+   "new": 0.3548008643727403,
+   "delta": 0.010426777225737482,
+   "se": 0.014245971234065402,
+   "z": 0.7319105910311439
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6603434481752228,
+   "new": 0.6625601282052869,
+   "delta": 0.0022166800300640332,
+   "se": 0.018402909878498644,
+   "z": 0.12045269170469228
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.785629474104885,
+   "new": 0.78907028057208,
+   "delta": 0.0034408064671949123,
+   "se": 0.014421716612411317,
+   "z": 0.23858508384735264
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3996391928753498,
+   "new": 0.38774065703603633,
+   "delta": -0.011898535839313495,
+   "se": 0.013961643462302432,
+   "z": -0.8522303174007062
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6613765778542923,
+   "new": 0.6357700340488971,
+   "delta": -0.025606543805395177,
+   "se": 0.016354045083743225,
+   "z": -1.5657620897015514
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.7996823256420107,
+   "new": 0.797269000152784,
+   "delta": -0.002413325489226681,
+   "se": 0.014936432232587081,
+   "z": -0.16157308864974365
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.40215537859026246,
+   "new": 0.40283471167708274,
+   "delta": 0.0006793330868202774,
+   "se": 0.012808482416966952,
+   "z": 0.053037749883654325
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6560084745781617,
+   "new": 0.6644794903479353,
+   "delta": 0.008471015769773604,
+   "se": 0.01625004566477834,
+   "z": 0.5212918132368309
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.8038193454000996,
+   "new": 0.8081590285958195,
+   "delta": 0.004339683195719868,
+   "se": 0.01483189406534761,
+   "z": 0.29259130200092626
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4508685304333839,
+   "new": 0.45071306153271107,
+   "delta": -0.00015546890067280605,
+   "se": 0.013541420007612817,
+   "z": -0.011480989481561267
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6278460413278326,
+   "new": 0.6509817960256505,
+   "delta": 0.023135754697817923,
+   "se": 0.01523798065536098,
+   "z": 1.5182953188537072
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.8075380653085874,
+   "new": 0.8255805911282666,
+   "delta": 0.018042525819679245,
+   "se": 0.014753533613518055,
+   "z": 1.222929115988025
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3349723514401297,
+   "new": 0.3398293699764471,
+   "delta": 0.00485701853631737,
+   "se": 0.014025135390630179,
+   "z": 0.3463081389975184
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.519728507843619,
+   "new": 0.4883553175224684,
+   "delta": -0.0313731903211506,
+   "se": 0.018923712557216223,
+   "z": -1.657877133056906
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "1"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5649235532351508,
+   "new": 0.6007255633927371,
+   "delta": 0.03580201015758633,
+   "se": 0.018076226219558563,
+   "z": 1.9806130838774512
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.38873550767021164,
+   "new": 0.3899104088242079,
+   "delta": 0.0011749011539962662,
+   "se": 0.013828297911831761,
+   "z": 0.0849635408122787
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.49974164493392464,
+   "new": 0.4994470705413384,
+   "delta": -0.0002945743925862332,
+   "se": 0.01674034810005636,
+   "z": -0.017596670680058404
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "2"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5859991413710955,
+   "new": 0.5883201987177893,
+   "delta": 0.0023210573466937445,
+   "se": 0.01810854649474412,
+   "z": 0.12817469073884066
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.41718293127425154,
+   "new": 0.41557651461397466,
+   "delta": -0.0016064166602768881,
+   "se": 0.013050817548306384,
+   "z": -0.12308935086487009
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.522415660886679,
+   "new": 0.5014035151076651,
+   "delta": -0.02101214577901389,
+   "se": 0.01657656108299768,
+   "z": -1.2675817181746893
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "3"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5839156233004905,
+   "new": 0.5826120083311599,
+   "delta": -0.0013036149693306243,
+   "se": 0.01822016157420711,
+   "z": -0.07154793682927885
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.4413282418317817,
+   "new": 0.43092337014884696,
+   "delta": -0.010404871682934747,
+   "se": 0.013270520598981404,
+   "z": -0.7840590431496249
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5165312364543662,
+   "new": 0.5020972012359366,
+   "delta": -0.014434035218429564,
+   "se": 0.015764551083821937,
+   "z": -0.9156007768113493
+  },
+  {
+   "file": "interpolation.json",
+   "sig": [
+    [
+     "K",
+     "4"
+    ],
+    [
+     "cost_model",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.610006328516642,
+   "new": 0.5937565180607638,
+   "delta": -0.016249810455878255,
+   "se": 0.01797296414372251,
+   "z": -0.9041252364348533
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.28910904826570694,
+   "new": 0.28910904826570694,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.28760065666458684,
+   "new": 0.28760065666458684,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.32734242057805996,
+   "new": 0.32734242057805996,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.3315538432937079,
+   "new": 0.3315538432937079,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.28910904826570694,
+   "new": 0.28910904826570694,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.28760065666458684,
+   "new": 0.28760065666458684,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.32734242057805996,
+   "new": 0.32734242057805996,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "None"
+    ]
+   ],
+   "old": 0.3315538432937079,
+   "new": 0.3315538432937079,
+   "delta": 0.0,
+   "se": 0.0,
+   "z": null
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.2052198019703219,
+   "new": 0.20871257404075072,
+   "delta": 0.0034927720704288068,
+   "se": 0.00429211299935189,
+   "z": 0.8137651713634324
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.2442087085987685,
+   "new": 0.24249480283442723,
+   "delta": -0.0017139057643412725,
+   "se": 0.0037020498175343135,
+   "z": -0.46296129139688075
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.27789762298523235,
+   "new": 0.2764565782199444,
+   "delta": -0.0014410447652879466,
+   "se": 0.004968828301646726,
+   "z": -0.2900170176559267
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.2722172685839164,
+   "new": 0.27063550461275077,
+   "delta": -0.0015817639711656617,
+   "se": 0.005351058959308342,
+   "z": -0.2955983073993479
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.21189553489992335,
+   "new": 0.20447791704181542,
+   "delta": -0.007417617858107933,
+   "se": 0.004170908562781953,
+   "z": -1.7784177587341925
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.2244669468922263,
+   "new": 0.21554371496868033,
+   "delta": -0.008923231923545966,
+   "se": 0.004141791848506493,
+   "z": -2.1544375598603858
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.21312393830595336,
+   "new": 0.21090269194156533,
+   "delta": -0.00222124636438803,
+   "se": 0.005683461670574326,
+   "z": -0.39082631204998836
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "paper (0.7 / 1.1)"
+    ]
+   ],
+   "old": 0.17552323661362648,
+   "new": 0.17432860519476148,
+   "delta": -0.0011946314188649998,
+   "se": 0.005436379147418824,
+   "z": -0.2197476273214327
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.20269713448516985,
+   "new": 0.21174327851736752,
+   "delta": 0.009046144032197667,
+   "se": 0.004231709111695314,
+   "z": 2.1377045995899246
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.2329225467999013,
+   "new": 0.23740977288030127,
+   "delta": 0.004487226080399975,
+   "se": 0.003995014318312339,
+   "z": 1.1232065076291309
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.2529462146794509,
+   "new": 0.26158584144112446,
+   "delta": 0.008639626761673569,
+   "se": 0.005682038105756113,
+   "z": 1.520515456051115
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.2417647392343834,
+   "new": 0.2365355154944116,
+   "delta": -0.005229223739971811,
+   "se": 0.006321870613257434,
+   "z": -0.8271639930443593
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.2066774125281131,
+   "new": 0.2074940949890613,
+   "delta": 0.0008166824609481815,
+   "se": 0.004221920450455698,
+   "z": 0.19343861887782182
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.21704595242033317,
+   "new": 0.20919795670111882,
+   "delta": -0.007847995719214351,
+   "se": 0.004315673624449304,
+   "z": -1.8184868463531658
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.18724018023922828,
+   "new": 0.18508599742470558,
+   "delta": -0.0021541828145227038,
+   "se": 0.005785962466240378,
+   "z": -0.37231192339940217
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "dephase 1.6"
+    ]
+   ],
+   "old": 0.1502477404421308,
+   "new": 0.1501348210935938,
+   "delta": -0.00011291934853699392,
+   "se": 0.004561307240480969,
+   "z": -0.024755918113748263
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.20517427834013285,
+   "new": 0.20374198781379874,
+   "delta": -0.001432290526334118,
+   "se": 0.0043295088395953465,
+   "z": -0.330820557111505
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.23259804911969836,
+   "new": 0.23198590959338714,
+   "delta": -0.0006121395263112284,
+   "se": 0.004193506031888521,
+   "z": -0.1459732075395525
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.24579626425268264,
+   "new": 0.2411587531066727,
+   "delta": -0.004637511146009937,
+   "se": 0.006329056762371739,
+   "z": -0.7327333787842479
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.20446017245287398,
+   "new": 0.20607178260037978,
+   "delta": 0.0016116101475057987,
+   "se": 0.006814313060148269,
+   "z": 0.2365036847119455
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.2091428386390244,
+   "new": 0.2013022457171763,
+   "delta": -0.007840592921848077,
+   "se": 0.004289802984029193,
+   "z": -1.827727975163048
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.2016332422127834,
+   "new": 0.20458086748762622,
+   "delta": 0.0029476252748428244,
+   "se": 0.004405948086058302,
+   "z": 0.6690104416277546
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.16463154551997275,
+   "new": 0.16138742190882155,
+   "delta": -0.0032441236111512006,
+   "se": 0.005186740207183868,
+   "z": -0.6254648356318182
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "dephase 2.0"
+    ]
+   ],
+   "old": 0.1382221618773784,
+   "new": 0.1353335115521489,
+   "delta": -0.0028886503252295026,
+   "se": 0.00339824720411846,
+   "z": -0.8500412570717756
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.21016540005092277,
+   "new": 0.19988138392042096,
+   "delta": -0.01028401613050181,
+   "se": 0.004280139570441721,
+   "z": -2.402729154330001
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.22569749357519403,
+   "new": 0.2203957516596986,
+   "delta": -0.005301741915495428,
+   "se": 0.004326905178640546,
+   "z": -1.225296533343761
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.19208260023759738,
+   "new": 0.19394848334374365,
+   "delta": 0.001865883106146271,
+   "se": 0.006640794640625016,
+   "z": 0.2809728665198806
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.15386815677497795,
+   "new": 0.1543810480137048,
+   "delta": 0.0005128912387268592,
+   "se": 0.0056589579851057895,
+   "z": 0.09063351240224327
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.20883622267669685,
+   "new": 0.20898981998595148,
+   "delta": 0.00015359730925462722,
+   "se": 0.004167240230377302,
+   "z": 0.03685828048380127
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.19012360750966623,
+   "new": 0.19075152146495372,
+   "delta": 0.0006279139552874957,
+   "se": 0.004696177865876005,
+   "z": 0.13370744746491142
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.13819988597491037,
+   "new": 0.13775511841783072,
+   "delta": -0.000444767557079645,
+   "se": 0.004007078969780386,
+   "z": -0.11099545590039149
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "dephase 2.6"
+    ]
+   ],
+   "old": 0.1370087565680048,
+   "new": 0.13281360373733936,
+   "delta": -0.004195152830665433,
+   "se": 0.0033102709827107723,
+   "z": -1.267314021292007
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.20903802382097117,
+   "new": 0.2048922750619412,
+   "delta": -0.004145748759029982,
+   "se": 0.004157891374085362,
+   "z": -0.9970796218652896
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.22124147279050146,
+   "new": 0.2175931612138736,
+   "delta": -0.0036483115766278718,
+   "se": 0.00447900494293089,
+   "z": -0.8145361800472933
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.20427509134112806,
+   "new": 0.19055742769085993,
+   "delta": -0.013717663650268136,
+   "se": 0.0066906925212412245,
+   "z": -2.050260657879299
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "uniform"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.1552028982922497,
+   "new": 0.15402358579513134,
+   "delta": -0.0011793124971183622,
+   "se": 0.0054367045247985775,
+   "z": -0.2169167906291641
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.21026488714684097,
+   "new": 0.20846962951046066,
+   "delta": -0.0017952576363803041,
+   "se": 0.0041707963854838844,
+   "z": -0.4304352143941985
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.19380004150997174,
+   "new": 0.18395812882273463,
+   "delta": -0.009841912687237109,
+   "se": 0.0047653162515019385,
+   "z": -2.0653220411415765
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.13908857683423947,
+   "new": 0.13983865800408812,
+   "delta": 0.0007500811698486487,
+   "se": 0.004289470407337095,
+   "z": 0.17486568238485634
+  },
+  {
+   "file": "ladder_exponent_sensitivity_d7.json",
+   "sig": [
+    [
+     "cost",
+     "ion"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "label",
+     "Peterer worst (1.0/2.6)"
+    ]
+   ],
+   "old": 0.13424468811901677,
+   "new": 0.13491415346755484,
+   "delta": 0.0006694653485380675,
+   "se": 0.0032301649073892347,
+   "z": 0.20725423244077024
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3370864559700106,
+   "new": 0.33841942192242386,
+   "delta": 0.0013329659524132786,
+   "se": 0.014309170995737175,
+   "z": 0.0931546595404011
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.28600550720722556,
+   "new": 0.2726121324705709,
+   "delta": -0.01339337473665464,
+   "se": 0.014203890184074431,
+   "z": -0.9429370801297414
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2081216984213172,
+   "new": 0.20941401296185053,
+   "delta": 0.0012923145405333292,
+   "se": 0.012578385692157202,
+   "z": 0.1027408899807473
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.16043799219589777,
+   "new": 0.16296854537624522,
+   "delta": 0.00253055318034745,
+   "se": 0.014799083461152282,
+   "z": 0.17099391235884123
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6843767143685959,
+   "new": 0.6798021008989067,
+   "delta": -0.004574613469689237,
+   "se": 0.018103720518862308,
+   "z": -0.25268913453027164
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5624154217574726,
+   "new": 0.5834766793907958,
+   "delta": 0.021061257633323227,
+   "se": 0.01850761042569532,
+   "z": 1.1379782234924565
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5417559512554617,
+   "new": 0.5251320688390977,
+   "delta": -0.016623882416364033,
+   "se": 0.01843538459429713,
+   "z": -0.9017377604102995
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.474745676931969,
+   "new": 0.45809214650471847,
+   "delta": -0.01665353042725054,
+   "se": 0.01833120018134737,
+   "z": -0.9084800920016183
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.7795593291137234,
+   "new": 0.7757983988405567,
+   "delta": -0.003760930273166707,
+   "se": 0.014659568581160964,
+   "z": -0.25655122470656366
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.7421473004982999,
+   "new": 0.753320352760859,
+   "delta": 0.011173052262559047,
+   "se": 0.016763045480488098,
+   "z": 0.6665287805586575
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.704235264406932,
+   "new": 0.6815230254362833,
+   "delta": -0.022712238970648668,
+   "se": 0.018106323363781165,
+   "z": -1.254381605493742
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.49261342232915395,
+   "new": 0.47662474669602123,
+   "delta": -0.01598867563313272,
+   "se": 0.015353581354148951,
+   "z": -1.0413645692385738
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.41392227589762687,
+   "new": 0.4064252126566668,
+   "delta": -0.007497063240960056,
+   "se": 0.017475658633405458,
+   "z": -0.42900032543718286
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.3420025060861333,
+   "new": 0.3431497384720003,
+   "delta": 0.001147232385867003,
+   "se": 0.016191257803963556,
+   "z": 0.07085505028436796
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2609445188321443,
+   "new": 0.24311665908114655,
+   "delta": -0.017827859750997765,
+   "se": 0.01990434554924572,
+   "z": -0.8956767609811395
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7022123481127724,
+   "new": 0.7051433447220125,
+   "delta": 0.002930996609240011,
+   "se": 0.017605566971471705,
+   "z": 0.16648123937101467
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6034755656000227,
+   "new": 0.592883145690463,
+   "delta": -0.010592419909559725,
+   "se": 0.018392800990603177,
+   "z": -0.5759003163776609
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.545606001555734,
+   "new": 0.5534485293647038,
+   "delta": 0.007842527808969768,
+   "se": 0.018163345754102184,
+   "z": 0.43177770853139963
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4911084129517164,
+   "new": 0.4783766825263009,
+   "delta": -0.012731730425415533,
+   "se": 0.01802859460346982,
+   "z": -0.7061965009166692
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7168301170009624,
+   "new": 0.7080207228464054,
+   "delta": -0.00880939415455706,
+   "se": 0.016324542087542516,
+   "z": -0.5396411187104373
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6819861472007533,
+   "new": 0.6670933902491636,
+   "delta": -0.014892756951589758,
+   "se": 0.01752520318120908,
+   "z": -0.8497908296754078
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5854710829011718,
+   "new": 0.6227623370246064,
+   "delta": 0.03729125412343459,
+   "se": 0.01798781823579433,
+   "z": 2.073139367687625
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4834314238585701,
+   "new": 0.4819313335824225,
+   "delta": -0.0015000902761475587,
+   "se": 0.015357460724199194,
+   "z": -0.09767827527527538
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4205286168442622,
+   "new": 0.4094077534777998,
+   "delta": -0.011120863366462397,
+   "se": 0.017502308584433964,
+   "z": -0.6353940860323399
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.3429859039179462,
+   "new": 0.3441193705836637,
+   "delta": 0.0011334666657175085,
+   "se": 0.016628423024018905,
+   "z": 0.06816441126619609
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.24453451723463793,
+   "new": 0.25137407151557206,
+   "delta": 0.006839554280934135,
+   "se": 0.019404020713104125,
+   "z": 0.35248129148384055
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7410136321235213,
+   "new": 0.7220822987524046,
+   "delta": -0.018931333371116743,
+   "se": 0.017141681151725662,
+   "z": -1.104403541493415
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6147771868348691,
+   "new": 0.651611986516268,
+   "delta": 0.0368347996813988,
+   "se": 0.01801490817562029,
+   "z": 2.0446842871643174
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5713409980389386,
+   "new": 0.5968883727989511,
+   "delta": 0.025547374760012564,
+   "se": 0.018223476666492155,
+   "z": 1.4018935699018946
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5203912809155041,
+   "new": 0.5053037512794313,
+   "delta": -0.01508752963607285,
+   "se": 0.018241460184186233,
+   "z": -0.8271009822531878
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7685771926705245,
+   "new": 0.7866046000776586,
+   "delta": 0.018027407407134155,
+   "se": 0.014386502846440443,
+   "z": 1.2530778049089641
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7464131611985035,
+   "new": 0.7447547763631296,
+   "delta": -0.0016583848353739494,
+   "se": 0.01653764983652699,
+   "z": -0.10027935358209401
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6890072198690257,
+   "new": 0.675832094703956,
+   "delta": -0.01317512516506969,
+   "se": 0.01760223118867558,
+   "z": -0.7484917692449082
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5737865913399812,
+   "new": 0.5845100369558155,
+   "delta": 0.01072344561583427,
+   "se": 0.013774851418354947,
+   "z": 0.7784799479975016
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.548305725005199,
+   "new": 0.5565778077628954,
+   "delta": 0.00827208275769642,
+   "se": 0.017301996582167,
+   "z": 0.47809989548965554
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4701766217520192,
+   "new": 0.4856989148719419,
+   "delta": 0.015522293119922703,
+   "se": 0.016828527401267866,
+   "z": 0.9223797632318826
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.3817709281708007,
+   "new": 0.41192977216407006,
+   "delta": 0.030158843993269346,
+   "se": 0.02179678564608937,
+   "z": 1.3836372244492041
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.8416880313960226,
+   "new": 0.8297388279221455,
+   "delta": -0.011949203473877068,
+   "se": 0.013419678320809892,
+   "z": -0.8904239869406886
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7922852862067483,
+   "new": 0.7862494196302484,
+   "delta": -0.006035866576499904,
+   "se": 0.014012731447922205,
+   "z": -0.43074161514705234
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7670786801854499,
+   "new": 0.7700679897956482,
+   "delta": 0.0029893096101982763,
+   "se": 0.014026125851264486,
+   "z": 0.21312439670778965
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7098732486976992,
+   "new": 0.737007178382272,
+   "delta": 0.027133929684572844,
+   "se": 0.015183697897218325,
+   "z": 1.7870435692443418
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.8829948625695155,
+   "new": 0.889142902612603,
+   "delta": 0.006148040043087444,
+   "se": 0.00831938846331544,
+   "z": 0.7390014386510964
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.8914027618046503,
+   "new": 0.9006594877841301,
+   "delta": 0.009256725979479796,
+   "se": 0.00946076286938406,
+   "z": 0.9784333575715604
+  },
+  {
+   "file": "qpe_hires_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.8785149683770047,
+   "new": 0.8701736382525697,
+   "delta": -0.008341330124435054,
+   "se": 0.010508483325780867,
+   "z": -0.7937710767424399
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5256677278085864,
+   "new": 0.5350535287057437,
+   "delta": 0.009385800897157348,
+   "se": 0.015558994087906675,
+   "z": 0.6032395696102565
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.63123492438609,
+   "new": 0.6181126483025543,
+   "delta": -0.013122276083535667,
+   "se": 0.01321205186814475,
+   "z": -0.9932050081618633
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.8033602508892295,
+   "new": 0.8004781775824407,
+   "delta": -0.0028820733067888016,
+   "se": 0.005643307999128349,
+   "z": -0.5107063635785889
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.451525501133916,
+   "new": 0.47051412318328345,
+   "delta": 0.018988622049367465,
+   "se": 0.014141330001574672,
+   "z": 1.3427748342803
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5976660977866114,
+   "new": 0.5877483378445324,
+   "delta": -0.009917759942078996,
+   "se": 0.015183246229227423,
+   "z": -0.6532041825803708
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.7972193849688969,
+   "new": 0.7992398074846487,
+   "delta": 0.002020422515751852,
+   "se": 0.006628061378236035,
+   "z": 0.3048285766311897
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.16700130112257694,
+   "new": 0.1723343140570659,
+   "delta": 0.0053330129344889565,
+   "se": 0.00762098324154488,
+   "z": 0.6997801681831123
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.24004313343008588,
+   "new": 0.2362243602681569,
+   "delta": -0.0038187731619289678,
+   "se": 0.009031388449824353,
+   "z": -0.42283345281236767
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2844229023308104,
+   "new": 0.2887395057232612,
+   "delta": 0.0043166033924507685,
+   "se": 0.006820277422107729,
+   "z": 0.6329073035150484
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.10920104933162354,
+   "new": 0.11609949321487159,
+   "delta": 0.006898443883248048,
+   "se": 0.006706406968302227,
+   "z": 1.0286348436433221
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2208821162850002,
+   "new": 0.2278951211346069,
+   "delta": 0.00701300484960668,
+   "se": 0.009243792399095986,
+   "z": 0.7586718250284947
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "33"
+    ],
+    [
+     "a",
+     "2"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.26886421093787116,
+   "new": 0.27134609749112387,
+   "delta": 0.00248188655325271,
+   "se": 0.007976792617158746,
+   "z": 0.3111384076745289
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5034922774601868,
+   "new": 0.5497310560745302,
+   "delta": 0.046238778614343445,
+   "se": 0.015341262412104024,
+   "z": 3.014013930031061
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6582954485728624,
+   "new": 0.6401722980489641,
+   "delta": -0.018123150523898235,
+   "se": 0.011279068931672907,
+   "z": -1.6067949077788122
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7987988986988956,
+   "new": 0.7957231161107485,
+   "delta": -0.0030757825881471135,
+   "se": 0.005737982489564058,
+   "z": -0.5360390335350772
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.46209402933754107,
+   "new": 0.45988907448986766,
+   "delta": -0.0022049548476734127,
+   "se": 0.013343060337483004,
+   "z": -0.16525105874544438
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5680918164558618,
+   "new": 0.6167408895998086,
+   "delta": 0.04864907314394673,
+   "se": 0.014626767531601236,
+   "z": 3.32603037812969
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "16"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.8006115585201178,
+   "new": 0.7954954616628492,
+   "delta": -0.005116096857268548,
+   "se": 0.007111839662261085,
+   "z": -0.7193774185344857
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.1675295843668834,
+   "new": 0.14994482995795122,
+   "delta": -0.017584754408932174,
+   "se": 0.007817480732530094,
+   "z": -2.2494144866591754
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2474726232930556,
+   "new": 0.24198972891742465,
+   "delta": -0.005482894375630959,
+   "se": 0.008911127333036669,
+   "z": -0.6152862786848472
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.28925154874314496,
+   "new": 0.27844076578745813,
+   "delta": -0.010810782955686826,
+   "se": 0.00729631085214037,
+   "z": -1.4816779568150509
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.11783913238478476,
+   "new": 0.11045701275079552,
+   "delta": -0.0073821196339892425,
+   "se": 0.006414633644952704,
+   "z": -1.150824823768041
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2308046865551367,
+   "new": 0.21297713353467287,
+   "delta": -0.01782755302046382,
+   "se": 0.00879616781573543,
+   "z": -2.026740893752866
+  },
+  {
+   "file": "same_n_control.json",
+   "sig": [
+    [
+     "N",
+     "55"
+    ],
+    [
+     "a",
+     "4"
+    ],
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2787126399631578,
+   "new": 0.2753060050181077,
+   "delta": -0.003406634945050113,
+   "se": 0.007746655155535846,
+   "z": -0.43975559472473663
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.1760186467131539,
+   "new": 0.18004079025824204,
+   "delta": 0.004022143545088147,
+   "se": 0.006701743009258571,
+   "z": 0.6001637991089017
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17288107495170812,
+   "new": 0.19943783561585626,
+   "delta": 0.026556760664148138,
+   "se": 0.008723214870435807,
+   "z": 3.0443776816908072
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.183994769044414,
+   "new": 0.17809506974107495,
+   "delta": -0.005899699303339057,
+   "se": 0.00883447979507308,
+   "z": -0.6678038141679007
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.16769981681128598,
+   "new": 0.16963249631445274,
+   "delta": 0.001932679503166751,
+   "se": 0.01073456199362134,
+   "z": 0.18004269799878023
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.23653571652273264,
+   "new": 0.23371679810212517,
+   "delta": -0.002818918420607469,
+   "se": 0.007366841677112873,
+   "z": -0.3826495184992528
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.25384055479456713,
+   "new": 0.26123072528682634,
+   "delta": 0.007390170492259207,
+   "se": 0.008814184963765953,
+   "z": 0.8384405957713961
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.28397580772776376,
+   "new": 0.2727642109944127,
+   "delta": -0.011211596733351037,
+   "se": 0.011215337665658376,
+   "z": -0.9996664449685903
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2537056958530846,
+   "new": 0.25846826228118963,
+   "delta": 0.0047625664281050195,
+   "se": 0.012683198777336886,
+   "z": 0.37550199375689547
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2807467973004543,
+   "new": 0.2796406803155982,
+   "delta": -0.0011061169848561314,
+   "se": 0.006875576173258967,
+   "z": -0.1608762606918863
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.27983789992433483,
+   "new": 0.27447931637296236,
+   "delta": -0.0053585835513724756,
+   "se": 0.008351954669847405,
+   "z": -0.6415963404013997
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.26743534272632696,
+   "new": 0.26076611480530604,
+   "delta": -0.006669227921020926,
+   "se": 0.009353713479394211,
+   "z": -0.7130032297560663
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2029197380087307,
+   "new": 0.2052203522836303,
+   "delta": 0.0023006142748996095,
+   "se": 0.006931058661339592,
+   "z": 0.3319282648308968
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.22805515510192456,
+   "new": 0.21350932380714582,
+   "delta": -0.014545831294778738,
+   "se": 0.009682098318029653,
+   "z": -1.5023428617422752
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.1975886403536743,
+   "new": 0.21907333777631385,
+   "delta": 0.02148469742263956,
+   "se": 0.010505291426291268,
+   "z": 2.045131025006167
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.18083612756353928,
+   "new": 0.18740729263976078,
+   "delta": 0.006571165076221491,
+   "se": 0.014846056264554614,
+   "z": 0.44262024601848887
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2426237830292661,
+   "new": 0.2470742459480893,
+   "delta": 0.0044504629188232,
+   "se": 0.00626250237332971,
+   "z": 0.7106524921693457
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.26694220747077346,
+   "new": 0.2673428704227354,
+   "delta": 0.0004006629519619498,
+   "se": 0.008085280278697551,
+   "z": 0.04955461507223002
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.29455458030253073,
+   "new": 0.28773571945764004,
+   "delta": -0.006818860844890695,
+   "se": 0.009783170397519476,
+   "z": -0.6969990880072596
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2627484685123413,
+   "new": 0.28262319345594894,
+   "delta": 0.019874724943607647,
+   "se": 0.011589437926285109,
+   "z": 1.714899813953127
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2615452135532207,
+   "new": 0.2575953941865393,
+   "delta": -0.003949819366681373,
+   "se": 0.007727187517431747,
+   "z": -0.5111587311387207
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.24077732261563725,
+   "new": 0.24298090471063702,
+   "delta": 0.0022035820949997675,
+   "se": 0.008908281870578195,
+   "z": 0.24736331057031802
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2278536149260429,
+   "new": 0.22949333682378942,
+   "delta": 0.0016397218977465267,
+   "se": 0.009669028478285739,
+   "z": 0.16958496930988867
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2068411580023855,
+   "new": 0.2064172830439276,
+   "delta": -0.0004238749584579149,
+   "se": 0.00682206769710288,
+   "z": -0.06213291589556073
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2175820972618868,
+   "new": 0.22179242340812347,
+   "delta": 0.004210326146236676,
+   "se": 0.00956383175815636,
+   "z": 0.4402342337992266
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.19285551414584437,
+   "new": 0.2086471022554414,
+   "delta": 0.01579158810959702,
+   "se": 0.010612252895126208,
+   "z": 1.4880523735774784
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.1782949930157752,
+   "new": 0.17101941500866252,
+   "delta": -0.007275578007112676,
+   "se": 0.013411085339876656,
+   "z": -0.5425047878473638
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.24339649593374305,
+   "new": 0.2404293575955967,
+   "delta": -0.0029671383381463523,
+   "se": 0.006045264365189232,
+   "z": -0.49082027830448294
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.27132006558969335,
+   "new": 0.26554395247310586,
+   "delta": -0.005776113116587489,
+   "se": 0.007176366333676602,
+   "z": -0.8048799138753366
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.28175992589077437,
+   "new": 0.275612231773599,
+   "delta": -0.006147694117175362,
+   "se": 0.008569737961508075,
+   "z": -0.7173724733228027
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.27782259572526014,
+   "new": 0.26572021467283735,
+   "delta": -0.012102381052422784,
+   "se": 0.009953715402425038,
+   "z": -1.215865690662028
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2865253131861179,
+   "new": 0.27743726383061995,
+   "delta": -0.009088049355497951,
+   "se": 0.007496469221502993,
+   "z": -1.212310634108874
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2682781524504216,
+   "new": 0.26890781306042305,
+   "delta": 0.0006296606100014701,
+   "se": 0.008715624458379843,
+   "z": 0.07224503683107503
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.25778197049463186,
+   "new": 0.24390869734221085,
+   "delta": -0.013873273152421012,
+   "se": 0.010001685317929573,
+   "z": -1.3870935458798146
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.22804940047949912,
+   "new": 0.22921466972911111,
+   "delta": 0.0011652692496119943,
+   "se": 0.005913667726290096,
+   "z": 0.1970467911870691
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2572402174939843,
+   "new": 0.24293899520427012,
+   "delta": -0.014301222289714172,
+   "se": 0.009164537829894232,
+   "z": -1.560495745138871
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.22253260706059064,
+   "new": 0.22953416529920545,
+   "delta": 0.007001558238614813,
+   "se": 0.009892897675823648,
+   "z": 0.7077358391894909
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20759908075165456,
+   "new": 0.21356967468716648,
+   "delta": 0.005970593935511914,
+   "se": 0.013927058632236113,
+   "z": 0.428704588181466
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2608626616574306,
+   "new": 0.2571952635132552,
+   "delta": -0.0036673981441753822,
+   "se": 0.0043759394793731156,
+   "z": -0.838082464682707
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.28496050204157486,
+   "new": 0.2893190896646377,
+   "delta": 0.004358587623062848,
+   "se": 0.006569994756664197,
+   "z": 0.6634080824252967
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.30416890523341833,
+   "new": 0.2983332421079521,
+   "delta": -0.0058356631254662394,
+   "se": 0.00824025456959876,
+   "z": -0.7081896652800126
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2907010213806492,
+   "new": 0.2933087858500561,
+   "delta": 0.0026077644694069146,
+   "se": 0.009712537782894118,
+   "z": 0.2684946537865472
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.3078952365943254,
+   "new": 0.30463985450929576,
+   "delta": -0.0032553820850296233,
+   "se": 0.004492037820781344,
+   "z": -0.7247005067431473
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.3064140840410559,
+   "new": 0.30446075691203695,
+   "delta": -0.001953327129018967,
+   "se": 0.005009500344945753,
+   "z": -0.3899245422729119
+  },
+  {
+   "file": "scaling_fair.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.29867030757677726,
+   "new": 0.29968737337958445,
+   "delta": 0.0010170658028071933,
+   "se": 0.00540946846183467,
+   "z": 0.18801584850394826
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17997564000216182,
+   "new": 0.1793400502230755,
+   "delta": -0.0006355897790863152,
+   "se": 0.0042826705988758,
+   "z": -0.14840968139206348
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.18610286241513177,
+   "new": 0.1931352304345155,
+   "delta": 0.007032368019383728,
+   "se": 0.005704378241344568,
+   "z": 1.2328018448030091
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.17361475906655055,
+   "new": 0.17122275591595953,
+   "delta": -0.0023920031505910155,
+   "se": 0.0050740024763619475,
+   "z": -0.4714233313315366
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.15989300979746207,
+   "new": 0.17409483001180132,
+   "delta": 0.014201820214339245,
+   "se": 0.007107429998892688,
+   "z": 1.9981653307245848
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.23355727868367598,
+   "new": 0.2320092562218343,
+   "delta": -0.001548022461841686,
+   "se": 0.004675554858110463,
+   "z": -0.33108850367917403
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.25719643585160706,
+   "new": 0.2567385902409321,
+   "delta": -0.0004578456106749673,
+   "se": 0.005531937805301956,
+   "z": -0.08276405606660218
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2653518685801093,
+   "new": 0.266288267710716,
+   "delta": 0.0009363991306067243,
+   "se": 0.006958010645445901,
+   "z": 0.13457857113507127
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.26787845646493347,
+   "new": 0.2638597301352465,
+   "delta": -0.004018726329686972,
+   "se": 0.00825306633839637,
+   "z": -0.4869373593897271
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2871389645165535,
+   "new": 0.28012251483258815,
+   "delta": -0.0070164496839653645,
+   "se": 0.0041725730585910935,
+   "z": -1.6815642495507392
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.27866551435408154,
+   "new": 0.2765939168486696,
+   "delta": -0.0020715975054119706,
+   "se": 0.005011772935551944,
+   "z": -0.41334624135038284
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.26107297889895803,
+   "new": 0.26356512381163955,
+   "delta": 0.0024921449126815154,
+   "se": 0.0060140212386487,
+   "z": 0.4143891106778797
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20885308690052432,
+   "new": 0.2045978835166214,
+   "delta": -0.004255203383902922,
+   "se": 0.004154688046438927,
+   "z": -1.024193233364452
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2177877699725766,
+   "new": 0.2180569054481573,
+   "delta": 0.0002691354755807174,
+   "se": 0.006035068094761136,
+   "z": 0.044595267419492074
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20342364925488363,
+   "new": 0.20790077878971108,
+   "delta": 0.0044771295348274565,
+   "se": 0.0065540517117809545,
+   "z": 0.6831086679984206
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.18070988721329911,
+   "new": 0.1809059056320334,
+   "delta": 0.0001960184187342895,
+   "se": 0.009185059092143611,
+   "z": 0.02134100790945948
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.24561701441782754,
+   "new": 0.24631798932461305,
+   "delta": 0.0007009749067855009,
+   "se": 0.004035933531340256,
+   "z": 0.1736834616680916
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.26953882232912746,
+   "new": 0.26923092389340103,
+   "delta": -0.00030789843572642805,
+   "se": 0.004998336890218531,
+   "z": -0.06160017671657313
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.279554373943613,
+   "new": 0.2816511325070288,
+   "delta": 0.0020967585634157904,
+   "se": 0.006356090209554836,
+   "z": 0.3298818132354106
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2700734357107718,
+   "new": 0.27246576872617245,
+   "delta": 0.0023923330154006495,
+   "se": 0.007461554800939584,
+   "z": 0.3206212484158662
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.26919580382919767,
+   "new": 0.2540356127871034,
+   "delta": -0.015160191042094262,
+   "se": 0.004881458041691062,
+   "z": -3.1056686163469274
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.25152386154623685,
+   "new": 0.24494968320236427,
+   "delta": -0.006574178343872583,
+   "se": 0.005655653628962683,
+   "z": -1.1624082334544183
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.23615676925663548,
+   "new": 0.23900189349672973,
+   "delta": 0.0028451242400942545,
+   "se": 0.006316616267536396,
+   "z": 0.4504190407634036
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20752304283226647,
+   "new": 0.21021253218798033,
+   "delta": 0.0026894893557138644,
+   "se": 0.004251733357386602,
+   "z": 0.6325630348011766
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2181288252123751,
+   "new": 0.22639013099960745,
+   "delta": 0.00826130578723236,
+   "se": 0.006042050225933798,
+   "z": 1.3673017400241116
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.20892523191284937,
+   "new": 0.20779910915826627,
+   "delta": -0.0011261227545830976,
+   "se": 0.0067014430046697104,
+   "z": -0.16804183125908717
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.17984558461030475,
+   "new": 0.18027438343402505,
+   "delta": 0.00042879882372029443,
+   "se": 0.009071442721351818,
+   "z": 0.04726908793802043
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.24453240368410498,
+   "new": 0.2408716677434844,
+   "delta": -0.0036607359406205797,
+   "se": 0.0037364511564686688,
+   "z": -0.9797360616592008
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2751925938011095,
+   "new": 0.26936771081553706,
+   "delta": -0.005824882985572433,
+   "se": 0.004455830607209417,
+   "z": -1.3072496463729848
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2791609671372669,
+   "new": 0.27457597970592645,
+   "delta": -0.004584987431340448,
+   "se": 0.005493225561163121,
+   "z": -0.8346621452714632
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2756333820436328,
+   "new": 0.2622505850722295,
+   "delta": -0.013382796971403321,
+   "se": 0.006447771035744978,
+   "z": -2.075569510333437
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.27864090421557963,
+   "new": 0.2804484877654298,
+   "delta": 0.001807583549850167,
+   "se": 0.004727453415942926,
+   "z": 0.3823588284877114
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2703147745272742,
+   "new": 0.26826953983437446,
+   "delta": -0.0020452346928997445,
+   "se": 0.005685038124442616,
+   "z": -0.3597574278537081
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2504383030073227,
+   "new": 0.25020121200589923,
+   "delta": -0.00023709100142349504,
+   "se": 0.006375474562570203,
+   "z": -0.037187977004164284
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.22316198032490517,
+   "new": 0.229270453675102,
+   "delta": 0.006108473350196819,
+   "se": 0.003900426685464948,
+   "z": 1.5661038760093147
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.240101294962787,
+   "new": 0.2440175863140892,
+   "delta": 0.003916291351302198,
+   "se": 0.00549161332090282,
+   "z": 0.7131404056428285
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.22909696664483342,
+   "new": 0.22356421719875752,
+   "delta": -0.005532749446075902,
+   "se": 0.006092066156700079,
+   "z": -0.9081893242395211
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.21180645605202097,
+   "new": 0.21487384975660823,
+   "delta": 0.0030673937045872512,
+   "se": 0.009179492084285888,
+   "z": 0.33415723619809373
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2571150630110699,
+   "new": 0.25514129292912713,
+   "delta": -0.0019737700819427717,
+   "se": 0.0030485002960254407,
+   "z": -0.647456089971887
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2878558517252313,
+   "new": 0.28839929968336114,
+   "delta": 0.0005434479581298279,
+   "se": 0.003963997449978024,
+   "z": 0.13709594039543108
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.3020754879658905,
+   "new": 0.29803375747159216,
+   "delta": -0.004041730494298346,
+   "se": 0.00525409881889329,
+   "z": -0.7692528507009857
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.29494646144933645,
+   "new": 0.2946355643982198,
+   "delta": -0.0003108970511166431,
+   "se": 0.006140854874836861,
+   "z": -0.050627649969484496
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.3069105282190283,
+   "new": 0.30822264671330096,
+   "delta": 0.0013121184942726516,
+   "se": 0.002787466393327543,
+   "z": 0.47072083000301496
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.30554087341851643,
+   "new": 0.3019355795235541,
+   "delta": -0.003605293894962336,
+   "se": 0.003262082863606458,
+   "z": -1.1052122357727094
+  },
+  {
+   "file": "scaling_fair_1000.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.30089554348539627,
+   "new": 0.3009223845087413,
+   "delta": 2.6841023345047788e-05,
+   "se": 0.0033990107726143428,
+   "z": 0.007896716174395371
+  },
+  {
+   "file": "scaling_fair_m8.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.2659865944768974,
+   "new": 0.2566022756506647,
+   "delta": -0.009384318826232696,
+   "se": 0.009190723817463638,
+   "z": -1.0210641743364326
+  },
+  {
+   "file": "scaling_fair_m8.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2699033975743519,
+   "new": 0.25837665017193284,
+   "delta": -0.011526747402419046,
+   "se": 0.008457385162255202,
+   "z": -1.3629209479381668
+  },
+  {
+   "file": "scaling_fair_m8.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.2582948294350133,
+   "new": 0.2684226810458316,
+   "delta": 0.010127851610818306,
+   "se": 0.007299926384713176,
+   "z": 1.3873909238354933
+  },
+  {
+   "file": "scaling_fair_m8.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.29293503881572314,
+   "new": 0.2890353658300461,
+   "delta": -0.0038996729856770607,
+   "se": 0.007152375319530359,
+   "z": -0.54522767772387
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3827165751678199,
+   "new": 0.3634170764804708,
+   "delta": -0.019299498687349093,
+   "se": 0.015883985417758758,
+   "z": -1.2150287336433645
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.34892411624366176,
+   "new": 0.3365140103177782,
+   "delta": -0.012410105925883541,
+   "se": 0.013944444396010999,
+   "z": -0.889967758732189
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.3440423099291857,
+   "new": 0.3333785884621055,
+   "delta": -0.010663721467080223,
+   "se": 0.012403479616554688,
+   "z": -0.8597362834254637
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.29444631424739576,
+   "new": 0.31919851518333253,
+   "delta": 0.024752200935936775,
+   "se": 0.013791359648628713,
+   "z": 1.7947614714259088
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.49913300504608826,
+   "new": 0.5194500075547169,
+   "delta": 0.020317002508628668,
+   "se": 0.01957804307968906,
+   "z": 1.037744294765917
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.577200216578143,
+   "new": 0.5293851814650519,
+   "delta": -0.04781503511309115,
+   "se": 0.0194023693719894,
+   "z": -2.4643915491125656
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5683824087510999,
+   "new": 0.53520117903628,
+   "delta": -0.03318122971481996,
+   "se": 0.01922703435119768,
+   "z": -1.7257591112980486
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5029634831689378,
+   "new": 0.48086711153595674,
+   "delta": -0.02209637163298106,
+   "se": 0.02820293473329699,
+   "z": -0.7834777423674852
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.6409634488702612,
+   "new": 0.6287988556871952,
+   "delta": -0.012164593183066064,
+   "se": 0.018685356313006368,
+   "z": -0.6510228105523801
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.61947821150821,
+   "new": 0.6039576740580814,
+   "delta": -0.015520537450128602,
+   "se": 0.0220289100775181,
+   "z": -0.7045531256659083
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "depolarizing"
+    ],
+    [
+     "regime",
+     "depolarizing"
+    ],
+    [
+     "strength",
+     "0.005"
+    ]
+   ],
+   "old": 0.5754434726547564,
+   "new": 0.62906864001729,
+   "delta": 0.05362516736253364,
+   "se": 0.03173992099749951,
+   "z": 1.6895179848355093
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.47025652464400863,
+   "new": 0.4936512898129755,
+   "delta": 0.02339476516896688,
+   "se": 0.018573379659346256,
+   "z": 1.259585794187676
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.43535382149353824,
+   "new": 0.4403354408619997,
+   "delta": 0.004981619368461476,
+   "se": 0.019245270997699213,
+   "z": 0.25884901122239495
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4133430999418068,
+   "new": 0.4316106349094256,
+   "delta": 0.018267534967618793,
+   "se": 0.018732196268346865,
+   "z": 0.9751945103461657
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.39256907523242945,
+   "new": 0.4009273191700562,
+   "delta": 0.008358243937626741,
+   "se": 0.02417803988396726,
+   "z": 0.34569567995332784
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5375730663427806,
+   "new": 0.5411147401736676,
+   "delta": 0.0035416738308869933,
+   "se": 0.018955254429913634,
+   "z": 0.18684390884766036
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5608005011022985,
+   "new": 0.568675187996723,
+   "delta": 0.007874686894424499,
+   "se": 0.01858003042666612,
+   "z": 0.4238252959544524
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5809980360600169,
+   "new": 0.5666487752509481,
+   "delta": -0.014349260809068731,
+   "se": 0.018983365623191497,
+   "z": -0.755886026424029
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5259277229292255,
+   "new": 0.5608701106470907,
+   "delta": 0.034942387717865175,
+   "se": 0.02723630298266447,
+   "z": 1.2829343152815387
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.599101891643178,
+   "new": 0.5875214389544609,
+   "delta": -0.011580452688717102,
+   "se": 0.019580872333628895,
+   "z": -0.5914165871368466
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5519561769226273,
+   "new": 0.5503508902873574,
+   "delta": -0.0016052866352699313,
+   "se": 0.022982424866356578,
+   "z": -0.0698484448270675
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon"
+    ],
+    [
+     "regime",
+     "transmon"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5019731665348502,
+   "new": 0.5048514013552369,
+   "delta": 0.002878234820386627,
+   "se": 0.031179846067340394,
+   "z": 0.0923107450296703
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.48925542384995924,
+   "new": 0.47153966536110403,
+   "delta": -0.017715758488855204,
+   "se": 0.01836851998128348,
+   "z": -0.9644630327814432
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4501865525853688,
+   "new": 0.4482550093900828,
+   "delta": -0.0019315431952860451,
+   "se": 0.019222759229891993,
+   "z": -0.10048209896331817
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.44629643160607446,
+   "new": 0.44312209039020667,
+   "delta": -0.003174341215867793,
+   "se": 0.018200311905538568,
+   "z": -0.17441136351634742
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.41325473923844797,
+   "new": 0.386945878436171,
+   "delta": -0.026308860802276957,
+   "se": 0.024893467975374638,
+   "z": -1.056858000994577
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5594491271987873,
+   "new": 0.560692505684653,
+   "delta": 0.0012433784858657537,
+   "se": 0.018502955278999884,
+   "z": 0.06719891320695882
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5920104992471623,
+   "new": 0.6039361991561293,
+   "delta": 0.011925699908966969,
+   "se": 0.01834905113494235,
+   "z": 0.6499355100851343
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6043352053300451,
+   "new": 0.5970311296359269,
+   "delta": -0.007304075694118284,
+   "se": 0.018586087313509733,
+   "z": -0.3929861928932802
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5695860825308092,
+   "new": 0.561627456252842,
+   "delta": -0.007958626277967173,
+   "se": 0.02817119476952558,
+   "z": -0.28250936259815584
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6212095063790455,
+   "new": 0.6524501046347717,
+   "delta": 0.031240598255726226,
+   "se": 0.018258531472762924,
+   "z": 1.7110137418405877
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6088445207289601,
+   "new": 0.6135942123465022,
+   "delta": 0.004749691617542129,
+   "se": 0.021501595319505042,
+   "z": 0.2208994982448337
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.562156735804047,
+   "new": 0.5406913802293064,
+   "delta": -0.021465355574740608,
+   "se": 0.03230785631052413,
+   "z": -0.6644004903460082
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5347620855574499,
+   "new": 0.5234583001412743,
+   "delta": -0.011303785416175605,
+   "se": 0.01714779807984166,
+   "z": -0.6591974878374578
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "8"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5673973627487661,
+   "new": 0.5650639694807587,
+   "delta": -0.002333393268007411,
+   "se": 0.018359647210650015,
+   "z": -0.1270935787183243
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "10"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.5350684331049732,
+   "new": 0.5051590450911554,
+   "delta": -0.029909388013817817,
+   "se": 0.018589653265997187,
+   "z": -1.6089266209459565
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "2"
+    ],
+    [
+     "m",
+     "12"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.4775300449878476,
+   "new": 0.4844055767212499,
+   "delta": 0.006875531733402274,
+   "se": 0.025407859962108963,
+   "z": 0.2706064872703106
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6188124392763809,
+   "new": 0.6366894130347522,
+   "delta": 0.017876973758371384,
+   "se": 0.01488283665273288,
+   "z": 1.2011805394026616
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.685106966781956,
+   "new": 0.6739500279731462,
+   "delta": -0.011156938808809858,
+   "se": 0.014602844374879522,
+   "z": -0.7640250435047115
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "6"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.700119191660795,
+   "new": 0.7088783270611472,
+   "delta": 0.008759135400352225,
+   "se": 0.01405878413928412,
+   "z": 0.6230364812186556
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "3"
+    ],
+    [
+     "m",
+     "7"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.6710490765583096,
+   "new": 0.6975221701598713,
+   "delta": 0.026473093601561692,
+   "se": 0.021872796359359067,
+   "z": 1.210320489736294
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "3"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7421509248895951,
+   "new": 0.7244187270981358,
+   "delta": -0.017732197791459292,
+   "se": 0.010856921925357775,
+   "z": -1.6332619791658816
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "4"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7614158858340607,
+   "new": 0.7568269868371371,
+   "delta": -0.004588898996923607,
+   "se": 0.01322794875687299,
+   "z": -0.3469093418236371
+  },
+  {
+   "file": "scaling_fair_n29.json",
+   "sig": [
+    [
+     "cost_model",
+     "uniform"
+    ],
+    [
+     "d",
+     "5"
+    ],
+    [
+     "m",
+     "5"
+    ],
+    [
+     "noise_model",
+     "transmon_cal"
+    ],
+    [
+     "regime",
+     "transmon_cal_lowcharge"
+    ],
+    [
+     "strength",
+     "0.003"
+    ]
+   ],
+   "old": 0.7296537093557862,
+   "new": 0.7497273787642329,
+   "delta": 0.02007366940844668,
+   "se": 0.020230730312500434,
+   "z": 0.9922365183249611
+  }
+ ]
+}

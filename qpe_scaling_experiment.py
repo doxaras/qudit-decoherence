@@ -11,6 +11,7 @@ the same crossover pattern should appear. Writes results/qpe_scaling.json.
 import json
 import os
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from qpe_generic import qpe_trajectories
@@ -25,7 +26,8 @@ BIG = {(2, 12)}
 def one_point(args):
     d, m, model, strength = args
     n_traj = N_TRAJ_BIG if (d, m) in BIG else N_TRAJ
-    seed = hash(("qpe", d, m, model, int(strength * 1e6))) % (2 ** 32)
+    seed = zlib.crc32(f"qpe,{d},{m},{model},{int(strength * 1e6)}"
+                      .encode()) % (2 ** 32)
     t0 = time.time()
     res = qpe_trajectories(d, m, model, strength, n_traj=n_traj, seed=seed)
     res["elapsed_s"] = round(time.time() - t0, 1)

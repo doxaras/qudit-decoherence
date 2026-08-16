@@ -71,8 +71,9 @@ sequence---and charging those pulses returns the advantage to $d=3$.
 Along
 the way we identify a number-theoretic confound---grid alignment of the
 phases $s/r$---that reverses naive cross-dimension Shor comparisons and
-predicts the winner in every biased instance tested (three instances
-$\times$ two noise models). Accumulated channel damage fixes end-state
+predicts the winner in five of the six biased instance-channel cells
+tested (three instances $\times$ two noise models), the sixth missing
+by $1.4\sigma$. Accumulated channel damage fixes end-state
 fidelity on a single exponential across algorithms and bases
 ($R^2=0.97$--$0.99$ in linear fidelity; $0.76$ rescored in log
 fidelity), as first-order composition of incoherent channels
@@ -241,9 +242,13 @@ measurement grid points and the peaks are maximally noise-robust. Which
 base receives this gift is decided by number theory, not physics. The
 canonical demonstration instance $N=15$ admits \emph{only} power-of-two
 orders, silently handing qubits perfect alignment; on unbiased instances
-the ordering of bases reverses. Alignment predicts the winner in all six
+the ordering of bases reverses. Alignment predicts the winner in five of the six
 biased runs we construct (three aligned instances $\times$ two noise
-models), and a within-modulus control---two orders
+models); the exception is $N=15$ under depolarizing, where the aligned
+qubit trails the ququint by $1.4\sigma$ ($0.72\pm0.05$ against
+$0.81\pm0.03$) while holding its lead in the ladder channel---a miss
+inside the noise of a 400-trajectory point, but a miss, and we count
+it as one. A within-modulus control---two orders
 hosted on identical registers---prices it at ${\approx}0.2$ in
 floor-corrected signal (a figure measured on prime-order alignment,
 where a corollary of the decoder lemma---noiseless aligned success is
@@ -807,7 +812,7 @@ exception: under $d^2$ decomposition (\texttt{pavlidis}) qubits win
 in every algorithm, dimension, and channel tested \emph{except} Shor
 at $d=3$ under per-particle noise ($0.394$ vs $0.331$ in
 Table~\ref{tab:cost}, replicated at 1000-trajectory statistics in the
-$d=7$ demo grid, $0.378$ vs $0.312$). The exception isolates the width component of the
+$d=7$ demo grid, $0.385$ vs $0.338$). The exception isolates the width component of the
 mechanism: at $d=3$ the \texttt{pavlidis} depth surcharge almost
 exactly cancels the depth compression ($58.5$ vs $57$ layers), while
 the width compression (7 vs 11 carriers) survives, and per-particle
@@ -919,32 +924,41 @@ size, $m=9$, at Hilbert-space dimension $5.3\times10^{5}$) at fixed
 per-layer strength. Both qudits stay above the
 qubit at every precision on the measured overlap in all four regimes,
 and the gap over the qutrit widens with size under ladder noise
-because the qubit decays roughly $2\times$ faster per precision bit:
-slopes $-0.045\pm0.003$/bit ($d{=}2$, $R^2=0.99$, $n=4$ sizes) against
-$-0.021\pm0.005$/bit ($d{=}3$, $R^2=0.80$, $n=6$) under the calibrated
+because the qubit decays several times faster per precision bit---a
+ratio of $3.6\pm1.0$: slopes $-0.049\pm0.005$/bit ($d{=}2$,
+$R^2=0.97$, $n=4$ sizes) against
+$-0.013\pm0.003$/bit ($d{=}3$, $R^2=0.73$, $n=6$) under the calibrated
 ladder, while the ququint decays at a rate comparable to the qubit's
-($-0.040\pm0.004$/bit, $R^2=0.99$, $n=3$) from a higher starting
-point. Two readings deserve emphasis. First, the qutrit's size
+($-0.043\pm0.006$/bit, $R^2=1.00$, $n=3$) from a higher starting
+point. Slopes are weighted least squares, the per-point standard
+errors serving as weights because Sec.~\ref{sec:methods} measures them
+to be calibrated; unweighted fits give the same slopes within errors
+but take their uncertainties from residual scatter, which at $n=3$ is
+one degree of freedom and not usable. Two readings deserve emphasis. First, the qutrit's size
 dependence is the shallowest in every regime, but it is flat in none of
 them: the family holds a plateau and then falls, and a single slope is
 therefore a summary rather than a model. Under the calibrated ladder the
-first three sizes agree within $0.004$ ($0.738$--$0.742$
+first three sizes agree within $0.013$ ($0.705$--$0.718$
 from 6.3 to 9.5 bits) and the whole
 decline is carried by the last
-three, the 14.3-bit point sitting $4.1\sigma$ below the 9.5-bit one.
+three, the 14.3-bit point sitting $3.5\sigma$ below the 9.5-bit one.
 Because both statements are spent on the same error bars, we
 characterized the trajectory estimator rather than assuming it
 (Sec.~\ref{sec:methods}): across $24$ independent $1000$-trajectory
 replicas at five grid points the empirical standard error of the mean
 agrees with the quoted one to a ratio of $0.995$ (range
 $0.84$--$1.17$; no point departs at $p<0.2$), so the bars are
-calibrated, not conservative. A constant fit to the plateau then gives
-$\chi^2/\mathrm{dof}=0.015$, a low $1.5\%$ fluctuation on
-correctly-sized bars rather than evidence for flatness; we therefore
-quote the raw spread there and reserve significance for the fall,
-which the same calibration leaves at $4.15\sigma$.
+calibrated, not conservative. A constant fit to the plateau gives
+$\chi^2/\mathrm{dof}=0.15$ ($p=0.14$), which is unremarkable; we
+quote the raw spread there and reserve significance for the fall.
+An earlier release of these sweeps returned
+$\chi^2/\mathrm{dof}=0.015$ on the same three points, a $1.5\%$
+low-tail value that might be read as over-conservative bars. It was
+not: regenerating every sweep from reproducible seeds
+(Sec.~\ref{sec:methods}) returns the ordinary value above, which is
+what a fluctuation does and what a mis-sized error model would not.
 The same shape appears under depolarizing, where four sizes hold near
-$0.67$ before falling to $0.59\pm0.04$ at 14.3 bits, a $1.9\sigma$ drop
+$0.65$ before falling to $0.59\pm0.04$ at 14.3 bits, a $2.0\sigma$ drop
 from 9.5 bits that turns a slope consistent with zero over the first
 five sizes into $-0.007\pm0.004$/bit over six. The onset is later and
 the fall gentler in the channel whose per-event damage is flatter in
@@ -984,16 +998,24 @@ alignment-neutral benchmark of Sec.~\ref{sec:alignment}, whose work
 register is one digit wider for $d=3,5$; 400 trajectories per point)
 replicates every claim above. Both qudits again clear the
 qubit at every size in all four regimes, and the qubit again decays
-fastest ($-0.040\pm0.009$/bit under the calibrated ladder, matching
-$-0.045\pm0.003$ at $N=21$; the ququint matches at
-$-0.038\pm0.001$ vs $-0.040\pm0.004$). The qutrit's slope agrees
-between the instances in both channels---within $0.6\sigma$ under the
-calibrated ladder ($-0.025\pm0.004$/bit on $N=29$ against
-$-0.021\pm0.005$ at $N=21$) and $1.4\sigma$ under depolarizing
-($-0.029\pm0.016$ against $-0.007\pm0.004$)---and is the shallowest in
-every regime on both. The $N=29$ sweep stops at four qutrit sizes,
-however, so it corroborates the slope without reaching the register
-depth at which the plateau above gives way. What is instance-robust is the ordering, the
+fastest ($-0.042\pm0.006$/bit under the calibrated ladder, matching
+$-0.049\pm0.005$ at $N=21$ within $1.0\sigma$; the ququint matches at
+$-0.058\pm0.009$ vs $-0.043\pm0.006$, $1.4\sigma$). Slopes are
+compared over \emph{matched} size ranges: the $N=29$ sweep reaches
+four qutrit sizes and the $N=21$ sweep six, and setting a four-size
+slope against a six-size one that includes the fall is not a
+replication test. Restricted to the common range, the qutrit's slope
+agrees between the instances under the calibrated ladder
+($-0.028\pm0.008$/bit on $N=29$ against $-0.012\pm0.006$ at $N=21$,
+$1.7\sigma$) but \emph{not} under depolarizing
+($-0.039\pm0.008$ against $-0.001\pm0.007$, $3.7\sigma$), where the
+$N=29$ qutrit decays while the $N=21$ qutrit is flat across the same
+four sizes. The qutrit remains the shallowest family in every regime
+on both instances, which is the ordering claim; its \emph{rate} is
+instance-dependent in the flatter channel, and we do not claim
+otherwise. The $N=29$ sweep also stops at four qutrit sizes, so it
+does not reach the register depth at which the plateau above gives
+way. What is instance-robust is the ordering, the
 qubit's fastest decay,
 and the late qutrit-over-ququint crossing, which recurs near 11 bits
 on $N=29$ under the calibrated ladder (7.2 at $N=21$) and moves
@@ -1077,7 +1099,7 @@ The surviving mechanism candidate is total noise exposure: carriers
 $\times$ time-layers. If it were sufficient, signal would be a function
 of exposure $\times$ strength alone and all points---both algorithms,
 all bases, all sizes---would collapse onto one curve. They do not
-($R^2=0.67$/$0.79$ for ladder/depolarizing), and the failure decomposes
+($R^2=0.67$/$0.77$ for ladder/depolarizing), and the failure decomposes
 into two identifiable pieces.
 
 \emph{Piece 1: exposure must be counted in damage, not events.} One
@@ -1096,7 +1118,7 @@ the signal rows of Table~\ref{tab:collapse} gain nothing from it.
 
 \emph{Piece 2: the residual is the decoder, not the noise.} With units
 fixed, a nested fit finds one shared amplitude with a per-\emph{algorithm}
-decay rate at $R^2=0.93$/$0.94$ (ladder/depolarizing). The split is stark
+decay rate at $R^2=0.95$/$0.93$ (ladder/depolarizing). The split is stark
 at the family level: Grover is a textbook exponential in damage, while
 Shor's $d=3$ family holds a flat signal of ${\approx}0.73$ while its
 exposure triples. A candidate explanation is that Grover's ``decoder'' is the
@@ -1114,8 +1136,8 @@ sizes.}
 \begin{tabular}{llcc}
 ordinate & abscissa & ladder $R^2$ & depol.\ $R^2$ \\
 \hline
-signal   & exposure $\times$ strength & 0.67 & 0.79 \\
-signal   & exposure $\times$ damage   & 0.81 & 0.79 \\
+signal   & exposure $\times$ strength & 0.67 & 0.77 \\
+signal   & exposure $\times$ damage   & 0.84 & 0.77 \\
 fidelity & exposure $\times$ damage   & \textbf{0.97} & \textbf{0.99} \\
 \end{tabular}
 \end{ruledtabular}
@@ -1169,8 +1191,8 @@ Limitations).
 \includegraphics[width=\textwidth]{mechanism.png}
 \caption{Damage units and the decoder. Left column: floor-corrected decoded
 signal against damage-weighted exposure---the algorithms refuse a common
-curve ($R^2=0.79$--$0.81$), and granting a per-algorithm decay rate
-(solid: Shor; dashed: Grover) recovers $R^2=0.93$--$0.94$; Shor's $d=3$ family
+curve ($R^2=0.77$--$0.84$), and granting a per-algorithm decay rate
+(solid: Shor; dashed: Grover) recovers $R^2=0.93$--$0.95$; Shor's $d=3$ family
 (orange circles) sits nearly flat while its exposure triples. Right
 column: end-state fidelity on the same abscissa (log scale) falls on a
 single exponential with amplitude ${\approx}1$ for both algorithms, all
@@ -2026,11 +2048,13 @@ margins shrink by up to $4\times$. The scaling trends are measured
 to Hilbert-space dimension $5.3\times10^{5}$ and stated as slopes with error
 bars, not theorems: the
 Shor sweep uses two instances ($N=21$, $r=6$ and $N=29$, $r=7$) at one
-noise strength per regime, with 3--6 sizes per base. The ordering, the
-qubit's fastest decay, and the qutrit's slope all replicate across the
-instances ($0.6\sigma$ under the calibrated ladder, $1.4\sigma$ under
-depolarizing); individual per-base slopes nonetheless carry
-instance-level variance of order $0.01$/bit. The qutrit families are
+noise strength per regime, with 3--6 sizes per base. The ordering and
+the qubit's fastest decay replicate across the instances; the
+qutrit's \emph{rate} replicates only in the ladder channel
+($1.7\sigma$ over matched sizes) and not under depolarizing
+($3.7\sigma$), so individual per-base slopes carry instance-level
+variance of order $0.03$/bit---larger than the earlier
+size-mismatched comparison suggested. The qutrit families are
 plateau-then-fall rather than linear, so their quoted slopes average a
 shape: six sizes locate the fall in the last three but cannot fit its
 onset, and the $N=29$ sweep stops before reaching it. Whether the
@@ -2120,7 +2144,30 @@ $0.995$ (range $0.84$--$1.17$; smallest Bartlett $p=0.22$), with
 realized $1\sigma$ coverage $0.58$--$0.79$ around the nominal $0.68$.
 The quoted bars are therefore neither conservative nor optimistic, and
 every $\sigma$ and $\chi^2$ in Sec.~\ref{sec:scaling} is computed from
-them. Fractional gate costs are exact: both channel families form
+them by a committed script rather than by hand.
+
+\emph{Reproducible seeds.} Every trajectory sweep now seeds from
+\texttt{crc32} of its configuration tuple. It previously seeded from
+\texttt{hash} of that tuple, and CPython salts string hashing per
+process, so those seeds---and therefore the exact runs behind an
+earlier release of these numbers---could not be regenerated. All
+sweeps were re-run after the change. The re-run doubles as the
+broadest calibration test in this work: old and new draw independent
+streams at identical settings, so if the quoted standard errors are
+honest the shifts $z=(\text{new}-\text{old})/\sqrt{\sigma_{\rm
+new}^2+\sigma_{\rm old}^2}$ must be standard normal. Over the $368$
+paired points they give mean $z=-0.09\pm0.05$ and
+$\mathrm{sd}\,z=0.98\pm0.04$, with $5.2\%$ beyond $2\sigma$ against
+$4.6\%$ expected---agreement over the whole grid, not just the five
+points characterized above. Two claims did move, and both are stated
+in their corrected form in the text rather than here: one of the six
+grid-alignment predictions now misses by $1.4\sigma$
+(Sec.~\ref{sec:alignment}), and the qutrit's depolarizing slope no longer
+replicates across instances (Sec.~\ref{sec:scaling}). No cost-table
+or robustness verdict changed---those are exact density matrices and
+carry no seed. Every paired shift is recorded in
+\texttt{results/prehash\_comparison.json}, and the size-scaling fits
+are regenerated by \texttt{scaling\_claims.py}. Fractional gate costs are exact: both channel families form
 one-parameter semigroups, so $E^t$ is evaluated by scaling the Lindblad
 rate (ladder) or as $1-q=(1-p)^t$ (depolarizing). End-state fidelity is
 estimated as the trajectory average of

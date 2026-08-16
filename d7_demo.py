@@ -20,6 +20,7 @@ import json
 import os
 import sys
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from qudit_shor import shor_config
@@ -38,7 +39,7 @@ N_TRAJ = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 def one_point(args):
     d, model, s, cost = args
     m, _ = shor_config(d, N)
-    seed = hash((d, model, int(s * 1e6), cost)) % (2 ** 32)
+    seed = zlib.crc32(f"{d},{model},{int(s * 1e6)},{cost}".encode()) % (2 ** 32)
     t0 = time.time()
     res = shor_trajectories(d, m, model, s, n_traj=N_TRAJ, seed=seed,
                             a=A, N=N, cost_model=cost)

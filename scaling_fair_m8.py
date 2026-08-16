@@ -16,6 +16,7 @@ import json
 import os
 import sys
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from trajectories import shor_trajectories
@@ -33,7 +34,7 @@ N_TRAJ = int(sys.argv[1]) if len(sys.argv) > 1 else 500
 
 def one_point(args):
     label, model, strength, dephase_ratio = args
-    seed = hash((label, D, M)) % (2 ** 32)
+    seed = zlib.crc32(f"{label},{D},{M}".encode()) % (2 ** 32)
     t0 = time.time()
     res = shor_trajectories(D, M, model, strength, n_traj=N_TRAJ, seed=seed,
                             a=A, N=N, dephase_ratio=dephase_ratio)

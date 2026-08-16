@@ -35,6 +35,7 @@ Writes results/same_n_control.json. Run: python3 same_n_control.py
 import json
 import os
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from qudit_shor import multiplicative_order, shor_config
@@ -50,7 +51,7 @@ N_TRAJ = 400
 def one(args):
     d, a, N, model, s = args
     m, _ = shor_config(d, N)
-    seed = hash((d, a, N, model)) % (2 ** 32)
+    seed = zlib.crc32(f"{d},{a},{N},{model}".encode()) % (2 ** 32)
     t0 = time.time()
     res = shor_trajectories(d, m, model, s, n_traj=N_TRAJ, seed=seed,
                             a=a, N=N)

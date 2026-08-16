@@ -13,6 +13,7 @@ results/scaling.json. Run: python3 scaling_experiment.py
 import json
 import os
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from trajectories import shor_trajectories
@@ -27,7 +28,8 @@ BIG = {(2, 12)}
 def one_point(args):
     d, m, model, strength = args
     n_traj = N_TRAJ_BIG if (d, m) in BIG else N_TRAJ
-    seed = hash((d, m, model, int(strength * 1e6))) % (2 ** 32)
+    seed = zlib.crc32(f"{d},{m},{model},{int(strength * 1e6)}"
+                      .encode()) % (2 ** 32)
     t0 = time.time()
     res = shor_trajectories(d, m, model, strength, n_traj=n_traj, seed=seed)
     res["elapsed_s"] = round(time.time() - t0, 1)

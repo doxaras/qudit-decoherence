@@ -16,6 +16,7 @@ Writes results/scaling_calibrated.json. Run: python3 scaling_calibrated.py
 import json
 import os
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from qpe_generic import qpe_trajectories
@@ -33,7 +34,7 @@ BIG = {(2, 12)}
 def one_point(args):
     algo, d, m, regime, dephase_ratio = args
     n_traj = N_TRAJ_BIG if (d, m) in BIG else N_TRAJ
-    seed = hash((algo, d, m, regime)) % (2 ** 32)
+    seed = zlib.crc32(f"{algo},{d},{m},{regime}".encode()) % (2 ** 32)
     fn = shor_trajectories if algo == "shor" else qpe_trajectories
     t0 = time.time()
     res = fn(d, m, "transmon_cal", STRENGTH, n_traj=n_traj, seed=seed,

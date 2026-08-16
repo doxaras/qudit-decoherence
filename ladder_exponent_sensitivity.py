@@ -37,6 +37,7 @@ import json
 import os
 import sys
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from qudit_shor import (multiplicative_order, recovered_order, shor_config,
@@ -76,7 +77,8 @@ def one(args):
     label, damp, deph, d, cost = args
     t0 = time.time()
     m, _ = shor_config(d, N)
-    seed = hash((d, cost, int(deph * 100), int(damp * 100))) % (2 ** 32)
+    seed = zlib.crc32(f"{d},{cost},{int(deph * 100)},{int(damp * 100)}"
+                      .encode()) % (2 ** 32)
     if TRAJ:
         res = (shor_trajectories(d, m, a=A, N=N, cost_model=cost)
                if label is None else

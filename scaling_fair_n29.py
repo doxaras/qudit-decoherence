@@ -24,6 +24,7 @@ import json
 import os
 import sys
 import time
+import zlib
 from concurrent.futures import ProcessPoolExecutor
 
 from trajectories import shor_trajectories
@@ -47,7 +48,7 @@ OUT = ("results/scaling_fair_n29.json" if N_TRAJ == 400
 def one_point(args):
     label, model, strength, dephase_ratio, d, m = args
     n_traj = N_TRAJ_BIG if (d, m) in BIG else N_TRAJ
-    seed = hash((label, d, m, N)) % (2 ** 32)
+    seed = zlib.crc32(f"{label},{d},{m},{N}".encode()) % (2 ** 32)
     t0 = time.time()
     res = shor_trajectories(d, m, model, strength, n_traj=n_traj, seed=seed,
                             a=A, N=N, dephase_ratio=dephase_ratio)

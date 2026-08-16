@@ -31,11 +31,16 @@ Writes results/exposure_collapse.json. Run: python3 exposure_collapse.py
 
 import json
 import os
+import sys
+
+# Optional results directory, so the same fit can be run against an
+# archived tree (e.g. results_prehash/) to check what a re-run moved.
+RES = sys.argv[1] if len(sys.argv) > 1 else "results"
 
 
 def _scaling_fair_path():
-    p = "results/scaling_fair_1000.json"
-    return p if os.path.exists(p) else "results/scaling_fair.json"
+    p = os.path.join(RES, "scaling_fair_1000.json")
+    return p if os.path.exists(p) else os.path.join(RES, "scaling_fair.json")
 
 
 import numpy as np
@@ -52,7 +57,7 @@ REGIMES = [("transmon_cal", 0.003), ("depolarizing", 0.005)]
 
 def load_points():
     pts = []
-    g = json.load(open("results/grover.json"))
+    g = json.load(open(os.path.join(RES, "grover.json")))
     for r in g["scaling"]:
         pts.append(dict(alg="grover", d=r["d"], bits=r["bits"],
                         model=r["noise_model"], strength=r["strength"],
@@ -212,7 +217,7 @@ def main():
         }
         report["fits"][model] = entry
 
-    with open("results/exposure_collapse.json", "w") as fh:
+    with open(os.path.join(RES, "exposure_collapse.json"), "w") as fh:
         json.dump(report, fh, indent=1, default=float)
 
     # ------------------------------------------------------------------
