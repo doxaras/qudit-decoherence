@@ -2,18 +2,17 @@
 
 > **Status 2026-08-16: fields below are current.** Rebuilt after the
 > referee-driven revision, the four robustness simulations, the seed
-> reproducibility fix and the full sweep re-run. Paper is **24 pages,
+> reproducibility fix and the full sweep re-run. Paper is **23 pages,
 > 5 figures, 10 tables, 52 references**; tarball rebuilt from the
-> current source. One thing still needs a decision, flagged in
-> **Abstract** below: the paper's own abstract is 3991 characters and
-> arXiv's metadata field takes 1920, so the field version here is a
-> condensation, not a copy.
+> current source. The abstract was shortened to 1909 characters so it
+> fits arXiv's 1920-character metadata field verbatim -- the block
+> below is a copy of the paper's abstract, not a separate summary.
 
 Everything needed to submit `paper/main.tex` to arXiv. Rebuild the package
 with `./paper/make_arxiv.sh`; it refuses to write the tarball unless a
 standalone pdflatex-only build of exactly the shipped files is clean.
 
-**Upload file:** `paper/arxiv-submission.tar.gz` (844 KB)
+**Upload file:** `paper/arxiv-submission.tar.gz` (843 KB)
 Contents: `main.tex`, `main.bbl`, and the five figure PNGs, flat, no
 subdirectories. No `.aux`/`.log`/`.pdf`/`.bib` — arXiv rejects or ignores
 those, and a stray `main.pdf` can make it skip compilation entirely.
@@ -85,7 +84,7 @@ John Doxaras
 **Comments:**
 
 ```
-24 pages, 5 figures, 10 tables, 52 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
+23 pages, 5 figures, 10 tables, 52 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
 ```
 
 **Leave these three empty:**
@@ -105,7 +104,8 @@ server-side; the build takes a minute or two.
 
 Expect exactly one benign warning class in the log: an underfull/overfull
 `\hbox` or two, and possibly `A float is stuck`. Both are cosmetic — the
-local build produces them too and all six floats place correctly.
+local build produces them too, and all fifteen floats (5 figures, 10
+tables) place correctly.
 
 If it errors on a missing `.bbl`, the tarball is stale: re-run
 `./paper/make_arxiv.sh`.
@@ -114,7 +114,7 @@ If it errors on a missing `.bbl`, the tarball is stale: re-run
 
 Download the generated PDF and check, in this order:
 
-1. **24 pages** — a shorter PDF means a float or the bibliography was dropped
+1. **23 pages** — a shorter PDF means a float or the bibliography was dropped
 2. **All five figure PNGs render** — Figs. 2-6 — not grey boxes
 3. **The TikZ pipeline diagram (Fig. 1, page 3)** draws: it is vector, not a
    PNG, so it is the one element sensitive to a TeX Live version gap
@@ -135,23 +135,12 @@ paper cross-link in both directions.
 
 ## Abstract as plain text
 
-**arXiv's abstract field accepts at most 1920 characters.** The paper's
-abstract is 3991, so it cannot be pasted as-is; the block below is a
-condensation to 1911 that keeps both conditions, the measured-fidelity
-verdict, the decoder result and the hardware anchor, and drops the
-grid-alignment confound, the quasi-static Zeeman result and the
-phi(r)/r corollary. Paste verbatim:
+arXiv's abstract field accepts at most 1920 characters. The paper's
+abstract is 1909, so this is the paper's abstract verbatim, with LaTeX
+stripped -- the PDF and the metadata say the same thing. Paste it as is:
 
 ```
-Whether qudits buy resilience against decoherence is open: prior work compares noiseless resource counts, single arithmetic primitives, or error-correcting codes, which have no problem instance to compress. We simulate Shor order finding, eigenstate phase estimation, and Grover search as bare, uncorrected circuits on qubit, qutrit and ququint registers, under a ladder channel calibrated to published per-level transmon coherence data and a depolarizing channel for trapped ions, three entangling-gate cost models, and registers to Hilbert-space dimension 5.3x10^5. Two conditions organize all three algorithms: qudits outperform qubits only with a native two-qudit gate whose cost grows no faster than linearly in d, and only while that gate's own infidelity growth with d stays below a critical inflation factor we compute. Two-level-decomposed gates forfeit the advantage in every case tested but one. The second is decided by measured hardware: feeding the only published native two-qudit gate (99.6/98.7/93.7% at d=2/3/5) through our threshold, the ququint advantage is lost in every channel and cost pairing, while the qutrit retains a diminished one. Steepening the per-level dephasing exponent to the range the deepest published transmon data require, and charging single-qudit gates their measured per-Clifford cost, independently leave only d=3. Accumulated channel damage fixes end-state fidelity on a single exponential across algorithms and bases (R^2=0.97-0.99); what the algorithm adds is its decoder. For continued-fraction order recovery we give that contribution in closed form - an exact finite-size mediant-interval formula, proved and verified outcome-for-outcome - base-independent at matched control dimension, so the entire cross-base difference sits in the quantum state. The qubit branch is checked on a commercial trapped-ion processor (0.617+/-0.007 against a predicted 0.60-0.70).
-```
-
-The better fix is to shorten the paper's own abstract to match, so the
-two agree; that is an editorial call and has not been made. The full
-de-LaTeXed abstract, for reference:
-
-```
-Whether qudits buy resilience against decoherence is a recognized open question: prior work compares algorithms by noiseless resource counts, single arithmetic primitives under local noise, or error-correcting codes, which have no problem instance to compress. We simulate Shor order finding, eigenstate phase estimation, and Grover search as bare, uncorrected circuits - the regime of near-term demonstrations - on qubit, qutrit, and ququint registers (with a demo-size d=7 check) under two decoherence channels - a ladder channel calibrated to published per-level transmon coherence data and a depolarizing channel representative of trapped-ion qudits - three entangling-gate cost models, and registers to Hilbert-space dimension 5.3x10^5 (19.0 qubit-equivalents). Two conditions organize all three algorithms: qudits outperform qubits only with a native two-qudit entangling gate whose cost grows no faster than linearly in d, and only while that gate's own infidelity growth with d stays below a critical inflation factor f* we compute. Gates compiled by two-level decomposition forfeit the advantage in every case tested but one: Shor at d=3 under per-particle noise, where width compression alone survives the depth surcharge. The second condition is decided by measured hardware: feeding the only published native two-qudit entangling gate (99.6/98.7/93.7% at d=2/3/5) through our threshold, the ququint advantage is lost in every channel/cost pairing - even granting the gate a 1-sigma-better fidelity - while the qutrit retains a diminished advantage in the matched trapped-ion pairing and straddles break-even elsewhere. Whether linear cost suffices is further set by the level and structure of the operating dephasing: free-evolution ladder dephasing splits the linear-cost cells; steepening the per-level dephasing exponent to the range the deepest published transmon ladder data require leaves only d=3 in advantage, and only with a native gate; and unmitigated Zeeman-structured dephasing reverses the verdict under a Markovian generator but not under the quasi-static field noise laboratories actually have, whose damage grows with the square of circuit depth and so favors the shallower qudit schedule. Refocusing is where that regime turns d-dependent instead: on the 40Ca+ encoding a single echo cancels the qubit's dephasing exactly but cannot cancel any d>=3, for which exact refocusing needs a d-interval pulse sequence - and charging those pulses returns the advantage to d=3. Along the way we identify a number-theoretic confound - grid alignment of the phases s/r - that reverses naive cross-dimension Shor comparisons and predicts the winner in five of the six biased instance-channel cells tested (three instances x two noise models), the sixth missing by 1.4 sigma. Accumulated channel damage fixes end-state fidelity on a single exponential across algorithms and bases (R^2=0.97-0.99 in linear fidelity; 0.76 rescored in log fidelity), as first-order composition of incoherent channels requires; what the algorithm contributes is its decoder. For continued-fraction order recovery we give that contribution in closed form: an exact finite-size mediant-interval formula, built on a proved acceptance lemma and verified outcome-for-outcome on 27 instance/size combinations, whose asymptotic density is a totient sum over the denominators the decoder admits. Being base-independent at matched control dimension, it places the entire cross-base difference in the quantum state. A corollary - noiseless aligned success is exactly phi(r)/r - explains which instances can be scored at all. The qubit branch of our predictions is checked on hardware: the shallow compiled circuit lands inside its predicted success band on a commercial trapped-ion processor (0.617+/-0.007 vs 0.60-0.70), consistent with the vendor's measured per-gate infidelity, while two deeper circuits on the same device fail coherently, bounding the convention's regime of validity at shallow depth.
+Whether qudits buy resilience against decoherence is open: prior work compares noiseless resource counts, single arithmetic primitives, or error-correcting codes, which have no problem instance to compress. We simulate Shor order finding, eigenstate phase estimation and Grover search as bare, uncorrected circuits on qubit, qutrit and ququint registers, under a transmon-calibrated ladder channel and a trapped-ion depolarizing channel, three entangling-gate cost models, and registers to Hilbert-space dimension 5.3x10^5. Two conditions organize all three algorithms: a qudit advantage needs a native two-qudit gate whose cost grows at most linearly in d, and survives only while that gate's own infidelity growth with d stays below a critical inflation factor f^* we compute. Two-level-decomposed gates forfeit it in every case tested but one. The second is decided by measurement: the only published native two-qudit gate (99.6/98.7/93.7% at d=2/3/5) fails the threshold at d=5 in every channel and cost pairing, while the qutrit survives only in the matched trapped-ion pairing. Three further tightenings - a steeper dephasing exponent, measured per-Clifford single-qudit costs, and refocusing pulses charged as exposure - independently leave only d=3. Accumulated channel damage fixes end-state fidelity on one exponential across algorithms and bases (R^2=0.97-0.99); what the algorithm adds is its decoder. For continued-fraction order recovery we give it in closed form - an exact finite-size mediant-interval formula, proved and verified outcome-for-outcome - and being base-independent at matched control dimension it places the cross-base difference wholly in the quantum state. A number-theoretic confound, grid alignment of the phases s/r, reverses naive cross-dimension comparisons. The qubit branch is checked on a commercial trapped-ion processor (0.617+/-0.007 against a predicted 0.60-0.70).
 ```
 
 Written ASCII-only on purpose. arXiv accepts UTF-8, but ASCII removes any
