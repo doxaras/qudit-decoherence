@@ -2,8 +2,8 @@
 
 > **Status 2026-08-16: fields below are current.** Rebuilt after the
 > referee-driven revision, the four robustness simulations, the seed
-> reproducibility fix and the full sweep re-run. Paper is **26 pages,
-> 5 figures, 10 tables, 52 references**; tarball rebuilt from the
+> reproducibility fix and the full sweep re-run. Paper is **27 pages,
+> 5 figures, 10 tables, 53 references**; tarball rebuilt from the
 > current source. The abstract was shortened to 1914 characters so it
 > fits arXiv's 1920-character metadata field verbatim -- the block
 > below is a copy of the paper's abstract, not a separate summary.
@@ -12,7 +12,7 @@ Everything needed to submit `paper/main.tex` to arXiv. Rebuild the package
 with `./paper/make_arxiv.sh`; it refuses to write the tarball unless a
 standalone pdflatex-only build of exactly the shipped files is clean.
 
-**Upload file:** `paper/arxiv-submission.tar.gz` (851 KB)
+**Upload file:** `paper/arxiv-submission.tar.gz` (853 KB)
 Contents: `main.tex`, `main.bbl`, and the five figure PNGs, flat, no
 subdirectories. No `.aux`/`.log`/`.pdf`/`.bib` — arXiv rejects or ignores
 those, and a stray `main.pdf` can make it skip compilation entirely.
@@ -84,7 +84,7 @@ John Doxaras
 **Comments:**
 
 ```
-26 pages, 5 figures, 10 tables, 52 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
+27 pages, 5 figures, 10 tables, 53 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
 ```
 
 **Leave these three empty:**
@@ -114,12 +114,12 @@ If it errors on a missing `.bbl`, the tarball is stale: re-run
 
 Download the generated PDF and check, in this order:
 
-1. **26 pages** — a shorter PDF means a float or the bibliography was dropped
+1. **27 pages** — a shorter PDF means a float or the bibliography was dropped
 2. **All five figure PNGs render** — Figs. 2-6 — not grey boxes
 3. **The TikZ pipeline diagram (Fig. 1, page 3)** draws: it is vector, not a
    PNG, so it is the one element sensitive to a TeX Live version gap
 4. **No `[?]` citation marks** anywhere — those mean the `.bbl` did not load
-5. Bibliography lists **52 entries**
+5. Bibliography lists **53 entries**
 
 ## Page 8 — Review and submit
 

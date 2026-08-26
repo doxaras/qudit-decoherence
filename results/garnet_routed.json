@@ -1,0 +1,122 @@
+{
+ "m5": {
+  "m": 5,
+  "bits": 4,
+  "n_cz": 47,
+  "n_prx": 72,
+  "noiseless_parsed": 0.9168045203614656,
+  "noiseless_analytic": 0.9168045203614644,
+  "parse_validated": true,
+  "measured": {
+   "success": 0.0802,
+   "stderr": 0.003841040484035543,
+   "floor": 0.0625,
+   "signal": 0.02071860744984816,
+   "work_qubit_one": 0.8136
+  },
+  "predictions": [
+   {
+    "success": 0.3140864969102236,
+    "work_qubit_one": 0.7875800181641961,
+    "strength": 0.004,
+    "convention": "paper",
+    "signal": 0.29449276096979443
+   },
+   {
+    "success": 0.17567723575350452,
+    "work_qubit_one": 0.6896558733591482,
+    "strength": 0.007,
+    "convention": "paper",
+    "signal": 0.13247879773083507
+   },
+   {
+    "success": 0.11800455476837948,
+    "work_qubit_one": 0.6249185282292253,
+    "strength": 0.01,
+    "convention": "paper",
+    "signal": 0.06497045660591258
+   },
+   {
+    "success": 0.5767356983924438,
+    "work_qubit_one": 0.9010824116619166,
+    "strength": 0.004,
+    "convention": "cz_only",
+    "signal": 0.6019348910560203
+   },
+   {
+    "success": 0.4207213575270972,
+    "work_qubit_one": 0.8397650253879452,
+    "strength": 0.007,
+    "convention": "cz_only",
+    "signal": 0.4193134286302621
+   },
+   {
+    "success": 0.31611973471707133,
+    "work_qubit_one": 0.7876773749884635,
+    "strength": 0.01,
+    "convention": "cz_only",
+    "signal": 0.2968727528326344
+   }
+  ]
+ },
+ "m7": {
+  "m": 7,
+  "bits": 5,
+  "n_cz": 104,
+  "n_prx": 159,
+  "noiseless_parsed": 0.9885323951511299,
+  "noiseless_analytic": 0.9885323951511352,
+  "parse_validated": true,
+  "measured": {
+   "success": 0.0316,
+   "stderr": 0.0024739215832358147,
+   "floor": 0.03125,
+   "signal": 0.0003656183397635191,
+   "work_qubit_one": 0.6618
+  },
+  "predictions": [
+   {
+    "success": 0.0856039124682622,
+    "work_qubit_one": 0.6563788975936213,
+    "strength": 0.004,
+    "convention": "paper",
+    "signal": 0.05677939210370711
+   },
+   {
+    "success": 0.04319697273910229,
+    "work_qubit_one": 0.5652006714179911,
+    "strength": 0.007,
+    "convention": "paper",
+    "signal": 0.012480092394487326
+   },
+   {
+    "success": 0.03460773696573581,
+    "work_qubit_one": 0.5271129290520262,
+    "strength": 0.01,
+    "convention": "paper",
+    "signal": 0.0035075720422140357
+   },
+   {
+    "success": 0.2940895639444047,
+    "work_qubit_one": 0.8153507898251973,
+    "strength": 0.004,
+    "convention": "cz_only",
+    "signal": 0.27456847141005636
+   },
+   {
+    "success": 0.14575056395909475,
+    "work_qubit_one": 0.7229120681949409,
+    "strength": 0.007,
+    "convention": "cz_only",
+    "signal": 0.1196100174191728
+   },
+   {
+    "success": 0.0864746836691493,
+    "work_qubit_one": 0.6574045865904721,
+    "strength": 0.01,
+    "convention": "cz_only",
+    "signal": 0.057689020448799186
+   }
+  ]
+ }
+}

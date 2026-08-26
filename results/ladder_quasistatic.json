@@ -1,0 +1,293 @@
+{
+ "N": 21,
+ "a": 2,
+ "strength": 0.003,
+ "sigma": 0.007254762501100117,
+ "n_traj": 1000,
+ "modes": [
+  "markov_local",
+  "markov_common",
+  "qs_local",
+  "qs_common"
+ ],
+ "costs": [
+  "uniform",
+  "ion"
+ ],
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "baselines": {
+  "2": 0.289109048265707,
+  "3": 0.28760065666458684,
+  "5": 0.32734242057805996
+ },
+ "runs": [
+  {
+   "success": 0.20809600776489762,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 2,
+   "cost": "uniform",
+   "mode": "markov_local",
+   "elapsed_s": 22.8,
+   "signal": 0.5063462901226377,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.24247437262956514,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 3,
+   "cost": "uniform",
+   "mode": "markov_local",
+   "elapsed_s": 10.7,
+   "signal": 0.7250809001522195,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.27941398758591257,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 5,
+   "cost": "uniform",
+   "mode": "markov_local",
+   "elapsed_s": 11.7,
+   "signal": 0.7595673171161317,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.20809600776489762,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 2,
+   "cost": "ion",
+   "mode": "markov_local",
+   "elapsed_s": 22.7,
+   "signal": 0.5063462901226377,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.2167410420146751,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 3,
+   "cost": "ion",
+   "mode": "markov_local",
+   "elapsed_s": 10.2,
+   "signal": 0.5683078744087204,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.21610941998932176,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 5,
+   "cost": "ion",
+   "mode": "markov_local",
+   "elapsed_s": 11.3,
+   "signal": 0.4420003516252038,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.21822637210889712,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 2,
+   "cost": "uniform",
+   "mode": "markov_common",
+   "elapsed_s": 23.5,
+   "signal": 0.5680757587354685,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.2473770553180488,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 3,
+   "cost": "uniform",
+   "mode": "markov_common",
+   "elapsed_s": 10.6,
+   "signal": 0.7549491053541187,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.2806392434204803,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 5,
+   "cost": "uniform",
+   "mode": "markov_common",
+   "elapsed_s": 12.1,
+   "signal": 0.765713805309737,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.21822637210889712,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 2,
+   "cost": "ion",
+   "mode": "markov_common",
+   "elapsed_s": 21.7,
+   "signal": 0.5680757587354685,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.22426651293979935,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 3,
+   "cost": "ion",
+   "mode": "markov_common",
+   "elapsed_s": 11.2,
+   "signal": 0.6141546738274399,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.21995677476207076,
+   "stderr": 0.0,
+   "n_traj": 0,
+   "d": 5,
+   "cost": "ion",
+   "mode": "markov_common",
+   "elapsed_s": 12.1,
+   "signal": 0.46130058266279383,
+   "signal_err": 0.0
+  },
+  {
+   "success": 0.21725442447794055,
+   "stderr": 0.0025183397984259058,
+   "n_traj": 1000,
+   "d": 2,
+   "cost": "uniform",
+   "mode": "qs_local",
+   "elapsed_s": 23.2,
+   "signal": 0.5621531868771338,
+   "signal_err": 0.015345526800865313
+  },
+  {
+   "success": 0.2564813255507625,
+   "stderr": 0.0019029909352422701,
+   "n_traj": 1000,
+   "d": 3,
+   "cost": "uniform",
+   "mode": "qs_local",
+   "elapsed_s": 8.2,
+   "signal": 0.8104142922329255,
+   "signal_err": 0.011593433098308499
+  },
+  {
+   "success": 0.30009777196643217,
+   "stderr": 0.0020318360795460754,
+   "n_traj": 1000,
+   "d": 5,
+   "cost": "uniform",
+   "mode": "qs_local",
+   "elapsed_s": 4.7,
+   "signal": 0.8633273914672912,
+   "signal_err": 0.010192692923333066
+  },
+  {
+   "success": 0.21133042359593537,
+   "stderr": 0.0026541943885597325,
+   "n_traj": 1000,
+   "d": 2,
+   "cost": "ion",
+   "mode": "qs_local",
+   "elapsed_s": 23.1,
+   "signal": 0.5260552328361494,
+   "signal_err": 0.016173357999507487
+  },
+  {
+   "success": 0.22870083826146137,
+   "stderr": 0.001989042719423113,
+   "n_traj": 1000,
+   "d": 3,
+   "cost": "ion",
+   "mode": "qs_local",
+   "elapsed_s": 8.2,
+   "signal": 0.6411695444717287,
+   "signal_err": 0.01211767921236772
+  },
+  {
+   "success": 0.2410393807621423,
+   "stderr": 0.0022926276980562623,
+   "n_traj": 1000,
+   "d": 5,
+   "cost": "ion",
+   "mode": "qs_local",
+   "elapsed_s": 4.8,
+   "signal": 0.5670613431619163,
+   "signal_err": 0.011500952438562861
+  },
+  {
+   "success": 0.22458302541826541,
+   "stderr": 0.0025995911895805145,
+   "n_traj": 1000,
+   "d": 2,
+   "cost": "uniform",
+   "mode": "qs_common",
+   "elapsed_s": 22.8,
+   "signal": 0.6068100843350924,
+   "signal_err": 0.015840632902651093
+  },
+  {
+   "success": 0.2544168566066378,
+   "stderr": 0.0018850452831399016,
+   "n_traj": 1000,
+   "d": 3,
+   "cost": "uniform",
+   "mode": "qs_common",
+   "elapsed_s": 8.3,
+   "signal": 0.7978371001170851,
+   "signal_err": 0.01148410429741863
+  },
+  {
+   "success": 0.30050342519500634,
+   "stderr": 0.0020131400782250233,
+   "n_traj": 1000,
+   "d": 5,
+   "cost": "uniform",
+   "mode": "qs_common",
+   "elapsed_s": 4.7,
+   "signal": 0.8653623483389788,
+   "signal_err": 0.01009890455020688
+  },
+  {
+   "success": 0.2211141378194264,
+   "stderr": 0.0026773663726943715,
+   "n_traj": 1000,
+   "d": 2,
+   "cost": "ion",
+   "mode": "qs_common",
+   "elapsed_s": 21.4,
+   "signal": 0.585672385740786,
+   "signal_err": 0.01631455669866222
+  },
+  {
+   "success": 0.23237695376995987,
+   "stderr": 0.002119442957186796,
+   "n_traj": 1000,
+   "d": 3,
+   "cost": "ion",
+   "mode": "qs_common",
+   "elapsed_s": 8.3,
+   "signal": 0.663565236652998,
+   "signal_err": 0.012912105714627604
+  },
+  {
+   "success": 0.24020579482655774,
+   "stderr": 0.0024063309226822573,
+   "n_traj": 1000,
+   "d": 5,
+   "cost": "ion",
+   "mode": "qs_common",
+   "elapsed_s": 4.9,
+   "signal": 0.5628796645549881,
+   "signal_err": 0.012071343950295662
+  }
+ ]
+}

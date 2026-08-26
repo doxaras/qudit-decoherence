@@ -315,6 +315,8 @@ match the manuscript and which are partly superseded.
 | `ion_zeeman_quasistatic.py` | the quasi-static (non-Markovian) Zeeman control — withdraws the reversal |
 | `ladder_exponent_sensitivity.py` | the ladder verdicts swept across the exponents Peterer admits |
 | `dephase_ratio_sweep.py` | the T₂/T₁ balance swept over the measured transmon range |
+| `ladder_quasistatic.py` | quasi-static and common-mode dephasing on the calibrated ladder |
+| `ladder_thermal.py` | thermal excitation and top-level leakage — the n̄ threshold |
 | `single_qudit_cost.py` | measured single-qudit pulse counts charged against the advantage |
 | `parallel_schedule.py` | concurrent (ASAP) schedules — the serial-convention check |
 | `trajectory_variance.py` | the trajectory error bars validated on 24×1000 replicas |
@@ -329,6 +331,7 @@ match the manuscript and which are partly superseded.
 |------|----------|
 | `braket_qpe_anchor.py` | circuit construction and submission to AWS Braket (**costs money**) |
 | `braket_raw_analysis.py` | every hardware number reproduced from the committed shot histograms (free) |
+| `garnet_routed.py` | predicted bands for Garnet from its routed circuits (task metadata, committed) |
 | `ion_qpe_prediction.py` | predictions for the proposed trapped-ion experiment |
 
 **Figures**

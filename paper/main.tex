@@ -489,7 +489,13 @@ entangling gates at $1.3\times10^{-2}$--$6.3\times10^{-2}$ for
 $d=3$--$5$ (native light-shift~\cite{hrmo2023}) and
 $2.5\times10^{-2}$--$6.2\times10^{-2}$ at $d=3$
 (decomposed~\cite{ringbauer2022}); only single-qudit pulses reach the
-$10^{-3}$--$10^{-4}$ scale~\cite{ringbauer2022,low2023}. In the
+$10^{-3}$--$10^{-4}$ scale~\cite{ringbauer2022,low2023}. These
+infidelities come attached to durations that differ by orders of
+magnitude across platforms---the transmon CZ$^\dagger$ takes
+$580$~ns, ion entanglers run on the sub-millisecond scale against
+proportionally longer coherence times---and
+Sec.~\ref{sec:robustness} makes the duration side explicit by
+restating the threshold $f^\ast$ as a wall-clock tolerance. In the
 per-carrier-layer convention above, a measured gate infidelity
 $\epsilon$ over $L$ layers implies $s=\epsilon/[2L(1-1/d^2)]$; our
 sweeps ($0.001$--$0.05$ at demo size, $0.003$--$0.005$ for scaling)
@@ -1490,7 +1496,16 @@ exposure is $m\times\varepsilon(d{+}1)/2$, and at matched precision
 $m\approx\log D/\log d$, giving $9\varepsilon/8\varepsilon/9\varepsilon$
 for $d=2/3/5$ at $D\approx64$. Per-level readout degradation with $d$ is
 almost exactly cancelled by the reduced carrier count---near-neutral by
-construction, not luck. The neutrality claim is scoped to
+construction, not luck. Measured hardware sits mid-sweep, not at its
+edge: transmon qutrit assignment fidelities of $97$--$99\%$ for
+$\lvert0\rangle$ and $92$--$96\%$ for
+$\lvert2\rangle$~\cite{blok2021,goss2022} correspond to
+$\varepsilon\approx0.01$--$0.03$ in the $(1{+}k)$ model (Wang's
+ten-state single-shot readout at $93.8\%$~\cite{wang2025} sits at its
+upper end), and at $\varepsilon=0.02$ the ladder cells read
+$0.48/0.72/0.75$ for $d=2/3/5$ against $0.51/0.73/0.76$ at
+zero---every ordering of Table~\ref{tab:cost} intact at the measured
+operating point. The neutrality claim is scoped to
 simultaneous $d$-level discrimination (the transmon case that
 motivates the $(1{+}k)$ model): ion-qudit readout is sequential
 shelving with $d-1$ detection rounds, so misreads compound down the
@@ -1617,7 +1632,13 @@ the harsher reading: the charge dispersion of $\lvert2\rangle$ that
 drives idle dephasing is the same mechanism that limits the
 cross-Kerr entangler~\cite{blok2021,goss2022}, so idle and gate
 error should co-scale---the global scope---and the operative target
-is $98.2\%$, $0.9$ points above the measured gate. The verdict is
+is $98.2\%$, $0.9$ points above the measured gate. Nor is the
+measured number a ceiling: the same group has since demonstrated the
+first qutrit error-mitigation protocols---noise tailoring with up to
+$3\times$ improvement in effective error on a transmon qutrit
+processor~\cite{goss2024}---so the $0.9$-point gap is within reach of
+demonstrated mitigation, with the caveat that mitigation overhead is
+itself exposure this paper's accounting would charge. The verdict is
 also a function of the assumed anchor: re-anchored to a
 Willow-class $99.67\%$ two-qubit gate the factor rises to $f=4.20$
 against $f^\ast_{\rm gate}=3.57$ and the CZ$^\dagger$ fails both
@@ -1810,6 +1831,59 @@ sweep's: dephasing is the component of the ladder that scales worst
 with $d$, so every advantage except the native-gate qutrit's is
 additionally conditional on dephasing not dominating
 relaxation---the upper half of the measured transmon $T_2$ range.
+
+\emph{Quasi-static and correlated dephasing.} The ladder's stated
+microscopic mechanism---charge dispersion---is $1/f$ and quasi-static
+on gate timescales, and transmons sharing a feedline or TLS bath
+acquire spatially correlated dephasing, so the substitution that
+withdrew the Zeeman reversal (Table~\ref{tab:quasistatic}) is
+mandatory here too. The calibrated dephasing being realized by
+diagonal jumps, its Euclidean level vectors double as quasi-static
+sensitivities: a static offset drawn once per shot---per carrier, or
+one for the register---reproduces the calibrated pair structure
+exactly, with damage growing as depth$^2$, matched to the Markovian
+$0{\leftrightarrow}1$ damage on the qubit's \texttt{uniform} circuit
+and then held fixed across bases; relaxation stays local and
+Markovian throughout
+(\texttt{results/ladder\_quasistatic.json}; exact DM for the
+Markovian rows, 1000 trajectories otherwise). All four
+temporal$\times$spatial combinations preserve every verdict of the
+$s=0.003$ demo cells, and both referee-predicted signs are
+confirmed. Quasi-static dephasing lifts every base but the shallow
+qudit schedules most---the \texttt{uniform} ququint from $0.760$ to
+$0.863(10)$, its margin over the qubit widening from $0.254$ to
+$0.301$---so the Markovian stand-in is \emph{conservative} for the
+qudits, as the ion analysis already implied. Common-mode correlation
+helps the wide qubit register most ($+0.06$ against the ququint's
+$+0.006$), thinning the \texttt{ion} qutrit margin from $0.062$ to
+$0.046$ without flipping it. The paper's Markovian, uncorrelated
+convention is therefore mildly pessimistic for qudits on the
+temporal axis and mildly optimistic on the spatial one; neither
+axis, nor their combination, moves a verdict.
+
+\emph{Thermal excitation and leakage.} The ladder as calibrated is
+downward-only and truncated at $d-1$: no thermal excitation
+(transmons run at $\bar n\sim0.01$--$0.05$) and an artificially
+confined top level. Both omissions have a qudit-favoring
+\emph{per-carrier} sign, upward matrix elements growing as
+$\sqrt{k}$. Extending every carrier to $d+1$ levels---detailed-balance
+up-jumps at rate $\bar n\,\Gamma$, the top rung being leakage out of
+the encoded manifold, gates acting as identity on the leak level,
+any leaked outcome decoded as a failure---and sweeping $\bar n$ to
+$0.4$ at the $s=0.003$ \texttt{uniform}-cost operating point
+(\texttt{results/ladder\_thermal.json}; 1000 trajectories per point,
+the $\bar n=0$ column reproducing the exact leak-free values within
+errors) shows the register-level sign is the opposite: the
+\emph{qubit} loses most. Its $11\times57$ carrier-layers of thermal
+exposure against the ququint's $5\times15$ outweigh the per-carrier
+growth: at the physical $\bar n=0.05$ the qubit falls $0.52\to0.47$
+while both qudit columns move within their error bars, and at
+$\bar n=0.4$---an order of magnitude beyond hardware---the qubit is
+destroyed ($0.04$) while the ququint still holds $0.69$. Neither the
+$d=3$ nor the $d=5$ advantage crosses anywhere in the swept range;
+the gaps \emph{widen} monotonically, $+0.21\to+0.55$ and
+$+0.24\to+0.65$. Confining the top level was a bias against the wide
+qubit register, not for the qudits.
 
 \emph{Concurrent schedules.} Every result here is an exposure budget,
 and the budget charges every carrier an idle channel through every
@@ -2083,7 +2157,9 @@ more---15 entangling gates at $m=5$ (6 qubits), 28 at $m=7$ (8
 qubits). We ran these circuits on two commercial devices
 (Table~\ref{tab:hardware}): the trapped-ion IonQ Forte-1
 (all-to-all connectivity, vendor-reported two-qubit
-$ZZ$ fidelity $0.993$) and the 20-qubit square-lattice superconducting
+$ZZ$ fidelity $0.993$ at the August 2026 calibration current when the
+tasks ran---a figure that drifts between calibrations) and the
+20-qubit square-lattice superconducting
 IQM Garnet. Predictions were recomputed for the compiled circuits by
 exact density-matrix evolution under the paper's per-particle
 depolarizing convention, bracketed by two exposure accountings (every
@@ -2097,8 +2173,10 @@ used directly as the per-layer strength ($s=0.007$ for Forte-1),
 spanning the two exposure accountings; the paper's own
 gate-to-strength conversion $s=\epsilon/1.5$ shifts each band upward
 (see text);
-Garnet predictions are not quoted because server-side SWAP routing
-makes the compiled depth compiler-dependent. Forte-1 main runs use
+Garnet bands are computed on the \emph{routed} circuits recovered
+from the task metadata (47 and 104 native CZ gates after server-side
+SWAP routing; \texttt{results/garnet\_routed.json}), at the same
+$s=0.007$ spanning the same two accountings. Forte-1 main runs use
 IonQ debiasing over 5{,}000 shots; success is scored in the
 digit-reversed reading (see text). $\lvert w\rangle$ is the work-qubit
 $\lvert1\rangle$ population.}
@@ -2110,8 +2188,8 @@ device & circuit & predicted & measured & $\lvert w\rangle$ \\
 Forte-1 & $m{=}5$ (15 gates)      & 0.60--0.70 & $0.617\pm0.007$ & 0.99 \\
 Forte-1 & $m{=}7$ (28 gates)      & 0.42--0.54 & $0.011\pm0.001$ & 0.99 \\
 Forte-1 & $m{=}7$ AQFT (25)       & 0.44--0.57 & $0.066\pm0.004$ & 0.99 \\
-Garnet  & $m{=}5$ (15 gates)      & ---        & $0.080\pm0.004$ & 0.81 \\
-Garnet  & $m{=}7$ (28 gates)      & ---        & $0.032\pm0.003$ & 0.66 \\
+Garnet  & $m{=}5$ (47 routed)     & 0.18--0.42 & $0.080\pm0.004$ & 0.81 \\
+Garnet  & $m{=}7$ (104 routed)    & 0.04--0.15 & $0.032\pm0.003$ & 0.66 \\
 \end{tabular}
 \end{ruledtabular}
 \end{table}
@@ -2159,11 +2237,22 @@ angle systematics rather than the incoherent noise our channels
 describe. (A base-2 datum adjacent to the truncation-robustness
 conjecture for qudits~\cite{pavlidis2021}---which it cannot test
 directly: truncation buys an order of magnitude but cannot repair a
-coherent failure.) \emph{Third, the superconducting lattice fails by plain
-decoherence}: both circuits sit at the random floor with the work
-qubit visibly decayed ($0.81$/$0.66$), the signature of SWAP-routing
-the all-to-all kickback pattern through a fixed-connectivity chip
-whose coherence time is four to five orders shorter than the ions'.
+coherent failure.) \emph{Third, the superconducting lattice fails
+mostly---but not only---by routed decoherence.} Recovering the routed
+circuits from the task metadata turns what an earlier version of this
+section could only infer from work-qubit decay into a test
+(\texttt{results/garnet\_routed.json}): SWAP-routing the all-to-all
+kickback pattern through the fixed-connectivity chip inflates 15 and
+28 entangling gates to 47 and 104 native CZs, and exact-DM
+depolarizing over those routed circuits (parse validated by
+reproducing the analytic noiseless successes to $10^{-6}$) predicts
+the decayed work-qubit populations at $s\approx0.004$ per layer. But
+conditioned on that work-qubit-pinned scale, plain decoherence
+predicts control success $0.31$ ($m{=}5$) and $0.09$ ($m{=}7$)
+against the measured $0.080$ and $0.032$: a $3$--$4\times$ coherent
+excess on the control register at both depths, the same signature the
+ion device shows at depth. Routing overhead sets the scale of the
+failure; a coherent residual finishes it.
 
 The three-way outcome maps onto the paper's framework. The
 per-particle depolarizing convention quantitatively describes the
@@ -2324,14 +2413,19 @@ exception), since small orders collapse the continued-fraction
 metric's dynamic range. Each rule was learned by stepping on the
 corresponding rake.
 
-\emph{Limitations.} Our channels are Markovian and incoherent: coherent
+\emph{Limitations.} Our channels are incoherent: coherent
 errors (cross-Kerr shifts $\alpha\approx0.1$--$0.7$\,MHz, drive-induced
-shifts) and leakage during gates are not modeled; correlated noise
-enters only through the common-mode Zeeman test of
-Sec.~\ref{sec:robustness}.
+shifts) and leakage \emph{during gates} are not modeled---idle
+thermal leakage now is (Sec.~\ref{sec:robustness}), and helps the
+qudits. Non-Markovian and correlated dephasing enter through the
+quasi-static and common-mode controls of Sec.~\ref{sec:robustness},
+on both channel families.
 Cross-Kerr in particular is known to be fast on unprotected
-qutrits~\cite{goss2022}, and since the number of level pairs it can
-act on grows with $d$, its omission plausibly favors qudits---the
+qutrits---at the measured $\alpha\approx0.1$--$0.7$\,MHz a residual
+always-on coupling dephases an unprotected two-qutrit coherence on
+the microsecond scale, i.e.\ within a few $580$-ns gate
+durations~\cite{goss2022}---and since the number of level pairs it
+can act on grows with $d$, its omission plausibly favors qudits---the
 sign of this bias runs against our conclusion, not for it. Gate cost
 and gate error are treated as proportional (more layers $=$ more idle
 decoherence); a model where longer gates achieve better per-operation
