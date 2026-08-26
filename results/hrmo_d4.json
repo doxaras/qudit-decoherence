@@ -1,0 +1,701 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "d": 4,
+ "hrmo_eps": {
+  "2": [
+   0.004,
+   0.001
+  ],
+  "4": [
+   0.03,
+   0.002
+  ]
+ },
+ "delta2": 0.7499996250714958,
+ "delta4": 2.1538033410095636,
+ "floors": {
+  "2": 0.125,
+  "4": 0.125
+ },
+ "noiseless": {
+  "2": 0.289109048265707,
+  "4": 0.28910904826570755
+ },
+ "s2": {
+  "transmon_cal": 0.003,
+  "depolarizing": 0.005
+ },
+ "factors": [
+  1.0,
+  1.25,
+  1.5,
+  1.75,
+  2.0,
+  2.5,
+  3.0,
+  4.0
+ ],
+ "f_stars": {
+  "transmon_cal/uniform": 3.401774631876635,
+  "transmon_cal/ion": 1.4304528590749694,
+  "depolarizing/uniform": 3.635701384964444,
+  "depolarizing/ion": 1.5301430077115568
+ },
+ "rows": [
+  {
+   "channel": "transmon_cal",
+   "cost": "uniform",
+   "scope": "global",
+   "f_central": 2.611657750238043,
+   "f_sigma": 0.6757305193589468,
+   "f_star": 3.401774631876635,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.6889946486085688,
+    "central": 0.598800022536475,
+    "hi": 0.5172672517904078
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "uniform",
+   "scope": "gate",
+   "f_central": 2.611657750238043,
+   "f_sigma": 0.6757305193589468,
+   "f_star": 3.401774631876635,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.7664870723770081,
+    "central": 0.7234608078314554,
+    "hi": 0.6822842491577279
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "ion",
+   "scope": "global",
+   "f_central": 0.870552583412681,
+   "f_sigma": 0.22524350645298227,
+   "f_star": 1.4304528590749694,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.7455465811095883,
+    "central": 0.6694252074305754,
+    "hi": 0.5993676679514306
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "ion",
+   "scope": "gate",
+   "f_central": 0.870552583412681,
+   "f_sigma": 0.22524350645298227,
+   "f_star": 1.4304528590749694,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.6898068095677657,
+    "central": 0.6503397667497669,
+    "hi": 0.6126006860439004
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "uniform",
+   "scope": "global",
+   "f_central": 6.0,
+   "f_sigma": 1.5524174696260022,
+   "f_star": 3.635701384964444,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.24266576558128788,
+    "central": 0.12159990920545657,
+    "hi": 0.04062378461881116
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "uniform",
+   "scope": "gate",
+   "f_central": 6.0,
+   "f_sigma": 1.5524174696260022,
+   "f_star": 3.635701384964444,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.4596469012176688,
+    "central": 0.35642609680106196,
+    "hi": 0.2678531326312703
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "ion",
+   "scope": "global",
+   "f_central": 2.0,
+   "f_sigma": 0.5174724898753341,
+   "f_star": 1.5301430077115568,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.3434334978457179,
+    "central": 0.21838098848953677,
+    "hi": 0.1264418399789074
+   },
+   "verdict": "lost (survives at -1 sigma)"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "ion",
+   "scope": "gate",
+   "f_central": 2.0,
+   "f_sigma": 0.5174724898753341,
+   "f_star": 1.5301430077115568,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.40107360844413587,
+    "central": 0.31016642398193117,
+    "hi": 0.23231968418269017
+   },
+   "verdict": "lost (survives at -1 sigma)"
+  }
+ ],
+ "runs": [
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.289109048265707,
+   "elapsed_s": 9.0
+  },
+  {
+   "d": 4,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.28910904826570755,
+   "elapsed_s": 10.1
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.20809600776489762,
+   "elapsed_s": 53.7
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.26109228771426374,
+   "elapsed_s": 45.6
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.00375,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.254646084495257,
+   "elapsed_s": 46.4
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.24841823408809455,
+   "elapsed_s": 46.1
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.00525,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.24240522430726827,
+   "elapsed_s": 49.0
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.236603078110234,
+   "elapsed_s": 50.6
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.22561362775713148,
+   "elapsed_s": 50.7
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.21541166111287677,
+   "elapsed_s": 50.2
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.012,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.19720331054129278,
+   "elapsed_s": 50.3
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.005807781692637289,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.23807025604331783,
+   "elapsed_s": 48.8
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.007834973250714129,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.22326850179994515,
+   "elapsed_s": 48.1
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.00986216480879097,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.20988823639034193,
+   "elapsed_s": 49.3
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.005807781692637289,
+   "success": 0.2507874639557593,
+   "elapsed_s": 48.9
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.007834973250714129,
+   "success": 0.2437264646307601,
+   "elapsed_s": 49.0
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.00986216480879097,
+   "success": 0.2369690187759576,
+   "elapsed_s": 49.3
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.22813347411198956,
+   "elapsed_s": 49.5
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.00375,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.21603411085315813,
+   "elapsed_s": 48.6
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.2050366360431825,
+   "elapsed_s": 47.3
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.00525,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.1950575409834988,
+   "elapsed_s": 47.2
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.18601466678961223,
+   "elapsed_s": 47.4
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.1704245218367681,
+   "elapsed_s": 38.4
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.15768271525997518,
+   "elapsed_s": 36.0
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.012,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.13879105886392107,
+   "elapsed_s": 35.7
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.0019359272308790963,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.24735093986364667,
+   "elapsed_s": 35.6
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.002611657750238043,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.2348587336765056,
+   "elapsed_s": 34.2
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.00328738826959699,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.2233616575487459,
+   "elapsed_s": 35.3
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.0019359272308790963,
+   "success": 0.2382035390053702,
+   "elapsed_s": 34.9
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.002611657750238043,
+   "success": 0.23172664017064648,
+   "elapsed_s": 35.7
+  },
+  {
+   "d": 4,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.00328738826959699,
+   "success": 0.225533315553584,
+   "elapsed_s": 35.0
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.17928488827437242,
+   "elapsed_s": 36.4
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.24860098043694218,
+   "elapsed_s": 35.8
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.00625,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.23990614676456232,
+   "elapsed_s": 34.7
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.23171900191846925,
+   "elapsed_s": 35.0
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.00875,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.22401040134400252,
+   "elapsed_s": 35.1
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.21675296186729,
+   "elapsed_s": 35.1
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.2034901520197955,
+   "elapsed_s": 34.7
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.19174252727410826,
+   "elapsed_s": 35.2
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.17214584352544465,
+   "elapsed_s": 35.7
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.02223791265186999,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.16482364783621445,
+   "elapsed_s": 35.3
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.03,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.14495564536890393,
+   "elapsed_s": 35.0
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.03776208734813001,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.1316667306307442,
+   "elapsed_s": 34.3
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.02223791265186999,
+   "success": 0.20043221549711332,
+   "elapsed_s": 35.2
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.03,
+   "success": 0.18349274752308323,
+   "elapsed_s": 34.7
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.03776208734813001,
+   "success": 0.1689571226711061,
+   "elapsed_s": 35.5
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.20696850737296973,
+   "elapsed_s": 35.6
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.00625,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.19280977435175434,
+   "elapsed_s": 34.4
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.18056121606337183,
+   "elapsed_s": 35.4
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.00875,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.16997561192249933,
+   "elapsed_s": 34.5
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.16083829618034232,
+   "elapsed_s": 35.8
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.1461864946479475,
+   "elapsed_s": 35.3
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.1353852798746108,
+   "elapsed_s": 35.3
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.02,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.12185074631841641,
+   "elapsed_s": 35.6
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.007412637550623329,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.1813605444740237,
+   "elapsed_s": 34.7
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.01258736244937667,
+   "cost": "ion",
+   "gate_strength": null,
+   "success": 0.14575025001990338,
+   "elapsed_s": 34.6
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.007412637550623329,
+   "success": 0.19081980816626018,
+   "elapsed_s": 34.5
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.01,
+   "success": 0.17590111664365266,
+   "elapsed_s": 34.8
+  },
+  {
+   "d": 4,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.01258736244937667,
+   "success": 0.16312576226461104,
+   "elapsed_s": 32.7
+  }
+ ]
+}

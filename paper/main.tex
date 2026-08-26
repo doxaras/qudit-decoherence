@@ -30,35 +30,34 @@
 
 \begin{abstract}
 Whether qudits buy resilience against decoherence in full algorithms
-is open: prior noisy comparisons stop at gate-level criteria, single
+is open: prior noisy comparisons stop at gate-level criteria,
 arithmetic primitives, or a fixed dimension, and error-correcting
-codes have no problem instance to compress. We simulate Shor order
+codes have no instance to compress. We simulate Shor order
 finding, eigenstate phase estimation, and Grover search as bare,
-uncorrected circuits on qubit, qutrit, and ququint registers, under a
-transmon-calibrated ladder channel and a trapped-ion depolarizing
-channel, three entangling-gate cost models, and registers to
+uncorrected circuits on qubit, qutrit, and ququint registers, under
+transmon-calibrated ladder and trapped-ion depolarizing channels, three entangling-gate cost models, and registers to
 Hilbert-space dimension $5.3\times10^{5}$. Two conditions organize
-all three algorithms. A qudit advantage needs an entangling gate
+all three. A qudit advantage needs an entangling gate
 whose cost grows at most linearly in $d$: two-level-decomposed gates
 forfeit it at $d\ge5$ on the ladder and at $d=7$ everywhere, and the
 decomposed qutrit's residual advantage survives realistic accounting
 only under per-particle noise. And it survives only while the gate's
 own infidelity growth with $d$ stays below a critical inflation
-factor we compute: converted through the channel's own damage
+factor we compute: converted through each channel's damage
 identity, the only native gate characterized across $d=2/3/5$
 ($99.6/98.7/93.7\%$) fails at $d=5$ in seven of eight readings,
-while its qutrit gate passes under both charging scopes; the
+while its qutrit gate passes seven of eight; the
 transmon qutrit gate passes only when charged solely on the
 entangler, and loses once its $580$-ns duration is charged as
 exposure. Further tightenings independently leave only $d=3$.
 Accumulated channel damage fixes end-state fidelity on one
 exponential across algorithms and bases; what the algorithm adds is
-its decoder, for which we prove an exact finite-size
-mediant-interval acceptance law, base-independent at matched control
-dimension---the quantum state carries the whole cross-base
+its decoder, for which we derive an exact finite-size
+mediant-interval acceptance law, verified outcome-for-outcome,
+base-independent at matched control
+dimension: the quantum state carries the whole cross-base
 difference. A number-theoretic confound, grid alignment, reverses
-naive cross-dimension comparisons. A shallow trapped-ion anchor
-circuit fixes the channel's scale ($0.617\pm0.007$); deeper anchors
+naive cross-dimension comparisons. A shallow trapped-ion anchor fixes the channel's scale; deeper anchors
 fail coherently, bounding the validated depth.
 \end{abstract}
 
@@ -69,10 +68,11 @@ fail coherently, bounding the validated depth.
 \label{sec:intro}
 
 Quantum hardware is not binary by nature. Transmons, trapped ions,
-nitrogen-vacancy centers, and molecular spins all expose more than two
-usable levels, and processors that exploit them as qudits now exist on
-several
-platforms~\cite{ringbauer2022,blok2021,goss2022,low2023,gardill2020,chiesa2024}.
+nitrogen-vacancy centers, molecular spins, and Rydberg-blockaded atom
+arrays all expose more than two
+usable levels, and processors that exploit them as qudits now exist
+or are proposed on several
+platforms~\cite{ringbauer2022,blok2021,goss2022,low2023,gardill2020,chiesa2024,robert2026}.
 The theoretical case for higher dimensions is old and, at the level of
 structure, strong: fault-tolerant stabilizer constructions close cleanly
 in prime dimension~\cite{gottesman1999} and the discrete phase-space
@@ -868,6 +868,31 @@ single-qudit costs or concurrency are charged on the ladder, and is
 survived---thinly---by the decomposed qutrit under per-particle
 noise.
 
+\emph{The exposure inequality.} The grid's verdicts are readable from
+closed-form accounting before any simulation. Writing $C_d$ for the
+carrier count, $L_d$ for the serial layer count, and $\Delta_d$ for
+the per-carrier-layer damage of the channel ($0.75/1.46/2.83$ per unit
+$s$ at $d=2/3/5$ on the calibrated ladder, $1-1/d^2$ per unit $p$
+under depolarizing; Sec.~\ref{sec:mechanism}), the qudit wins a cell
+iff
+\begin{equation}
+C_d\,L_d\,\Delta_d \;<\; C_2\,L_2\,\Delta_2 .
+\label{eq:inequality}
+\end{equation}
+Evaluated on Table~\ref{tab:cost} ($C=11/7/5$, $L$ from the layers
+column), Eq.~\eqref{eq:inequality} predicts $11$ of the $12$
+qudit-versus-qubit verdicts and the winner in four of the six rows
+outright (a fifth---depolarizing/\texttt{pavlidis}---is a predicted
+tie at $1\%$, split by the decoder toward the qutrit);
+its one clean miss is the ladder/\texttt{pavlidis} qutrit cell---the
+cell the concurrency and measured single-qudit charges kill
+independently (Sec.~\ref{sec:robustness}). What the inequality cannot
+supply is the \emph{margin}: decoded success is not a function of
+accumulated damage, because the decoder acts on the full outcome
+distribution, not on the end-state fidelity it determines
+(Sec.~\ref{sec:mechanism}). The distribution is what the quantum
+simulation adds.
+
 Cost model and noise model are not independent: each pairing describes a
 platform, and both \emph{physically matched} pairings favor
 ququints---trapped-ion qudits (\texttt{ion} cost, per-particle noise)
@@ -1016,7 +1041,8 @@ ratio of $3.6\pm1.0$: slopes $-0.049\pm0.005$/bit ($d{=}2$,
 $R^2=0.97$, $n=4$ sizes) against
 $-0.013\pm0.003$/bit ($d{=}3$, $R^2=0.73$, $n=6$) under the calibrated
 ladder, while the ququint decays at a rate comparable to the qubit's
-($-0.043\pm0.006$/bit, $R^2=1.00$, $n=3$) from a higher starting
+($-0.043\pm0.006$/bit, $n=3$ points: $0.750, 0.669, 0.535$ at
+$7.0, 9.3, 11.6$ bits) from a higher starting
 point. Slopes are weighted least squares, the per-point standard
 errors serving as weights because Sec.~\ref{sec:methods} measures them
 to be calibrated; unweighted fits give the same slopes within errors
@@ -1122,7 +1148,8 @@ Everything above measures one algorithm family---the interpolation
 experiment of Sec.~\ref{sec:mechanism} shows Shor \emph{is} phase
 estimation on an eigenstate superposition. Grover search is the second
 family, chosen to attack our own weakest claim, with the prediction
-registered in advance: \emph{qudits win, by less than in phase
+registered in advance (\texttt{grover\_study.py} docstring, commit
+\texttt{6540a97}, 2026-08-10): \emph{qudits win, by less than in phase
 estimation}. The iteration count $\lfloor(\pi/4)\sqrt{M}\rceil$ is
 base-independent, so Grover holds the oracle count fixed across bases;
 its residual depth compression comes only from the narrower
@@ -1421,11 +1448,16 @@ before $q$ has denominator divisible by $r$,
 with $I(p/q)$ the open mediant interval above. Equation
 \eqref{eq:decoderexact} reproduces the enumerated $\lvert A\rvert$
 \emph{without error}---outcome for outcome, on all 27 instance/size
-combinations tested, including all four within-modulus orders. As
+combinations tested (the 11 register sizes of
+Table~\ref{tab:decoder} plus 16 within-modulus (order, $D$) pairs).
+As
 $D\to\infty$ each count becomes $D$ times an interval measure; the
 exact per-denominator measure is
-$\mu(q)=\tfrac{2}{q}\sum_{u<q,\,\gcd(u,q)=1}(q+u)^{-1}$, and summing
-it over the admissible denominators,
+\begin{equation}
+\mu(q)=\frac{2}{q}\sum_{\substack{0<u<q\\ \gcd(u,q)=1}}\frac{1}{q+u},
+\label{eq:mu}
+\end{equation}
+and summing it over the admissible denominators,
 $\lvert A\rvert/D\to\sum_{k}\mu(kr)$ minus the first-admissible
 overlap corrections. The overlaps vanish on five of our six
 instances---$r$ and $2r$ are never convergent denominators of the
@@ -1636,7 +1668,33 @@ therefore fails at $d=5$ in seven of eight scope/cost pairings,
 with the eighth a near-tie, and passes at $d=3$ for the trapped-ion
 gate in seven of eight---the scope question, a measurable property
 rather than a modeling choice, has moved from deciding the ion
-qutrit to deciding the transmon one below.
+qutrit to deciding the transmon one below. One costing convention
+deserves a sensitivity check: \texttt{ion} charges the supplement's
+$2(d{-}1)$-pulse construction, while the same reference's main text
+quotes $2d$ M{\o}lmer--S{\o}rensen gates for the controlled-increment.
+Charging the qudit entangler $d$ layers instead (the qubit's
+controlled-phase remains a single two-pulse gate), both quantities
+move: the measured $d=3$ factor falls to $0.56$ (ladder) and $0.91$
+(depolarizing)---the heavier charge absorbs more of the measured
+infidelity---while $f^\ast$ falls to $0.85$/$0.69$ (ladder, $d=3/5$)
+and $1.10$/$1.33$ (depolarizing, $d=3/5$)
+(\texttt{results/ion\_2d\_fstar.json}). The marginal
+depolarizing/\texttt{ion} qutrit cell survives centrally under either
+convention ($0.91<1.10$), brushing its threshold at $+1\sigma$ under
+the harsher one; every $d=5$ verdict is unchanged.
+
+\emph{The measured fourth point.} The same reference's $d=4$ gate
+($97.0(2)\%$) tests the monotonicity the inflation analysis assumes
+(\texttt{results/hrmo\_d4.json}). The channel-consistent factors
+interpolate cleanly---$2.61\pm0.68$ (\texttt{uniform}) and
+$0.87\pm0.23$ (\texttt{ion}) on the ladder, $6.00$/$2.00$ under
+depolarizing, each between its $d=3$ and $d=5$ values---and the
+verdicts interpolate with them: the $d=4$ register survives all four
+ladder readings but only the most lenient depolarizing one
+(\texttt{uniform}, gate-only, $0.36$ vs $0.33$ centrally), five of
+eight against the qutrit's seven and the ququint's one. The $d=3$
+outcome is not a boundary artifact, and the analysis's monotonicity
+assumption is now measured rather than assumed.
 
 \emph{The transmon side of the same test.} The measured cross-Kerr
 two-qutrit gates of Ref.~\cite{goss2022}---CZ$^\dagger$ process
@@ -1738,7 +1796,8 @@ transmon follow-up could report.
 qudit gate of Ref.~\cite{hrmo2023} ($N{=}21$ demo instance, exact
 density matrices; \texttt{results/hrmo\_reanalysis.json}, ladder
 rows at the channel-consistent conversion of
-\texttt{results/transmon\_rebuild.json}), under the
+\texttt{results/transmon\_rebuild.json}, $d=4$ rows from
+\texttt{results/hrmo\_d4.json}), under the
 \emph{global} inflation scope (every qudit carrier-layer at
 $f s_2$); the gate-only scope, which brackets it from the other
 side, is reported in the text.
@@ -1753,12 +1812,16 @@ $s_2=0.003$ (ladder) and $0.005$ (depolarizing).}
 noise & cost & $d$ & $f$ measured & $f^\ast$ & signal (qubit) \\
 \hline
 ladder & \texttt{uniform} & 3 & $1.7\pm0.5$ & 2.05 & \textbf{0.58} (0.51) \\
+       & \texttt{uniform} & 4 & $2.6\pm0.7$ & 3.40 & \textbf{0.60} (0.51) \\
        & \texttt{uniform} & 5 & $4.2\pm1.1$ & 2.46 & 0.31 (0.51) \\
        & \texttt{ion}     & 3 & $0.8\pm0.2$ & 1.21 & \textbf{0.63} (0.51) \\
+       & \texttt{ion}     & 4 & $0.9\pm0.2$ & 1.43 & \textbf{0.67} (0.51) \\
        & \texttt{ion}     & 5 & $1.0\pm0.3$ & --- & 0.43 (0.51) \\
 depol. & \texttt{uniform} & 3 & $2.7\pm0.8$ & 2.65 & 0.32 (0.33) \\
+       & \texttt{uniform} & 4 & $6.0\pm1.6$ & 3.64 & 0.12 (0.33) \\
        & \texttt{uniform} & 5 & $12.3\pm3.1$ & 4.50 & 0.04 (0.33) \\
        & \texttt{ion}     & 3 & $1.4\pm0.4$ & 1.56 & \textbf{0.38} (0.33) \\
+       & \texttt{ion}     & 4 & $2.0\pm0.5$ & 1.53 & 0.22 (0.33) \\
        & \texttt{ion}     & 5 & $3.1\pm0.8$ & 1.62 & 0.12 (0.33) \\
 \end{tabular}
 \end{ruledtabular}
@@ -1963,7 +2026,11 @@ to $1$ at $d=2$ like every other multiplier here, and sweeping
 $\alpha$, the measurement pins the $d{=}3:d{=}5$ ratio to
 $\alpha=2.15$ (pulse count) or $\alpha=3.15$ (per-Clifford error);
 the $d=2$ end is an extrapolation, which is why this is reported as a
-threshold rather than a table row. Four of the six cells survive the
+threshold rather than a table row. The charge is not an ion quirk:
+an independent Rydberg-superatom qudit encoding derives its
+generalized Fourier gate at ${\sim}(d/2)^2$ laser pulses---$\alpha=2$
+by construction, before any entangling gate exists on that
+platform~\cite{robert2026}. Four of the six cells survive the
 steeper calibration: depolarizing under \texttt{uniform}
 ($\alpha^\ast$ beyond the swept range), \texttt{ion}
 ($\alpha^\ast=3.55$), and---by a hair---\texttt{pavlidis}
@@ -2006,7 +2073,11 @@ choice ($9\times$, via $\{S_{-1/2},D_{-3/2},D_{-1/2}\}$).
 \begin{table}[t]
 \caption{Zeeman-structured dephasing on the demo instance under a
 \emph{Markovian} generator: floor-corrected signal at $s=0.003$,
-\texttt{uniform} cost. Both variants reverse the qudit ordering of
+\texttt{uniform} cost. The Zeeman jump is the \emph{only} channel in
+this table (a structured-dephasing stress test, not composed with a
+base noise model; Table~\ref{tab:quasistatic} instead composes it
+with the depolarizing operating point, which is why the $d=2$ columns
+of the two tables differ). Both variants reverse the qudit ordering of
 Table~\ref{tab:cost}, and the reversal persists under \texttt{ion}
 cost---but it does not survive replacing the generator with
 quasi-static field noise (Table~\ref{tab:quasistatic}).}
@@ -2067,7 +2138,10 @@ matching the Markovian $0{\leftrightarrow}1$ damage over the $d=2$
 circuit and then held fixed across bases, so the rows differ only in
 the time statistics of the same field. ``echo'' is the best
 two-interval sequence, ``$d$-pulse'' the exact $d$-interval one, and
-``charged'' pays its pulses as exposure.}
+``charged'' pays its pulses as exposure---one extra single-qudit
+layer per pulse \emph{per gate} (the naive $d$-interval sequence over
+an ${\sim}50$-gate schedule roughly doubles the wide registers'
+exposure, which is why the $d=2$ margin drops so sharply).}
 \label{tab:quasistatic}
 \begin{ruledtabular}
 \begin{tabular}{llccc|ccc}
@@ -2366,7 +2440,35 @@ $0.816$. Raw success is the directly measured quantity and the one we
 would score. The shallower $m=3$ pair is a dead heat by construction
 ($0.655$ vs $0.657$ raw, signal $0.734$ vs $0.695$) and serves as a
 systematics check rather than a test
-(\texttt{results/qpe\_d3\_measured.json}). For the ququint the table stands as a
+(\texttt{results/qpe\_d3\_measured.json}).
+
+\emph{The error budget in hardware units.} The channel behind these
+predictions charges gates and serial idle time; four further budget
+items an experimental run must carry are estimable from the cited
+devices, and we state them with their signs. (i)~\emph{Single-qudit
+rotations}: the ${\sim}2m$ Fourier rotations per circuit are charged
+one layer each at the per-pulse error; at the measured per-Clifford
+error ($2\times10^{-3}$ at $d{=}3$~\cite{ringbauer2022}) the excess
+is priced by the single-qudit-cost sweep of Sec.~\ref{sec:robustness},
+which this pairing survives to $\alpha^\ast=3.55$ against the measured
+$2.15$--$3.15$. (ii)~\emph{Readout}: $d{-}1=2$ sequential shelving
+rounds at ${\sim}3\times10^{-3}$ worst-case misassignment each, plus
+${\sim}3$ ms of detection and re-cooling idle per
+round~\cite{ringbauer2022}---the largest uncharged term, a few percent
+per idling carrier at the shielded ${\sim}100$ ms coherence unless
+echoed, which is precisely the suppression the
+$\varepsilon^\ast=0.09$--$0.15$ specification prices. (iii)~\emph{Cross-talk}:
+residual ${\sim}2\times10^{-3}$ per gate~\cite{ringbauer2022}, largely
+coherent (state-dependent AC-Stark shifts on occupied higher
+levels)---excluded from our channels (Limitations) and in principle
+calibratable, so it enters as a calibration requirement rather than a
+decoherence rate. (iv)~\emph{Motional heating}: $2.7(2)$ phonons/s
+with $27.4(4)$ ms motional coherence~\cite{meth2025} against a
+${\sim}10$ ms schedule---percent-level at most. Summed conservatively,
+the uncharged terms stay below the $0.08$ raw margin of the $m{=}4$
+pair provided the collective-$B$ suppression of
+Sec.~\ref{sec:robustness} is met; the $m{=}3$ dead-heat pair is the
+systematics control that would expose any of them. For the ququint the table stands as a
 falsifiable \emph{conditional} prediction: at matched per-base
 strength $s=10^{-3}$ the $m=3$ pair separates $0.855$ vs $0.778$,
 and the separation widens down the demonstrated-fidelity band
@@ -2393,10 +2495,16 @@ finest criterion the $D=25$ grid can express). ``gates'' counts
 entangling gates (controlled-$U$ plus QFT rotations), with total
 entangling time-layers under the \texttt{ion} cost model in
 parentheses: a controlled-$U$ spans the $w$-digit work register and
-is charged $w$ base layers ($w=4$ at $d=2$, $2$ at $d=5$), each
+is charged $w$ base layers, each
 entangling gate then multiplied by the $(d{-}1)$ layer charge---e.g.\
 $d{=}5$, $m{=}3$: $3\times(2\cdot4)+3\times4=36$; $d{=}2$, $m{=}7$:
-$7\times4+21\times1=49$. $s$ is the per-carrier-layer strength of
+$7\times4+21\times1=49$. Here $w=\lceil\log_d 16\rceil$ ($4$ at
+$d{=}2$, $2$ at $d{=}5$): the simulated target is a $16$-dimensional
+diagonal-unitary system embedded in the work register
+(Sec.~\ref{sec:setup}), a genuinely multi-digit workload---unlike the
+hardware circuits of Sec.~\ref{sec:hardware}, where the work register
+is reduced to the single digit carrying the eigenstate. $s$ is the
+per-carrier-layer strength of
 Sec.~\ref{sec:setup}.
 Readout is not charged; sequential-shelving readout adds up to $d-1$
 detection rounds at ${\sim}3\times10^{-3}$ worst-case qudit
@@ -2644,7 +2752,9 @@ predicates; unbiased-instance orderings; Grover correctness and cost
 accounting; and readout-channel monotonicity. The exact decoder count of
 Sec.~\ref{sec:decoder} and the formula of Eq.~\eqref{eq:decoderexact}
 are verified by outcome-for-outcome comparison against decoder
-enumeration on 27 instance/size combinations. The external
+enumeration on 27 instance/size combinations (the 11 register sizes
+of Table~\ref{tab:decoder}; 16 within-modulus (order, $D$) pairs on
+$N=33,55$). The external
 reproduction of Ref.~\cite{jankovic2024}
 (Sec.~\ref{sec:robustness}) runs separately from the test suite.
 Statistics: 1000 trajectories per Shor and QPE scaling point;

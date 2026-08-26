@@ -1,0 +1,12 @@
+measured f under 2d, transmon_cal d=3: 0.56 +/- 0.16
+measured f under 2d, transmon_cal d=5: 0.83 +/- 0.21
+measured f under 2d, depolarizing d=3: 0.91 +/- 0.27
+measured f under 2d, depolarizing d=5: 2.46 +/- 0.63
+41 exact-DM runs
+grid done in 259 s
+transmon_cal d=3: f* 0.8457487300349547  f_meas 0.56+/-0.16  -> SURVIVES (signal at f=0.5: 0.674 vs 0.506)
+transmon_cal d=5: f* 0.6890729345882654  f_meas 0.83+/-0.21  -> LOST (signal at f=0.75: 0.474 vs 0.506)
+depolarizing d=3: f* 1.1038776786243683  f_meas 0.91+/-0.27  -> SURVIVES (signal at f=1.0: 0.367 vs 0.331)
+depolarizing d=5: f* 1.3323648589281036  f_meas 2.46+/-0.63  -> LOST (signal at f=2.5: 0.126 vs 0.331)
+
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/ion_2d_fstar.json

@@ -1,0 +1,460 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "s2": {
+  "transmon_cal": 0.003,
+  "depolarizing": 0.005
+ },
+ "factors": [
+  0.5,
+  0.75,
+  1.0,
+  1.25,
+  1.5,
+  1.75,
+  2.0,
+  2.5,
+  3.0
+ ],
+ "delta": {
+  "2": 0.7499996250714958,
+  "3": 1.4622884639825529,
+  "5": 2.8326882055562663
+ },
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "noiseless": {
+  "2": 0.289109048265707,
+  "3": 0.28760065666458684,
+  "5": 0.32734242057805996
+ },
+ "note": "ion2d charges the qudit entangler d layers; the qubit entangler stays at 1 (single two-pulse MS gate)",
+ "rows": [
+  {
+   "channel": "transmon_cal",
+   "d": 3,
+   "qubit_signal": 0.5063462901226377,
+   "f_star_2d": 0.8457487300349547,
+   "f_measured_2d": 0.5556356449770555,
+   "f_measured_sigma": 0.16310403893167638,
+   "f_measured_1d": null,
+   "signal_at_nearest_f": 0.673629100061125,
+   "nearest_factor": 0.5,
+   "sweep": {
+    "0.5": 0.673629100061125,
+    "0.75": 0.5473151145026492,
+    "1.0": 0.44034548585834443,
+    "1.25": 0.34960996883117273,
+    "1.5": 0.27251458937067663,
+    "1.75": 0.20689181366017773,
+    "2.0": 0.15092719544199823,
+    "2.5": 0.062130456901077435,
+    "3.0": -0.003358903563925492
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "transmon_cal",
+   "d": 5,
+   "qubit_signal": 0.5063462901226377,
+   "f_star_2d": 0.6890729345882654,
+   "f_measured_2d": 0.834013010800558,
+   "f_measured_sigma": 0.2122519259927625,
+   "f_measured_1d": null,
+   "signal_at_nearest_f": 0.47374601376834946,
+   "nearest_factor": 0.75,
+   "sweep": {
+    "0.5": 0.6075136428753035,
+    "0.75": 0.47374601376834946,
+    "1.0": 0.36951118564382174,
+    "1.25": 0.2882368671106416,
+    "1.5": 0.22482271437793705,
+    "1.75": 0.1753079525443838,
+    "2.0": 0.13661443585728195,
+    "2.5": 0.08264523373977892,
+    "3.0": 0.04944314429427872
+   },
+   "verdict": "LOST"
+  },
+  {
+   "channel": "depolarizing",
+   "d": 3,
+   "qubit_signal": 0.3307854676390567,
+   "f_star_2d": 1.1038776786243683,
+   "f_measured_2d": 0.9140625,
+   "f_measured_sigma": 0.26831843301223385,
+   "f_measured_1d": null,
+   "signal_at_nearest_f": 0.36693504950662936,
+   "nearest_factor": 1.0,
+   "sweep": {
+    "0.5": 0.612959166047313,
+    "0.75": 0.4760815875467716,
+    "1.0": 0.36693504950662936,
+    "1.25": 0.2799346892119672,
+    "1.5": 0.21064812470829042,
+    "1.75": 0.15554950727750189,
+    "2.0": 0.1118278859394946,
+    "2.5": 0.04998055421130191,
+    "3.0": 0.01198269341885474
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "depolarizing",
+   "d": 5,
+   "qubit_signal": 0.3307854676390567,
+   "f_star_2d": 1.3323648589281036,
+   "f_measured_2d": 2.4609375000000004,
+   "f_measured_sigma": 0.6262956540946862,
+   "f_measured_1d": null,
+   "signal_at_nearest_f": 0.12622641534980622,
+   "nearest_factor": 2.5,
+   "sweep": {
+    "0.5": 0.6580743081663892,
+    "0.75": 0.534184491142038,
+    "1.0": 0.4338226903007536,
+    "1.25": 0.3525001414821269,
+    "1.5": 0.28659013409042794,
+    "1.75": 0.23316103685417638,
+    "2.0": 0.18984196743418857,
+    "2.5": 0.12622641534980622,
+    "3.0": 0.08437647086235216
+   },
+   "verdict": "LOST"
+  }
+ ],
+ "runs": [
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.289109048265707,
+   "elapsed_s": 9.3
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.28760065666458684,
+   "elapsed_s": 5.7
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "success": 0.32734242057805996,
+   "elapsed_s": 6.4
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "success": 0.20809600776489762,
+   "elapsed_s": 54.6
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0015,
+   "cost": "ion2d",
+   "success": 0.23402887522211163,
+   "elapsed_s": 23.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0022500000000000003,
+   "cost": "ion2d",
+   "success": 0.21329520923432296,
+   "elapsed_s": 22.9
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion2d",
+   "success": 0.19573680078617794,
+   "elapsed_s": 22.8
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.00375,
+   "cost": "ion2d",
+   "success": 0.18084312218872944,
+   "elapsed_s": 22.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "ion2d",
+   "success": 0.16818838851162798,
+   "elapsed_s": 23.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.00525,
+   "cost": "ion2d",
+   "success": 0.15741681237334534,
+   "elapsed_s": 22.9
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "ion2d",
+   "success": 0.1482305635495152,
+   "elapsed_s": 24.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "ion2d",
+   "success": 0.13365512354916667,
+   "elapsed_s": 24.1
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "ion2d",
+   "success": 0.12290544670513527,
+   "elapsed_s": 23.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0015,
+   "cost": "ion2d",
+   "success": 0.24910324010495807,
+   "elapsed_s": 26.2
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0022500000000000003,
+   "cost": "ion2d",
+   "success": 0.2224376771237897,
+   "elapsed_s": 25.8
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion2d",
+   "success": 0.2016592541769083,
+   "elapsed_s": 25.5
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.00375,
+   "cost": "ion2d",
+   "success": 0.1854578347896719,
+   "elapsed_s": 26.2
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0045000000000000005,
+   "cost": "ion2d",
+   "success": 0.17281670408502778,
+   "elapsed_s": 25.5
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.00525,
+   "cost": "ion2d",
+   "success": 0.16294631160678114,
+   "elapsed_s": 25.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.006,
+   "cost": "ion2d",
+   "success": 0.1552330523296967,
+   "elapsed_s": 25.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.0075,
+   "cost": "ion2d",
+   "success": 0.14447470094292708,
+   "elapsed_s": 25.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.009000000000000001,
+   "cost": "ion2d",
+   "success": 0.13785611606461182,
+   "elapsed_s": 25.1
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "success": 0.17928488827437242,
+   "elapsed_s": 59.5
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0025,
+   "cost": "ion2d",
+   "success": 0.2240702776702893,
+   "elapsed_s": 23.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.00375,
+   "cost": "ion2d",
+   "success": 0.20160266269242338,
+   "elapsed_s": 23.4
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion2d",
+   "success": 0.1836869279189359,
+   "elapsed_s": 22.1
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.00625,
+   "cost": "ion2d",
+   "success": 0.16940635238969864,
+   "elapsed_s": 23.4
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "ion2d",
+   "success": 0.15803338779271373,
+   "elapsed_s": 23.9
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.00875,
+   "cost": "ion2d",
+   "success": 0.1489892876865536,
+   "elapsed_s": 23.5
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion2d",
+   "success": 0.1418126517086859,
+   "elapsed_s": 23.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "ion2d",
+   "success": 0.13166079154356844,
+   "elapsed_s": 23.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "ion2d",
+   "success": 0.12542367575280455,
+   "elapsed_s": 23.5
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0025,
+   "cost": "ion2d",
+   "success": 0.2591821255101202,
+   "elapsed_s": 25.5
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.00375,
+   "cost": "ion2d",
+   "success": 0.2344856294995131,
+   "elapsed_s": 25.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion2d",
+   "success": 0.21447926518623828,
+   "elapsed_s": 25.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.00625,
+   "cost": "ion2d",
+   "success": 0.19826823145715577,
+   "elapsed_s": 26.0
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0075,
+   "cost": "ion2d",
+   "success": 0.18512957104337668,
+   "elapsed_s": 25.1
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.00875,
+   "cost": "ion2d",
+   "success": 0.17447888547100177,
+   "elapsed_s": 24.2
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.01,
+   "cost": "ion2d",
+   "success": 0.16584355731563238,
+   "elapsed_s": 23.8
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.0125,
+   "cost": "ion2d",
+   "success": 0.15316227917672195,
+   "elapsed_s": 23.9
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.015,
+   "cost": "ion2d",
+   "success": 0.14481980994153543,
+   "elapsed_s": 22.0
+  }
+ ]
+}

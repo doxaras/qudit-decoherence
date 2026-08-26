@@ -580,6 +580,19 @@ set, and none treats d > 2.
 | 48 | A Precise Error Bound for Quantum Phase Estimation | Chappell, Lohe, von Smekal, Iqbal, Abbott | 2011 (PLoS ONE 6(5):e19663) | [1102.0108](https://arxiv.org/abs/1102.0108) | `chappell-2011-precise-error-bound-qpe.pdf` |
 | 49 | Approximate Quantum Fourier Transform and Decoherence | Barenco, Ekert, Suominen, Törmä | 1996 (PRA 54:139) | [quant-ph/9601018](https://arxiv.org/abs/quant-ph/9601018) | `barenco-1996-approximate-qft-decoherence.pdf` |
 | 50 | Scaling laws for Shor's algorithm with a banded quantum Fourier transform | Y. S. Nam, R. Blümel | 2013 | [1302.5844](https://arxiv.org/abs/1302.5844) | `nam-2013-scaling-laws-banded-qft.pdf` |
+| 51 | Qudit encoding in Rydberg blockaded arrays of atoms | Achille Robert, Tom Bienaimé | 2025 (PRA 113:062614, 2026) | [2502.06465](https://arxiv.org/abs/2502.06465) | `robert-2025-qudit-encoding-rydberg-blockaded-arrays.pdf` |
+
+The first Rydberg-superatom entry, and the first platform in the library
+with *no* two-qudit gate at all: d = 2N collective dressed states of a
+blockaded N-atom array (Jaynes–Cummings-isomorphic), arbitrary
+single-qudit unitaries by pulse sequences. Read against the paper's
+accounting: their generalized Hadamard — our F_d — costs ~N² = (d/2)²
+pulses, i.e. exactly the α = 2 single-qudit charge our robustness
+section prices (α* = 2.14 kills the ladder/ion pairing), with gate
+infidelity scaling ~N³; entangling superatom–superatom gates are listed
+as future work, which under our Condition 1 means the platform is
+pre-condition-1 hardware. Registered in the ai-arxiv database.
+
 
 Notes: the bib entry `nam2012` (PRA 86, 044303) is the 2012 companion Pavlidis
 & Floratos cite; it is not on arXiv, so the library carries the 2013 scaling
@@ -588,4 +601,4 @@ mediant-interval measure) has no electronic copy here. All eight are also
 registered in the ai-arxiv database (`../ai-arxiv/data/arxiv.db`), together
 with Pavlidis & Floratos 1707.08834, which was in the library but not the db.
 
-Library now holds 50 PDFs.
+Library now holds 51 PDFs.

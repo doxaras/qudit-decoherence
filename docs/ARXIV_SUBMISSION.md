@@ -2,9 +2,9 @@
 
 > **Status 2026-08-16: fields below are current.** Rebuilt after the
 > referee-driven revision, the four robustness simulations, the seed
-> reproducibility fix and the full sweep re-run. Paper is **27 pages,
-> 5 figures, 10 tables, 53 references**; tarball rebuilt from the
-> current source. The abstract was shortened to 1914 characters so it
+> reproducibility fix and the full sweep re-run. Paper is **28 pages,
+> 5 figures, 10 tables, 54 references**; tarball rebuilt from the
+> current source. The abstract was shortened to 1913 characters so it
 > fits arXiv's 1920-character metadata field verbatim -- the block
 > below is a copy of the paper's abstract, not a separate summary.
 
@@ -12,7 +12,7 @@ Everything needed to submit `paper/main.tex` to arXiv. Rebuild the package
 with `./paper/make_arxiv.sh`; it refuses to write the tarball unless a
 standalone pdflatex-only build of exactly the shipped files is clean.
 
-**Upload file:** `paper/arxiv-submission.tar.gz` (853 KB)
+**Upload file:** `paper/arxiv-submission.tar.gz` (856 KB)
 Contents: `main.tex`, `main.bbl`, and the five figure PNGs, flat, no
 subdirectories. No `.aux`/`.log`/`.pdf`/`.bib` — arXiv rejects or ignores
 those, and a stray `main.pdf` can make it skip compilation entirely.
@@ -84,7 +84,7 @@ John Doxaras
 **Comments:**
 
 ```
-27 pages, 5 figures, 10 tables, 53 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
+28 pages, 5 figures, 10 tables, 54 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
 ```
 
 **Leave these three empty:**
@@ -114,12 +114,12 @@ If it errors on a missing `.bbl`, the tarball is stale: re-run
 
 Download the generated PDF and check, in this order:
 
-1. **27 pages** — a shorter PDF means a float or the bibliography was dropped
+1. **28 pages** — a shorter PDF means a float or the bibliography was dropped
 2. **All five figure PNGs render** — Figs. 2-6 — not grey boxes
 3. **The TikZ pipeline diagram (Fig. 1, page 3)** draws: it is vector, not a
    PNG, so it is the one element sensitive to a TeX Live version gap
 4. **No `[?]` citation marks** anywhere — those mean the `.bbl` did not load
-5. Bibliography lists **53 entries**
+5. Bibliography lists **54 entries**
 
 ## Page 8 — Review and submit
 
@@ -136,11 +136,11 @@ paper cross-link in both directions.
 ## Abstract as plain text
 
 arXiv's abstract field accepts at most 1920 characters. The paper's
-abstract is 1914, so this is the paper's abstract verbatim, with LaTeX
+abstract is 1913, so this is the paper's abstract verbatim, with LaTeX
 stripped -- the PDF and the metadata say the same thing. Paste it as is:
 
 ```
-Whether qudits buy resilience against decoherence is open: prior work compares noiseless resource counts, single arithmetic primitives, or error-correcting codes, which have no problem instance to compress. We simulate Shor order finding, eigenstate phase estimation and Grover search as bare, uncorrected circuits on qubit, qutrit and ququint registers, under a transmon-calibrated ladder channel and a trapped-ion depolarizing channel, three entangling-gate cost models, and registers to Hilbert-space dimension 5.3x10^5. Two conditions organize all three algorithms: a qudit advantage needs a native two-qudit gate whose cost grows at most linearly in d, and survives only while that gate's own infidelity growth with d stays below a critical inflation factor f^* we compute. Two-level-decomposed gates forfeit it in every case tested but one. The second is decided by measurement: converted through the channel's own damage identity, the only published native two-qudit gate (99.6/98.7/93.7% at d=2/3/5) fails the threshold at d=5 in seven of eight readings, while its qutrit gate passes under both charging scopes; the transmon qutrit gate passes only when charged solely on the entangler, and loses once its 580-ns duration is charged as exposure. Further tightenings independently leave only d=3. Accumulated channel damage fixes end-state fidelity on one exponential across algorithms and bases (R^2=0.97-0.99); what the algorithm adds is its decoder. For continued-fraction order recovery we give it in closed form - an exact finite-size mediant-interval formula - and being base-independent at matched control dimension it places the cross-base difference wholly in the quantum state. A number-theoretic confound, grid alignment of the phases s/r, reverses naive cross-dimension comparisons. The qubit branch is checked on a commercial trapped-ion processor (0.617+/-0.007 against a predicted 0.60-0.70).
+Whether qudits buy resilience against decoherence in full algorithms is open: prior noisy comparisons stop at gate-level criteria, arithmetic primitives, or a fixed dimension, and error-correcting codes have no instance to compress. We simulate Shor order finding, eigenstate phase estimation, and Grover search as bare, uncorrected circuits on qubit, qutrit, and ququint registers, under transmon-calibrated ladder and trapped-ion depolarizing channels, three entangling-gate cost models, and registers to Hilbert-space dimension 5.3x10^5. Two conditions organize all three. A qudit advantage needs an entangling gate whose cost grows at most linearly in d: two-level-decomposed gates forfeit it at d>=5 on the ladder and at d=7 everywhere, and the decomposed qutrit's residual advantage survives realistic accounting only under per-particle noise. And it survives only while the gate's own infidelity growth with d stays below a critical inflation factor we compute: converted through each channel's damage identity, the only native gate characterized across d=2/3/5 (99.6/98.7/93.7%) fails at d=5 in seven of eight readings, while its qutrit gate passes seven of eight; the transmon qutrit gate passes only when charged solely on the entangler, and loses once its 580-ns duration is charged as exposure. Further tightenings independently leave only d=3. Accumulated channel damage fixes end-state fidelity on one exponential across algorithms and bases; what the algorithm adds is its decoder, for which we derive an exact finite-size mediant-interval acceptance law, verified outcome-for-outcome, base-independent at matched control dimension: the quantum state carries the whole cross-base difference. A number-theoretic confound, grid alignment, reverses naive cross-dimension comparisons. A shallow trapped-ion anchor fixes the channel's scale; deeper anchors fail coherently, bounding the validated depth.
 ```
 
 Written ASCII-only on purpose. arXiv accepts UTF-8, but ASCII removes any
