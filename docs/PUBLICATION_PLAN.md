@@ -1,5 +1,18 @@
 # arXiv publication plan
 
+> **Status: 📓 historical.** This is the plan that produced the paper,
+> not a live document. Every hardening task it lists has been executed,
+> and several of its provisional claims were overturned by the work it
+> commissioned — most notably the qutrit flatness claim in §"Pre-
+> publication hardening", which six register sizes have since retired.
+>
+> The working title it proposes is not the final one. The paper is
+> **"Native gates or nothing: the condition for a qudit advantage in
+> uncorrected quantum algorithms under decoherence."**
+>
+> Current state: `PAPER.md`. Submission mechanics:
+> `ARXIV_SUBMISSION.md`.
+
 Working plan for a paper based on this repo's results, grounded in the
 SOTA analysis (`docs/SOTA.md`) of the 21-paper library.
 

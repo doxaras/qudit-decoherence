@@ -1,0 +1,215 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "channel": "transmon_cal",
+ "s2": 0.003,
+ "eps2_equivalent": 0.0045000000000000005,
+ "goss_eps": {
+  "CZ+": [
+   0.027,
+   0.001
+  ],
+  "CZ": [
+   0.048,
+   0.003
+  ]
+ },
+ "f_star_global": 2.05,
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678
+ },
+ "noiseless": {
+  "2": 0.289109048265707,
+  "3": 0.28760065666458684
+ },
+ "qubit_signal": 0.5063462901226377,
+ "runs": [
+  {
+   "d": 2,
+   "strength": 0.0,
+   "scope": null,
+   "gate_strength": null,
+   "success": 0.289109048265707,
+   "elapsed_s": 6.5
+  },
+  {
+   "d": 3,
+   "strength": 0.0,
+   "scope": null,
+   "gate_strength": null,
+   "success": 0.28760065666458684,
+   "elapsed_s": 3.9
+  },
+  {
+   "d": 2,
+   "strength": 0.003,
+   "scope": "global",
+   "gate_strength": null,
+   "success": 0.20809600776489762,
+   "elapsed_s": 34.5
+  },
+  {
+   "d": 3,
+   "strength": 0.014625,
+   "scope": "global",
+   "gate_strength": null,
+   "success": 0.14636697916659433,
+   "elapsed_s": 15.9
+  },
+  {
+   "d": 3,
+   "strength": 0.0151875,
+   "scope": "global",
+   "gate_strength": null,
+   "success": 0.14370514132755646,
+   "elapsed_s": 15.9
+  },
+  {
+   "d": 3,
+   "strength": 0.01575,
+   "scope": "global",
+   "gate_strength": null,
+   "success": 0.14116418751690044,
+   "elapsed_s": 16.3
+  },
+  {
+   "d": 3,
+   "strength": 0.003,
+   "scope": "gate",
+   "gate_strength": 0.014625,
+   "success": 0.19255944599838595,
+   "elapsed_s": 16.2
+  },
+  {
+   "d": 3,
+   "strength": 0.003,
+   "scope": "gate",
+   "gate_strength": 0.0151875,
+   "success": 0.19060288034017733,
+   "elapsed_s": 16.3
+  },
+  {
+   "d": 3,
+   "strength": 0.003,
+   "scope": "gate",
+   "gate_strength": 0.01575,
+   "success": 0.1886822653943884,
+   "elapsed_s": 16.2
+  },
+  {
+   "d": 3,
+   "strength": 0.0253125,
+   "scope": "global",
+   "gate_strength": null,
+   "success": 0.11168829826589714,
+   "elapsed_s": 16.2
+  },
+  {
+   "d": 3,
+   "strength": 0.027,
+   "scope": "global",
+   "gate_strength": null,
+   "success": 0.10838658451451386,
+   "elapsed_s": 17.4
+  },
+  {
+   "d": 3,
+   "strength": 0.0286875,
+   "scope": "global",
+   "gate_strength": null,
+   "success": 0.10546292272550202,
+   "elapsed_s": 16.1
+  },
+  {
+   "d": 3,
+   "strength": 0.003,
+   "scope": "gate",
+   "gate_strength": 0.0253125,
+   "success": 0.16087812641525367,
+   "elapsed_s": 16.6
+  },
+  {
+   "d": 3,
+   "strength": 0.003,
+   "scope": "gate",
+   "gate_strength": 0.027,
+   "success": 0.1567961216228938,
+   "elapsed_s": 13.9
+  },
+  {
+   "d": 3,
+   "strength": 0.003,
+   "scope": "gate",
+   "gate_strength": 0.0286875,
+   "success": 0.15292534690125195,
+   "elapsed_s": 12.8
+  }
+ ],
+ "cells": [
+  {
+   "gate": "CZ+",
+   "scope": "global",
+   "eps": 0.027,
+   "eps_sigma": 0.001,
+   "f_central": 5.0625,
+   "f_sigma": 0.1875,
+   "qubit_signal": 0.5063462901226377,
+   "qutrit_signal": {
+    "lo": 0.1395738355986446,
+    "central": 0.12335734274314773,
+    "hi": 0.10787730158048064
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "gate": "CZ+",
+   "scope": "gate",
+   "eps": 0.027,
+   "eps_sigma": 0.001,
+   "f_central": 5.0625,
+   "f_sigma": 0.1875,
+   "qubit_signal": 0.5063462901226377,
+   "qutrit_signal": {
+    "lo": 0.4209883520540434,
+    "central": 0.4090685301353952,
+    "hi": 0.39736772774624424
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "gate": "CZ",
+   "scope": "global",
+   "eps": 0.048,
+   "eps_sigma": 0.003,
+   "f_central": 9.0,
+   "f_sigma": 0.5625,
+   "qubit_signal": 0.5063462901226377,
+   "qutrit_signal": {
+    "lo": -0.07169620227394102,
+    "central": -0.09181095782928166,
+    "hi": -0.10962253891738308
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "gate": "CZ",
+   "scope": "gate",
+   "eps": 0.048,
+   "eps_sigma": 0.003,
+   "f_central": 9.0,
+   "f_sigma": 0.5625,
+   "qubit_signal": 0.5063462901226377,
+   "qutrit_signal": {
+    "lo": 0.2279788887659723,
+    "central": 0.20311043112343816,
+    "hi": 0.1795288328389117
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  }
+ ],
+ "f_star_gate_only": 3.62890625,
+ "eps3_target_gate_only": 0.019354166666666665,
+ "eps3_target_global": 0.010933333333333331
+}

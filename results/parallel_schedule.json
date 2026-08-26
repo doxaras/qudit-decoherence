@@ -46,13 +46,13 @@
   },
   "3_pavlidis": {
    "carriers": 7,
-   "serial": 58.5,
-   "parallel": 45.0
+   "serial": 48.5,
+   "parallel": 41.25
   },
   "5_pavlidis": {
    "carriers": 5,
-   "serial": 93.75,
-   "parallel": 75.0
+   "serial": 62.25,
+   "parallel": 59.25
   }
  },
  "runs": [
@@ -64,7 +64,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.17928488827437242,
-   "elapsed_s": 23.2
+   "elapsed_s": 93.2
   },
   {
    "d": 3,
@@ -74,7 +74,7 @@
    "serial_layers": 26.0,
    "makespan": 20.0,
    "success": 0.23297489868846893,
-   "elapsed_s": 10.9
+   "elapsed_s": 43.5
   },
   {
    "d": 5,
@@ -84,7 +84,7 @@
    "serial_layers": 15.0,
    "makespan": 12.0,
    "success": 0.2839644667171672,
-   "elapsed_s": 11.9
+   "elapsed_s": 46.2
   },
   {
    "d": 2,
@@ -94,7 +94,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.19708014580931554,
-   "elapsed_s": 14.9
+   "elapsed_s": 58.3
   },
   {
    "d": 3,
@@ -104,7 +104,7 @@
    "serial_layers": 26.0,
    "makespan": 20.0,
    "success": 0.24333094549784703,
-   "elapsed_s": 8.2
+   "elapsed_s": 24.9
   },
   {
    "d": 5,
@@ -114,7 +114,7 @@
    "serial_layers": 15.0,
    "makespan": 12.0,
    "success": 0.29224550039867225,
-   "elapsed_s": 9.6
+   "elapsed_s": 29.5
   },
   {
    "d": 2,
@@ -124,7 +124,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.17928488827437242,
-   "elapsed_s": 23.4
+   "elapsed_s": 76.5
   },
   {
    "d": 3,
@@ -134,7 +134,7 @@
    "serial_layers": 44.0,
    "makespan": 37.0,
    "success": 0.20505827866600596,
-   "elapsed_s": 10.9
+   "elapsed_s": 33.2
   },
   {
    "d": 5,
@@ -144,7 +144,7 @@
    "serial_layers": 42.0,
    "makespan": 39.0,
    "success": 0.2281330428905692,
-   "elapsed_s": 12.1
+   "elapsed_s": 32.5
   },
   {
    "d": 2,
@@ -154,7 +154,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.19708014580931554,
-   "elapsed_s": 15.1
+   "elapsed_s": 41.9
   },
   {
    "d": 3,
@@ -164,7 +164,7 @@
    "serial_layers": 44.0,
    "makespan": 37.0,
    "success": 0.21416459275384556,
-   "elapsed_s": 8.3
+   "elapsed_s": 25.6
   },
   {
    "d": 5,
@@ -174,7 +174,7 @@
    "serial_layers": 42.0,
    "makespan": 39.0,
    "success": 0.2335159756169232,
-   "elapsed_s": 9.6
+   "elapsed_s": 25.8
   },
   {
    "d": 2,
@@ -184,27 +184,27 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.17928488827437242,
-   "elapsed_s": 23.2
+   "elapsed_s": 69.0
   },
   {
    "d": 3,
    "model": "depolarizing",
    "cost": "pavlidis",
    "parallel": false,
-   "serial_layers": 58.5,
-   "makespan": 45.0,
-   "success": 0.18814389667380021,
-   "elapsed_s": 11.0
+   "serial_layers": 48.5,
+   "makespan": 41.25,
+   "success": 0.19916911064676815,
+   "elapsed_s": 31.1
   },
   {
    "d": 5,
    "model": "depolarizing",
    "cost": "pavlidis",
    "parallel": false,
-   "serial_layers": 93.75,
-   "makespan": 75.0,
-   "success": 0.1709414040826373,
-   "elapsed_s": 11.9
+   "serial_layers": 62.25,
+   "makespan": 59.25,
+   "success": 0.20006092634749434,
+   "elapsed_s": 31.8
   },
   {
    "d": 2,
@@ -214,27 +214,27 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.19708014580931554,
-   "elapsed_s": 15.0
+   "elapsed_s": 45.3
   },
   {
    "d": 3,
    "model": "depolarizing",
    "cost": "pavlidis",
    "parallel": true,
-   "serial_layers": 58.5,
-   "makespan": 45.0,
-   "success": 0.20351861081774814,
-   "elapsed_s": 8.3
+   "serial_layers": 48.5,
+   "makespan": 41.25,
+   "success": 0.20796127407157353,
+   "elapsed_s": 24.0
   },
   {
    "d": 5,
    "model": "depolarizing",
    "cost": "pavlidis",
    "parallel": true,
-   "serial_layers": 93.75,
-   "makespan": 75.0,
-   "success": 0.1879268086517013,
-   "elapsed_s": 9.7
+   "serial_layers": 62.25,
+   "makespan": 59.25,
+   "success": 0.20397340452487497,
+   "elapsed_s": 25.9
   },
   {
    "d": 2,
@@ -244,7 +244,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.171293263350989,
-   "elapsed_s": 23.0
+   "elapsed_s": 67.4
   },
   {
    "d": 3,
@@ -254,7 +254,7 @@
    "serial_layers": 26.0,
    "makespan": 20.0,
    "success": 0.21839798393131538,
-   "elapsed_s": 11.1
+   "elapsed_s": 28.4
   },
   {
    "d": 5,
@@ -264,7 +264,7 @@
    "serial_layers": 15.0,
    "makespan": 12.0,
    "success": 0.25386543717845855,
-   "elapsed_s": 11.9
+   "elapsed_s": 28.6
   },
   {
    "d": 2,
@@ -274,7 +274,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.1929941792756098,
-   "elapsed_s": 14.7
+   "elapsed_s": 41.2
   },
   {
    "d": 3,
@@ -284,7 +284,7 @@
    "serial_layers": 26.0,
    "makespan": 20.0,
    "success": 0.23003023724644414,
-   "elapsed_s": 8.3
+   "elapsed_s": 24.0
   },
   {
    "d": 5,
@@ -294,7 +294,7 @@
    "serial_layers": 15.0,
    "makespan": 12.0,
    "success": 0.26408677704964423,
-   "elapsed_s": 9.6
+   "elapsed_s": 25.7
   },
   {
    "d": 2,
@@ -304,7 +304,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.171293263350989,
-   "elapsed_s": 23.1
+   "elapsed_s": 60.4
   },
   {
    "d": 3,
@@ -314,7 +314,7 @@
    "serial_layers": 44.0,
    "makespan": 37.0,
    "success": 0.184856451708445,
-   "elapsed_s": 11.2
+   "elapsed_s": 32.1
   },
   {
    "d": 5,
@@ -324,7 +324,7 @@
    "serial_layers": 42.0,
    "makespan": 39.0,
    "success": 0.17909822948253706,
-   "elapsed_s": 11.7
+   "elapsed_s": 30.4
   },
   {
    "d": 2,
@@ -334,7 +334,7 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.1929941792756098,
-   "elapsed_s": 14.8
+   "elapsed_s": 37.4
   },
   {
    "d": 3,
@@ -344,7 +344,7 @@
    "serial_layers": 44.0,
    "makespan": 37.0,
    "success": 0.19530292712730718,
-   "elapsed_s": 8.3
+   "elapsed_s": 15.1
   },
   {
    "d": 5,
@@ -354,7 +354,7 @@
    "serial_layers": 42.0,
    "makespan": 39.0,
    "success": 0.18354253643594345,
-   "elapsed_s": 9.7
+   "elapsed_s": 18.3
   },
   {
    "d": 2,
@@ -364,27 +364,27 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.171293263350989,
-   "elapsed_s": 22.8
+   "elapsed_s": 66.8
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "cost": "pavlidis",
    "parallel": false,
-   "serial_layers": 58.5,
-   "makespan": 45.0,
-   "success": 0.1652516044816402,
-   "elapsed_s": 11.0
+   "serial_layers": 48.5,
+   "makespan": 41.25,
+   "success": 0.17808393632585762,
+   "elapsed_s": 30.3
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "cost": "pavlidis",
    "parallel": false,
-   "serial_layers": 93.75,
-   "makespan": 75.0,
-   "success": 0.13571891176723616,
-   "elapsed_s": 11.8
+   "serial_layers": 62.25,
+   "makespan": 59.25,
+   "success": 0.1542640713503975,
+   "elapsed_s": 32.1
   },
   {
    "d": 2,
@@ -394,27 +394,27 @@
    "serial_layers": 57.0,
    "makespan": 42.0,
    "success": 0.1929941792756098,
-   "elapsed_s": 14.9
+   "elapsed_s": 46.0
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "cost": "pavlidis",
    "parallel": true,
-   "serial_layers": 58.5,
-   "makespan": 45.0,
-   "success": 0.18247729569554308,
-   "elapsed_s": 8.1
+   "serial_layers": 48.5,
+   "makespan": 41.25,
+   "success": 0.18822784422164388,
+   "elapsed_s": 24.3
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "cost": "pavlidis",
    "parallel": true,
-   "serial_layers": 93.75,
-   "makespan": 75.0,
-   "success": 0.14443142142910423,
-   "elapsed_s": 8.9
+   "serial_layers": 62.25,
+   "makespan": 59.25,
+   "success": 0.1566759189912293,
+   "elapsed_s": 24.7
   }
  ],
  "cells": [
@@ -441,8 +441,8 @@
    "cost": "pavlidis",
    "serial_verdict": "qudit",
    "parallel_verdict": "qudit",
-   "serial_margin": 0.06330240121307962,
-   "parallel_margin": 0.04853292501220985,
+   "serial_margin": 0.13047039356815987,
+   "parallel_margin": 0.07559859214581655,
    "flipped": false
   },
   {
@@ -466,11 +466,11 @@
   {
    "model": "transmon_cal",
    "cost": "pavlidis",
-   "serial_verdict": "qubit",
+   "serial_verdict": "qudit",
    "parallel_verdict": "qubit",
-   "serial_margin": -0.027465362674611804,
-   "parallel_margin": -0.05475745095312967,
-   "flipped": false
+   "serial_margin": 0.05071198330012788,
+   "parallel_margin": -0.019723863361479577,
+   "flipped": true
   }
  ]
 }

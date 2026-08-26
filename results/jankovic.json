@@ -175,16 +175,16 @@
   {
    "cost": "pavlidis",
    "d": 3,
-   "layer_ratio": 0.9743589743589743,
+   "layer_ratio": 1.175257731958763,
    "critical": 1.68247934285722,
    "predicted_qudit_wins": false,
-   "observed_qudit_wins": false,
-   "agree": true
+   "observed_qudit_wins": true,
+   "agree": false
   },
   {
    "cost": "pavlidis",
    "d": 5,
-   "layer_ratio": 0.608,
+   "layer_ratio": 0.9156626506024096,
    "critical": 3.4454124645871445,
    "predicted_qudit_wins": false,
    "observed_qudit_wins": false,

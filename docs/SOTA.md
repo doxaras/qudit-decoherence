@@ -1,6 +1,19 @@
 # State of the art: prime-d qudits, decoherence, and quantum algorithms
 
-Synthesis of a deep read of the 21 papers in `papers/` (see `papers/INDEX.md`),
+> **Status: ⚠️ incomplete.** This synthesises the **first 21** papers of
+> the library. `papers/INDEX.md` now indexes **51**: a second pass added
+> the closest prior work to cite and differentiate, and a third added
+> the exact success-probability analyses of order finding (Shor's
+> 4/π² asymptotics, Gerjuoy, Bourdon–Williams, Ekerå,
+> Magdon-Ismail–Dong, Barzen–Leymann, Chappell) that the paper's
+> decoder section positions itself against. Those later additions are
+> annotated in place in `INDEX.md` rather than here.
+>
+> The gap analysis in §5 is what the finished paper closes; §6's
+> reconciliations made it into the Discussion largely intact.
+
+Synthesis of a deep read of the first 21 papers in `papers/` (the library now
+holds 51 — see `papers/INDEX.md`),
 organized around the question this project answers: *does a prime-base
 encoding buy decoherence resilience in phase-critical quantum algorithms,
 and on which hardware?* Sections marked (pending) will be filled as the

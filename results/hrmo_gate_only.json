@@ -1,0 +1,407 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "hrmo_eps": {
+  "2": [
+   0.004,
+   0.001
+  ],
+  "3": [
+   0.013,
+   0.002
+  ],
+  "5": [
+   0.063,
+   0.003
+  ]
+ },
+ "inflation_scope": "two-qudit gate participants only",
+ "floors": {
+  "2": 0.125,
+  "3": 0.12345679012345678,
+  "5": 0.128
+ },
+ "noiseless": {
+  "2": 0.289109048265707,
+  "3": 0.28760065666458684,
+  "5": 0.32734242057805996
+ },
+ "runs": [
+  {
+   "d": 2,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.289109048265707,
+   "elapsed_s": 26.4
+  },
+  {
+   "d": 3,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.28760065666458684,
+   "elapsed_s": 15.7
+  },
+  {
+   "d": 5,
+   "model": null,
+   "strength": 0.0,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.32734242057805996,
+   "elapsed_s": 16.8
+  },
+  {
+   "d": 2,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.20809600776489762,
+   "elapsed_s": 131.2
+  },
+  {
+   "d": 2,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": null,
+   "success": 0.17928488827437242,
+   "elapsed_s": 131.0
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.005811696602889895,
+   "success": 0.22854023620275837,
+   "elapsed_s": 65.5
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.0082265625,
+   "success": 0.21759654553631055,
+   "elapsed_s": 62.3
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.010641428397110105,
+   "success": 0.20751201909268635,
+   "elapsed_s": 40.4
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.027519627688579712,
+   "success": 0.19146519682064186,
+   "elapsed_s": 44.9
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.036914062500000004,
+   "success": 0.17355452842133057,
+   "elapsed_s": 62.9
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "uniform",
+   "gate_strength": 0.04630849731142029,
+   "success": 0.1607318897501978,
+   "elapsed_s": 64.2
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.0029058483014449475,
+   "success": 0.21754871487837818,
+   "elapsed_s": 62.3
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.00411328125,
+   "success": 0.20756986959302653,
+   "elapsed_s": 62.0
+  },
+  {
+   "d": 3,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.005320714198555052,
+   "success": 0.19836725558844925,
+   "elapsed_s": 63.0
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.006879906922144928,
+   "success": 0.1789615927167908,
+   "elapsed_s": 64.3
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.009228515625000001,
+   "success": 0.16464010793262013,
+   "elapsed_s": 65.6
+  },
+  {
+   "d": 5,
+   "model": "transmon_cal",
+   "strength": 0.003,
+   "cost": "ion",
+   "gate_strength": 0.011577124327855072,
+   "success": 0.15437757695341314,
+   "elapsed_s": 68.5
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.009686161004816491,
+   "success": 0.2184684869544679,
+   "elapsed_s": 61.3
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.013710937500000001,
+   "success": 0.207267198752601,
+   "elapsed_s": 57.8
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.01773571399518351,
+   "success": 0.19711530858846807,
+   "elapsed_s": 60.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.04586604614763285,
+   "success": 0.20439670767225634,
+   "elapsed_s": 65.1
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.0615234375,
+   "success": 0.18588066856174987,
+   "elapsed_s": 67.0
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "uniform",
+   "gate_strength": 0.07718082885236716,
+   "success": 0.17177614475879735,
+   "elapsed_s": 71.0
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.004843080502408246,
+   "success": 0.20585676329925684,
+   "elapsed_s": 58.2
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.0068554687500000005,
+   "success": 0.19607047963138696,
+   "elapsed_s": 59.5
+  },
+  {
+   "d": 3,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.008867856997591754,
+   "success": 0.1872083868035053,
+   "elapsed_s": 53.1
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.011466511536908213,
+   "success": 0.192477394218814,
+   "elapsed_s": 53.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.015380859375,
+   "success": 0.17747996323960033,
+   "elapsed_s": 51.6
+  },
+  {
+   "d": 5,
+   "model": "depolarizing",
+   "strength": 0.005,
+   "cost": "ion",
+   "gate_strength": 0.01929520721309179,
+   "success": 0.16603993626425595,
+   "elapsed_s": 47.1
+  }
+ ],
+ "cells": [
+  {
+   "channel": "transmon_cal",
+   "cost": "uniform",
+   "d": 3,
+   "f_central": 2.7421875,
+   "f_sigma": 0.8049552990367016,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.6401911219324816,
+    "central": 0.5735197872243668,
+    "hi": 0.5120826671167003
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "uniform",
+   "d": 5,
+   "f_central": 12.3046875,
+   "f_sigma": 3.1314782704734303,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.3183727609838554,
+    "central": 0.228524005523912,
+    "hi": 0.16419931921806083
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "ion",
+   "d": 3,
+   "f_central": 1.37109375,
+   "f_sigma": 0.4024776495183508,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.57322839249278,
+    "central": 0.5124351048992334,
+    "hi": 0.45637078645410073
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "transmon_cal",
+   "cost": "ion",
+   "d": 5,
+   "f_central": 3.076171875,
+   "f_sigma": 0.7828695676183576,
+   "qubit_signal": 0.5063462901226377,
+   "qudit_signal": {
+    "lo": 0.25564850957970026,
+    "central": 0.18380487116776192,
+    "hi": 0.1323229490086583
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "uniform",
+   "d": 3,
+   "f_central": 2.7421875,
+   "f_sigma": 0.8049552990367016,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.5788318432672216,
+    "central": 0.5105911685597071,
+    "hi": 0.44874365407101235
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "uniform",
+   "d": 5,
+   "f_central": 12.3046875,
+   "f_sigma": 3.1314782704734303,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.38324360389885187,
+    "central": 0.29035801007083956,
+    "hi": 0.21960275505762292
+   },
+   "verdict": "lost (survives at -1 sigma)"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "ion",
+   "d": 3,
+   "f_central": 1.37109375,
+   "f_sigma": 0.4024776495183508,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.5019984901790578,
+    "central": 0.44237832968151225,
+    "hi": 0.3883885400254908
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "channel": "depolarizing",
+   "cost": "ion",
+   "d": 5,
+   "f_central": 3.076171875,
+   "f_sigma": 0.7828695676183576,
+   "qubit_signal": 0.3307854676390567,
+   "qudit_signal": {
+    "lo": 0.3234504428703145,
+    "central": 0.24821592461913847,
+    "hi": 0.19082710119575372
+   },
+   "verdict": "LOST (even at -1 sigma)"
+  }
+ ]
+}

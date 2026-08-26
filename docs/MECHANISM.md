@@ -1,5 +1,18 @@
 # The mechanism: a falsified hypothesis and a confound
 
+> **Status: 📓 audit trail — kept deliberately.** This records a
+> hypothesis that was **falsified** (control–work entanglement as the
+> cause of the Shor/QPE difference) and the confound that chasing its
+> failure exposed. Both are in the paper, and both should stay here in
+> the order they happened.
+>
+> Read it for the method, not for current numbers. The gap the
+> entanglement hypothesis was built to explain (≈ 0.5, measured on the
+> then-current confounded N = 15 comparison) **did not itself survive**
+> the de-confounding of §4. The surviving mechanism — width-and-depth
+> compression, with the residual sitting in the classical decoder — is
+> `TEXTBOOK.md` §14 and §11–12.
+
 Pre-publication hardening task #4. This was meant to be the paper's
 mechanism section — a clean demonstration that control–work entanglement
 explains why Shor and phase estimation order oppositely. **The experiment

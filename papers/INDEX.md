@@ -1,8 +1,16 @@
 # Reference library — prime-base qudits, decoherence, and Shor/QPE
 
-21 papers, all downloaded successfully from arXiv (61 MB total). Every arXiv ID
-below was verified against the arXiv API before download; titles and author
-lists are as returned by the API.
+**51 papers**, all downloaded successfully from arXiv. Every arXiv ID below was
+verified against the arXiv API before download; titles and author lists are as
+returned by the API.
+
+The library grew in passes as the paper was written: the first 21 answered the
+core question, then a second pass added the closest prior work to cite and
+differentiate (§2A–2C), and a third referee pass added the exact
+success-probability analyses of order finding (§ "Referee pass"). Section 1–5
+below are the original organisation; everything after "Download status" is a
+later pass. `docs/SOTA.md` synthesises the first 21; the later additions are
+annotated in place.
 
 Organised by the question each group answers for this repo: *does a prime-base
 (d = 3, 5) encoding buy resilience against decoherence in the phase-critical
@@ -71,7 +79,23 @@ depth for d = 3 vs d = 2).
 
 QFT-based adders and controlled modular multipliers over Z_{d^m} — exactly the
 primitives behind `qudit_shor.py`'s controlled |x⟩ → |a^c x mod 15⟩ and the
-no-swap inverse QFT. Use for gate-count and depth cross-checks.
+no-swap inverse QFT. Use for gate-count and depth cross-checks. **Source of the
+`pavlidis` cost model**: the controlled rotations decompose into 4(d−1)²
+elementary two-level gates, i.e. (d−1)² per gate after d = 2 normalization —
+which our d²/4 charge rounds *down*, making the decomposition verdicts
+conservative. Also the source of the truncation-robustness conjecture for
+qudits that the paper's AQFT hardware run touches on.
+
+| # | Paper | Authors | Year | arXiv | File |
+|---|---|---|---|---|---|
+| 6b | Finite Fractional Fourier Transform on Qudits | Emmanuel Floratos, Archimedes Pavlidis | 2024 | [2409.05759](https://arxiv.org/abs/2409.05759) | `floratos-pavlidis-2024-fractional-qft-qudits.pdf` |
+
+Follow-up by the same authors, and the reason `pavlidis` is charged as a
+**uniform layer multiplier** rather than a gate-count multiplier: it reports the
+same d² scaling in **depth**, not merely in gate count, for a full QFT-based
+in-place modular multiplier under a 1D-local-neighbour architecture. Cited in
+the paper's gate-cost subsection as `floratos2024`. (Its `refs.bib` entry needs
+a `journal` field or the LaTeX build fails.)
 
 | # | Paper | Authors | Year | arXiv | File |
 |---|---|---|---|---|---|

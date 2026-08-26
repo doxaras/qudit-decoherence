@@ -151,6 +151,30 @@ def main():
                 for p in pts))
         print()
 
+    out["crossings"] = {}
+    for regime in REGIMES:
+        k3, k5 = f"{regime}_3", f"{regime}_5"
+        if k3 not in out["slopes"] or k5 not in out["slopes"]:
+            continue
+        entry = {}
+        for conv in ("unweighted", "weighted"):
+            f3 = out["slopes"][k3][conv]
+            f5 = out["slopes"][k5][conv]
+            if f3["slope"] == f5["slope"]:
+                continue
+            x = (f5["intercept"] - f3["intercept"]) / (f3["slope"] - f5["slope"])
+            entry[conv] = x
+        bits5 = [p["bits"] for p in out["slopes"][k5]["points"]]
+        entry["ququint_max_bits"] = max(bits5)
+        out["crossings"][regime] = entry
+        print(f"-- {regime}, d=3/d=5 fitted-line crossing --")
+        for conv in ("unweighted", "weighted"):
+            if conv in entry:
+                tag = (" (extrapolated past ququint data)"
+                       if entry[conv] > entry["ququint_max_bits"] else "")
+                print(f"   {conv}: {entry[conv]:.2f} bits{tag}")
+        print()
+
     for regime in ("transmon_cal", "depolarizing"):
         pts = series(runs, bl, regime, 3)
         if len(pts) < 3:

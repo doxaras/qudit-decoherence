@@ -1,5 +1,14 @@
 # Glossary, diagrams, tests & benchmarks
 
+> **Status: ⚠️ partially superseded.** §1–4 (glossary, diagrams, how the
+> physical system is emulated, tests) are current. **§5's benchmark
+> numbers are historical** — they predate the unbiased instances, the
+> six-size scaling sweep, and the cost-model grid, and §5.3's slopes in
+> particular are retired (see `PAPER.md`).
+>
+> For definitions derived rather than listed — and for the notation
+> table the paper actually uses — see `TEXTBOOK.md` §A.1.
+
 Companion reference for the ai-qutrits simulator. Everything here refers to
 concrete objects in `qudit_shor.py`; the benchmark numbers are measured from
 `results/results.json` on the machine listed in §5.

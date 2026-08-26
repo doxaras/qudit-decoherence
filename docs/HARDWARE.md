@@ -1,5 +1,12 @@
 # Hardware anchor: the qubit branch on real devices
 
+> **Status: ✅ current.** This is the paper's Sec. IX. Raw shot
+> histograms are committed to `results/braket_raw_counts.json`, so
+> `braket_raw_analysis.py` reproduces every number below **without
+> re-running hardware** (and without cost). The reinterpretation-search
+> figure in Finding 2 was recomputed from those histograms and is
+> **0.15**, superseding an earlier 0.21.
+
 Paper Sec. "Hardware anchor". The qubit rows of the paper's prediction
 table compile at face-value gate counts on cloud hardware: one work
 qubit prepared in the eigenstate, each controlled-U^(2^i) a single
@@ -48,7 +55,10 @@ reading (below). `results/braket_pilot_results.json` and
 2. **The deep ion circuit fails coherently, not by decoherence.** The
    work qubit stays at 0.99 while the interference peak is destroyed;
    no relabeling of outcome bits recovers it (best of 10,080
-   reinterpretations: 0.21). The m=4 probe caught the mechanism: a
+   reinterpretations: 0.15 — recomputed from the committed raw shot
+   histograms by `braket_raw_analysis.py`; an earlier pass reported
+   0.21, which is superseded. Either way it is not significant over so
+   large a hypothesis set). The m=4 probe caught the mechanism: a
    nearly pure output (71% of shots on one outcome) whose phase is
    wrong by one least-significant digit — a popcount argument
    ('1101' has three 1s, the ideal '1010' two) rules out any qubit

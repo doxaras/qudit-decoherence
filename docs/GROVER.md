@@ -1,5 +1,21 @@
 # Grover: a falsification test of the mechanism
 
+> **Status: ⚠️ partially superseded (§5 only).** The Grover result
+> itself (§1–4, §6) is current: the advantage is **0.33–0.50 of
+> Shor's**, exactly as the halved exposure compression predicts.
+>
+> §5's account of the decoder was written while the acceptance law was
+> still being derived. The finished version — the acceptance lemma with
+> proof, the Stern–Brocot mediant decomposition, and the totient sum
+> with its Khinchin cross-check — is `TEXTBOOK.md` §11–12, and the
+> lemma is Appendix A of the paper. §5's *fidelity collapse* is also
+> now stated more carefully in the paper: a single exponential with
+> amplitude ≈ 1 is the **null expectation** for first-order composition
+> of incoherent channels, not a discovery, and rescored in log fidelity
+> the same fit gives R² = 0.76 rather than 0.97–0.99
+> (`logfid_rescore.py`). What survives as informative is the **decoder
+> residual**, which no channel-level argument predicts.
+
 Everything else in this project measures one algorithm family. The
 interpolation experiment (`docs/MECHANISM.md`) showed that Shor's work
 register starts in an equal superposition of the modular multiplier's

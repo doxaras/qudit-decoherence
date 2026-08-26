@@ -1,5 +1,20 @@
 # Grid alignment, and the unbiased re-run of every Shor result
 
+> **Status: ⚠️ current except §6.** The alignment result — 6 of 6 on
+> biased runs, ≈ 0.2 signal, the N = 15 pathology, the missing converse
+> control — is the paper's Sec. III and stands. Two extensions landed
+> later and are **not** in this file:
+> - **Full multiplicative-group ensembles** at N = 21, 33 and 55
+>   (`ensemble_a_traj.py`): alignment theory predicts the ensemble
+>   *class by class*, and the ququint's aligned-over-unaligned excess
+>   (+0.18 to +0.19) independently reproduces the ≈ 0.2 price measured
+>   by the within-modulus control in §3.
+> - **§6's scaling slopes are retired** by the sixth qutrit size; the
+>   correction block inside §6 has been revised.
+>
+> The number-theoretic account of alignment, including why it cannot
+> drift with register size, is `TEXTBOOK.md` §10.
+
 Pre-publication hardening task **4b**. `docs/MECHANISM.md` records how the
 grid-alignment confound was discovered — by chasing a *failed* experiment.
 This document does the work that discovery forced: it establishes grid
@@ -262,15 +277,40 @@ against −0.05 for the qubit. Under the noise model this project was built
 to interrogate, the qutrit's Shor performance is essentially *independent
 of problem size* over the range we can simulate.
 
-> **Superseded (Aug 12, 2026).** The four sizes above stop at 11.1 bits.
-> A fifth size (d = 3, m = 8, 12.7 bits, 1000 trajectories) puts the
-> calibrated-ladder slope at **−0.018 ± 0.008/bit**, not −0.000: the
-> first three sizes are flat (0.738–0.742) and the fall is carried by
-> the two largest, with m = 8 sitting 3.9σ below m = 6. Flatness
-> survives only under **depolarizing** noise (−0.001 ± 0.004/bit,
-> 0.5σ across the same span). The paper carries the corrected figures;
-> the ordering, the qubit's fastest decay, and the qutrit-over-ququint
-> crossing are unaffected. The ququint starts higher
+> **Superseded (Aug 12, 2026 — revised, six sizes).** The four sizes
+> above stop at 11.1 bits, and the "flatness" they show is an artifact
+> of stopping there.
+>
+> A fifth size (d = 3, m = 8, 12.7 bits) moved the calibrated-ladder
+> slope to −0.018 ± 0.008/bit. A **sixth** (d = 3, m = 9, 14.3 bits,
+> Hilbert dimension 5.3 × 10⁵, 1000 trajectories), together with a
+> 1000-trajectory d = 2, m = 12 rerun, gives the figures the paper
+> carries:
+>
+> | regime | d = 2 | d = 3 | d = 5 |
+> |---|---|---|---|
+> | calibrated ladder | −0.045 ± 0.003/bit (R² = 0.99, n = 4) | **−0.021 ± 0.005/bit** (R² = 0.80, n = 6) | −0.040 ± 0.004/bit (R² = 0.99, n = 3) |
+>
+> **The flatness claim is withdrawn.** The qutrit family is
+> *plateau-then-fall*: the first three sizes agree to χ²/dof = 0.01
+> (0.738–0.742 from 6.3 to 9.5 bits) and the whole decline is carried
+> by the last three, with the 14.3-bit point sitting **4.1σ** below the
+> 9.5-bit one. The same shape appears under depolarizing — four sizes
+> hold near 0.67 before falling to 0.59 ± 0.04, turning a slope
+> consistent with zero over five sizes into −0.007 ± 0.004/bit over
+> six. Five sizes would have read as a flat depolarizing family; it is
+> the sixth that resolves the shape.
+>
+> The mechanism is the decoder law (`docs/TEXTBOOK.md` §12): acceptance
+> grows linearly in D — exponentially in m — while noise broadening
+> grows only polynomially in m, so decoder tolerance **postpones** the
+> decay of decoded success without repealing it. The onset is later and
+> the fall gentler in the channel whose per-event damage is flatter in
+> d, which is the predicted ordering.
+>
+> The ordering, the qubit's fastest decay, and the qutrit-over-ququint
+> crossing are unaffected. A single slope is now a *summary*, not a
+> model. The ququint starts higher
 but decays faster than the qutrit, so d = 3 overtakes d = 5 above ≈ 9 bits
 in three of the four regimes — the story is not monotonic in d, and the
 best base depends on the target precision. This reverses the earlier

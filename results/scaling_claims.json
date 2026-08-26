@@ -591,5 +591,27 @@
    "hi_value": 0.5998716037785665,
    "hi_err": 0.033278417982018874
   }
+ },
+ "crossings": {
+  "depolarizing": {
+   "unweighted": 12.616544803475644,
+   "weighted": 12.506335990546926,
+   "ququint_max_bits": 11.60964047443681
+  },
+  "transmon": {
+   "unweighted": -10.981443316637767,
+   "weighted": -4.415860977187989,
+   "ququint_max_bits": 11.60964047443681
+  },
+  "transmon_cal": {
+   "unweighted": 8.544175585814898,
+   "weighted": 8.59530972600622,
+   "ququint_max_bits": 11.60964047443681
+  },
+  "transmon_cal_lowcharge": {
+   "unweighted": 18.05375080254011,
+   "weighted": 14.642502427998403,
+   "ququint_max_bits": 11.60964047443681
+  }
  }
 }

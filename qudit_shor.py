@@ -404,7 +404,10 @@ def noise_superop_pow(d: int, model: str, strength: float, power: float = 1.0,
 #   pavlidis  Pavlidis & Floratos 2017: QFT-domain arithmetic on qudits has
 #             two-qudit-gate depth carrying an explicit d^2 factor (QFT depth
 #             8 d^2 q, MAC depth 4 d^2 q). Normalized to 1 at d=2: d^2/4,
-#             applied to every gate. The harshest of the three.
+#             applied to two-qudit gates only -- the d^2 is the two-level
+#             decomposition cost of the *controlled* rotations, so
+#             single-qudit gates stay at one layer. The harshest of the
+#             three.
 #
 # Transmon hardware sits nearer "uniform": Goss 2022's cross-Kerr CZ is a
 # single fully entangling two-qutrit gate whose count does not grow with d.
@@ -412,7 +415,7 @@ def noise_superop_pow(d: int, model: str, strength: float, power: float = 1.0,
 GATE_COST_MODELS = {
     "uniform": (lambda d: 1.0, lambda d: 1.0),
     "ion": (lambda d: 1.0, lambda d: float(d - 1)),
-    "pavlidis": (lambda d: d * d / 4.0, lambda d: d * d / 4.0),
+    "pavlidis": (lambda d: 1.0, lambda d: d * d / 4.0),
 }
 
 
@@ -538,19 +541,29 @@ def initial_state(dims: list[int], m: int, d: int, w: int) -> np.ndarray:
 
 
 def run_circuit(dims: list[int], gates, rho: np.ndarray,
-                E_by_cost: dict | None = None) -> np.ndarray:
+                E_by_cost: dict | None = None,
+                E_gate_by_cost: dict | None = None) -> np.ndarray:
     """Apply gates in series; after each gate every qudit idles through the
     gate's time-layers under the matching noise superoperator.
 
     `E_by_cost` maps a gate's layer cost to the channel already raised to
-    that power (see `channels_by_cost`).
+    that power (see `channels_by_cost`). If `E_gate_by_cost` is given, the
+    *participants* of a multi-qudit gate take that channel through the
+    gate's layers instead -- gate-only noise inflation -- while spectators
+    and single-qudit-gate layers keep `E_by_cost`.
     """
     for sites, U, cost in gates:
         rho = apply_unitary(rho, U, sites, dims)
         if E_by_cost is not None:
             Ec = E_by_cost[cost]
-            for q in range(len(dims)):
-                rho = apply_channel(rho, Ec, q, dims)
+            if E_gate_by_cost is not None and len(sites) >= 2:
+                Eg = E_gate_by_cost[cost]
+                for q in range(len(dims)):
+                    rho = apply_channel(rho, Eg if q in sites else Ec, q,
+                                        dims)
+            else:
+                for q in range(len(dims)):
+                    rho = apply_channel(rho, Ec, q, dims)
     return rho
 
 
@@ -628,24 +641,32 @@ def layer_count(gates) -> float:
 def shor_run(d: int, noise_model: str | None = None, strength: float = 0.0,
              a: int = 7, N: int = 15, dephase_ratio: float = 1.0,
              cost_model: str = "uniform", readout_eps: float = 0.0,
+             gate_strength: float | None = None,
              **noise_kw) -> dict:
     """Run the full order-finding circuit and score it.
 
     Returns a dict with outcome probabilities, success probability (the
     probability that continued-fraction post-processing recovers the exact
     multiplicative order of a mod N), and resource counts.
+
+    `gate_strength`, if given, is the strength the participants of a
+    multi-qudit gate take through that gate's layers (gate-only noise
+    inflation); everything else stays at `strength`.
     """
     m, w = shor_config(d, N)
     dims = [d] * (m + w)
     gates = apply_cost_model(build_shor_gates(d, m, w, a, N), d, cost_model)
     rho = initial_state(dims, m, d, w)
 
-    E = None
+    E = Eg = None
     if noise_model and strength > 0:
         E = channels_by_cost(d, gates, noise_model, strength, dephase_ratio,
                              **noise_kw)
+        if gate_strength is not None:
+            Eg = channels_by_cost(d, gates, noise_model, gate_strength,
+                                  dephase_ratio, **noise_kw)
 
-    rho = run_circuit(dims, gates, rho, E)
+    rho = run_circuit(dims, gates, rho, E, Eg)
     probs = control_probs(rho, d, m, w)
     if readout_eps > 0:
         probs = apply_readout(probs, d, m, readout_confusion(d, readout_eps))

@@ -1,5 +1,21 @@
 # Robustness: independent validation, readout error, and echo
 
+> **Status: ⚠️ incomplete.** Everything in this file is current, but the
+> paper's robustness section (Sec. VIII) has since grown three more
+> controls that are **not** documented here:
+> - **Noise-inflation threshold** (`noise_inflation.py`) — the qudit
+>   advantage survives a qudit-to-qubit per-gate noise ratio up to
+>   f* = 1.2–4.5 depending on the cost/channel pairing.
+> - **Zeeman-structured dephasing** (`collective_zeeman.py`,
+>   `ion_zeeman_*.py`) — the sharpest failure mode found: it **reverses
+>   the verdict outright**, and the qudit ordering returns only at
+>   ε* = 0.58–0.79 under native-gate cost, 0.09–0.15 under MS cost.
+> - **Composite dimension** (`d4_control.py`, `composite_control.py`) —
+>   d = 4 and d = 6 both land inside the qudit band; the bare dynamics
+>   carries no trace of primality.
+>
+> All three are written up in `TEXTBOOK.md` §17, §19.3 and §21.4.
+
 Pre-publication hardening tasks **#1b**, **#5** and **#6**. Three separate
 attacks on the result, grouped because each asks the same question: does
 the qudit advantage survive something we had not charged for?

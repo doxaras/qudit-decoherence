@@ -1,5 +1,23 @@
 # Prime-dimensional qudits, decoherence, and Shor's algorithm
 
+> **Status: ⚠️ partially superseded.** §1–3 (physical platforms, why
+> prime *d* is mathematically special, Shor in base *d*) are current and
+> remain the best short introduction to the physics. §4 quotes scaling
+> slopes that six qutrit sizes have since retired — see `PAPER.md`.
+>
+> One conclusion of the finished work belongs here and is worth stating
+> up front: **primality plays no role in the bare, uncorrected dynamics
+> this repo measures.** The circuits and channels use only the ring Z_d,
+> and composite d = 4 and d = 6 both land inside the qudit band. The
+> prime restriction is inherited from the *fault-tolerance* and
+> *QFT-arithmetic* motivations (§2) — the latter because the
+> Floratos–Pavlidis in-place multipliers assume odd prime *d*, where
+> every nonzero multiplier is invertible — not from the algorithm-level
+> physics. Keep the two separate.
+>
+> For the full derivation chain from first principles, see
+> `TEXTBOOK.md`.
+
 This document is the physics background for the simulator in this repo. It
 answers three questions:
 

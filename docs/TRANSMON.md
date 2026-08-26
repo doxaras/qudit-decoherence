@@ -1,5 +1,18 @@
 # The transmon: physical implementation and state of the art
 
+> **Status: ✅ current.** Device background, unaffected by later
+> results. Read it before `CALIBRATION.md`, which fits the channel to
+> the measurements described here, and alongside `TEXTBOOK.md` §15.
+>
+> One conclusion from the finished paper belongs on this page: **the
+> transmon is the robust route to a qudit advantage** — provided it has
+> a native cross-Kerr entangler. It tolerates residual structured
+> dephasing far better than the linear-cost trapped-ion route
+> (ε ≈ 0.6–0.8 vs 0.09–0.15), and refocusing — which every real
+> transmon circuit uses anyway — buys roughly one cost model of
+> headroom because dynamical decoupling suppresses exactly the
+> max-level dephasing term that scales worst with *d*.
+
 Why this document: our "ladder" noise model is named after this device.
 This explains what a transmon physically is, why its noise has the ladder
 structure we simulate, what the field has demonstrated (qubit and qudit

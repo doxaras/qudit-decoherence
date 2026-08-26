@@ -1,5 +1,20 @@
 # Physical experiments to verify our claims
 
+> **Status: ✅ current, and E1 is now costed with predictions.** The
+> paper's Discussion carries the proposed experiment — **eigenstate QPE
+> at d = 5, m = 2–3 on a Ringbauer-class trapped-ion processor** — with
+> exact density-matrix predictions at demonstrated, not projected, gate
+> fidelities (`ion_qpe_prediction.py`; `TEXTBOOK.md` §21.6). The m = 3
+> pair is the decisive one; the deep-circuit coherent failure observed
+> on IonQ (`HARDWARE.md`) counsels entering at m = 2 first.
+>
+> One finding since: **the transmon route is the robust one.** Both
+> matched cost/noise pairings favour ququints, but the native-entangler
+> route tolerates residual Zeeman dephasing up to ε ≈ 0.6–0.8 of the
+> unmitigated reference while the linear-MS route tolerates only
+> 0.09–0.15. The ion proposal is conditional on collective-*B*
+> suppression beyond plain shielding.
+
 Each of the paper's load-bearing claims maps to a measurable quantity on
 real hardware. Ordered by feasibility — from things doable with cloud
 access this month to full collaborations. Access routes verified by live

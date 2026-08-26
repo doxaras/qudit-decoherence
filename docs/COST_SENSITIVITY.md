@@ -1,5 +1,16 @@
 # Gate-cost sensitivity: the strongest objection, tested
 
+> **Status: ✅ current.** This document became the paper's central
+> result (Sec. IV, "The cost condition") and its title claim — *native
+> gates or nothing*. §6 carries the d = 7 point.
+>
+> Two later notes worth carrying back here: (i) the `pavlidis` model is
+> now supported in **depth**, not just gate count, by a 2024 follow-up
+> from the same authors (`floratos2024`, arXiv:2409.05759), which is
+> what licenses treating it as a uniform layer multiplier; (ii) the
+> break-even criterion and the derivation of the three cost models from
+> first principles are in `TEXTBOOK.md` §3 and §19.
+
 Pre-publication hardening task #2. Our default cost model charges every
 gate one time-layer regardless of dimension — the assumption most
 favourable to qudits, and the obvious reviewer attack, because real
