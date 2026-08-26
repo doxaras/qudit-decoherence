@@ -12,7 +12,7 @@ Everything needed to submit `paper/main.tex` to arXiv. Rebuild the package
 with `./paper/make_arxiv.sh`; it refuses to write the tarball unless a
 standalone pdflatex-only build of exactly the shipped files is clean.
 
-**Upload file:** `paper/arxiv-submission.tar.gz` (843 KB)
+**Upload file:** `paper/arxiv-submission.tar.gz` (851 KB)
 Contents: `main.tex`, `main.bbl`, and the five figure PNGs, flat, no
 subdirectories. No `.aux`/`.log`/`.pdf`/`.bib` — arXiv rejects or ignores
 those, and a stray `main.pdf` can make it skip compilation entirely.

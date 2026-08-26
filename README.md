@@ -279,6 +279,9 @@ match the manuscript and which are partly superseded.
 | `cost_fair.py` | unbiased-instance gate-cost grid → `cost_fair.json` |
 | `d7_demo.py` | the seventh dimension — demo grid at d = 7 |
 | `matched_D.py` | matched control dimension: is the lead just a bigger acceptance set? |
+| `d7_matched_D.py` | the same control extended to d = 7 (qubit at D = 256/512) |
+| `cost_grid_ssweep.py` | the cost-table verdicts swept across the demo strength range |
+| `scaling_claims.py` | every quoted size-scaling number recomputed from the runs |
 | `jankovic_check.py` | cross-validation vs arXiv:2302.04543 → `jankovic.json` |
 | `scaling_fair.py` | unbiased-instance scaling study → `scaling_fair.json` |
 | `scaling_fair_m8.py`, `scaling_fair_point.py` | the deep qutrit points (m = 8, m = 9) and the d = 2, m = 12 rerun |
@@ -294,6 +297,9 @@ match the manuscript and which are partly superseded.
 | `exposure_collapse.py` | cross-algorithm collapse re-fit in damage units |
 | `fidelity_collapse.py` | end-state fidelity vs decoded signal: the decoder check |
 | `logfid_rescore.py` | the same fit rescored in **log** fidelity — the honesty check |
+| `favg_rescore.py` | the collapse rescored in average-gate-infidelity units — the metric-convention check |
+| `collapse_tail_deep.py` | the three deepest fidelity points re-measured at 1600 trajectories |
+| `interpolation_slopes.py` | slopes of the interpolation study, quantified |
 | `decoder_formula.py` | the acceptance lemma, verified on 42 (instance, D) combinations |
 | `decoder_scaling.py` | the acceptance set measured exactly, and Eq. (5) |
 
@@ -306,6 +312,15 @@ match the manuscript and which are partly superseded.
 | `noise_inflation.py` | the threshold f* at which extra qudit noise erases the advantage |
 | `collective_zeeman.py` | Zeeman-structured dephasing — the sharpest failure mode |
 | `ion_zeeman_demo.py`, `ion_zeeman_echo.py` | its demo grid and the suppression sweep pricing ε* |
+| `ion_zeeman_quasistatic.py` | the quasi-static (non-Markovian) Zeeman control — withdraws the reversal |
+| `ladder_exponent_sensitivity.py` | the ladder verdicts swept across the exponents Peterer admits |
+| `dephase_ratio_sweep.py` | the T₂/T₁ balance swept over the measured transmon range |
+| `single_qudit_cost.py` | measured single-qudit pulse counts charged against the advantage |
+| `parallel_schedule.py` | concurrent (ASAP) schedules — the serial-convention check |
+| `trajectory_variance.py` | the trajectory error bars validated on 24×1000 replicas |
+| `hrmo_reanalysis.py`, `hrmo_gate_only.py` | measured ion-gate fidelities fed through the threshold, both charging scopes |
+| `goss_transmon_test.py`, `transmon_rebuild.py` | the measured transmon CZ† verdict and the channel-consistent rebuild |
+| `qpe_measured_strengths.py`, `qpe_d3_measured.py` | the ion QPE proposal re-tabulated at measured per-base strengths |
 | `d4_control.py`, `composite_control.py` | composite d = 4 and d = 6 — does primality matter? |
 
 **Hardware (Secs. IX–X)**

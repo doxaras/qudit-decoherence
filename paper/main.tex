@@ -248,14 +248,14 @@ of Shor's. Counted in \emph{damage
 units}---the per-carrier-layer entanglement infidelity $1-\mathrm{tr}\,
 S/d^2$ of the actual channel---accumulated exposure places end-state
 fidelity for both algorithm families on a single exponential
-($R^2=0.97$--$0.99$ in linear fidelity, $0.76$ rescored in log
+($R^2=0.97$--$0.99$ in linear fidelity, $0.74$--$0.75$ rescored in log
 fidelity, amplitude ${\approx}1$)---what first-order
 composition of incoherent channels requires, rather than a discovery.
 What exposure does \emph{not}
 determine is the measured success probability, because the classical
 decoder intervenes: continued-fraction order recovery gains error
 tolerance with register size, and we observe it decoding correct orders
-from states with fidelity ${\sim}3\times10^{-4}$ to the ideal state. That
+from states with fidelity ${\sim}6\times10^{-4}$ to the ideal state. That
 tolerance has a closed form we state and verify---an exact finite-$D$
 mediant-interval formula for the acceptance set of a decoder required
 to return $r$ itself, built on a proved acceptance lemma and including
@@ -937,6 +937,24 @@ suggests. The criterion itself is conservative here---its $d=7$ bar of
 $5.70$ is not cleared (the uniform layer ratio is $3.80$), yet the
 $d=7$ register wins.
 
+The $d=7$ cells enter with a control-dimension gift the rest of the
+grid does not get: at $D=343$ the acceptance set for $r=6$ holds
+$48$ outcomes against the qubit's $8$ at $D=64$ and the ququint's
+$16$ at $D=125$---the confound the matched-$D$ control above exists
+to price, six-fold at this dimension. Extending that control
+(\texttt{results/d7\_matched\_D.json}): qubit registers bracketing
+$D=343$, at $m=8$ ($D=256$, $|\mathcal A|=36$) and $m=9$ ($D=512$,
+$|\mathcal A|=74$), score \emph{lower} than at $D=64$---
+$0.27/0.22$ under depolarizing and $0.21/0.16$ on the ladder at the
+same $s=0.005$ (\texttt{uniform} cost, 1000 trajectories, errors
+$\pm0.02$)---the added decoder tolerance again losing to the deeper
+circuit's added exposure. Matching $D$ therefore \emph{widens} every
+$d=7$-vs-qubit gap quoted above rather than closing it, and the one
+$d=7$ loss, to $d=5$ on the ladder, happens \emph{despite} a
+$3\times$ acceptance-set advantage at identical carrier and layer
+count---the seventh level's larger per-event damage overcomes a
+decoder gift.
+
 % =====================================================================
 \section{Scaling with problem size}
 \label{sec:scaling}
@@ -1164,6 +1182,20 @@ spread, against $3.6\times$ in event units), each family log-linear with
 $R^2\ge0.996$. The reweighting is a ladder effect: depolarizing
 damage is already nearly flat in $d$ ($0.75p$--$0.96p$), and there
 the signal rows of Table~\ref{tab:collapse} gain nothing from it.
+The unit itself carries a convention: $1-\Fe$ tends to $1-1/d^2$ for
+a fully depolarizing channel, growing with $d$ by construction, and
+the $d$-normalized alternative---the average gate infidelity
+$1-F_{\mathrm{avg}}=[d/(d+1)](1-\Fe)$---rescales each family's rate
+by $(d+1)/d$. In those units
+(\texttt{results/favg\_rescore.json}) the ladder spread widens back
+to $1.29\times$ while the depolarizing spread \emph{tightens} from
+$1.52\times$ to $1.23\times$: the two channels move in opposite
+directions, so neither unit is uniformly flattering, and the
+$1.1\times$ figure should be read as convention-dependent at the
+$\pm25\%$ level. The collapse's headline row is not: the pooled
+fidelity fits of Table~\ref{tab:collapse} are unchanged to two
+decimals in either unit, marginally \emph{improving} in
+$F_{\mathrm{avg}}$.
 
 \emph{Piece 2: the residual is the decoder, not the noise.} With units
 fixed, a nested fit finds one shared amplitude with a per-\emph{algorithm}
@@ -1208,7 +1240,7 @@ ladder and $0.025$ under depolarizing at every point, while Shor's
 $d=3$ family loses two thirds of its fidelity ($0.55\to0.18$) with
 signal flat, and at $d=2$, $m=12$ under depolarizing, continued
 fractions decode a signal of $0.131\pm0.018$ from a state with
-fidelity $2.7(1.1)\times10^{-4}$. The mechanism claim, in the form the data
+fidelity $6.4(2.0)\times10^{-4}$. The mechanism claim, in the form the data
 support: \emph{accumulated channel damage is the law for the quantum
 state; the residual algorithm dependence of decoded success sits in
 the decoder}---for which Sec.~\ref{sec:decoder} gives an exact
@@ -1223,14 +1255,19 @@ expectation}, not a discovery. The informative content of
 Table~\ref{tab:collapse} is therefore bounded as well as measured. In
 linear fidelity the shared fit gives $R^2=0.97/0.99$; rescored in
 \emph{log} fidelity---the metric that weights the deep tail---the
-same fit gives $R^2=0.76$ in both channels ($0.85$--$0.91$ if refit
-there). The law holds within a factor of two down to fidelity
-$1.5(6)\times10^{-2}$ on the ladder and, excepting a single
-floor-pinned Grover point, to $2.7(1.1)\times10^{-4}$ under
-depolarizing---though the endpoint fidelities themselves carry
-$40$--$48\%$ statistical error at their $100$--$200$ trajectories,
-so ``within a factor of two'' is at the resolution limit of the
-deepest points;
+same fit gives $R^2=0.74$--$0.75$ ($0.87$--$0.93$ if refit
+there). The deepest Shor points, whose first-pass estimates carried
+$40$--$48\%$ statistical error at $100$--$200$ trajectories, were
+re-measured at $1600$ trajectories each
+(\texttt{results/collapse\_tail\_deep.json}); the re-measurement
+moved the deepest depolarizing point from $2.7$ to
+$6.4(2.0)\times10^{-4}$---the $100$-trajectory mean of this
+heavy-tailed estimator had been skewed low---and tightened the other
+two. Against the shared law the deep endpoints now read as a test
+rather than a resolution limit: the law holds to a factor of $1.12$
+down to fidelity $2.1(3)\times10^{-2}$ on the ladder and, excepting a
+single floor-pinned Grover point, to a factor of $1.5$ at
+$6.4(2.0)\times10^{-4}$ under depolarizing;
 every departure is a Grover point approaching its
 $1/\!\dim\mathcal{H}$ fidelity floor (the deepest, at
 $5.3\times10^{-3}$, sits $1.4\times$ above its floor of $1/256$ and
@@ -1747,6 +1784,33 @@ leads; on a Peterer-consistent reading, only $d=3$ survives, and only
 with a native gate. We report the paper's grid at the published
 calibration and flag every $d\ge5$ ladder result as conditional on it.
 
+\emph{Dephasing weight.} A second unexamined constant sits beside the
+exponents: the channel fixes the pure-dephasing weight so that
+$T_2=T_1$ on the $0{\leftrightarrow}1$ subspace, while measured
+transmons span roughly $T_2\approx0.3T_1$ to $2T_1$. Sweeping the
+dephasing-to-relaxation weight over $0.2$--$5$---i.e.\ $T_2/T_1$ from
+$1.67$ down to $0.33$---and re-scoring the ladder rows of
+Table~\ref{tab:cost} at their $s=0.005$ operating point
+(exact density matrices;
+\texttt{results/dephase\_ratio\_sweep.json}) moves the verdicts only
+at the dephasing-dominated end. At fixed strength every
+qudit-vs-qubit verdict survives the full span; the only change is
+internal to the qudits (at $T_2=T_1/3$ the \texttt{uniform} optimum
+moves from $d=5$ to $d=3$) and the \texttt{pavlidis} qutrit margin
+thins to $+0.004$. The sharper reading rescales $s$ so the
+\emph{qubit's} per-carrier-layer damage stays at its calibrated
+value, isolating the $d$-dependent structure of dephasing from the
+overall noise level. There the native-gate qutrit survives everywhere
+($0.55$ against the qubit's $0.37$ at $T_2=T_1/3$), but the
+\texttt{ion}-cost qutrit win inverts at $T_2=T_1/3$ ($0.34$ vs
+$0.37$), the thin \texttt{pavlidis} win is already a tie at
+$T_2=0.67T_1$, and the ququint's \texttt{uniform} lead over the
+qutrit inverts at $T_2=T_1/3$. The pattern repeats the exponent
+sweep's: dephasing is the component of the ladder that scales worst
+with $d$, so every advantage except the native-gate qutrit's is
+additionally conditional on dephasing not dominating
+relaxation---the upper half of the measured transmon $T_2$ range.
+
 \emph{Concurrent schedules.} Every result here is an exposure budget,
 and the budget charges every carrier an idle channel through every
 gate. That serial convention is not neutral: concurrent execution
@@ -1816,7 +1880,8 @@ than a win. Across the whole
 swept range the best qudit is $d=3$ in every cell from
 $\alpha\ge1.5$---by $\alpha=3.15$ the ququint has fallen below the
 qubit even under native-gate cost---which is the same conclusion the
-ladder-exponent and measured-fidelity analyses reach independently.
+ladder-exponent, dephasing-weight and measured-fidelity analyses
+reach independently.
 
 \emph{Zeeman-structured dephasing.} The per-particle convention
 flattens pair structure the ion encoding really has, so we also test

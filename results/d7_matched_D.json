@@ -1,0 +1,206 @@
+{
+ "N": 21,
+ "a": 2,
+ "r": 6,
+ "configs": [
+  [
+   2,
+   8
+  ],
+  [
+   2,
+   9
+  ]
+ ],
+ "noise": [
+  [
+   "depolarizing",
+   0.005
+  ],
+  [
+   "transmon_cal",
+   0.005
+  ],
+  [
+   "transmon_cal",
+   0.003
+  ]
+ ],
+ "n_traj": 1000,
+ "acceptance_sets": {
+  "2,6": {
+   "D": 64,
+   "A_size": 8
+  },
+  "2,8": {
+   "D": 256,
+   "A_size": 36
+  },
+  "2,9": {
+   "D": 512,
+   "A_size": 74
+  },
+  "3,4": {
+   "D": 81,
+   "A_size": 10
+  },
+  "5,3": {
+   "D": 125,
+   "A_size": 16
+  },
+  "7,3": {
+   "D": 343,
+   "A_size": 48
+  }
+ },
+ "baselines": {
+  "2,8": {
+   "success": 0.32364879864138535,
+   "stderr": 0.0,
+   "n_traj": 1,
+   "d": 2,
+   "m": 8,
+   "w": 5,
+   "D": 256,
+   "n_qudits": 13,
+   "n_gates": 52,
+   "n_layers": 84.0,
+   "noise_model": null,
+   "strength": 0.0,
+   "cost_model": "uniform",
+   "floor": 0.140625
+  },
+  "2,9": {
+   "success": 0.32860745983115597,
+   "stderr": 0.0,
+   "n_traj": 1,
+   "d": 2,
+   "m": 9,
+   "w": 5,
+   "D": 512,
+   "n_qudits": 14,
+   "n_gates": 63,
+   "n_layers": 99.0,
+   "noise_model": null,
+   "strength": 0.0,
+   "cost_model": "uniform",
+   "floor": 0.14453125
+  }
+ },
+ "runs": [
+  {
+   "success": 0.18969488337429333,
+   "stderr": 0.004088283633784059,
+   "n_traj": 1000,
+   "d": 2,
+   "m": 8,
+   "w": 5,
+   "D": 256,
+   "n_qudits": 13,
+   "n_gates": 52,
+   "n_layers": 84.0,
+   "noise_model": "depolarizing",
+   "strength": 0.005,
+   "cost_model": "uniform",
+   "floor": 0.140625,
+   "elapsed_s": 144.4,
+   "signal": 0.26810657268916305,
+   "signal_err": 0.02233744280324218
+  },
+  {
+   "success": 0.1792641411212332,
+   "stderr": 0.004050314131577835,
+   "n_traj": 1000,
+   "d": 2,
+   "m": 8,
+   "w": 5,
+   "D": 256,
+   "n_qudits": 13,
+   "n_gates": 52,
+   "n_layers": 84.0,
+   "noise_model": "transmon_cal",
+   "strength": 0.005,
+   "cost_model": "uniform",
+   "floor": 0.140625,
+   "elapsed_s": 156.1,
+   "signal": 0.2111153926869493,
+   "signal_err": 0.022129986163788307
+  },
+  {
+   "success": 0.22230787022656945,
+   "stderr": 0.004249582696192571,
+   "n_traj": 1000,
+   "d": 2,
+   "m": 8,
+   "w": 5,
+   "D": 256,
+   "n_qudits": 13,
+   "n_gates": 52,
+   "n_layers": 84.0,
+   "noise_model": "transmon_cal",
+   "strength": 0.003,
+   "cost_model": "uniform",
+   "floor": 0.140625,
+   "elapsed_s": 166.7,
+   "signal": 0.4462964425004526,
+   "signal_err": 0.0232187438340691
+  },
+  {
+   "success": 0.18579487184463836,
+   "stderr": 0.0037200471181120243,
+   "n_traj": 1000,
+   "d": 2,
+   "m": 9,
+   "w": 5,
+   "D": 512,
+   "n_qudits": 14,
+   "n_gates": 63,
+   "n_layers": 99.0,
+   "noise_model": "depolarizing",
+   "strength": 0.005,
+   "cost_model": "uniform",
+   "floor": 0.14453125,
+   "elapsed_s": 481.2,
+   "signal": 0.22416596844582712,
+   "signal_err": 0.020209277024577157
+  },
+  {
+   "success": 0.17388516380602628,
+   "stderr": 0.004083345747736027,
+   "n_traj": 1000,
+   "d": 2,
+   "m": 9,
+   "w": 5,
+   "D": 512,
+   "n_qudits": 14,
+   "n_gates": 63,
+   "n_layers": 99.0,
+   "noise_model": "transmon_cal",
+   "strength": 0.005,
+   "cost_model": "uniform",
+   "floor": 0.14453125,
+   "elapsed_s": 478.3,
+   "signal": 0.15946609196783865,
+   "signal_err": 0.02218290865224506
+  },
+  {
+   "success": 0.21689151892233713,
+   "stderr": 0.004452493582641296,
+   "n_traj": 1000,
+   "d": 2,
+   "m": 9,
+   "w": 5,
+   "D": 512,
+   "n_qudits": 14,
+   "n_gates": 63,
+   "n_layers": 99.0,
+   "noise_model": "transmon_cal",
+   "strength": 0.003,
+   "cost_model": "uniform",
+   "floor": 0.14453125,
+   "elapsed_s": 475.2,
+   "signal": 0.3930995156229566,
+   "signal_err": 0.024188316277944603
+  }
+ ]
+}
