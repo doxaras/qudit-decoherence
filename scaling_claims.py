@@ -14,11 +14,12 @@ Pass a directory to score a different tree, e.g.
 
     python3 scaling_claims.py results_prehash
 
-which is how the fit convention below was pinned: unweighted least
-squares reproduces the published slopes, weighted does not, so
-unweighted is what the paper means and what is reported first. Both are
-printed, because the two disagree by more than their error bars
-wherever the error bars vary strongly across sizes.
+which is how the fit convention was originally pinned against the
+pre-reseed backup. Since the seed fix the paper quotes the WEIGHTED
+least-squares slopes (the unweighted n=3 fits print bars of +-0.000);
+both conventions are still computed and printed, because they disagree
+by more than their error bars wherever the error bars vary strongly
+across sizes.
 
 Run: python3 scaling_claims.py [results_dir]
 Writes <results_dir>/scaling_claims.json

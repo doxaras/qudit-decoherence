@@ -145,7 +145,8 @@ def control_distribution_local(m: int, device_gates: bool = False) \
 
 
 def predict_exact_dm(m: int, bits: int, strength: float,
-                     convention: str) -> float:
+                     convention: str,
+                     aqft_cutoff: int | None = None) -> float:
     """Exact DM success of the compiled circuit under depolarizing noise."""
     from qudit_shor import channels_by_cost, control_probs, run_circuit
     H = np.array([[1, 1], [1, -1]]) / np.sqrt(2)
@@ -160,7 +161,7 @@ def predict_exact_dm(m: int, bits: int, strength: float,
 
     cost_1q = 1.0 if convention == "paper" else ONEQ_LAYER
     gates = [(q, unitary(k, a), 1.0 if len(q) == 2 else cost_1q)
-             for k, q, a in compiled_gates(m)]
+             for k, q, a in compiled_gates(m, aqft_cutoff)]
     dims = [2] * (m + 1)
     D = 1 << m
     psi = np.zeros(2 ** (m + 1))
@@ -198,12 +199,17 @@ def mode_predict(strengths):
     rows = []
     print(f"{'m':>2} {'b':>2} {'conv':>6} " +
           " ".join(f"s={s:<7g}" for s in strengths))
-    for m, bits in CONFIGS:
+    # (m, bits, aqft_cutoff): the two full circuits, plus the truncated
+    # 25-entangling-gate AQFT variant actually submitted (cutoff 5, see
+    # results/braket_task_main_m7aqft.json).
+    for m, bits, aqft in [(m, b, None) for m, b in CONFIGS] + [(7, 5, 5)]:
         for conv in ("paper", "timed"):
-            succ = [predict_exact_dm(m, bits, s, conv) for s in strengths]
+            succ = [predict_exact_dm(m, bits, s, conv, aqft)
+                    for s in strengths]
             rows.append({"m": m, "bits": bits, "convention": conv,
+                         "aqft_cutoff": aqft,
                          "strengths": list(strengths), "success": succ})
-            print(f"{m:>2} {bits:>2} {conv:>6} " +
+            print(f"{m:>2} {bits:>2} {conv:>6} aqft={str(aqft):>4} " +
                   " ".join(f"{x:<9.4f}" for x in succ))
     os.makedirs(RESULTS, exist_ok=True)
     with open(os.path.join(RESULTS, "braket_anchor_predictions.json"),

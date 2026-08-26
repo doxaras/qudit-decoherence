@@ -2,7 +2,7 @@
 
 > **Status 2026-08-16: fields below are current.** Rebuilt after the
 > referee-driven revision, the four robustness simulations, the seed
-> reproducibility fix and the full sweep re-run. Paper is **25 pages,
+> reproducibility fix and the full sweep re-run. Paper is **26 pages,
 > 5 figures, 10 tables, 52 references**; tarball rebuilt from the
 > current source. The abstract was shortened to 1914 characters so it
 > fits arXiv's 1920-character metadata field verbatim -- the block
@@ -84,7 +84,7 @@ John Doxaras
 **Comments:**
 
 ```
-25 pages, 5 figures, 10 tables, 52 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
+26 pages, 5 figures, 10 tables, 52 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
 ```
 
 **Leave these three empty:**
@@ -114,7 +114,7 @@ If it errors on a missing `.bbl`, the tarball is stale: re-run
 
 Download the generated PDF and check, in this order:
 
-1. **25 pages** — a shorter PDF means a float or the bibliography was dropped
+1. **26 pages** — a shorter PDF means a float or the bibliography was dropped
 2. **All five figure PNGs render** — Figs. 2-6 — not grey boxes
 3. **The TikZ pipeline diagram (Fig. 1, page 3)** draws: it is vector, not a
    PNG, so it is the one element sensitive to a TeX Live version gap

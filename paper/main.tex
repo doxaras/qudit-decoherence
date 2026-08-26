@@ -255,7 +255,7 @@ What exposure does \emph{not}
 determine is the measured success probability, because the classical
 decoder intervenes: continued-fraction order recovery gains error
 tolerance with register size, and we observe it decoding correct orders
-from states with fidelity $3\times10^{-4}$ to the ideal state. That
+from states with fidelity ${\sim}3\times10^{-4}$ to the ideal state. That
 tolerance has a closed form we state and verify---an exact finite-$D$
 mediant-interval formula for the acceptance set of a decoder required
 to return $r$ itself, built on a proved acceptance lemma and including
@@ -620,8 +620,11 @@ aligned ququint scores $1.00$ against the qubit's $0.25$--$0.43$); the
 exception is $N=15$ under depolarizing noise, where the aligned qubit
 trails the ququint by $1.4\sigma$ ($0.72\pm0.05$ against
 $0.81\pm0.03$) while holding its lead in the ladder channel. On
-the two unbiased instances ($r=6$, $r=7$) all four runs give the strict
-ordering $d=5>d=3>d=2$. Misalignment is moreover graded, not binary:
+the two unbiased instances ($r=6$, $r=7$) all four runs put both
+qudits above the qubit at ${\ge}5\sigma$; the $d=5>d=3$ leg is
+decisive under depolarizing ($3.9\sigma$ and $4.1\sigma$) but a
+statistical tie on the ladder ($1.1\sigma$ at $N=21$, $0.3\sigma$ at
+$N=29$). Misalignment is moreover graded, not binary:
 averaging the distance of the phases $s/r$ to the nearest grid point,
 the $r=6$ instance is mildly tilted \emph{toward} the qubit ($0.267$ vs
 $0.300$) and the qubit still loses by $0.21$--$0.48$, while $r=7$
@@ -772,7 +775,9 @@ column: total circuit cost in time-layers for $d=2/3/5$. The
 serial-schedule winner is
 decided by the cost model and the dimension, not the noise model;
 Sec.~\ref{sec:robustness} charges measured single-qudit costs and
-concurrency against these cells.}
+concurrency against these cells. No transmon entangler beyond $d=3$
+has been demonstrated, so the ladder $d=5$ cells are counterfactual
+hardware.}
 \label{tab:cost}
 \begin{ruledtabular}
 \begin{tabular}{llcccc}
@@ -791,12 +796,17 @@ ladder & \texttt{uniform}  & 0.282 & 0.578 & \textbf{0.631} & 57/26/15 \\
 Table~\ref{tab:cost} is the paper's central result in one table. Its
 cells are exact density matrices, so they carry no statistical
 uncertainty; the axis that matters is the strength they are evaluated
-at. Sweeping it across the full demo range
+at. Sweeping it across the demo grid
 ($0.001$--$0.05$; \texttt{results/cost\_grid\_ssweep.json}) leaves the
 qudit-versus-qubit verdict of \emph{every} cell unchanged wherever the
 metric still has dynamic range---we judge only strengths at which the
 best base clears $0.10$ signal, beyond which all three bases sit at the
-random floor and the ranking is decided by third-decimal noise. One
+random floor and the ranking is decided by third-decimal noise. That
+cutoff leaves live windows narrower than the grid: $0.001$--$0.02$
+for the \texttt{uniform} cells, $0.001$--$0.01$ for
+depolarizing/\texttt{ion} and \texttt{pavlidis}, and only
+$0.001$--$0.005$ for their ladder counterparts, so the stability
+claim is scoped to those windows. One
 piece of over-precision in the table should be read down, however: in
 the depolarizing/\texttt{ion} cell the two qudits are tied rather than
 ordered ($0.502$ against $0.497$, and the ordering reverses to $d=3$ at
@@ -816,7 +826,7 @@ corrected surcharge still leaves the circuit \emph{shorter} than the
 qubit's ($48.5$ vs $57$ layers), so decomposition trims the qutrit's
 margin without surrendering either compression; at $d=5$ the
 surcharge overtakes the depth compression ($62.2$ vs $57$) and only
-the width compression (6 vs 12 carriers) survives---enough under
+the width compression (5 vs 11 carriers) survives---enough under
 nearly-flat per-particle damage, not under the ladder's escalating
 per-event damage; by $d=7$ neither survives. Eigenstate QPE moves
 with Shor (its per-particle \texttt{pavlidis} cell is now a qudit
@@ -1002,9 +1012,11 @@ sizes), because $d^m \bmod r$ is periodic in $m$ and the multiset of
 phase offsets it induces therefore repeats. Alignment does not vary
 with register size here, so it can explain neither a size-dependent
 nor a size-independent signal. On the fitted curves the qutrit
-overtakes the ququint at 8.6
-bits (calibrated ladder) and 12.5 bits (depolarizing---an
-extrapolation, the ququint's largest simulated size being 11.6 bits),
+overtakes the ququint at 8.6 bits ($68\%$ CI $8.1$--$9.1$,
+calibrated ladder) and 12.5 bits ($68\%$ CI $11.3$--$14.7$,
+depolarizing---an extrapolation, the ququint's largest simulated
+size being 11.6 bits, though the interval's lower end falls just
+inside it),
 and from the
 smallest common size under the idealized ladder---the story is not
 monotonic in $d$, and the best base depends on the target precision.
@@ -1116,7 +1128,8 @@ eigenstates of the modular multiplier, QPE on a $K$-fold eigenstate
 superposition interpolates continuously from eigenstate QPE ($K=1$) to
 the Shor regime ($K=r$) with circuit, metric, noise, and cost held
 fixed; the control--work entanglement entropy is exactly $\log_2 K$
-bits. The measured effect---the slope of the ququint advantage in
+bits (the sweep reaches $K=4$, i.e.\ $2.0$ of the Shor regime's
+$\log_2 6\approx2.6$ bits). The measured effect---the slope of the ququint advantage in
 entanglement bits---is far too small, where it exists at all:
 consistent with zero under native-gate cost ($+0.002\pm0.012$ per bit
 on the calibrated ladder, $-0.011\pm0.011$ under depolarizing) and
@@ -1154,7 +1167,10 @@ the signal rows of Table~\ref{tab:collapse} gain nothing from it.
 
 \emph{Piece 2: the residual is the decoder, not the noise.} With units
 fixed, a nested fit finds one shared amplitude with a per-\emph{algorithm}
-decay rate at $R^2=0.95$/$0.93$ (ladder/depolarizing). The split is stark
+decay rate at $R^2=0.953$ on the ladder and $0.93$--$0.94$ under
+depolarizing, the range spanning the event- and damage-unit abscissae
+(\texttt{results/exposure\_collapse.json}, \texttt{nested} fits). The
+split is stark
 at the family level: Grover is a textbook exponential in damage, while
 Shor's $d=3$ family holds a flat signal of ${\approx}0.73$ while its
 exposure triples. A candidate explanation is that Grover's ``decoder'' is the
@@ -1192,7 +1208,7 @@ ladder and $0.025$ under depolarizing at every point, while Shor's
 $d=3$ family loses two thirds of its fidelity ($0.55\to0.18$) with
 signal flat, and at $d=2$, $m=12$ under depolarizing, continued
 fractions decode a signal of $0.131\pm0.018$ from a state with
-fidelity $3\times10^{-4}$. The mechanism claim, in the form the data
+fidelity $2.7(1.1)\times10^{-4}$. The mechanism claim, in the form the data
 support: \emph{accumulated channel damage is the law for the quantum
 state; the residual algorithm dependence of decoded success sits in
 the decoder}---for which Sec.~\ref{sec:decoder} gives an exact
@@ -1209,8 +1225,12 @@ linear fidelity the shared fit gives $R^2=0.97/0.99$; rescored in
 \emph{log} fidelity---the metric that weights the deep tail---the
 same fit gives $R^2=0.76$ in both channels ($0.85$--$0.91$ if refit
 there). The law holds within a factor of two down to fidelity
-$1.5\times10^{-2}$ on the ladder and, excepting a single
-floor-pinned Grover point, to $2.7\times10^{-4}$ under depolarizing;
+$1.5(6)\times10^{-2}$ on the ladder and, excepting a single
+floor-pinned Grover point, to $2.7(1.1)\times10^{-4}$ under
+depolarizing---though the endpoint fidelities themselves carry
+$40$--$48\%$ statistical error at their $100$--$200$ trajectories,
+so ``within a factor of two'' is at the resolution limit of the
+deepest points;
 every departure is a Grover point approaching its
 $1/\!\dim\mathcal{H}$ fidelity floor (the deepest, at
 $5.3\times10^{-3}$, sits $1.4\times$ above its floor of $1/256$ and
@@ -1660,7 +1680,13 @@ depol. & \texttt{uniform} & 3 & $2.7\pm0.8$ & 2.65 & 0.32 (0.33) \\
 relaxation at $\Gamma_k\propto k^{0.7}$ and dephasing at
 $\max(j,k)^{1.1}$. Both exponents are constrained mainly by $d=3$ pair
 data (Blok's $1:2.0:2.3$, which the channel realizes as
-$1:2.14:2.14$), and are then applied at $d=5$ and $7$. Peterer
+$1:2.14:2.14$), and are then applied at $d=5$ and $7$. A provenance
+caveat sharpens the stakes: if those pair ratios were extracted from
+Ramsey decay in a quasi-static-dominated regime---where decay is
+Gaussian and $1/T_2^\ast$ scales with the \emph{first} power of the
+level sensitivity---then the Lindblad rates realize their
+\emph{squares}, $1:4.0:5.3$, a steepening the sweep below prices at
+dephasing exponent ${\approx}2$. Peterer
 \emph{et al.}~\cite{peterer2015}, who measured the sequential ladder to
 the fourth level, disagree in both places: their $T_1$ series gives
 $\Gamma_{21}/\Gamma_{10}=2.05$ (i.e.\ $k^{1.0}$, not $k^{0.7}$), and
@@ -1708,10 +1734,13 @@ is already gone at the first steepening ($0.666$ against the qutrit's
 $0.697$ at exponent $1.6$) and falls below the qubit by exponent
 $2.6$. Under linear \texttt{ion} cost even the qutrit advantage fails
 once dephasing reaches exponent $2.0$. A trajectory run extending the
-same sweep to $d=7$ (1000 per point, which reproduces the $d=2,3,5$
-columns within its error bars) shows the pattern continuing: $d=7$
+same sweep to $d=7$ (1000 per point; its ten independent $d=2$ draws
+scatter about the exact $0.5063$ with mean $z=-0.7$, the worst at
+$-2.6\sigma$) shows the pattern continuing: $d=7$
 falls from $0.682$ to $0.075$ under \texttt{uniform} cost across the
-range, and is below the qubit from exponent $1.6$ on. The dimension
+range, statistically tied with the qubit at exponent $1.6$
+($0.504\pm0.024$ against the exact $0.506$) and clearly below from
+$2.0$ on ($0.345\pm0.025$, ${>}4\sigma$). The dimension
 at which qudits help is therefore bounded by the very exponent the
 data constrain least: on the calibrated ladder as published, $d=5$
 leads; on a Peterer-consistent reading, only $d=3$ survives, and only
@@ -2126,7 +2155,8 @@ Read honestly against measured gates, however, the table must be
 entered \emph{per base}, and the measured-fidelity analysis of
 Sec.~\ref{sec:robustness} then predicts the $d=5$ experiment
 \emph{fails} on today's hardware: at the strengths the Hrmo gate set
-implies ($s_5=0.0082$ native, $s_2=0.0027$ from the same apparatus's
+implies ($s_5=0.0082$ under the \texttt{ion} accounting,
+$s_2=0.0027$ from the same apparatus's
 $d=2$ gate), the qubit register wins both pairs---$0.657$ vs $0.599$
 at 4 bits and $0.533$ vs $0.427$ at 5 bits
 (\texttt{results/qpe\_measured\_strengths.json})---and the ququint
