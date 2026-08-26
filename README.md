@@ -278,6 +278,7 @@ match the manuscript and which are partly superseded.
 |------|----------|
 | `cost_fair.py` | unbiased-instance gate-cost grid → `cost_fair.json` |
 | `d7_demo.py` | the seventh dimension — demo grid at d = 7 |
+| `d11_demo.py` | d = 11 and 13 — the primes past the break-even bar |
 | `matched_D.py` | matched control dimension: is the lead just a bigger acceptance set? |
 | `d7_matched_D.py` | the same control extended to d = 7 (qubit at D = 256/512) |
 | `cost_grid_ssweep.py` | the cost-table verdicts swept across the demo strength range |

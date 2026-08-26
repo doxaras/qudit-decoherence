@@ -2327,6 +2327,7 @@ altered assumption.
 | control | question | answer |
 |---|---|---|
 | d = 7 grid (`d7_demo.py`) | does the condition extend a prime higher? | Yes, narrowing: `pavlidis` at/below the floor; `uniform` still beats the qubit on both channels but the ladder optimum moves to d = 5; `ion` fails on the ladder, keeps a 1.6σ edge under depolarizing |
+| d = 11, 13 grid (`d11_demo.py`) | past the break-even bar? | Native gate still wins decisively on both channels (0.89/0.86 vs 0.33 depol.) — the m = 2 register's 36 carrier-layers beat per-event damage of 6.8–8.1s; `ion` collapses on the ladder (0.07/0.03 vs 0.25); `pavlidis` dead. Demo-size statements: the d-ordering is set by the m-staircase, and the Janković bar (11.6/15.1 vs ratio 6.3) errs conservative at its widest margin |
 | matched D (`matched_D.py`, `d7_matched_D.py`) | is the qudit lead just a bigger acceptance set (§12)? | No — equalizing D *helps* qudits: the D-matched qubit scores lower (0.33→0.27→0.22 depol. as D = 64→256→512), its decoder gift outweighed by added exposure; the d = 7 loss to d = 5 stands *despite* a 3× acceptance-set advantage |
 | composite d (`d4_control.py`, `composite_control.py`) | does primality matter dynamically? | No: d = 4 and d = 6 land inside the qudit band (d = 6 at its top under depolarizing) — §2.1 measured |
 | ladder exponents (`ladder_exponent_sensitivity.py`) | are the verdicts artifacts of the fitted 0.7/1.1? | Under native cost the qutrit survives every exponent Peterer admits; the ququint dies at the first steepening (1.6) and d = 7 falls hardest; under `ion` cost even the qutrit fails from exponent 2.0 |
@@ -2433,8 +2434,10 @@ Restating the paper's Limitations as open problems:
   tolerance in the opposite direction.
 - **The plateau's onset is unfitted** — six sizes locate the fall but
   cannot fit its onset; beyond 14.3 bits is unmeasured.
-- **d > 7 is untested**, and d = 7 only at demo size, where the
-  break-even window has visibly narrowed.
+- **No scaling sweep exists above d = 5.** d = 7, 11, 13 are tested
+  only at demo size on one instance, where the linear-cost window
+  closes by d = 11 and the native-gate cells are dominated by
+  register granularity (the m-staircase of §23.1).
 - **Compiled arithmetic** is charged, not compiled: at face value the
   compiled qudit-to-qubit depth ratio spans ≈ 0.9–2.7 across
   d = 3–5, harsher than any cost model here — the decomposition
@@ -2528,7 +2531,7 @@ Course-scale projects; each has a committed answer key.
 | § | topic | script → result |
 |---|---|---|
 | 3, 20 | cost models | `cost_fair.py` → `cost_fair.json`; `cost_sensitivity.py`; `cost_grid_ssweep.py` |
-| 3 | d = 7 grid | `d7_demo.py`; matched-D extension `d7_matched_D.py` |
+| 3 | d = 7–13 grids | `d7_demo.py`, `d11_demo.py`; matched-D extension `d7_matched_D.py` |
 | 6–7 | QPE / order finding engines | `qudit_shor.py`, `qpe_generic.py`, `qpe_hires.py` |
 | 7.4 | interpolation | `interpolation_experiment.py`, `interpolation_slopes.py` |
 | 9 | Grover | `grover.py`, `grover_study.py`, `grover_cost.py` |

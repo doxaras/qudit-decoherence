@@ -961,6 +961,36 @@ $3\times$ acceptance-set advantage at identical carrier and layer
 count---the seventh level's larger per-event damage overcomes a
 decoder gift.
 
+\emph{The primes past the bar.} At $d=11$ the demo register hits a
+step: $m=w=2$ suffices ($D=121$), leaving four carriers and nine
+\texttt{uniform} layers---$36$ carrier-layers of exposure against
+the qubit's $627$---while the ladder's per-event damage keeps
+climbing, $6.8s$ and $8.1s$ per carrier-layer at $d=11,13$ against
+$2.8s$ at $d=5$. The two effects collide, and exposure wins
+(\texttt{results/d11\_demo.json}; 1000 trajectories, both bases at
+residual misalignment $0.300$, matching bases $3$--$7$): with a
+native gate the eleventh and thirteenth primes beat the qubit
+decisively on both channels ($0.89/0.86$ vs $0.33$ under
+depolarizing, $0.68/0.67$ vs $0.24$ on the ladder at $s=0.005$).
+The \texttt{ion} charge, whose $d-1$ multiplier now costs $54$--$64$
+layers, collapses on the ladder ($0.07/0.03$ vs $0.25$) while
+keeping a thin depolarizing edge ($0.40/0.45$ vs $0.33$), and
+\texttt{pavlidis} loses everywhere ($-0.03$ to $+0.10$ against the
+qubit's $0.29$--$0.34$). Three cautions temper the native-gate
+cells. The ordering in $d$ is set by register granularity---the drop
+from $m=3$ to $m=2$ at $d\ge9$ is why $d=11$ scores above
+$d=7$---so these are demo-size statements, not asymptotics. The
+larger $D$ carries a larger acceptance set (floors $14/121$ and
+$24/169$, floor-corrected as everywhere). And no entangling gate
+beyond $d=5$ exists on any platform, so every cost model here is
+counterfactual twice over. The gate-level break-even bar
+$(d^2{-}1)/(3\log_2 d)=11.6$ and $15.1$ is not remotely cleared by
+the layer ratio $57/9=6.3$, yet the native register wins---the
+criterion errs conservative at its widest margin yet. The structural
+statement survives untouched: native gates keep the advantage alive
+at every prime tested; decomposition has forfeited it from $d=7$ on,
+and linear cost forfeits the ladder from $d=11$ on.
+
 % =====================================================================
 \section{Scaling with problem size}
 \label{sec:scaling}
@@ -2458,9 +2488,11 @@ is derived and verified exactly (Sec.~\ref{sec:decoder}) and grid
 alignment is excluded as a confound. Statistical error
 bars are small throughout; the dominant uncertainty is the systematic
 spread across channel and cost-model choices, which is why we report
-the full grid. Dimensions beyond $d=7$ are untested, and $d=7$ itself only at demo
-size on one instance (Sec.~\ref{sec:cost}), where the break-even
-window has visibly narrowed. All
+the full grid. Dimensions beyond $d=5$ are tested only at demo size
+on one instance ($d=7$, $11$, $13$; Sec.~\ref{sec:cost}), where the
+linear-cost window closes by $d=11$ and the native-gate cells are
+dominated by register granularity---no scaling sweep exists above
+$d=5$. All
 simulations are of ideal algorithm circuits: the controlled-$U^{d^i}$
 multipliers are applied as exact unitaries, each charged one gate at
 the cost model's per-gate rate, whereas compiled modular
