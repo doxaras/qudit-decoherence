@@ -15,9 +15,9 @@ superconducting hardware.
 
 ## 📄 The paper
 
-**"Native gates or nothing: the condition for a qudit advantage in
-uncorrected quantum algorithms under decoherence"** — `paper/main.pdf`
-(19 pp, 6 figures, 7 tables, 48 references).
+**"The conditions for a qudit advantage in uncorrected quantum
+algorithms under decoherence"** — `paper/main.pdf`
+(28 pp, 6 figures, 10 tables, 54 references).
 
 - **`docs/TEXTBOOK.md`** — 🎓 *start here.* The complete mathematical
   and physical background, derived from first principles: qudits and the
@@ -120,12 +120,12 @@ the idealized noise models.
 > - Any claim below about **qubits leading in Shor** is superseded by
 >   `docs/GRID_ALIGNMENT.md` — it was an arithmetic artifact of N = 15,
 >   which admits only power-of-two orders.
-> - Any **scaling slope** below is superseded by the six-size sweep in
->   the paper (`docs/PAPER.md` changelog, Aug 12): under the calibrated
->   ladder, −0.045 ± 0.003/bit (d = 2), −0.021 ± 0.005/bit (d = 3),
->   −0.040 ± 0.004/bit (d = 5). In particular the qutrit family is
->   **plateau-then-fall, not flat**; the earlier flatness claim is
->   withdrawn.
+> - Any **scaling slope** below is superseded by the seven-size sweep in
+>   the paper (Aug 27): under the calibrated ladder,
+>   −0.049 ± 0.005/bit (d = 2), −0.015 ± 0.003/bit (d = 3, to 15.8
+>   bits), −0.039 ± 0.003/bit (d = 5, to 16.3 bits). In particular the
+>   qutrit family is **plateau-then-fall, not flat**; the earlier
+>   flatness claim is withdrawn.
 > - The QPE results are unaffected throughout — their golden-ratio
 >   target phase was base-fair by construction.
 
