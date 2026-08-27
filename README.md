@@ -1,6 +1,6 @@
 # ai-qutrits — prime-base quantum information vs. decoherence
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21901534.svg)](https://doi.org/10.5281/zenodo.21901534)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21901533.svg)](https://doi.org/10.5281/zenodo.21901533)
 
 **📄 [Paper PDF — direct download](https://raw.githubusercontent.com/doxaras/qudit-decoherence/main/paper/main.pdf)** (GitHub's in-browser PDF preview sometimes fails; the file itself is fine)
 
