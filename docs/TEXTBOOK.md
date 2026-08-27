@@ -2272,31 +2272,37 @@ d = 5 only under assumptions the data currently disfavour.
 
 ### 22.3 Scaling, and the plateau
 
-Sweeping precision 6 → 14.3 bits (D = 64 to 19683; deepest register
-3¹² = 5.3×10⁵), 1000 trajectories per point, weighted least-squares
-fits with committed statistics (`scaling_claims.py`):
+Sweeping precision 6 → 16.3 bits (control D = 64 to 78125; deepest
+registers 3¹³ = 1.6×10⁶ and 5⁹ = 2.0×10⁶), 1000 trajectories per
+point, weighted least-squares fits with committed statistics
+(`scaling_claims.py`):
 
 - Both qudits stay above the qubit at every precision in all four
   regimes (≥ 5σ where quoted).
-- The qubit decays roughly 2× faster per precision bit: −0.045(3)/bit
-  against the qutrit's −0.021(5) on the ladder; the ququint decays at
-  qubit-like slope from a higher start.
+- The qubit decays 3.3(7)× faster per precision bit than the qutrit:
+  −0.049(5)/bit against −0.015(3) on the calibrated ladder (n = 7,
+  out to 15.8 bits); the ququint decays at qubit-like slope,
+  −0.039(3), from a higher start (n = 5, out to 16.3 bits).
 - **The qutrit family holds a plateau, then falls**: first three sizes
   flat (χ²/dof = 0.15, lower-tail p = 0.14), the 14.3-bit point
-  3.5σ below the 9.5-bit one. A single slope is a summary, not a
-  model.
-- Qutrit–ququint crossings, with Monte Carlo confidence intervals:
-  8.6 [8.1–9.1] bits (ladder) and 12.5 [11.3–14.7] bits
-  (depolarizing) — the second extrapolated past the ququint's last
-  simulated size, and the first's lower end inside the simulated
-  range.
+  3.5σ below the 9.5-bit one and the 15.8-bit point (0.568 ± 0.031)
+  continuing the fall. A single slope is a summary, not a model.
+- Qutrit–ququint crossings, with bootstrap confidence intervals
+  (6000 parametric refits): 8.7 [8.0–9.2] bits on the ladder — and
+  the deepest sizes now measure its far side directly, 0.568 ± 0.031
+  (d = 3, 15.8 bits) against 0.407 ± 0.026 (d = 5, 16.3 bits), a
+  4.0σ gap. Under depolarizing the fitted lines cross at 14.7
+  [13.2–17.5] bits, but the measurement does not yet realize it: at
+  the deepest sizes the ququint still leads, 0.508 ± 0.026 to
+  0.454 ± 0.036 (1.2σ), because the qutrit's seventh size falls off
+  its plateau faster than its fitted line allows.
 - **This is the decoder law made visible** (§12.2): acceptance grows
   linearly in D while broadening grows polynomially in m, so decoder
   tolerance postpones the decay of decoded success. The reprieve ends
   when accepted outcomes stop carrying amplitude.
 
 > **Honest-reporting note.** Five sizes would have read as a flat
-> family; the sixth resolves the shape. An earlier version of this
+> family; the sixth and seventh resolve the shape. An earlier version of this
 > project claimed flatness and has retracted it. Instance robustness:
 > the N = 29 sweep replicates the ordering and the qubit's fastest
 > decay; the qutrit slope replicates under the ladder (1.7σ) but not
@@ -2432,8 +2438,9 @@ Restating the paper's Limitations as open problems:
 - **Gate cost and gate error are treated as proportional**; longer-
   but-better gates would soften the ion penalty, and f* bounds the
   tolerance in the opposite direction.
-- **The plateau's onset is unfitted** — six sizes locate the fall but
-  cannot fit its onset; beyond 14.3 bits is unmeasured.
+- **The plateau's onset is unfitted** — seven sizes locate the fall but
+  cannot fit its onset; beyond 15.8 bits (qutrit) / 16.3 bits
+  (ququint) is unmeasured.
 - **No scaling sweep exists above d = 5.** d = 7, 11, 13 are tested
   only at demo size on one instance, where the linear-cost window
   closes by d = 11 and the native-gate cells are dominated by

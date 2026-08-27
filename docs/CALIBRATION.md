@@ -5,11 +5,11 @@
 > results sections:
 > - **§4 uses the confounded N = 15 instance.** Superseded by
 >   `GRID_ALIGNMENT.md`.
-> - **§6's scaling slopes are retired.** Six qutrit sizes (to 14.3 bits,
->   Hilbert dimension 5.3 × 10⁵) give −0.045 ± 0.003/bit (d = 2),
->   −0.021 ± 0.005/bit (d = 3), −0.040 ± 0.004/bit (d = 5) under the
->   calibrated ladder, and the qutrit family is **plateau-then-fall,
->   not flat**.
+> - **§6's scaling slopes are retired.** Seven qutrit sizes (to 15.8 bits,
+>   Hilbert dimension 1.6 × 10⁶) give −0.049 ± 0.005/bit (d = 2),
+>   −0.015 ± 0.003/bit (d = 3), −0.039 ± 0.003/bit (d = 5, to 16.3
+>   bits) under the calibrated ladder, and the qutrit family is
+>   **plateau-then-fall, not flat**.
 >
 > For the fitted channel derived from first principles, including the
 > Euclidean-embedding construction, see `TEXTBOOK.md` §15–16. For the

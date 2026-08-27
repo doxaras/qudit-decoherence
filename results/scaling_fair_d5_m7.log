@@ -1,0 +1,7 @@
+baseline d=5 m=7: success=0.3333 floor=0.1423 layers=49 dim=1953125 traj=1000
+depolarizing           success=0.2394±0.0050 signal= 0.508 (32411.9s)
+transmon               success=0.1976±0.0050 signal= 0.289 (32475.2s)
+transmon_cal           success=0.2201±0.0049 signal= 0.407 (32436.8s)
+transmon_cal_lowcharge success=0.2889±0.0029 signal= 0.767 (32398.2s)
+
+wrote results/scaling_fair_d5_m7.json
