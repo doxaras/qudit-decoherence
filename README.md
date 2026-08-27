@@ -2,12 +2,14 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21901534.svg)](https://doi.org/10.5281/zenodo.21901534)
 
+**📄 [Paper PDF — direct download](https://raw.githubusercontent.com/doxaras/qudit-decoherence/main/paper/main.pdf)** (GitHub's in-browser PDF preview sometimes fails; the file itself is fine)
+
 Can storing quantum information in a **prime base** — qutrits (d = 3),
 ququints (d = 5) — instead of qubits buy you resilience against
 decoherence? This repo answers the question quantitatively across three
 algorithms — **Shor order finding**, **eigenstate phase estimation** and
 **Grover search** — under two hardware-grounded noise models, three gate
-cost models, registers to Hilbert-space dimension 5.3 × 10⁵ (19.0
+cost models, registers to Hilbert-space dimension 2.0 × 10⁶ (20.9
 qubit-equivalents), and an anchor run on real trapped-ion and
 superconducting hardware.
 
