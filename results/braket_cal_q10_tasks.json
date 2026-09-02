@@ -1,0 +1,5 @@
+{
+ "cal_ref_all0": "arn:aws:braket:eu-north-1:<ACCOUNT>:quantum-task/2996dbc0-a991-4182-a065-23199424a37f",
+ "cal_x_q10": "arn:aws:braket:eu-north-1:<ACCOUNT>:quantum-task/25b93ed8-36d9-4ba9-8a15-dc7198642534",
+ "cal_x_all6": "arn:aws:braket:eu-north-1:<ACCOUNT>:quantum-task/8eaa3eb5-9117-4a00-8d33-13dd9dbb41ca"
+}

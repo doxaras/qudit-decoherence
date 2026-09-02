@@ -36,7 +36,16 @@ def _kraus_sets(d: int, noise_model: str, strength: float,
     for c in costs:
         Ec = noise_superop_pow(d, noise_model, strength, c, dephase_ratio,
                                **noise_kw)
-        sets[c] = [(K, K.conj().T @ K) for K in kraus_from_superop(Ec)]
+        kraus = [(K, K.conj().T @ K) for K in kraus_from_superop(Ec)]
+        # Guard: the eigenvalue cut in kraus_from_superop must not have
+        # truncated the channel -- sum K^dag K = I, or sampling is biased.
+        comp = sum(KdK for _, KdK in kraus)
+        defect = float(np.abs(comp - np.eye(d)).max())
+        if defect > 1e-8:
+            raise RuntimeError(
+                f"Kraus completeness violated ({defect:.1e}) for "
+                f"{noise_model} d={d} s={strength} cost={c}")
+        sets[c] = kraus
     return sets
 
 

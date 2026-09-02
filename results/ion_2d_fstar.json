@@ -38,22 +38,22 @@
    "channel": "transmon_cal",
    "d": 3,
    "qubit_signal": 0.5063462901226377,
-   "f_star_2d": 0.8457487300349547,
+   "f_star_2d": 0.7037972120748094,
    "f_measured_2d": 0.5556356449770555,
    "f_measured_sigma": 0.16310403893167638,
    "f_measured_1d": null,
-   "signal_at_nearest_f": 0.673629100061125,
+   "signal_at_nearest_f": 0.6191341732178567,
    "nearest_factor": 0.5,
    "sweep": {
-    "0.5": 0.673629100061125,
-    "0.75": 0.5473151145026492,
-    "1.0": 0.44034548585834443,
-    "1.25": 0.34960996883117273,
-    "1.5": 0.27251458937067663,
-    "1.75": 0.20689181366017773,
-    "2.0": 0.15092719544199823,
-    "2.5": 0.062130456901077435,
-    "3.0": -0.003358903563925492
+    "0.5": 0.6191341732178567,
+    "0.75": 0.4807761923272531,
+    "1.0": 0.36820477527705475,
+    "1.25": 0.27640443742137144,
+    "1.5": 0.20136530554580342,
+    "1.75": 0.1398726416689627,
+    "2.0": 0.08934242498082151,
+    "2.5": 0.013241160096119121,
+    "3.0": -0.03925269622520349
    },
    "verdict": "SURVIVES"
   },
@@ -61,22 +61,22 @@
    "channel": "transmon_cal",
    "d": 5,
    "qubit_signal": 0.5063462901226377,
-   "f_star_2d": 0.6890729345882654,
+   "f_star_2d": 0.5159394641577326,
    "f_measured_2d": 0.834013010800558,
    "f_measured_sigma": 0.2122519259927625,
    "f_measured_1d": null,
-   "signal_at_nearest_f": 0.47374601376834946,
+   "signal_at_nearest_f": 0.3716054516110545,
    "nearest_factor": 0.75,
    "sweep": {
-    "0.5": 0.6075136428753035,
-    "0.75": 0.47374601376834946,
-    "1.0": 0.36951118564382174,
-    "1.25": 0.2882368671106416,
-    "1.5": 0.22482271437793705,
-    "1.75": 0.1753079525443838,
-    "2.0": 0.13661443585728195,
-    "2.5": 0.08264523373977892,
-    "3.0": 0.04944314429427872
+    "0.5": 0.5155221076448429,
+    "0.75": 0.3716054516110545,
+    "1.0": 0.26862715523697134,
+    "1.25": 0.19477430474517554,
+    "1.5": 0.14168065323193665,
+    "1.75": 0.10340836566223924,
+    "2.0": 0.07573393994534316,
+    "2.5": 0.04099594226129715,
+    "3.0": 0.02228146832630126
    },
    "verdict": "LOST"
   },
@@ -134,7 +134,7 @@
    "strength": 0.0,
    "cost": "uniform",
    "success": 0.289109048265707,
-   "elapsed_s": 9.3
+   "elapsed_s": 4.9
   },
   {
    "d": 3,
@@ -142,7 +142,7 @@
    "strength": 0.0,
    "cost": "uniform",
    "success": 0.28760065666458684,
-   "elapsed_s": 5.7
+   "elapsed_s": 2.8
   },
   {
    "d": 5,
@@ -150,7 +150,7 @@
    "strength": 0.0,
    "cost": "uniform",
    "success": 0.32734242057805996,
-   "elapsed_s": 6.4
+   "elapsed_s": 3.1
   },
   {
    "d": 2,
@@ -158,151 +158,151 @@
    "strength": 0.003,
    "cost": "ion",
    "success": 0.20809600776489762,
-   "elapsed_s": 54.6
+   "elapsed_s": 25.2
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.0015,
    "cost": "ion2d",
-   "success": 0.23402887522211163,
-   "elapsed_s": 23.2
+   "success": 0.22508386722318155,
+   "elapsed_s": 11.5
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.0022500000000000003,
    "cost": "ion2d",
-   "success": 0.21329520923432296,
-   "elapsed_s": 22.9
+   "success": 0.2023732532729741,
+   "elapsed_s": 11.3
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.003,
    "cost": "ion2d",
-   "success": 0.19573680078617794,
-   "elapsed_s": 22.8
+   "success": 0.18389534561634044,
+   "elapsed_s": 11.4
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.00375,
    "cost": "ion2d",
-   "success": 0.18084312218872944,
-   "elapsed_s": 22.1
+   "success": 0.1688268832109265,
+   "elapsed_s": 11.1
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.0045000000000000005,
    "cost": "ion2d",
-   "success": 0.16818838851162798,
-   "elapsed_s": 23.2
+   "success": 0.15650966996298102,
+   "elapsed_s": 11.9
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.00525,
    "cost": "ion2d",
-   "success": 0.15741681237334534,
-   "elapsed_s": 22.9
+   "success": 0.1464160263503223,
+   "elapsed_s": 11.5
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.006,
    "cost": "ion2d",
-   "success": 0.1482305635495152,
-   "elapsed_s": 24.2
+   "success": 0.13812180120596967,
+   "elapsed_s": 11.7
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.0075,
    "cost": "ion2d",
-   "success": 0.13365512354916667,
-   "elapsed_s": 24.1
+   "success": 0.1256302453391239,
+   "elapsed_s": 11.5
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.009000000000000001,
    "cost": "ion2d",
-   "success": 0.12290544670513527,
-   "elapsed_s": 23.8
+   "success": 0.11701370079288746,
+   "elapsed_s": 11.8
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.0015,
    "cost": "ion2d",
-   "success": 0.24910324010495807,
-   "elapsed_s": 26.2
+   "success": 0.23076542479942616,
+   "elapsed_s": 12.5
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.0022500000000000003,
    "cost": "ion2d",
-   "success": 0.2224376771237897,
-   "elapsed_s": 25.8
+   "success": 0.20207673022415074,
+   "elapsed_s": 12.4
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.003,
    "cost": "ion2d",
-   "success": 0.2016592541769083,
-   "elapsed_s": 25.5
+   "success": 0.18154878735793614,
+   "elapsed_s": 12.7
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.00375,
    "cost": "ion2d",
-   "success": 0.1854578347896719,
-   "elapsed_s": 26.2
+   "success": 0.166826781374312,
+   "elapsed_s": 12.6
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.0045000000000000005,
    "cost": "ion2d",
-   "success": 0.17281670408502778,
-   "elapsed_s": 25.5
+   "success": 0.156242964364335,
+   "elapsed_s": 13.0
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.00525,
    "cost": "ion2d",
-   "success": 0.16294631160678114,
-   "elapsed_s": 25.4
+   "success": 0.1486136739191319,
+   "elapsed_s": 12.7
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.006,
    "cost": "ion2d",
-   "success": 0.1552330523296967,
-   "elapsed_s": 25.4
+   "success": 0.14309698690861813,
+   "elapsed_s": 12.7
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.0075,
    "cost": "ion2d",
-   "success": 0.14447470094292708,
-   "elapsed_s": 25.4
+   "success": 0.13617223036424536,
+   "elapsed_s": 12.5
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.009000000000000001,
    "cost": "ion2d",
-   "success": 0.13785611606461182,
-   "elapsed_s": 25.1
+   "success": 0.13244164183019827,
+   "elapsed_s": 13.0
   },
   {
    "d": 2,
@@ -310,7 +310,7 @@
    "strength": 0.005,
    "cost": "ion",
    "success": 0.17928488827437242,
-   "elapsed_s": 59.5
+   "elapsed_s": 25.3
   },
   {
    "d": 3,
@@ -318,7 +318,7 @@
    "strength": 0.0025,
    "cost": "ion2d",
    "success": 0.2240702776702893,
-   "elapsed_s": 23.3
+   "elapsed_s": 11.4
   },
   {
    "d": 3,
@@ -326,7 +326,7 @@
    "strength": 0.00375,
    "cost": "ion2d",
    "success": 0.20160266269242338,
-   "elapsed_s": 23.4
+   "elapsed_s": 11.6
   },
   {
    "d": 3,
@@ -334,7 +334,7 @@
    "strength": 0.005,
    "cost": "ion2d",
    "success": 0.1836869279189359,
-   "elapsed_s": 22.1
+   "elapsed_s": 11.4
   },
   {
    "d": 3,
@@ -342,7 +342,7 @@
    "strength": 0.00625,
    "cost": "ion2d",
    "success": 0.16940635238969864,
-   "elapsed_s": 23.4
+   "elapsed_s": 11.3
   },
   {
    "d": 3,
@@ -350,7 +350,7 @@
    "strength": 0.0075,
    "cost": "ion2d",
    "success": 0.15803338779271373,
-   "elapsed_s": 23.9
+   "elapsed_s": 11.7
   },
   {
    "d": 3,
@@ -358,7 +358,7 @@
    "strength": 0.00875,
    "cost": "ion2d",
    "success": 0.1489892876865536,
-   "elapsed_s": 23.5
+   "elapsed_s": 11.8
   },
   {
    "d": 3,
@@ -366,7 +366,7 @@
    "strength": 0.01,
    "cost": "ion2d",
    "success": 0.1418126517086859,
-   "elapsed_s": 23.3
+   "elapsed_s": 11.9
   },
   {
    "d": 3,
@@ -374,7 +374,7 @@
    "strength": 0.0125,
    "cost": "ion2d",
    "success": 0.13166079154356844,
-   "elapsed_s": 23.2
+   "elapsed_s": 11.6
   },
   {
    "d": 3,
@@ -382,7 +382,7 @@
    "strength": 0.015,
    "cost": "ion2d",
    "success": 0.12542367575280455,
-   "elapsed_s": 23.5
+   "elapsed_s": 11.7
   },
   {
    "d": 5,
@@ -390,7 +390,7 @@
    "strength": 0.0025,
    "cost": "ion2d",
    "success": 0.2591821255101202,
-   "elapsed_s": 25.5
+   "elapsed_s": 12.2
   },
   {
    "d": 5,
@@ -398,7 +398,7 @@
    "strength": 0.00375,
    "cost": "ion2d",
    "success": 0.2344856294995131,
-   "elapsed_s": 25.6
+   "elapsed_s": 12.6
   },
   {
    "d": 5,
@@ -406,7 +406,7 @@
    "strength": 0.005,
    "cost": "ion2d",
    "success": 0.21447926518623828,
-   "elapsed_s": 25.6
+   "elapsed_s": 12.6
   },
   {
    "d": 5,
@@ -414,7 +414,7 @@
    "strength": 0.00625,
    "cost": "ion2d",
    "success": 0.19826823145715577,
-   "elapsed_s": 26.0
+   "elapsed_s": 12.5
   },
   {
    "d": 5,
@@ -422,7 +422,7 @@
    "strength": 0.0075,
    "cost": "ion2d",
    "success": 0.18512957104337668,
-   "elapsed_s": 25.1
+   "elapsed_s": 12.7
   },
   {
    "d": 5,
@@ -430,7 +430,7 @@
    "strength": 0.00875,
    "cost": "ion2d",
    "success": 0.17447888547100177,
-   "elapsed_s": 24.2
+   "elapsed_s": 13.0
   },
   {
    "d": 5,
@@ -438,7 +438,7 @@
    "strength": 0.01,
    "cost": "ion2d",
    "success": 0.16584355731563238,
-   "elapsed_s": 23.8
+   "elapsed_s": 12.8
   },
   {
    "d": 5,
@@ -446,7 +446,7 @@
    "strength": 0.0125,
    "cost": "ion2d",
    "success": 0.15316227917672195,
-   "elapsed_s": 23.9
+   "elapsed_s": 12.6
   },
   {
    "d": 5,
@@ -454,7 +454,7 @@
    "strength": 0.015,
    "cost": "ion2d",
    "success": 0.14481980994153543,
-   "elapsed_s": 22.0
+   "elapsed_s": 11.8
   }
  ]
 }

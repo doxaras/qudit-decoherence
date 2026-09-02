@@ -2,9 +2,9 @@
 
 > **Status 2026-08-16: fields below are current.** Rebuilt after the
 > referee-driven revision, the four robustness simulations, the seed
-> reproducibility fix and the full sweep re-run. Paper is **28 pages,
-> 5 figures, 10 tables, 54 references**; tarball rebuilt from the
-> current source. The abstract was shortened to 1913 characters so it
+> reproducibility fix and the full sweep re-run. Paper is **32 pages,
+> 5 figures, 10 tables, 55 references**; tarball rebuilt from the
+> current source. The abstract was shortened to 1914 characters so it
 > fits arXiv's 1920-character metadata field verbatim -- the block
 > below is a copy of the paper's abstract, not a separate summary.
 
@@ -70,7 +70,7 @@ algorithm-under-noise work and cross-lists can be added after announcement.
 **Title** — one line, no `\\` linebreak:
 
 ```
-Native gates are necessary but not sufficient: the conditions for a qudit advantage in uncorrected quantum algorithms under decoherence
+The conditions for a qudit advantage in uncorrected quantum algorithms under decoherence
 ```
 
 **Authors** — exactly this format, arXiv parses comma-separated:
@@ -84,7 +84,7 @@ John Doxaras
 **Comments:**
 
 ```
-28 pages, 5 figures, 10 tables, 54 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
+32 pages, 5 figures, 10 tables, 55 references. Code, data, and hardware records: https://github.com/doxaras/qudit-decoherence
 ```
 
 **Leave these three empty:**
@@ -136,11 +136,11 @@ paper cross-link in both directions.
 ## Abstract as plain text
 
 arXiv's abstract field accepts at most 1920 characters. The paper's
-abstract is 1913, so this is the paper's abstract verbatim, with LaTeX
+abstract is 1914, so this is the paper's abstract verbatim, with LaTeX
 stripped -- the PDF and the metadata say the same thing. Paste it as is:
 
 ```
-Whether qudits buy resilience against decoherence in full algorithms is open: prior noisy comparisons stop at gate-level criteria, arithmetic primitives, or a fixed dimension, and error-correcting codes have no instance to compress. We simulate Shor order finding, eigenstate phase estimation, and Grover search as bare, uncorrected circuits on qubit, qutrit, and ququint registers, under transmon-calibrated ladder and trapped-ion depolarizing channels, three entangling-gate cost models, and registers to Hilbert-space dimension 2.0x10^6. Two conditions organize all three. A qudit advantage needs an entangling gate whose cost grows at most linearly in d: two-level-decomposed gates forfeit it at d>=5 on the ladder and at d=7 everywhere, and the decomposed qutrit's residual advantage survives realistic accounting only under per-particle noise. And it survives only while the gate's own infidelity growth with d stays below a critical inflation factor we compute: converted through each channel's damage identity, the only native gate characterized across d=2/3/5 (99.6/98.7/93.7%) fails at d=5 in seven of eight readings, while its qutrit gate passes seven of eight; the transmon qutrit gate passes only when charged solely on the entangler, and loses once its 580-ns duration is charged as exposure. Further tightenings independently leave only d=3. Accumulated channel damage fixes end-state fidelity on one exponential across algorithms and bases; what the algorithm adds is its decoder, for which we derive an exact finite-size mediant-interval acceptance law, verified outcome-for-outcome, base-independent at matched control dimension: the quantum state carries the whole cross-base difference. A number-theoretic confound, grid alignment, reverses naive cross-dimension comparisons. A shallow trapped-ion anchor fixes the channel's scale; deeper anchors fail coherently, bounding the validated depth.
+Whether qudits buy resilience against decoherence in full algorithms is open: prior noisy comparisons stop at gate-level criteria, arithmetic primitives, or a fixed dimension. We simulate Shor order finding, eigenstate phase estimation, and Grover search as uncorrected circuits on qubit, qutrit, and ququint registers, under transmon-calibrated ladder and trapped-ion depolarizing channels (the ladder's per-level law is measured through level 3 and extrapolated beyond), three entangling-gate cost models, and registers to Hilbert-space dimension 2.0x10^6. Two conditions organize all three. A qudit advantage needs an entangling gate whose cost grows at most linearly in d: two-level-decomposed gates forfeit it on the calibrated ladder at every dimension tested; the decomposed qutrit's residual advantage survives only under per-particle noise. And the gate's own infidelity growth with d must stay below a critical inflation factor we compute: the only native gate characterized across d=2/3/5 (99.6/98.7/93.7%) fails at d=5 in all eight readings of the accounting (one measured fidelity through every channel, cost, and scope pairing; two survive only at -1 sigma) while its qutrit gate passes seven of eight; the transmon qutrit gate fails both charging scopes -- 97.3% measured against 97.4% gate-only and 98.5% global targets -- and its timed reading fails against any two-qubit comparator faster than ~310 ns. Further tightenings independently leave only the trapped-ion d=3. Accumulated channel damage fixes end-state fidelity on one exponential; what the algorithm adds is its decoder, for which we derive an exact mediant-interval acceptance law, base-independent at matched control dimension. A number-theoretic confound, grid alignment, reverses naive cross-dimension comparisons. A shallow trapped-ion anchor fixes the channel's scale; deeper anchors fail coherently, bounding the validated depth.
 ```
 
 Written ASCII-only on purpose. arXiv accepts UTF-8, but ASCII removes any

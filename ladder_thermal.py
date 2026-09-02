@@ -57,13 +57,24 @@ RESULTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
 
 def thermal_generator(d: int, s: float, nbar: float) -> np.ndarray:
     """Lindblad generator, one time-layer, on d+1 levels: calibrated
-    ladder + detailed-balance thermal up-jumps."""
+    ladder + detailed-balance thermal up-jumps.
+
+    Secular form: one jump operator per transition, matching the main
+    channel (`_relaxation_dissipator`); an earlier revision used the
+    single collective jump here and silently kept the pre-revision
+    channel after the secular change landed elsewhere.
+    """
     dd = d + 1
-    down = np.diag(np.sqrt(np.arange(1.0, dd) ** 0.7), 1)
-    L = s * _dissipator(down)
-    if nbar > 0:
-        up = np.diag(np.sqrt(np.arange(1.0, dd) ** 0.7), -1)
-        L = L + s * nbar * _dissipator(up)
+    amps = np.sqrt(np.arange(1.0, dd) ** 0.7)
+    L = np.zeros((dd * dd, dd * dd))
+    for k in range(1, dd):
+        down_k = np.zeros((dd, dd))
+        down_k[k - 1, k] = amps[k - 1]
+        L = L + s * _dissipator(down_k)
+        if nbar > 0:
+            up_k = np.zeros((dd, dd))
+            up_k[k, k - 1] = amps[k - 1]
+            L = L + s * nbar * _dissipator(up_k)
     for Ld in _mds_dephasing_jumps(dephasing_matrix(dd, s)):
         L = L + _dissipator(Ld)
     return L

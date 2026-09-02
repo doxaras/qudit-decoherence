@@ -104,16 +104,27 @@ def r_squared(y, yhat):
     return 1.0 - np.sum((y - yhat) ** 2) / np.sum((y - np.mean(y)) ** 2)
 
 
-def fit_exp(x, y):
-    """signal = A*exp(-k*x), linear-domain least squares (as the original)."""
+def fit_exp(x, y, err=None):
+    """signal = A*exp(-k*x), linear-domain least squares (as the original).
+
+    With `err`, an inverse-variance-weighted fit; exact points (err = 0,
+    the density-matrix cells) are floored at a tenth of the smallest
+    trajectory error so they dominate without degenerating the weights.
+    """
     x, y = np.asarray(x, float), np.asarray(y, float)
     pos = y > 0
     k0 = 0.3
     if pos.sum() >= 2:
         slope = np.polyfit(x[pos], np.log(y[pos]), 1)[0]
         k0 = max(-slope, 1e-6)
+    sigma = None
+    if err is not None:
+        sigma = np.asarray(err, float).copy()
+        nz = sigma[sigma > 0]
+        sigma[sigma <= 0] = (nz.min() / 10.0) if nz.size else 1.0
     (A, k), _ = curve_fit(lambda x, A, k: A * np.exp(-k * x), x, y,
-                          p0=(max(y.max(), 1e-3), k0), maxfev=20000)
+                          p0=(max(y.max(), 1e-3), k0), sigma=sigma,
+                          maxfev=20000)
     yhat = A * np.exp(-k * x)
     return dict(A=A, k=k, r2=r_squared(y, yhat), resid=y - yhat)
 
@@ -197,13 +208,17 @@ def main():
         fams = [f"{p['alg']} d={p['d']}" for p in sub]
         xs = {name: [abscissas(p)[name] for p in sub]
               for name in abscissas(sub[0])}
+        errs = [p.get("stderr", 0.0) or 0.0 for p in sub]
         entry = {"n_points": len(sub), "abscissa": {}}
         for name, x in xs.items():
             f = fit_exp(x, y)
             med = {a: float(np.median(np.abs(f["resid"][np.array(algs) == a])))
                    for a in ("grover", "shor")}
+            fw = fit_exp(x, y, err=errs)
             entry["abscissa"][name] = {
                 "A": f["A"], "k": f["k"], "r2": round(f["r2"], 4),
+                "weighted": {"A": fw["A"], "k": fw["k"],
+                             "r2": round(fw["r2"], 4)},
                 "median_abs_resid": med,
                 "families": family_diagnostics(x, y, fams),
             }

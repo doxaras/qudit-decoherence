@@ -51,7 +51,8 @@ decoder: $(R)/grover.json $(R)/grover_cost.json \
          $(R)/exposure_collapse.json $(R)/fidelity_collapse.json \
          $(R)/logfid_rescore.json $(R)/decoder_formula.json \
          $(R)/decoder_scaling.json $(R)/collapse_tail_deep.json \
-         $(R)/favg_rescore.json $(R)/interpolation_slopes.json
+         $(R)/favg_rescore.json $(R)/interpolation_slopes.json \
+         $(R)/crossing_bootstrap.json
 
 $(R)/grover.json:             ; $(PY) grover_study.py
 $(R)/grover_cost.json:        ; $(PY) grover_cost.py
@@ -60,6 +61,7 @@ $(R)/fidelity_collapse.json:  ; $(PY) fidelity_collapse.py
 $(R)/logfid_rescore.json:     ; $(PY) logfid_rescore.py
 $(R)/decoder_formula.json:    ; $(PY) decoder_formula.py   # seconds
 $(R)/decoder_scaling.json:    ; $(PY) decoder_scaling.py   # seconds
+$(R)/crossing_bootstrap.json: ; $(PY) crossing_bootstrap.py # seconds
 $(R)/collapse_tail_deep.json: ; $(PY) collapse_tail_deep.py
 $(R)/favg_rescore.json:       ; $(PY) favg_rescore.py
 $(R)/interpolation_slopes.json: ; $(PY) interpolation_slopes.py

@@ -44,7 +44,7 @@
    "cost": "uniform",
    "success": 0.289109048265707,
    "stderr": 0.0,
-   "elapsed_s": 5.0
+   "elapsed_s": 5.6
   },
   {
    "label": null,
@@ -54,7 +54,7 @@
    "cost": "uniform",
    "success": 0.28760065666458684,
    "stderr": 0.0,
-   "elapsed_s": 2.8
+   "elapsed_s": 3.2
   },
   {
    "label": null,
@@ -64,7 +64,7 @@
    "cost": "uniform",
    "success": 0.32734242057805996,
    "stderr": 0.0,
-   "elapsed_s": 3.3
+   "elapsed_s": 3.6
   },
   {
    "label": null,
@@ -74,7 +74,7 @@
    "cost": "ion",
    "success": 0.289109048265707,
    "stderr": 0.0,
-   "elapsed_s": 4.9
+   "elapsed_s": 5.8
   },
   {
    "label": null,
@@ -84,7 +84,7 @@
    "cost": "ion",
    "success": 0.28760065666458684,
    "stderr": 0.0,
-   "elapsed_s": 2.9
+   "elapsed_s": 3.3
   },
   {
    "label": null,
@@ -94,7 +94,7 @@
    "cost": "ion",
    "success": 0.32734242057805996,
    "stderr": 0.0,
-   "elapsed_s": 3.2
+   "elapsed_s": 3.8
   },
   {
    "label": "paper (0.7 / 1.1)",
@@ -104,7 +104,7 @@
    "cost": "uniform",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 25.7
+   "elapsed_s": 30.1
   },
   {
    "label": "paper (0.7 / 1.1)",
@@ -112,9 +112,9 @@
    "dephase": 1.1,
    "d": 3,
    "cost": "uniform",
-   "success": 0.24247437262956514,
+   "success": 0.2349912857949415,
    "stderr": 0.0,
-   "elapsed_s": 11.0
+   "elapsed_s": 13.2
   },
   {
    "label": "paper (0.7 / 1.1)",
@@ -122,9 +122,9 @@
    "dephase": 1.1,
    "d": 5,
    "cost": "uniform",
-   "success": 0.27941398758591257,
+   "success": 0.26639900891177964,
    "stderr": 0.0,
-   "elapsed_s": 12.4
+   "elapsed_s": 14.7
   },
   {
    "label": "paper (0.7 / 1.1)",
@@ -134,7 +134,7 @@
    "cost": "ion",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 26.0
+   "elapsed_s": 30.6
   },
   {
    "label": "paper (0.7 / 1.1)",
@@ -142,9 +142,9 @@
    "dephase": 1.1,
    "d": 3,
    "cost": "ion",
-   "success": 0.2167410420146751,
+   "success": 0.20622539489172012,
    "stderr": 0.0,
-   "elapsed_s": 10.8
+   "elapsed_s": 13.7
   },
   {
    "label": "paper (0.7 / 1.1)",
@@ -152,9 +152,9 @@
    "dephase": 1.1,
    "d": 5,
    "cost": "ion",
-   "success": 0.21610941998932176,
+   "success": 0.19565364187969736,
    "stderr": 0.0,
-   "elapsed_s": 11.8
+   "elapsed_s": 14.4
   },
   {
    "label": "dephase 1.6",
@@ -164,7 +164,7 @@
    "cost": "uniform",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 25.6
+   "elapsed_s": 30.0
   },
   {
    "label": "dephase 1.6",
@@ -172,9 +172,9 @@
    "dephase": 1.6,
    "d": 3,
    "cost": "uniform",
-   "success": 0.2378093220697113,
+   "success": 0.2305907631235678,
    "stderr": 0.0,
-   "elapsed_s": 11.1
+   "elapsed_s": 13.2
   },
   {
    "label": "dephase 1.6",
@@ -182,9 +182,9 @@
    "dephase": 1.6,
    "d": 5,
    "cost": "uniform",
-   "success": 0.2607523415566582,
+   "success": 0.2493117662855675,
    "stderr": 0.0,
-   "elapsed_s": 12.5
+   "elapsed_s": 14.8
   },
   {
    "label": "dephase 1.6",
@@ -194,7 +194,7 @@
    "cost": "ion",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 26.4
+   "elapsed_s": 30.3
   },
   {
    "label": "dephase 1.6",
@@ -202,9 +202,9 @@
    "dephase": 1.6,
    "d": 3,
    "cost": "ion",
-   "success": 0.2101869878488986,
+   "success": 0.20033333849319038,
    "stderr": 0.0,
-   "elapsed_s": 10.9
+   "elapsed_s": 13.2
   },
   {
    "label": "dephase 1.6",
@@ -212,9 +212,9 @@
    "dephase": 1.6,
    "d": 5,
    "cost": "ion",
-   "success": 0.18750576340519956,
+   "success": 0.1737681009980546,
    "stderr": 0.0,
-   "elapsed_s": 12.2
+   "elapsed_s": 14.3
   },
   {
    "label": "dephase 2.0",
@@ -224,7 +224,7 @@
    "cost": "uniform",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 26.3
+   "elapsed_s": 30.1
   },
   {
    "label": "dephase 2.0",
@@ -232,9 +232,9 @@
    "dephase": 2.0,
    "d": 3,
    "cost": "uniform",
-   "success": 0.23296151055785724,
+   "success": 0.22601850788769273,
    "stderr": 0.0,
-   "elapsed_s": 11.0
+   "elapsed_s": 13.4
   },
   {
    "label": "dephase 2.0",
@@ -242,9 +242,9 @@
    "dephase": 2.0,
    "d": 5,
    "cost": "uniform",
-   "success": 0.23884452706430798,
+   "success": 0.22925349559537375,
    "stderr": 0.0,
-   "elapsed_s": 12.4
+   "elapsed_s": 14.5
   },
   {
    "label": "dephase 2.0",
@@ -254,7 +254,7 @@
    "cost": "ion",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 26.6
+   "elapsed_s": 30.9
   },
   {
    "label": "dephase 2.0",
@@ -262,9 +262,9 @@
    "dephase": 2.0,
    "d": 3,
    "cost": "ion",
-   "success": 0.20363409434265695,
+   "success": 0.1944451716927754,
    "stderr": 0.0,
-   "elapsed_s": 10.9
+   "elapsed_s": 13.3
   },
   {
    "label": "dephase 2.0",
@@ -272,9 +272,9 @@
    "dephase": 2.0,
    "d": 5,
    "cost": "ion",
-   "success": 0.16374754980751038,
+   "success": 0.15561285565402794,
    "stderr": 0.0,
-   "elapsed_s": 12.0
+   "elapsed_s": 14.2
   },
   {
    "label": "dephase 2.6",
@@ -284,7 +284,7 @@
    "cost": "uniform",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 25.8
+   "elapsed_s": 33.6
   },
   {
    "label": "dephase 2.6",
@@ -292,9 +292,9 @@
    "dephase": 2.6,
    "d": 3,
    "cost": "uniform",
-   "success": 0.22341610696879746,
+   "success": 0.2170179393842985,
    "stderr": 0.0,
-   "elapsed_s": 10.8
+   "elapsed_s": 14.7
   },
   {
    "label": "dephase 2.6",
@@ -302,9 +302,9 @@
    "dephase": 2.6,
    "d": 5,
    "cost": "uniform",
-   "success": 0.19610199466596806,
+   "success": 0.1901559362327247,
    "stderr": 0.0,
-   "elapsed_s": 12.2
+   "elapsed_s": 16.4
   },
   {
    "label": "dephase 2.6",
@@ -314,7 +314,7 @@
    "cost": "ion",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 26.3
+   "elapsed_s": 35.5
   },
   {
    "label": "dephase 2.6",
@@ -322,9 +322,9 @@
    "dephase": 2.6,
    "d": 3,
    "cost": "ion",
-   "success": 0.19149872930533515,
+   "success": 0.18355039338042337,
    "stderr": 0.0,
-   "elapsed_s": 11.0
+   "elapsed_s": 15.0
   },
   {
    "label": "dephase 2.6",
@@ -332,9 +332,9 @@
    "dephase": 2.6,
    "d": 5,
    "cost": "ion",
-   "success": 0.13904268586908822,
+   "success": 0.13680817221460337,
    "stderr": 0.0,
-   "elapsed_s": 12.3
+   "elapsed_s": 16.4
   },
   {
    "label": "Peterer worst (1.0/2.6)",
@@ -344,7 +344,7 @@
    "cost": "uniform",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 26.0
+   "elapsed_s": 34.9
   },
   {
    "label": "Peterer worst (1.0/2.6)",
@@ -352,9 +352,9 @@
    "dephase": 2.6,
    "d": 3,
    "cost": "uniform",
-   "success": 0.22258479086914754,
+   "success": 0.21560642351447412,
    "stderr": 0.0,
-   "elapsed_s": 10.8
+   "elapsed_s": 15.7
   },
   {
    "label": "Peterer worst (1.0/2.6)",
@@ -362,9 +362,9 @@
    "dephase": 2.6,
    "d": 5,
    "cost": "uniform",
-   "success": 0.19335658267855577,
+   "success": 0.18617223510975237,
    "stderr": 0.0,
-   "elapsed_s": 12.4
+   "elapsed_s": 17.0
   },
   {
    "label": "Peterer worst (1.0/2.6)",
@@ -374,7 +374,7 @@
    "cost": "ion",
    "success": 0.20809600776489762,
    "stderr": 0.0,
-   "elapsed_s": 23.0
+   "elapsed_s": 32.2
   },
   {
    "label": "Peterer worst (1.0/2.6)",
@@ -382,9 +382,9 @@
    "dephase": 2.6,
    "d": 3,
    "cost": "ion",
-   "success": 0.1907582150821764,
+   "success": 0.18219728954177136,
    "stderr": 0.0,
-   "elapsed_s": 11.1
+   "elapsed_s": 15.2
   },
   {
    "label": "Peterer worst (1.0/2.6)",
@@ -392,9 +392,9 @@
    "dephase": 2.6,
    "d": 5,
    "cost": "ion",
-   "success": 0.1378889598821392,
+   "success": 0.13553176588942495,
    "stderr": 0.0,
-   "elapsed_s": 11.3
+   "elapsed_s": 15.7
   }
  ],
  "table": [
@@ -405,8 +405,8 @@
    "dephase": 1.1,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.7250809001522195,
-    "5": 0.7595673171161317
+    "3": 0.6794923137961854,
+    "5": 0.6942777583940511
    },
    "best_d": 5,
    "qudit_wins": true
@@ -418,8 +418,8 @@
    "dephase": 1.6,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.6966604013656571,
-    "5": 0.665951287095333
+    "3": 0.6526833762214692,
+    "5": 0.6085597131497826
    },
    "best_d": 3,
    "qudit_wins": true
@@ -431,8 +431,8 @@
    "dephase": 2.0,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.6671264832607163,
-    "5": 0.5560508733809755
+    "3": 0.624828206654537,
+    "5": 0.5079375242949062
    },
    "best_d": 3,
    "qudit_wins": true
@@ -444,8 +444,8 @@
    "dephase": 2.6,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.608973816394739,
-    "5": 0.3416332282335269
+    "3": 0.5699947931797854,
+    "5": 0.31180486347302694
    },
    "best_d": 3,
    "qudit_wins": true
@@ -457,8 +457,8 @@
    "dephase": 2.6,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.6039092585945143,
-    "5": 0.3278608862530741
+    "3": 0.5613955326678448,
+    "5": 0.29182065182645284
    },
    "best_d": 3,
    "qudit_wins": true
@@ -470,11 +470,11 @@
    "dephase": 1.1,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.5683078744087204,
-    "5": 0.4420003516252038
+    "3": 0.5042442737117061,
+    "5": 0.3393840692990133
    },
-   "best_d": 3,
-   "qudit_wins": true
+   "best_d": 2,
+   "qudit_wins": false
   },
   {
    "cost": "ion",
@@ -483,11 +483,11 @@
    "dephase": 1.6,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.5283791563646977,
-    "5": 0.29851028813958774
+    "3": 0.4683485895007255,
+    "5": 0.22959539101278437
    },
-   "best_d": 3,
-   "qudit_wins": true
+   "best_d": 2,
+   "qudit_wins": false
   },
   {
    "cost": "ion",
@@ -496,8 +496,8 @@
    "dephase": 2.0,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.488457509310041,
-    "5": 0.17932735894270982
+    "3": 0.4324766015642188,
+    "5": 0.13851971684679676
    },
    "best_d": 2,
    "qudit_wins": false
@@ -509,8 +509,8 @@
    "dephase": 2.6,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.4145262361346221,
-    "5": 0.05539556426106524
+    "3": 0.36610325151508927,
+    "5": 0.04418614055684248
    },
    "best_d": 2,
    "qudit_wins": false
@@ -522,8 +522,8 @@
    "dephase": 2.6,
    "signal": {
     "2": 0.5063462901226377,
-    "3": 0.4100148630400131,
-    "5": 0.04960790509848759
+    "3": 0.35785984975317847,
+    "5": 0.037783056248560015
    },
    "best_d": 2,
    "qudit_wins": false

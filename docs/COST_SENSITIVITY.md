@@ -34,7 +34,7 @@ in d**, and that it exists for phase estimation but not for Shor.
 |---|---|---|---|
 | `uniform` | 1 | our original assumption | a **native** fully-entangling qudit gate whose count does not grow with d — e.g. Goss 2022's cross-Kerr CZ, one gate spanning the full 9-dimensional two-qutrit space |
 | `ion` | d−1 on entangling gates | Ringbauer 2022: Cinc costs 2(d−1) Mølmer–Sørensen gates (normalized to 1 at d = 2) | current trapped-ion qudit hardware |
-| `pavlidis` | d²/4 on all gates | Pavlidis & Floratos 2017: qudit QFT-domain arithmetic has depth 8d²q | **no** native qudit entangler — everything decomposed into two-level rotations |
+| `pavlidis` | d²/4 on **two-qudit gates only** (single-qudit gates stay at one layer; an earlier revision charged all gates and some tables below predate the change) | Pavlidis & Floratos 2017: qudit QFT-domain arithmetic has depth 8d²q | **no** native qudit entangler — everything decomposed into two-level rotations |
 
 Total Shor circuit cost (time-layers, N = 15) — this is the whole story
 in one table:
@@ -43,7 +43,11 @@ in one table:
 |---|---:|---:|---:|---|
 | `uniform` | 51.0 | 26.0 | 15.0 | qudits 3.4× cheaper |
 | `ion` | 51.0 | 44.0 | 42.0 | advantage nearly gone |
-| `pavlidis` | 51.0 | 58.5 | 93.8 | **advantage reversed** |
+| `pavlidis` | 51.0 | 48.5 | 62.25 | **advantage reversed at d = 5** |
+
+(Historical note: an earlier revision charged `pavlidis` on all gates,
+giving 58.5/93.8 here; the current two-qudit-only convention matches
+`qudit_shor.py` and the paper.)
 
 The width-and-depth compression that drives every qudit win in this
 project is exactly what the costlier models eat.
@@ -57,10 +61,14 @@ positive means ququints win. Full grid in
 
 | | | `uniform` | `ion` | `pavlidis` |
 |---|---|---:|---:|---:|
-| **Shor** | ions / per-particle | −0.02 | −0.30 | −0.61 |
-| | transmon / calibrated | −0.25 | −0.65 | −0.90 |
-| **QPE** | ions / per-particle | **+0.42** | **+0.20** | −0.09 |
-| | transmon / calibrated | **+0.30** | +0.00 | −0.27 |
+| **Shor** | ions / per-particle | −0.02 | −0.30 | −0.45 |
+| | transmon / calibrated | −0.34 | −0.74 | −0.83 |
+| **QPE** | ions / per-particle | **+0.42** | **+0.20** | **+0.07** |
+| | transmon / calibrated | **+0.22** | −0.11 | −0.23 |
+
+(Regenerated 2026-08-31 under the two-qudit-only `pavlidis` charge and
+the secular relaxation form; the transmon rows and both `pavlidis`
+columns changed from the originally documented values.)
 
 Three conclusions, in decreasing order of comfort:
 
@@ -68,10 +76,12 @@ Three conclusions, in decreasing order of comfort:
    "erodes to a dead heat at scale" result was measured under `uniform`,
    the most generous assumption; charging realistic gate costs removes
    it. Shor is simply not the algorithm for qudits.
-2. **QPE's qudit advantage survives linear-in-d gate costs but not
-   quadratic.** It is large under `uniform` (+0.42 / +0.30), survives
-   `ion` on per-particle hardware (+0.20), reaches exact parity on
-   transmon noise (+0.00), and inverts under `pavlidis`.
+2. **QPE's qudit advantage survives realistic gate costs on
+   per-particle hardware but not on the calibrated ladder.** It is
+   large under `uniform` (+0.42 / +0.22), survives `ion` (+0.20) and
+   even the quadratic `pavlidis` charge thinly (+0.07) on
+   per-particle hardware, but on transmon noise it inverts under
+   `ion` (−0.11) and `pavlidis` (−0.23).
 3. **The crossover condition is sharp and physically meaningful**: qudits
    win iff entangling cost grows no faster than ~linearly in d. That is
    a concrete hardware requirement, not a modelling artifact.
@@ -84,7 +94,7 @@ platform, and only some combinations describe a *real* machine:
 | platform | cost model | noise model | QPE result |
 |---|---|---|---|
 | Trapped-ion qudits (Ringbauer-class) | `ion` (measured: 2(d−1) MS gates) | per-particle depolarizing | **+0.20 ququint win** |
-| Transmon with native cross-Kerr CZ (Goss-class) | `uniform` (one native gate) | calibrated ladder | **+0.30 ququint win** |
+| Transmon with native cross-Kerr CZ (Goss-class) | `uniform` (one native gate) | calibrated ladder | **+0.22 ququint win** |
 | Any platform lacking a native qudit entangler | `pavlidis` | either | qubits win |
 
 Both physically matched pairings favour ququints for phase estimation.
@@ -121,8 +131,10 @@ mode.
 ## 5. Caveats on the cost models themselves
 
 - The `pavlidis` d² factor is derived for their specific QFT-domain
-  arithmetic decomposition; applying it to *all* gates (including
-  single-qudit) is deliberately the harshest reading.
+  arithmetic decomposition; the current convention charges it on
+  two-qudit gates only (a single-qudit rotation decomposes into O(d)
+  two-level gates, not O(d²)), which is why the layer counts above are
+  milder than the all-gates reading an earlier revision used.
 - `ion` normalizes Ringbauer's 2(d−1) to (d−1) so that d = 2 costs one
   layer. This makes d = 2 identical across all three models — the same
   apples-to-apples device used for the noise calibration.

@@ -41,7 +41,7 @@
    "d": 2,
    "dephase_scale": 1.0,
    "success": 0.171293263350989,
-   "elapsed_s": 57.2,
+   "elapsed_s": 31.6,
    "signal": 0.28208842742196716
   },
   {
@@ -50,7 +50,7 @@
    "d": 2,
    "dephase_scale": 0.75,
    "success": 0.17595653761621174,
-   "elapsed_s": 57.5,
+   "elapsed_s": 31.6,
    "signal": 0.31050413218964396
   },
   {
@@ -59,7 +59,7 @@
    "d": 2,
    "dephase_scale": 0.5,
    "success": 0.18096874498045581,
-   "elapsed_s": 56.7,
+   "elapsed_s": 31.9,
    "signal": 0.34104606401615034
   },
   {
@@ -68,7 +68,7 @@
    "d": 2,
    "dephase_scale": 0.25,
    "success": 0.18635545448829252,
-   "elapsed_s": 57.4,
+   "elapsed_s": 31.6,
    "signal": 0.373870028110532
   },
   {
@@ -77,7 +77,7 @@
    "d": 2,
    "dephase_scale": 0.0,
    "success": 0.1921440904809127,
-   "elapsed_s": 59.9,
+   "elapsed_s": 31.7,
    "signal": 0.40914313494890603
   },
   {
@@ -85,90 +85,90 @@
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 1.0,
-   "success": 0.21839798393131538,
-   "elapsed_s": 23.9,
-   "signal": 0.578402323574295
+   "success": 0.2083690385025472,
+   "elapsed_s": 14.6,
+   "signal": 0.517303815051863
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.75,
-   "success": 0.22377758315292595,
-   "elapsed_s": 24.8,
-   "signal": 0.6111760076294502
+   "success": 0.2132387924083601,
+   "elapsed_s": 14.5,
+   "signal": 0.5469714109750567
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.5,
-   "success": 0.22945157935413965,
-   "elapsed_s": 24.8,
-   "signal": 0.6457432218713053
+   "success": 0.21837528047306132,
+   "elapsed_s": 14.5,
+   "signal": 0.5782640091874557
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.25,
-   "success": 0.235436770818207,
-   "elapsed_s": 24.1,
-   "signal": 0.6822063050811041
+   "success": 0.22379368967180202,
+   "elapsed_s": 14.4,
+   "signal": 0.6112741320322408
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.0,
-   "success": 0.24175097610428045,
-   "elapsed_s": 24.2,
-   "signal": 0.7206738117819487
+   "success": 0.22951012691340858,
+   "elapsed_s": 14.6,
+   "signal": 0.6460999062878641
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 1.0,
-   "success": 0.25386543717845855,
-   "elapsed_s": 26.3,
-   "signal": 0.6314031745650006
+   "success": 0.2364015665612804,
+   "elapsed_s": 16.0,
+   "signal": 0.5437957773710875
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.75,
-   "success": 0.2628275924309366,
-   "elapsed_s": 26.8,
-   "signal": 0.6763617700635869
+   "success": 0.24413246134426145,
+   "elapsed_s": 15.7,
+   "signal": 0.5825777624626839
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.5,
-   "success": 0.27244204137803696,
-   "elapsed_s": 27.2,
-   "signal": 0.724592592781702
+   "success": 0.2524265529664552,
+   "elapsed_s": 16.0,
+   "signal": 0.6241850209586041
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.25,
-   "success": 0.28275784626053735,
-   "elapsed_s": 26.5,
-   "signal": 0.7763417631418604
+   "success": 0.26132622784063353,
+   "elapsed_s": 15.8,
+   "signal": 0.6688301840321271
   },
   {
    "algo": "shor",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.0,
-   "success": 0.29382788989261344,
-   "elapsed_s": 27.2,
-   "signal": 0.8318745674490159
+   "success": 0.2708771745663223,
+   "elapsed_s": 15.8,
+   "signal": 0.7167424482556307
   },
   {
    "algo": "shor",
@@ -176,7 +176,7 @@
    "d": 2,
    "dephase_scale": 1.0,
    "success": 0.171293263350989,
-   "elapsed_s": 56.3,
+   "elapsed_s": 31.9,
    "signal": 0.28208842742196716
   },
   {
@@ -185,7 +185,7 @@
    "d": 2,
    "dephase_scale": 0.75,
    "success": 0.17595653761621174,
-   "elapsed_s": 56.6,
+   "elapsed_s": 31.6,
    "signal": 0.31050413218964396
   },
   {
@@ -194,7 +194,7 @@
    "d": 2,
    "dephase_scale": 0.5,
    "success": 0.18096874498045581,
-   "elapsed_s": 56.3,
+   "elapsed_s": 32.2,
    "signal": 0.34104606401615034
   },
   {
@@ -203,7 +203,7 @@
    "d": 2,
    "dephase_scale": 0.25,
    "success": 0.18635545448829252,
-   "elapsed_s": 54.0,
+   "elapsed_s": 31.7,
    "signal": 0.373870028110532
   },
   {
@@ -212,7 +212,7 @@
    "d": 2,
    "dephase_scale": 0.0,
    "success": 0.1921440904809127,
-   "elapsed_s": 47.0,
+   "elapsed_s": 32.0,
    "signal": 0.40914313494890603
   },
   {
@@ -220,90 +220,90 @@
    "cost": "ion",
    "d": 3,
    "dephase_scale": 1.0,
-   "success": 0.184856451708445,
-   "elapsed_s": 20.5,
-   "signal": 0.3740600418328949
+   "success": 0.17295401381352835,
+   "elapsed_s": 14.0,
+   "signal": 0.3015478112773034
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.75,
-   "success": 0.19169334695487195,
-   "elapsed_s": 20.9,
-   "signal": 0.41571188902338246
+   "success": 0.17866132310321378,
+   "elapsed_s": 14.8,
+   "signal": 0.33631797607207103
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.5,
-   "success": 0.1992284406624994,
-   "elapsed_s": 20.6,
-   "signal": 0.4616173125180786
+   "success": 0.18495324831133067,
+   "elapsed_s": 14.8,
+   "signal": 0.3746497477105824
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.25,
-   "success": 0.20753572994198574,
-   "elapsed_s": 20.7,
-   "signal": 0.5122271187480589
+   "success": 0.19189149017386836,
+   "elapsed_s": 14.5,
+   "signal": 0.4169190204451756
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.0,
-   "success": 0.2166975994231839,
-   "elapsed_s": 20.9,
-   "signal": 0.5680432127286551
+   "success": 0.19954470477829583,
+   "elapsed_s": 14.6,
+   "signal": 0.4635440620364176
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 1.0,
-   "success": 0.17909822948253706,
-   "elapsed_s": 21.8,
-   "signal": 0.25633394705632984
+   "success": 0.1613755296807891,
+   "elapsed_s": 15.9,
+   "signal": 0.1674281348847155
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.75,
-   "success": 0.1910713133134018,
-   "elapsed_s": 21.0,
-   "signal": 0.3163968468452698
+   "success": 0.1690935133794417,
+   "elapsed_s": 16.1,
+   "signal": 0.20614535160292188
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.5,
-   "success": 0.20596231812789623,
-   "elapsed_s": 21.5,
-   "signal": 0.39109747891000035
+   "success": 0.17868376048924614,
+   "elapsed_s": 15.9,
+   "signal": 0.25425476595634605
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.25,
-   "success": 0.22451144043829002,
-   "elapsed_s": 21.2,
-   "signal": 0.48414903440232565
+   "success": 0.19061931524061596,
+   "elapsed_s": 16.1,
+   "signal": 0.31412940135386297
   },
   {
    "algo": "shor",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.0,
-   "success": 0.24765502308659204,
-   "elapsed_s": 21.8,
-   "signal": 0.6002486713044435
+   "success": 0.20549810708635552,
+   "elapsed_s": 16.0,
+   "signal": 0.388768767137591
   },
   {
    "algo": "qpe",
@@ -311,7 +311,7 @@
    "d": 2,
    "dephase_scale": 1.0,
    "success": 0.3510492474212613,
-   "elapsed_s": 10.3,
+   "elapsed_s": 7.2,
    "signal": 0.40764502877702635
   },
   {
@@ -320,7 +320,7 @@
    "d": 2,
    "dephase_scale": 0.75,
    "success": 0.37615085811201054,
-   "elapsed_s": 10.7,
+   "elapsed_s": 7.6,
    "signal": 0.4396418108047876
   },
   {
@@ -329,7 +329,7 @@
    "d": 2,
    "dephase_scale": 0.5,
    "success": 0.4035297273924364,
-   "elapsed_s": 10.4,
+   "elapsed_s": 7.5,
    "signal": 0.47454139248203836
   },
   {
@@ -338,7 +338,7 @@
    "d": 2,
    "dephase_scale": 0.25,
    "success": 0.43341623974281296,
-   "elapsed_s": 10.4,
+   "elapsed_s": 7.5,
    "signal": 0.5126374426927689
   },
   {
@@ -347,7 +347,7 @@
    "d": 2,
    "dephase_scale": 0.0,
    "success": 0.4660661277866281,
-   "elapsed_s": 10.8,
+   "elapsed_s": 7.4,
    "signal": 0.554255941355636
   },
   {
@@ -355,90 +355,90 @@
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 1.0,
-   "success": 0.5858598350903487,
-   "elapsed_s": 21.4,
-   "signal": 0.572729382084155
+   "success": 0.5392808026586917,
+   "elapsed_s": 15.3,
+   "signal": 0.5241213786315192
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.75,
-   "success": 0.6211365779622843,
-   "elapsed_s": 20.9,
-   "signal": 0.6095427710662628
+   "success": 0.5713229769267979,
+   "elapsed_s": 14.5,
+   "signal": 0.5575593020091529
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.5,
-   "success": 0.6590143873538991,
-   "elapsed_s": 20.3,
-   "signal": 0.649070528376107
+   "success": 0.605716192297319,
+   "elapsed_s": 14.3,
+   "signal": 0.5934506772525195
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.25,
-   "success": 0.6997062647596187,
-   "elapsed_s": 21.0,
-   "signal": 0.6915349338000197
+   "success": 0.6426524599481392,
+   "elapsed_s": 14.2,
+   "signal": 0.6319958794984626
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 3,
    "dephase_scale": 0.0,
-   "success": 0.7434441086097822,
-   "elapsed_s": 21.1,
-   "signal": 0.7371779872060557
+   "success": 0.6823408069377295,
+   "elapsed_s": 15.0,
+   "signal": 0.6734130409719217
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 1.0,
-   "success": 0.6778195203750476,
-   "elapsed_s": 22.0,
-   "signal": 0.7047958143518233
+   "success": 0.6062953150607844,
+   "elapsed_s": 15.6,
+   "signal": 0.6267400124753818
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.75,
-   "success": 0.7155262053537232,
-   "elapsed_s": 21.0,
-   "signal": 0.7459458770359306
+   "success": 0.6394718975608649,
+   "elapsed_s": 15.9,
+   "signal": 0.6629462833341128
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.5,
-   "success": 0.7557460698169479,
-   "elapsed_s": 21.7,
-   "signal": 0.7898386229706099
+   "success": 0.6748445826401859,
+   "elapsed_s": 15.8,
+   "signal": 0.7015492050479264
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.25,
-   "success": 0.7986634515646974,
-   "elapsed_s": 21.3,
-   "signal": 0.8366752236995368
+   "success": 0.7125737706744769,
+   "elapsed_s": 15.8,
+   "signal": 0.7427238257686175
   },
   {
    "algo": "qpe",
    "cost": "uniform",
    "d": 5,
    "dephase_scale": 0.0,
-   "success": 0.8444772255532424,
-   "elapsed_s": 21.7,
-   "signal": 0.8866727154570414
+   "success": 0.7528324811952668,
+   "elapsed_s": 15.9,
+   "signal": 0.7866589651861697
   },
   {
    "algo": "qpe",
@@ -446,7 +446,7 @@
    "d": 2,
    "dephase_scale": 1.0,
    "success": 0.3510492474212613,
-   "elapsed_s": 10.2,
+   "elapsed_s": 7.5,
    "signal": 0.40764502877702635
   },
   {
@@ -455,7 +455,7 @@
    "d": 2,
    "dephase_scale": 0.75,
    "success": 0.37615085811201054,
-   "elapsed_s": 10.4,
+   "elapsed_s": 7.4,
    "signal": 0.4396418108047876
   },
   {
@@ -464,7 +464,7 @@
    "d": 2,
    "dephase_scale": 0.5,
    "success": 0.4035297273924364,
-   "elapsed_s": 10.6,
+   "elapsed_s": 7.4,
    "signal": 0.47454139248203836
   },
   {
@@ -473,7 +473,7 @@
    "d": 2,
    "dephase_scale": 0.25,
    "success": 0.43341623974281296,
-   "elapsed_s": 10.5,
+   "elapsed_s": 7.5,
    "signal": 0.5126374426927689
   },
   {
@@ -482,7 +482,7 @@
    "d": 2,
    "dephase_scale": 0.0,
    "success": 0.4660661277866281,
-   "elapsed_s": 10.4,
+   "elapsed_s": 7.3,
    "signal": 0.554255941355636
   },
   {
@@ -490,90 +490,90 @@
    "cost": "ion",
    "d": 3,
    "dephase_scale": 1.0,
-   "success": 0.4225090357598441,
-   "elapsed_s": 21.2,
-   "signal": 0.4022630627268735
+   "success": 0.36960635721328616,
+   "elapsed_s": 14.7,
+   "signal": 0.34705595671371614
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.75,
-   "success": 0.46349711052508413,
-   "elapsed_s": 20.7,
-   "signal": 0.44503656779332074
+   "success": 0.40444766245412217,
+   "elapsed_s": 14.8,
+   "signal": 0.3834149405102513
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.5,
-   "success": 0.5096208806832386,
-   "elapsed_s": 21.1,
-   "signal": 0.49316947786150883
+   "success": 0.4436086526566546,
+   "elapsed_s": 14.8,
+   "signal": 0.42428177366670006
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.25,
-   "success": 0.5616105526487253,
-   "elapsed_s": 20.6,
-   "signal": 0.5474238069549199
+   "success": 0.48769978737267455,
+   "elapsed_s": 14.7,
+   "signal": 0.4702935072004852
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 3,
    "dephase_scale": 0.0,
-   "success": 0.6203105054937352,
-   "elapsed_s": 20.4,
-   "signal": 0.6086807150872712
+   "success": 0.5374267044415071,
+   "elapsed_s": 15.0,
+   "signal": 0.5221865163590005
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 1.0,
-   "success": 0.4057561979750513,
-   "elapsed_s": 21.4,
-   "signal": 0.40788764602205013
+   "success": 0.3018876512168882,
+   "elapsed_s": 15.7,
+   "signal": 0.29453381466766965
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.75,
-   "success": 0.46453651461485634,
-   "elapsed_s": 21.2,
-   "signal": 0.47203578621755055
+   "success": 0.3423782249269255,
+   "elapsed_s": 15.7,
+   "signal": 0.33872199104079254
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.5,
-   "success": 0.5345913579233896,
-   "elapsed_s": 20.8,
-   "signal": 0.5484880438239076
+   "success": 0.3903881195740857,
+   "elapsed_s": 15.6,
+   "signal": 0.3911161533837645
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.25,
-   "success": 0.6184053944744179,
-   "elapsed_s": 20.6,
-   "signal": 0.6399559853794533
+   "success": 0.44753856966030264,
+   "elapsed_s": 14.5,
+   "signal": 0.45348558747224954
   },
   {
    "algo": "qpe",
    "cost": "ion",
    "d": 5,
    "dephase_scale": 0.0,
-   "success": 0.7190702633324488,
-   "elapsed_s": 20.0,
-   "signal": 0.7498135786931606
+   "success": 0.5158412235408592,
+   "elapsed_s": 14.1,
+   "signal": 0.5280256455618245
   }
  ]
 }

@@ -35,7 +35,11 @@ EPS2_EQUIV = 2 * 1 * (1 - 1 / 4) * S2   # qubit-gate infidelity the anchor impli
 # Goss et al. 2022: process infidelity and 1-sigma by gate.
 GOSS_EPS = {"CZ+": (0.027, 0.001), "CZ": (0.048, 0.003)}
 
-F_STAR_GLOBAL = 2.05           # ladder/uniform d=3, from noise_inflation.json
+# ladder/uniform d=3 global f*, read from noise_inflation.json so it
+# tracks the current channel (a hardcoded 2.05 went stale).
+F_STAR_GLOBAL = json.load(open(os.path.join(
+    RESULTS, "noise_inflation.json")))["crossings"][
+    "transmon_cal_uniform_d3"]["f_star"]
 
 
 def goss_f(eps, sig):

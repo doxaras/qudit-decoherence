@@ -1,5 +1,5 @@
 {
- "note": "PRE-RESEED ARTIFACT: the 'series' plateau values (0.7376-0.7419) and the 'rederivation' significances (4.1/1.9 sigma) predate the crc32 seed fix of c536ca1 and are superseded by results/scaling_claims.json (plateau 0.705-0.718, fall 3.5 sigma). The estimator-calibration content (SE ratio 0.995, sub-Bernoulli factors) is stream-independent and remains the quoted result.",
+ "note": "PRE-RESEED ARTIFACT: the 'series' plateau values (0.7376-0.7419) and the 'rederivation' significances (4.1/1.9 sigma) predate the crc32 per-trajectory seed fix (see trajectory_variance.py header) and are superseded by results/scaling_claims.json (plateau 0.705-0.718, fall 3.5 sigma). The estimator-calibration content (SE ratio 0.995, sub-Bernoulli factors) is stream-independent and remains the quoted result.",
  "m_traj": 1000,
  "replicas": 24,
  "points": [

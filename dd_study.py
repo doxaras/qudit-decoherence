@@ -1,21 +1,24 @@
-"""Does echo (dynamical decoupling) change who wins? Task #5.
+"""Does reduced dephasing change who wins? Task #5.
 
-No real transmon runs a long circuit without refocusing. DD suppresses the
-dephasing half of the ladder channel while leaving relaxation untouched
-(it cannot undo T1), so the honest question is not "does DD help" -- it
-always does -- but **whether it helps qubits or qudits more**, i.e. whether
-refocused hardware narrows or widens the gap we measure.
+`dephase_scale` sweeps the pure-dephasing rate from 1 (devices as
+measured) to 0 (the T1 limit). CAVEAT (post-review): this models
+*device engineering* -- the high-E_J/E_C regime of Wang et al. 2024,
+where charge dispersion is suppressed at the hardware level (the
+`transmon_cal_lowcharge` end point). It does NOT model echo/dynamical
+decoupling: the channel's dephasing generator is Markovian (white
+noise), which no pulse sequence suppresses -- and on a
+sensitivity-ordered qudit no two-interval echo refocuses at d >= 3 at
+all (see the permutation analysis of ion_zeeman_quasistatic.py /
+paper Sec. VIII, which is the honest treatment of pulsed refocusing,
+including its per-pulse charge). The cost "bracket" below via the
+`uniform`/`ion` entangling-gate models is likewise not a DD-pulse cost
+model; single-qudit refocusing pulses are charged properly only in the
+Sec. VIII analysis.
 
-`dephase_scale` sweeps from 1 (free evolution) to 0 (perfect echo, the
-T1 limit). This is the same knob that defines the `transmon_cal_lowcharge`
-regime, which is exactly the dephase_scale = 0 end point -- there reached
-by device engineering (high E_J/E_C, Wang et al. 2024), here by pulses.
-
-DD is not free: a d-level system needs more refocusing pulses than a qubit
-to average out all d(d-1)/2 coherences, and each pulse carries error. We
-bracket that cost with the two cost models already in the repo -- `uniform`
-(DD pulses are free, the optimistic limit) and `ion` (pulse count grows as
-d-1, the pessimistic limit) -- rather than inventing a new one.
+So read results/dd.json as: how the verdict moves as a platform's idle
+dephasing is engineered down toward its T1 limit. Since dephasing is
+the ladder component that grows fastest with d, reducing it helps
+qudits more by construction.
 
 Writes results/dd.json. Run: python3 dd_study.py
 """

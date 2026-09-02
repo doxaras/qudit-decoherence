@@ -38,8 +38,8 @@
   4.0
  ],
  "f_stars": {
-  "transmon_cal/uniform": 3.401774631876635,
-  "transmon_cal/ion": 1.4304528590749694,
+  "transmon_cal/uniform": 2.5841603658273575,
+  "transmon_cal/ion": 1.0665738209603213,
   "depolarizing/uniform": 3.635701384964444,
   "depolarizing/ion": 1.5301430077115568
  },
@@ -50,14 +50,14 @@
    "scope": "global",
    "f_central": 2.611657750238043,
    "f_sigma": 0.6757305193589468,
-   "f_star": 3.401774631876635,
+   "f_star": 2.5841603658273575,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.6889946486085688,
-    "central": 0.598800022536475,
-    "hi": 0.5172672517904078
+    "lo": 0.6051725142932227,
+    "central": 0.5018978256747083,
+    "hi": 0.4129564466569972
    },
-   "verdict": "SURVIVES"
+   "verdict": "lost (survives at -1 sigma)"
   },
   {
    "channel": "transmon_cal",
@@ -65,12 +65,12 @@
    "scope": "gate",
    "f_central": 2.611657750238043,
    "f_sigma": 0.6757305193589468,
-   "f_star": 3.401774631876635,
+   "f_star": 2.5841603658273575,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.7664870723770081,
-    "central": 0.7234608078314554,
-    "hi": 0.6822842491577279
+    "lo": 0.7035843274365985,
+    "central": 0.6549540735735258,
+    "hi": 0.6091009916922294
    },
    "verdict": "SURVIVES"
   },
@@ -80,12 +80,12 @@
    "scope": "global",
    "f_central": 0.870552583412681,
    "f_sigma": 0.22524350645298227,
-   "f_star": 1.4304528590749694,
+   "f_star": 1.0665738209603213,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.7455465811095883,
-    "central": 0.6694252074305754,
-    "hi": 0.5993676679514306
+    "lo": 0.6663801719715868,
+    "central": 0.5754476315150607,
+    "hi": 0.49537716514255886
    },
    "verdict": "SURVIVES"
   },
@@ -95,12 +95,12 @@
    "scope": "gate",
    "f_central": 0.870552583412681,
    "f_sigma": 0.22524350645298227,
-   "f_star": 1.4304528590749694,
+   "f_star": 1.0665738209603213,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.6898068095677657,
-    "central": 0.6503397667497669,
-    "hi": 0.6126006860439004
+    "lo": 0.5925477438765728,
+    "central": 0.5509898379773914,
+    "hi": 0.5118001318480558
    },
    "verdict": "SURVIVES"
   },
@@ -173,7 +173,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.289109048265707,
-   "elapsed_s": 9.0
+   "elapsed_s": 4.9
   },
   {
    "d": 4,
@@ -182,7 +182,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.28910904826570755,
-   "elapsed_s": 10.1
+   "elapsed_s": 5.9
   },
   {
    "d": 2,
@@ -191,7 +191,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.20809600776489762,
-   "elapsed_s": 53.7
+   "elapsed_s": 24.8
   },
   {
    "d": 4,
@@ -199,8 +199,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.26109228771426374,
-   "elapsed_s": 45.6
+   "success": 0.2523241166592553,
+   "elapsed_s": 24.0
   },
   {
    "d": 4,
@@ -208,8 +208,8 @@
    "strength": 0.00375,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.254646084495257,
-   "elapsed_s": 46.4
+   "success": 0.24427990765182778,
+   "elapsed_s": 23.7
   },
   {
    "d": 4,
@@ -217,8 +217,8 @@
    "strength": 0.0045000000000000005,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.24841823408809455,
-   "elapsed_s": 46.1
+   "success": 0.23665684784181235,
+   "elapsed_s": 24.1
   },
   {
    "d": 4,
@@ -226,8 +226,8 @@
    "strength": 0.00525,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.24240522430726827,
-   "elapsed_s": 49.0
+   "success": 0.22943556224104916,
+   "elapsed_s": 23.0
   },
   {
    "d": 4,
@@ -235,8 +235,8 @@
    "strength": 0.006,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.236603078110234,
-   "elapsed_s": 50.6
+   "success": 0.22259710218327713,
+   "elapsed_s": 23.3
   },
   {
    "d": 4,
@@ -244,8 +244,8 @@
    "strength": 0.0075,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.22561362775713148,
-   "elapsed_s": 50.7
+   "success": 0.20999540660190763,
+   "elapsed_s": 22.7
   },
   {
    "d": 4,
@@ -253,8 +253,8 @@
    "strength": 0.009000000000000001,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.21541166111287677,
-   "elapsed_s": 50.2
+   "success": 0.19871100438753234,
+   "elapsed_s": 22.7
   },
   {
    "d": 4,
@@ -262,8 +262,8 @@
    "strength": 0.012,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.19720331054129278,
-   "elapsed_s": 50.3
+   "success": 0.17958070127014739,
+   "elapsed_s": 21.6
   },
   {
    "d": 4,
@@ -271,8 +271,8 @@
    "strength": 0.005807781692637289,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.23807025604331783,
-   "elapsed_s": 48.8
+   "success": 0.22431428535722608,
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -280,8 +280,8 @@
    "strength": 0.007834973250714129,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.22326850179994515,
-   "elapsed_s": 48.1
+   "success": 0.20736597449810437,
+   "elapsed_s": 22.3
   },
   {
    "d": 4,
@@ -289,8 +289,8 @@
    "strength": 0.00986216480879097,
    "cost": "uniform",
    "gate_strength": null,
-   "success": 0.20988823639034193,
-   "elapsed_s": 49.3
+   "success": 0.19276988943606824,
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -298,8 +298,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.005807781692637289,
-   "success": 0.2507874639557593,
-   "elapsed_s": 48.9
+   "success": 0.24046455435028813,
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -307,8 +307,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.007834973250714129,
-   "success": 0.2437264646307601,
-   "elapsed_s": 49.0
+   "success": 0.2324838896718995,
+   "elapsed_s": 21.8
   },
   {
    "d": 4,
@@ -316,8 +316,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.00986216480879097,
-   "success": 0.2369690187759576,
-   "elapsed_s": 49.3
+   "success": 0.22495898404431042,
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -325,8 +325,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.22813347411198956,
-   "elapsed_s": 49.5
+   "success": 0.2116803236717152,
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -334,8 +334,8 @@
    "strength": 0.00375,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.21603411085315813,
-   "elapsed_s": 48.6
+   "success": 0.1982203935703861,
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -343,8 +343,8 @@
    "strength": 0.0045000000000000005,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.2050366360431825,
-   "elapsed_s": 47.3
+   "success": 0.1865430335708546,
+   "elapsed_s": 21.9
   },
   {
    "d": 4,
@@ -352,8 +352,8 @@
    "strength": 0.00525,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.1950575409834988,
-   "elapsed_s": 47.2
+   "success": 0.17641418192309527,
+   "elapsed_s": 22.4
   },
   {
    "d": 4,
@@ -361,8 +361,8 @@
    "strength": 0.006,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.18601466678961223,
-   "elapsed_s": 47.4
+   "success": 0.16762808381800778,
+   "elapsed_s": 21.9
   },
   {
    "d": 4,
@@ -370,8 +370,8 @@
    "strength": 0.0075,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.1704245218367681,
-   "elapsed_s": 38.4
+   "success": 0.15338752881973067,
+   "elapsed_s": 22.3
   },
   {
    "d": 4,
@@ -379,8 +379,8 @@
    "strength": 0.009000000000000001,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.15768271525997518,
-   "elapsed_s": 36.0
+   "success": 0.14264456569582623,
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -388,8 +388,8 @@
    "strength": 0.012,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.13879105886392107,
-   "elapsed_s": 35.7
+   "success": 0.1283351228978005,
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -397,8 +397,8 @@
    "strength": 0.0019359272308790963,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.24735093986364667,
-   "elapsed_s": 35.6
+   "success": 0.23435901580539564,
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -406,8 +406,8 @@
    "strength": 0.002611657750238043,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.2348587336765056,
-   "elapsed_s": 34.2
+   "success": 0.2194361631346922,
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -415,8 +415,8 @@
    "strength": 0.00328738826959699,
    "cost": "ion",
    "gate_strength": null,
-   "success": 0.2233616575487459,
-   "elapsed_s": 35.3
+   "success": 0.20629587510410957,
+   "elapsed_s": 22.4
   },
   {
    "d": 4,
@@ -424,8 +424,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.0019359272308790963,
-   "success": 0.2382035390053702,
-   "elapsed_s": 34.9
+   "success": 0.2222424462995766,
+   "elapsed_s": 22.2
   },
   {
    "d": 4,
@@ -433,8 +433,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.002611657750238043,
-   "success": 0.23172664017064648,
-   "elapsed_s": 35.7
+   "success": 0.2154224179145461,
+   "elapsed_s": 21.9
   },
   {
    "d": 4,
@@ -442,8 +442,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.00328738826959699,
-   "success": 0.225533315553584,
-   "elapsed_s": 35.0
+   "success": 0.20899103253984808,
+   "elapsed_s": 22.2
   },
   {
    "d": 2,
@@ -452,7 +452,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.17928488827437242,
-   "elapsed_s": 36.4
+   "elapsed_s": 24.3
   },
   {
    "d": 4,
@@ -461,7 +461,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.24860098043694218,
-   "elapsed_s": 35.8
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -470,7 +470,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.23990614676456232,
-   "elapsed_s": 34.7
+   "elapsed_s": 22.2
   },
   {
    "d": 4,
@@ -479,7 +479,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.23171900191846925,
-   "elapsed_s": 35.0
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -488,7 +488,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.22401040134400252,
-   "elapsed_s": 35.1
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -497,7 +497,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.21675296186729,
-   "elapsed_s": 35.1
+   "elapsed_s": 22.3
   },
   {
    "d": 4,
@@ -506,7 +506,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.2034901520197955,
-   "elapsed_s": 34.7
+   "elapsed_s": 21.7
   },
   {
    "d": 4,
@@ -515,7 +515,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.19174252727410826,
-   "elapsed_s": 35.2
+   "elapsed_s": 22.3
   },
   {
    "d": 4,
@@ -524,7 +524,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.17214584352544465,
-   "elapsed_s": 35.7
+   "elapsed_s": 21.9
   },
   {
    "d": 4,
@@ -533,7 +533,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.16482364783621445,
-   "elapsed_s": 35.3
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -542,7 +542,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.14495564536890393,
-   "elapsed_s": 35.0
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -551,7 +551,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.1316667306307442,
-   "elapsed_s": 34.3
+   "elapsed_s": 22.6
   },
   {
    "d": 4,
@@ -560,7 +560,7 @@
    "cost": "uniform",
    "gate_strength": 0.02223791265186999,
    "success": 0.20043221549711332,
-   "elapsed_s": 35.2
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -569,7 +569,7 @@
    "cost": "uniform",
    "gate_strength": 0.03,
    "success": 0.18349274752308323,
-   "elapsed_s": 34.7
+   "elapsed_s": 22.5
   },
   {
    "d": 4,
@@ -578,7 +578,7 @@
    "cost": "uniform",
    "gate_strength": 0.03776208734813001,
    "success": 0.1689571226711061,
-   "elapsed_s": 35.5
+   "elapsed_s": 22.0
   },
   {
    "d": 4,
@@ -587,7 +587,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.20696850737296973,
-   "elapsed_s": 35.6
+   "elapsed_s": 22.2
   },
   {
    "d": 4,
@@ -596,7 +596,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.19280977435175434,
-   "elapsed_s": 34.4
+   "elapsed_s": 21.7
   },
   {
    "d": 4,
@@ -605,7 +605,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.18056121606337183,
-   "elapsed_s": 35.4
+   "elapsed_s": 21.9
   },
   {
    "d": 4,
@@ -614,7 +614,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.16997561192249933,
-   "elapsed_s": 34.5
+   "elapsed_s": 22.4
   },
   {
    "d": 4,
@@ -623,7 +623,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.16083829618034232,
-   "elapsed_s": 35.8
+   "elapsed_s": 21.7
   },
   {
    "d": 4,
@@ -632,7 +632,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.1461864946479475,
-   "elapsed_s": 35.3
+   "elapsed_s": 22.8
   },
   {
    "d": 4,
@@ -641,7 +641,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.1353852798746108,
-   "elapsed_s": 35.3
+   "elapsed_s": 22.1
   },
   {
    "d": 4,
@@ -650,7 +650,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.12185074631841641,
-   "elapsed_s": 35.6
+   "elapsed_s": 22.3
   },
   {
    "d": 4,
@@ -659,7 +659,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.1813605444740237,
-   "elapsed_s": 34.7
+   "elapsed_s": 21.8
   },
   {
    "d": 4,
@@ -668,7 +668,7 @@
    "cost": "ion",
    "gate_strength": null,
    "success": 0.14575025001990338,
-   "elapsed_s": 34.6
+   "elapsed_s": 22.5
   },
   {
    "d": 4,
@@ -677,7 +677,7 @@
    "cost": "ion",
    "gate_strength": 0.007412637550623329,
    "success": 0.19081980816626018,
-   "elapsed_s": 34.5
+   "elapsed_s": 22.2
   },
   {
    "d": 4,
@@ -686,7 +686,7 @@
    "cost": "ion",
    "gate_strength": 0.01,
    "success": 0.17590111664365266,
-   "elapsed_s": 34.8
+   "elapsed_s": 21.4
   },
   {
    "d": 4,
@@ -695,7 +695,7 @@
    "cost": "ion",
    "gate_strength": 0.01258736244937667,
    "success": 0.16312576226461104,
-   "elapsed_s": 32.7
+   "elapsed_s": 18.2
   }
  ]
 }

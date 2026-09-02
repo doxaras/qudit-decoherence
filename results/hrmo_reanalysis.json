@@ -33,7 +33,7 @@
    "strength": 0.0,
    "cost": "uniform",
    "success": 0.289109048265707,
-   "elapsed_s": 4.3
+   "elapsed_s": 6.0
   },
   {
    "d": 3,
@@ -41,7 +41,7 @@
    "strength": 0.0,
    "cost": "uniform",
    "success": 0.28760065666458684,
-   "elapsed_s": 2.6
+   "elapsed_s": 3.5
   },
   {
    "d": 5,
@@ -49,7 +49,7 @@
    "strength": 0.0,
    "cost": "uniform",
    "success": 0.32734242057805996,
-   "elapsed_s": 2.7
+   "elapsed_s": 4.0
   },
   {
    "d": 2,
@@ -57,7 +57,7 @@
    "strength": 0.003,
    "cost": "uniform",
    "success": 0.20809600776489762,
-   "elapsed_s": 21.4
+   "elapsed_s": 31.9
   },
   {
    "d": 2,
@@ -65,103 +65,103 @@
    "strength": 0.005,
    "cost": "uniform",
    "success": 0.17928488827437242,
-   "elapsed_s": 21.8
+   "elapsed_s": 32.3
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.005811696602889895,
    "cost": "uniform",
-   "success": 0.20976870243762455,
-   "elapsed_s": 9.4
+   "success": 0.19910400796394684,
+   "elapsed_s": 14.1
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.0082265625,
    "cost": "uniform",
-   "success": 0.18741888958955072,
-   "elapsed_s": 9.6
+   "success": 0.17586037866914261,
+   "elapsed_s": 14.1
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.010641428397110105,
    "cost": "uniform",
-   "success": 0.1692661356227129,
-   "elapsed_s": 9.4
+   "success": 0.15787155424460886,
+   "elapsed_s": 14.1
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.027519627688579712,
    "cost": "uniform",
-   "success": 0.14066619812042586,
-   "elapsed_s": 10.8
+   "success": 0.13287615729784127,
+   "elapsed_s": 15.3
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.036914062500000004,
    "cost": "uniform",
-   "success": 0.13070738642162394,
-   "elapsed_s": 11.2
+   "success": 0.12733872428072912,
+   "elapsed_s": 15.7
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.04630849731142029,
    "cost": "uniform",
-   "success": 0.12615611003847305,
-   "elapsed_s": 11.1
+   "success": 0.12488847772719322,
+   "elapsed_s": 15.6
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.0029058483014449475,
    "cost": "ion",
-   "success": 0.2184974738217351,
-   "elapsed_s": 10.1
+   "success": 0.2081259684216902,
+   "elapsed_s": 14.9
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.00411328125,
    "cost": "ion",
-   "success": 0.197795890476759,
-   "elapsed_s": 10.1
+   "success": 0.18616300603971841,
+   "elapsed_s": 15.0
   },
   {
    "d": 3,
    "model": "transmon_cal",
    "strength": 0.005320714198555052,
    "cost": "ion",
-   "success": 0.18059007684739004,
-   "elapsed_s": 11.0
+   "success": 0.16869392337851646,
+   "elapsed_s": 14.8
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.006879906922144928,
    "cost": "ion",
-   "success": 0.1585343465760265,
-   "elapsed_s": 10.9
+   "success": 0.14535669092502598,
+   "elapsed_s": 15.5
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.009228515625000001,
    "cost": "ion",
-   "success": 0.14388371833727417,
-   "elapsed_s": 11.0
+   "success": 0.1357369550771247,
+   "elapsed_s": 15.7
   },
   {
    "d": 5,
    "model": "transmon_cal",
    "strength": 0.011577124327855072,
    "cost": "ion",
-   "success": 0.13602303395418286,
-   "elapsed_s": 11.3
+   "success": 0.13137388539338724,
+   "elapsed_s": 16.3
   },
   {
    "d": 3,
@@ -169,7 +169,7 @@
    "strength": 0.009686161004816491,
    "cost": "uniform",
    "success": 0.19732375606851718,
-   "elapsed_s": 11.0
+   "elapsed_s": 15.1
   },
   {
    "d": 3,
@@ -177,7 +177,7 @@
    "strength": 0.013710937500000001,
    "cost": "uniform",
    "success": 0.17524037983911778,
-   "elapsed_s": 10.3
+   "elapsed_s": 15.1
   },
   {
    "d": 3,
@@ -185,7 +185,7 @@
    "strength": 0.01773571399518351,
    "cost": "uniform",
    "success": 0.15892378762675458,
-   "elapsed_s": 11.4
+   "elapsed_s": 15.1
   },
   {
    "d": 5,
@@ -193,7 +193,7 @@
    "strength": 0.04586604614763285,
    "cost": "uniform",
    "success": 0.1479364877538325,
-   "elapsed_s": 11.5
+   "elapsed_s": 15.3
   },
   {
    "d": 5,
@@ -201,7 +201,7 @@
    "strength": 0.0615234375,
    "cost": "uniform",
    "success": 0.1368850524042321,
-   "elapsed_s": 12.2
+   "elapsed_s": 15.7
   },
   {
    "d": 5,
@@ -209,7 +209,7 @@
    "strength": 0.07718082885236716,
    "cost": "uniform",
    "success": 0.13200435075366634,
-   "elapsed_s": 11.8
+   "elapsed_s": 15.7
   },
   {
    "d": 3,
@@ -217,7 +217,7 @@
    "strength": 0.004843080502408246,
    "cost": "ion",
    "success": 0.20692688701342413,
-   "elapsed_s": 11.0
+   "elapsed_s": 15.2
   },
   {
    "d": 3,
@@ -225,7 +225,7 @@
    "strength": 0.0068554687500000005,
    "cost": "ion",
    "success": 0.18558625377550955,
-   "elapsed_s": 11.1
+   "elapsed_s": 15.1
   },
   {
    "d": 3,
@@ -233,7 +233,7 @@
    "strength": 0.008867856997591754,
    "cost": "ion",
    "success": 0.16909660804161894,
-   "elapsed_s": 11.3
+   "elapsed_s": 15.5
   },
   {
    "d": 5,
@@ -241,7 +241,7 @@
    "strength": 0.011466511536908213,
    "cost": "ion",
    "success": 0.16934624437542878,
-   "elapsed_s": 11.5
+   "elapsed_s": 15.5
   },
   {
    "d": 5,
@@ -249,7 +249,7 @@
    "strength": 0.015380859375,
    "cost": "ion",
    "success": 0.15234147383565622,
-   "elapsed_s": 11.7
+   "elapsed_s": 15.6
   },
   {
    "d": 5,
@@ -257,7 +257,7 @@
    "strength": 0.01929520721309179,
    "cost": "ion",
    "success": 0.14244311537939605,
-   "elapsed_s": 11.3
+   "elapsed_s": 15.2
   }
  ],
  "cells": [
@@ -267,14 +267,14 @@
    "d": 3,
    "f_central": 2.7421875,
    "f_sigma": 0.8049552990367016,
-   "f_star": 2.05,
+   "f_star": 1.7273,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.5258308710093673,
-    "central": 0.38967096860769235,
-    "hi": 0.2790804582867403
+    "lo": 0.4608592415576788,
+    "central": 0.3192540156994224,
+    "hi": 0.20966219966878052
    },
-   "verdict": "lost (survives at -1 sigma)"
+   "verdict": "LOST (even at -1 sigma)"
   },
   {
    "channel": "transmon_cal",
@@ -282,12 +282,12 @@
    "d": 5,
    "f_central": 12.3046875,
    "f_sigma": 3.1314782704734303,
-   "f_star": 2.46,
+   "f_star": 1.8697,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.0635399032664296,
-    "central": 0.013581586968659078,
-    "hi": -0.009249862403496364
+    "lo": 0.02446121243888393,
+    "central": -0.0033172854897281366,
+    "hi": -0.015608931926199573
    },
    "verdict": "LOST (even at -1 sigma)"
   },
@@ -297,12 +297,12 @@
    "d": 3,
    "f_central": 1.37109375,
    "f_sigma": 0.4024776495183508,
-   "f_star": 1.21,
+   "f_star": null,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.5790084375431942,
-    "central": 0.45288990639607496,
-    "hi": 0.34806836178443
+    "lo": 0.5158229794533176,
+    "central": 0.3820198539099792,
+    "hi": 0.27559441731393886
    },
    "verdict": "lost (survives at -1 sigma)"
   },
@@ -315,9 +315,9 @@
    "f_star": null,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.15317535769597837,
-    "central": 0.07968057321273628,
-    "hi": 0.040247499407890144
+    "lo": 0.08706973094183594,
+    "central": 0.038812386519080075,
+    "hi": 0.016925074871688248
    },
    "verdict": "LOST (even at -1 sigma)"
   },
@@ -327,7 +327,7 @@
    "d": 3,
    "f_central": 2.7421875,
    "f_sigma": 0.8049552990367016,
-   "f_star": 2.65,
+   "f_star": 2.6468,
    "qubit_signal": 0.3307854676390567,
    "qudit_signal": {
     "lo": 0.45001356128376147,
@@ -342,7 +342,7 @@
    "d": 5,
    "f_central": 12.3046875,
    "f_sigma": 3.1314782704734303,
-   "f_star": 4.5,
+   "f_star": 4.4973,
    "qubit_signal": 0.3307854676390567,
    "qudit_signal": {
     "lo": 0.10001126552000318,
@@ -357,7 +357,7 @@
    "d": 3,
    "f_central": 1.37109375,
    "f_sigma": 0.4024776495183508,
-   "f_star": 1.56,
+   "f_star": 1.5569,
    "qubit_signal": 0.3307854676390567,
    "qudit_signal": {
     "lo": 0.5085179157093389,
@@ -372,7 +372,7 @@
    "d": 5,
    "f_central": 3.076171875,
    "f_sigma": 0.7828695676183576,
-   "f_star": 1.62,
+   "f_star": 1.6245,
    "qubit_signal": 0.3307854676390567,
    "qudit_signal": {
     "lo": 0.207413175055924,

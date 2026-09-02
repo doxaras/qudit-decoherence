@@ -1,7 +1,8 @@
 # Grid alignment, and the unbiased re-run of every Shor result
 
-> **Status: ⚠️ current except §6.** The alignment result — 6 of 6 on
-> biased runs, ≈ 0.2 signal, the N = 15 pathology, the missing converse
+> **Status: ⚠️ current except §6.** The alignment result — 5 of 6 on
+> biased runs (the N = 15/depolarizing miss is a 1.4σ tie), ≈ 0.2
+> signal, the N = 15 pathology, the missing converse
 > control — is the paper's Sec. III and stands. Two extensions landed
 > later and are **not** in this file:
 > - **Full multiplicative-group ensembles** at N = 21, 33 and 55
@@ -240,7 +241,9 @@ This reproduces `fair_shor.py` exactly and confirms the unified thesis:
 gates; they survive ions' linear 2(d−1) Mølmer–Sørensen cost on per-particle
 hardware (0.502 vs 0.331); they lose under a d² decomposition. The cost
 model swings the ququint's circuit from 3.8× *shorter* than the qubit's
-(15 vs 57 layers) to 1.6× *longer* (93.8 vs 57), and that swing — not the
+(15 vs 57 layers) to 1.1× *longer* (62.25 vs 57, under the current
+two-qudit-only `pavlidis` charge; the historical 93.8 figure predates
+that convention), and that swing — not the
 noise model — is what decides the winner.
 
 Note the qutrit is the more robust qudit under cost pressure — it leads at

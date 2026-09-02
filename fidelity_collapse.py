@@ -170,11 +170,17 @@ def analyze(points):
         f = fit_exp(x, y)
         print(f"pooled: A = {f['A']:.3f}  k = {f['k']:.4f}  "
               f"R^2 = {f['r2']:.3f}")
+        fw = fit_exp(x, y, err=[p.get("stderr", 0.0) or 0.0 for p in sub])
+        print(f"pooled (inverse-variance weighted): A = {fw['A']:.3f}  "
+              f"k = {fw['k']:.4f}  R^2 = {fw['r2']:.3f}")
         nest = fit_nested(x, y, algs)
         for mname, mres in nest.items():
             print(f"  {mname:22s} R^2 = {mres['r2']:.3f}")
+        # Per-family log-linear column: diagnostic only. 3-4 points and 2
+        # fitted params leave 1-2 dof, so the R^2 here carries almost no
+        # information; read the slopes, not the fit quality.
         print(f"{'family':14s} {'k(fid)':>8s} {'R^2 loglin':>11s} "
-              f"{'fid range':>15s} {'sig range':>15s}")
+              f"{'fid range':>15s} {'sig range':>15s}   (diagnostic; 1-2 dof)")
         for alg in ("grover", "shor"):
             for d in (2, 3, 5):
                 fam = [(xi, p) for xi, p in zip(x, sub)
@@ -230,6 +236,9 @@ def main():
         json.dump({"N_shor": N_SHOR, "a_shor": A_SHOR,
                    "shor_sizes": SHOR_SIZES, "grover_sizes": GROVER_SIZES,
                    "regimes": REGIMES, "n_traj": N_TRAJ,
+                   "n_traj_note": ("default per trajectory point; exact-DM "
+                                   "points carry n_traj 0 and deep points "
+                                   "differ -- see the per-point n_traj"),
                    "points": results}, fh, indent=1)
     print(f"wrote {OUT}")
     analyze(results)

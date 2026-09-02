@@ -62,12 +62,13 @@ S2_PAPER = 0.003               # the paper's transmon operating point
 GOSS_EPS = {"CZ+": (0.027, 0.001), "CZ": (0.048, 0.003)}
 HRMO_EPS = {2: (0.004, 0.001), 3: (0.013, 0.002), 5: (0.063, 0.003)}
 
-# Published critical factors at s2 = 0.003 (results/noise_inflation.json,
-# results/goss_transmon_test.json) -- thresholds live in strength space,
-# so the conversion fix moves f, not f*.
-F_STAR = {("uniform", 3, "global"): 2.05, ("uniform", 5, "global"): 2.46,
-          ("ion", 3, "global"): 1.21, ("ion", 5, "global"): None,
-          ("uniform", 3, "gate"): 3.63}
+# Critical factors are COMPUTED at runtime (compute_f_star_labels below)
+# so they track the current channel; a hardcoded table here went stale
+# when the relaxation form changed. Keys absent from the computed dict
+# (or cells already lost at f=1) label as None.
+F_STAR_KEYS = [("uniform", 3, "global"), ("uniform", 5, "global"),
+               ("ion", 3, "global"), ("ion", 5, "global"),
+               ("uniform", 3, "gate")]
 
 # Anchor sweep: assumed same-class two-qubit gate infidelity.
 ANCHOR_EPS2 = [0.0033, 0.0045, 0.0066, 0.010]
@@ -126,6 +127,38 @@ def bisect_fstar(args):
         else:
             hi = mid
     return {"scope": scope, "s2": s2, "f_star": (lo + hi) / 2}
+
+
+def compute_f_star_labels(s2, sig2, floors, base, f_hi=8.0):
+    """f* per (cost, d, scope) by bisection under the CURRENT channel.
+
+    Returns None for a cell already below the qubit at f=1 (no threshold
+    exists) and for keys outside F_STAR_KEYS. Replaces the stale
+    hardcoded table; verdict strings never depended on it.
+    """
+    out = {}
+    for cost, d, scope in F_STAR_KEYS:
+        def sig(f):
+            if scope == "global":
+                succ = shor_run(d, CHANNEL, s2 * f, a=A, N=N,
+                                cost_model=cost)["success"]
+            else:
+                succ = shor_run(d, CHANNEL, s2, a=A, N=N, cost_model=cost,
+                                gate_strength=s2 * f)["success"]
+            k = str(d)
+            return (succ - floors[k]) / (base[k] - floors[k])
+        if sig(1.0) <= sig2:
+            out[(cost, d, scope)] = None
+            continue
+        lo, hi = 1.0, f_hi
+        for _ in range(9):
+            mid = (lo + hi) / 2
+            if sig(mid) > sig2:
+                lo = mid
+            else:
+                hi = mid
+        out[(cost, d, scope)] = round((lo + hi) / 2, 4)
+    return out
 
 
 def main():
@@ -206,6 +239,9 @@ def main():
         return (succ - floors[str(d)]) / (base[str(d)] - floors[str(d)])
 
     sig2_paper = signal(2, res[(2, S2_PAPER, "uniform", None)])
+    F_STAR = compute_f_star_labels(S2_PAPER, sig2_paper, floors, base)
+    print("computed f* labels:", {"/".join(map(str, k)): v
+                                  for k, v in F_STAR.items()})
 
     out = {"N": N, "a": A, "r": r, "channel": CHANNEL, "s2_paper": S2_PAPER,
            "ladder_damage": DELTA, "floors": floors, "noiseless": base,

@@ -178,8 +178,8 @@
    "layer_ratio": 1.175257731958763,
    "critical": 1.68247934285722,
    "predicted_qudit_wins": false,
-   "observed_qudit_wins": true,
-   "agree": false
+   "observed_qudit_wins": false,
+   "agree": true
   },
   {
    "cost": "pavlidis",

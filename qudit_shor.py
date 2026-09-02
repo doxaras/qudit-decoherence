@@ -193,17 +193,49 @@ def _dissipator(J: np.ndarray) -> np.ndarray:
             - 0.5 * np.kron(I, JdJ.T))
 
 
+def _relaxation_dissipator(amps: np.ndarray, relaxation: str) -> np.ndarray:
+    """Ladder relaxation with per-transition amplitudes amps[k-1] on |k-1><k|.
+
+    "secular": one independent jump operator per transition, sum_k
+    D[amps_k |k-1><k|]. For an anharmonic ladder the Bohr frequencies
+    w_{k,k-1} are split by the anharmonicity (hundreds of MHz) while the
+    decay rates are kHz-MHz, so the secular Born-Markov limit applies and
+    cross-transition coherence-transfer terms rho_{j,k} -> rho_{j-1,k-1}
+    (j != k) are rotated away. This is the physical form for a transmon.
+
+    "collective": the single jump a = sum_k amps_k |k-1><k| (harmonic-
+    oscillator form, exact only for degenerate Bohr frequencies). Retains
+    the coherence-transfer terms; kept for auditing pre-revision results.
+
+    Populations evolve identically under both; at d=2 the two coincide.
+    """
+    d = amps.shape[0] + 1
+    if relaxation == "collective":
+        return _dissipator(np.diag(amps, 1))
+    if relaxation != "secular":
+        raise ValueError(f"unknown relaxation form: {relaxation!r}")
+    L = np.zeros((d * d, d * d))
+    for k in range(1, d):
+        Lk = np.zeros((d, d))
+        Lk[k - 1, k] = amps[k - 1]
+        L += _dissipator(Lk)
+    return L
+
+
 def transmon_superop(d: int, gamma_tau: float,
-                     dephase_ratio: float = 1.0) -> np.ndarray:
+                     dephase_ratio: float = 1.0,
+                     relaxation: str = "secular") -> np.ndarray:
     """One time-layer of anharmonic-ladder noise.
 
-    Jump operators: a = sum_k sqrt(k)|k-1><k|  (rate gamma), and the number
-    operator n_hat (rate dephase_ratio * gamma). gamma_tau is the
-    dimensionless product (rate x layer duration).
+    Jump operators: sqrt(k)|k-1><k| per transition (rate gamma; see
+    `_relaxation_dissipator` for the secular/collective distinction), and
+    the number operator n_hat (rate dephase_ratio * gamma). gamma_tau is
+    the dimensionless product (rate x layer duration).
     """
-    a = np.diag(np.sqrt(np.arange(1.0, d)), 1)
+    amps = np.sqrt(np.arange(1.0, d))
     n_op = np.diag(np.arange(d, dtype=float))
-    L = gamma_tau * _dissipator(a) + gamma_tau * dephase_ratio * _dissipator(n_op)
+    L = (gamma_tau * _relaxation_dissipator(amps, relaxation)
+         + gamma_tau * dephase_ratio * _dissipator(n_op))
     return expm(L)
 
 
@@ -299,10 +331,18 @@ def transmon_calibrated_superop(d: int, gamma_tau: float,
                                 dephase_ratio: float = 1.0,
                                 damping_exponent: float = DAMPING_EXPONENT,
                                 dephase_exponent: float = DEPHASE_EXPONENT,
-                                dephase_scale: float = 1.0) -> np.ndarray:
-    """One time-layer of transmon noise calibrated to measured per-level data."""
+                                dephase_scale: float = 1.0,
+                                relaxation: str = "secular") -> np.ndarray:
+    """One time-layer of transmon noise calibrated to measured per-level data.
+
+    Relaxation uses one jump operator per transition (secular form; see
+    `_relaxation_dissipator`) -- the sequential population decay of
+    Peterer 2015 fixes the rates but not the form, and the anharmonicity
+    makes the secular choice the physical one. The pre-revision collective
+    form is available as relaxation="collective".
+    """
     amps = np.sqrt(np.arange(1.0, d) ** damping_exponent)
-    L = gamma_tau * _dissipator(np.diag(amps, 1))
+    L = gamma_tau * _relaxation_dissipator(amps, relaxation)
     if dephase_ratio > 0 and dephase_scale > 0:
         gphi = dephasing_matrix(d, gamma_tau, dephase_ratio,
                                 dephase_exponent, dephase_scale)

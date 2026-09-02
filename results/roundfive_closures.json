@@ -1,0 +1,449 @@
+{
+ "N": 21,
+ "a": 2,
+ "strength": 0.005,
+ "AB_E": {
+  "floors_bases": {
+   "2": [
+    0.125,
+    0.289109048265707
+   ],
+   "3": [
+    0.12345679012345678,
+    0.28760065666458684
+   ],
+   "5": [
+    0.128,
+    0.32734242057805996
+   ]
+  },
+  "cells": [
+   {
+    "d": 3,
+    "model": "transmon_cal",
+    "cost": "pavlidis3",
+    "success": 0.14296617196421854,
+    "n_layers": 68.75,
+    "elapsed_s": 12.1,
+    "signal": 0.11885538126929178
+   },
+   {
+    "d": 5,
+    "model": "transmon_cal",
+    "cost": "pavlidis3",
+    "success": 0.12876822200931803,
+    "n_layers": 146.625,
+    "elapsed_s": 12.5,
+    "signal": 0.003853780881612228
+   },
+   {
+    "d": 3,
+    "model": "depolarizing",
+    "cost": "pavlidis3",
+    "success": 0.17703405114776494,
+    "n_layers": 68.75,
+    "elapsed_s": 12.0,
+    "signal": 0.3264042827386616
+   },
+   {
+    "d": 5,
+    "model": "depolarizing",
+    "cost": "pavlidis3",
+    "success": 0.14708347864065516,
+    "n_layers": 146.625,
+    "elapsed_s": 12.6,
+    "signal": 0.0957321506647518
+   },
+   {
+    "d": 3,
+    "model": "transmon_cal",
+    "cost": "timed_ls",
+    "success": 0.18881138565600214,
+    "n_layers": 35.0,
+    "elapsed_s": 11.8,
+    "signal": 0.3981543563564664
+   },
+   {
+    "d": 5,
+    "model": "transmon_cal",
+    "cost": "timed_ls",
+    "success": 0.18769168812343123,
+    "n_layers": 28.5,
+    "elapsed_s": 12.6,
+    "signal": 0.2994429783200948
+   },
+   {
+    "d": 3,
+    "model": "depolarizing",
+    "cost": "timed_ls",
+    "success": 0.21808497200282026,
+    "n_layers": 35.0,
+    "elapsed_s": 14.4,
+    "signal": 0.5764953870856465
+   },
+   {
+    "d": 5,
+    "model": "depolarizing",
+    "cost": "timed_ls",
+    "success": 0.2528932323846961,
+    "n_layers": 28.5,
+    "elapsed_s": 14.3,
+    "signal": 0.6265261153272165
+   },
+   {
+    "d": 2,
+    "model": "transmon_cal",
+    "cost": "uniform",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.171293263350989,
+    "n_layers": 57.0,
+    "elapsed_s": 31.8,
+    "signal": 0.28208842742196716
+   },
+   {
+    "d": 3,
+    "model": "transmon_cal",
+    "cost": "uniform",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.2110623069378755,
+    "n_layers": 26.0,
+    "elapsed_s": 14.6,
+    "signal": 0.5337117899100245
+   },
+   {
+    "d": 5,
+    "model": "transmon_cal",
+    "cost": "uniform",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.24539781867504984,
+    "n_layers": 15.0,
+    "elapsed_s": 14.7,
+    "signal": 0.5889254195600496
+   },
+   {
+    "d": 2,
+    "model": "transmon_cal",
+    "cost": "ion",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.171293263350989,
+    "n_layers": 57.0,
+    "elapsed_s": 31.9,
+    "signal": 0.28208842742196716
+   },
+   {
+    "d": 3,
+    "model": "transmon_cal",
+    "cost": "ion",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.17601282439335564,
+    "n_layers": 44.0,
+    "elapsed_s": 16.3,
+    "signal": 0.32018274808172453
+   },
+   {
+    "d": 5,
+    "model": "transmon_cal",
+    "cost": "ion",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.17026514225379893,
+    "n_layers": 42.0,
+    "elapsed_s": 16.8,
+    "signal": 0.21202282048766655
+   },
+   {
+    "d": 2,
+    "model": "transmon_cal",
+    "cost": "pavlidis",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.171293263350989,
+    "n_layers": 57.0,
+    "elapsed_s": 29.6,
+    "signal": 0.28208842742196716
+   },
+   {
+    "d": 3,
+    "model": "transmon_cal",
+    "cost": "pavlidis",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.16919852618908213,
+    "n_layers": 48.5,
+    "elapsed_s": 16.3,
+    "signal": 0.27866856696813397
+   },
+   {
+    "d": 5,
+    "model": "transmon_cal",
+    "cost": "pavlidis",
+    "damping_exponent": 0.7,
+    "dephase_exponent": 0.8,
+    "success": 0.148208168894606,
+    "n_layers": 62.25,
+    "elapsed_s": 11.5,
+    "signal": 0.10137415225522828
+   }
+  ]
+ },
+ "C_prep": [
+  {
+   "eps_prep": 0.0,
+   "cost": "uniform",
+   "model": "transmon_cal",
+   "signal_d2": 0.28208842742196716,
+   "signal_d3": 0.517303815051863,
+   "signal_d5": 0.5437957773710875
+  },
+  {
+   "eps_prep": 0.0,
+   "cost": "uniform",
+   "model": "depolarizing",
+   "signal_d2": 0.3307854676390567,
+   "signal_d3": 0.6672080466532074,
+   "signal_d5": 0.7823947670791601
+  },
+  {
+   "eps_prep": 0.0,
+   "cost": "ion",
+   "model": "transmon_cal",
+   "signal_d2": 0.28208842742196716,
+   "signal_d3": 0.3015478112773034,
+   "signal_d5": 0.1674281348847155
+  },
+  {
+   "eps_prep": 0.0,
+   "cost": "ion",
+   "model": "depolarizing",
+   "signal_d2": 0.3307854676390567,
+   "signal_d3": 0.49713394878572587,
+   "signal_d5": 0.50231678034309
+  },
+  {
+   "eps_prep": 0.01,
+   "cost": "uniform",
+   "model": "transmon_cal",
+   "signal_d2": 0.2396620406344727,
+   "signal_d3": 0.4828760122953883,
+   "signal_d5": 0.5024319987745304
+  },
+  {
+   "eps_prep": 0.01,
+   "cost": "uniform",
+   "model": "depolarizing",
+   "signal_d2": 0.2920266788679908,
+   "signal_d3": 0.6258639183643014,
+   "signal_d5": 0.7265140221139141
+  },
+  {
+   "eps_prep": 0.01,
+   "cost": "ion",
+   "model": "transmon_cal",
+   "signal_d2": 0.2396620406344727,
+   "signal_d3": 0.27759061576028965,
+   "signal_d5": 0.15217469685662166
+  },
+  {
+   "eps_prep": 0.01,
+   "cost": "ion",
+   "model": "depolarizing",
+   "signal_d2": 0.2920266788679908,
+   "signal_d3": 0.4642624033987181,
+   "signal_d5": 0.46494856950111346
+  },
+  {
+   "eps_prep": 0.02,
+   "cost": "uniform",
+   "model": "transmon_cal",
+   "signal_d2": 0.20131518367147266,
+   "signal_d3": 0.4494504459639183,
+   "signal_d5": 0.46287771243671655
+  },
+  {
+   "eps_prep": 0.02,
+   "cost": "uniform",
+   "model": "depolarizing",
+   "signal_d2": 0.2567978796049881,
+   "signal_d3": 0.5857654602090744,
+   "signal_d5": 0.6730327523352189
+  },
+  {
+   "eps_prep": 0.02,
+   "cost": "ion",
+   "model": "transmon_cal",
+   "signal_d2": 0.20131518367147266,
+   "signal_d3": 0.2543182223758735,
+   "signal_d5": 0.13764586640556697
+  },
+  {
+   "eps_prep": 0.02,
+   "cost": "ion",
+   "model": "depolarizing",
+   "signal_d2": 0.2567978796049881,
+   "signal_d3": 0.43239135396335626,
+   "signal_d5": 0.4292307891094792
+  },
+  {
+   "eps_prep": 0.04,
+   "cost": "uniform",
+   "model": "transmon_cal",
+   "signal_d2": 0.1353591053105019,
+   "signal_d3": 0.38557586382895365,
+   "signal_d5": 0.38899044475843675
+  },
+  {
+   "eps_prep": 0.04,
+   "cost": "uniform",
+   "model": "depolarizing",
+   "signal_d2": 0.19565645098601295,
+   "signal_d3": 0.509260272809777,
+   "signal_d5": 0.5729984524709286
+  },
+  {
+   "eps_prep": 0.04,
+   "cost": "ion",
+   "model": "transmon_cal",
+   "signal_d2": 0.1353591053105019,
+   "signal_d3": 0.2098112526258766,
+   "signal_d5": 0.11067433872463464
+  },
+  {
+   "eps_prep": 0.04,
+   "cost": "ion",
+   "model": "depolarizing",
+   "signal_d2": 0.19565645098601295,
+   "signal_d3": 0.3716139087413721,
+   "signal_d5": 0.3625573514984085
+  }
+ ],
+ "D_readout": {
+  "delta_per_round": 0.03,
+  "cells": [
+   {
+    "bits": 4,
+    "d": 5,
+    "m": 2,
+    "s": 0.001,
+    "success_uncharged": 0.7846501287187089,
+    "success_charged": 0.7339187243524423,
+    "floor": 0.08,
+    "elapsed_s": 0.1
+   },
+   {
+    "bits": 4,
+    "d": 5,
+    "m": 2,
+    "s": 0.005,
+    "success_uncharged": 0.6739267911021578,
+    "success_charged": 0.6316499843953534,
+    "floor": 0.08,
+    "elapsed_s": 0.1
+   },
+   {
+    "bits": 4,
+    "d": 2,
+    "m": 5,
+    "s": 0.001,
+    "success_uncharged": 0.8066947893137,
+    "success_charged": 0.7002549156873101,
+    "floor": 0.0625,
+    "elapsed_s": 0.4
+   },
+   {
+    "bits": 4,
+    "d": 2,
+    "m": 5,
+    "s": 0.005,
+    "success_uncharged": 0.5002518868733224,
+    "success_charged": 0.44086208808116434,
+    "floor": 0.0625,
+    "elapsed_s": 0.4
+   },
+   {
+    "bits": 5,
+    "d": 5,
+    "m": 3,
+    "s": 0.001,
+    "success_uncharged": 0.8549733838982205,
+    "success_charged": 0.7468437846201639,
+    "floor": 0.032,
+    "elapsed_s": 7.8
+   },
+   {
+    "bits": 5,
+    "d": 5,
+    "m": 3,
+    "s": 0.005,
+    "success_uncharged": 0.5745459167150924,
+    "success_charged": 0.5078233303232567,
+    "floor": 0.032,
+    "elapsed_s": 7.7
+   },
+   {
+    "bits": 5,
+    "d": 2,
+    "m": 7,
+    "s": 0.001,
+    "success_uncharged": 0.7780236644535259,
+    "success_charged": 0.6278180475742302,
+    "floor": 0.03125,
+    "elapsed_s": 20.6
+   },
+   {
+    "bits": 5,
+    "d": 2,
+    "m": 7,
+    "s": 0.005,
+    "success_uncharged": 0.3279356462747053,
+    "success_charged": 0.2733653450112737,
+    "floor": 0.03125,
+    "elapsed_s": 20.3
+   },
+   {
+    "bits": 6,
+    "d": 5,
+    "m": 4,
+    "s": 0.001,
+    "success_uncharged": 0.817073696739984,
+    "success_charged": 0.6485556404507488,
+    "floor": 0.016,
+    "elapsed_s": 395.0
+   },
+   {
+    "bits": 6,
+    "d": 5,
+    "m": 4,
+    "s": 0.005,
+    "success_uncharged": 0.41439558673990284,
+    "success_charged": 0.33654237600914966,
+    "floor": 0.016,
+    "elapsed_s": 388.3
+   },
+   {
+    "bits": 6,
+    "d": 2,
+    "m": 9,
+    "s": 0.001,
+    "success_uncharged": 0.6660205285954868,
+    "success_charged": 0.5180651512517249,
+    "floor": 0.015625,
+    "elapsed_s": 609.9
+   },
+   {
+    "bits": 6,
+    "d": 2,
+    "m": 9,
+    "s": 0.005,
+    "success_uncharged": 0.1902258878267909,
+    "success_charged": 0.15580962628272718,
+    "floor": 0.015625,
+    "elapsed_s": 608.5
+   }
+  ]
+ }
+}

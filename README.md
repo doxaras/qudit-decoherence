@@ -47,7 +47,7 @@ algorithms under decoherence"** — `paper/main.pdf`
 >
 > The winner is decided by the **cost model**, not the noise model. On
 > the benchmark instance the three published cost structures swing the
-> ququint circuit from 3.8× *shorter* than the qubit's to 1.6× *longer*.
+> ququint circuit from 3.8× *shorter* than the qubit's to 1.1× *longer*.
 >
 > The condition is about **uncorrected** circuits — the regime of every
 > near-term demonstration. It does not transfer to the error-correction
@@ -64,7 +64,8 @@ algorithms under decoherence"** — `paper/main.pdf`
 > physics. The canonical instance N = 15 admits **only** power-of-two
 > orders, silently handing qubits perfect alignment; that artifact
 > produced, and then destroyed, this project's original "qubits win
-> Shor" finding. Alignment predicts the winner in **6 of 6** biased runs
+> Shor" finding. Alignment predicts the winner in **5 of 6** biased runs
+> (the one miss, N = 15 under depolarizing, is a 1.4σ tie)
 > and is worth **≈ 0.2 signal**; on unbiased instances the ordering is
 > d = 5 > d = 3 > d = 2 under every noise model, strength and size.
 >
@@ -97,13 +98,17 @@ algorithms under decoherence"** — `paper/main.pdf`
 >
 > The qubit branch of the predictions was run on AWS Braket
 > (`docs/HARDWARE.md`). On IonQ Forte-1 the shallow compiled circuit
-> lands **inside its predicted band** — 0.617 ± 0.007 against 0.60–0.70
-> — pinning the device's effective per-gate depolarizing strength at
-> 0.007–0.009, bracketing the vendor's measured 0.7% two-qubit
-> infidelity. The deep circuit fails **coherently**, not by decoherence
-> (work qubit still at 0.99), and the superconducting lattice fails by
-> SWAP-routing overhead — the two regimes our channels deliberately
-> exclude, delineated on hardware.
+> lands **inside its predicted band** — 0.617 ± 0.007 against 0.60–0.70.
+> The implied effective per-gate depolarizing strength depends on the
+> exposure accounting: 0.0065 under layer counting, 0.0104 under timed
+> exposure — the vendor's measured 0.7% two-qubit infidelity sits
+> between the two conventions, so the anchor fixes the channel's *scale*
+> to within the conversion ambiguity without pinning the conversion.
+> The deep circuit fails **coherently**, not by decoherence — its
+> measured 0.011 sits *below* the depolarizing random floor of 0.031,
+> which no noise strength can produce — and the superconducting lattice
+> is dominated by SWAP-routing overhead: the two regimes our channels
+> deliberately exclude, delineated on hardware.
 
 ![grid alignment](results/grid_alignment.png)
 

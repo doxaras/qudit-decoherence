@@ -49,7 +49,10 @@ Two supporting results, both novel and both methodological:
    power-of-two orders, silently handing qubits perfect grid alignment.
    Measured over one instance per alignment class (r = 3, 4, 5, 6, 7) in
    two noise models, **the base that divides r wins in all 6 biased runs**
-   (3 aligned instances × 2 noise models), while both unbiased instances
+   (3 aligned instances × 2 noise models) *(superseded: the final tally
+   is 5 of 6 — the N = 15/depolarizing run is a 1.4σ tie; and the
+   unbiased ladder ordering did not survive the secular-channel
+   correction)*, while both unbiased instances
    give d = 5 > d = 3 > d = 2 in all 4 runs;
    a within-modulus control (N = 33 and N = 55, each carrying r = 5 and
    r = 10 on identical registers) isolates the effect from register width
@@ -99,6 +102,7 @@ fallback).
 > further identify a confound that invalidates naive cross-dimension
 > comparisons — the exact representability of the target phase s/r in
 > base d — show that it predicts the winner in all 6 biased runs
+> *(final tally: 5 of 6; see paper Sec. III)*
 > while being invisible at fixed d, and control for it.
 
 Anchor citations for the gap: Campbell PRL 2014 (noise-vs-d "depends
@@ -225,8 +229,9 @@ sign-flip mechanism (no precedent found in ~250 abstracts).
    headline, where the qubit now trails by 0.16–0.52. That headline does
    not survive de-confounding at all; calibration merely softened it.
    Grid alignment now has its own figure and two supporting results:
-   **6/6 prediction accuracy** on the biased instances (3 aligned
-   instances × 2 noise models — the base dividing r always wins), and a
+   **5/6 prediction accuracy** on the biased instances (3 aligned
+   instances × 2 noise models — the base dividing r wins in all but the
+   N = 15/depolarizing run, a 1.4σ tie), and a
    **within-modulus
    control** (N = 33 and N = 55, each hosting r = 5 and r = 10 on
    identical registers) that isolates alignment from register width and

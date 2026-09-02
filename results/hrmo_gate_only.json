@@ -35,7 +35,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.289109048265707,
-   "elapsed_s": 26.4
+   "elapsed_s": 6.7
   },
   {
    "d": 3,
@@ -44,7 +44,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.28760065666458684,
-   "elapsed_s": 15.7
+   "elapsed_s": 3.9
   },
   {
    "d": 5,
@@ -53,7 +53,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.32734242057805996,
-   "elapsed_s": 16.8
+   "elapsed_s": 4.6
   },
   {
    "d": 2,
@@ -62,7 +62,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.20809600776489762,
-   "elapsed_s": 131.2
+   "elapsed_s": 33.3
   },
   {
    "d": 2,
@@ -71,7 +71,7 @@
    "cost": "uniform",
    "gate_strength": null,
    "success": 0.17928488827437242,
-   "elapsed_s": 131.0
+   "elapsed_s": 32.9
   },
   {
    "d": 3,
@@ -79,8 +79,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.005811696602889895,
-   "success": 0.22854023620275837,
-   "elapsed_s": 65.5
+   "success": 0.2203361138282633,
+   "elapsed_s": 15.1
   },
   {
    "d": 3,
@@ -88,8 +88,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.0082265625,
-   "success": 0.21759654553631055,
-   "elapsed_s": 62.3
+   "success": 0.20897487708412496,
+   "elapsed_s": 14.8
   },
   {
    "d": 3,
@@ -97,8 +97,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.010641428397110105,
-   "success": 0.20751201909268635,
-   "elapsed_s": 40.4
+   "success": 0.19862948734413233,
+   "elapsed_s": 13.9
   },
   {
    "d": 5,
@@ -106,8 +106,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.027519627688579712,
-   "success": 0.19146519682064186,
-   "elapsed_s": 44.9
+   "success": 0.17562470215182682,
+   "elapsed_s": 15.3
   },
   {
    "d": 5,
@@ -115,8 +115,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.036914062500000004,
-   "success": 0.17355452842133057,
-   "elapsed_s": 62.9
+   "success": 0.15999790886088172,
+   "elapsed_s": 15.3
   },
   {
    "d": 5,
@@ -124,8 +124,8 @@
    "strength": 0.003,
    "cost": "uniform",
    "gate_strength": 0.04630849731142029,
-   "success": 0.1607318897501978,
-   "elapsed_s": 64.2
+   "success": 0.1496957495670142,
+   "elapsed_s": 15.4
   },
   {
    "d": 3,
@@ -133,8 +133,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.0029058483014449475,
-   "success": 0.21754871487837818,
-   "elapsed_s": 62.3
+   "success": 0.20704172357968811,
+   "elapsed_s": 14.6
   },
   {
    "d": 3,
@@ -142,8 +142,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.00411328125,
-   "success": 0.20756986959302653,
-   "elapsed_s": 62.0
+   "success": 0.19700890677214986,
+   "elapsed_s": 14.3
   },
   {
    "d": 3,
@@ -151,8 +151,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.005320714198555052,
-   "success": 0.19836725558844925,
-   "elapsed_s": 63.0
+   "success": 0.18786277645019253,
+   "elapsed_s": 14.3
   },
   {
    "d": 5,
@@ -160,8 +160,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.006879906922144928,
-   "success": 0.1789615927167908,
-   "elapsed_s": 64.3
+   "success": 0.16294520999442266,
+   "elapsed_s": 15.2
   },
   {
    "d": 5,
@@ -169,8 +169,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.009228515625000001,
-   "success": 0.16464010793262013,
-   "elapsed_s": 65.6
+   "success": 0.15167969991219027,
+   "elapsed_s": 14.7
   },
   {
    "d": 5,
@@ -178,8 +178,8 @@
    "strength": 0.003,
    "cost": "ion",
    "gate_strength": 0.011577124327855072,
-   "success": 0.15437757695341314,
-   "elapsed_s": 68.5
+   "success": 0.14422704670881833,
+   "elapsed_s": 15.4
   },
   {
    "d": 3,
@@ -188,7 +188,7 @@
    "cost": "uniform",
    "gate_strength": 0.009686161004816491,
    "success": 0.2184684869544679,
-   "elapsed_s": 61.3
+   "elapsed_s": 14.5
   },
   {
    "d": 3,
@@ -197,7 +197,7 @@
    "cost": "uniform",
    "gate_strength": 0.013710937500000001,
    "success": 0.207267198752601,
-   "elapsed_s": 57.8
+   "elapsed_s": 14.3
   },
   {
    "d": 3,
@@ -206,7 +206,7 @@
    "cost": "uniform",
    "gate_strength": 0.01773571399518351,
    "success": 0.19711530858846807,
-   "elapsed_s": 60.6
+   "elapsed_s": 14.4
   },
   {
    "d": 5,
@@ -215,7 +215,7 @@
    "cost": "uniform",
    "gate_strength": 0.04586604614763285,
    "success": 0.20439670767225634,
-   "elapsed_s": 65.1
+   "elapsed_s": 14.8
   },
   {
    "d": 5,
@@ -224,7 +224,7 @@
    "cost": "uniform",
    "gate_strength": 0.0615234375,
    "success": 0.18588066856174987,
-   "elapsed_s": 67.0
+   "elapsed_s": 14.8
   },
   {
    "d": 5,
@@ -233,7 +233,7 @@
    "cost": "uniform",
    "gate_strength": 0.07718082885236716,
    "success": 0.17177614475879735,
-   "elapsed_s": 71.0
+   "elapsed_s": 14.7
   },
   {
    "d": 3,
@@ -242,7 +242,7 @@
    "cost": "ion",
    "gate_strength": 0.004843080502408246,
    "success": 0.20585676329925684,
-   "elapsed_s": 58.2
+   "elapsed_s": 14.6
   },
   {
    "d": 3,
@@ -251,7 +251,7 @@
    "cost": "ion",
    "gate_strength": 0.0068554687500000005,
    "success": 0.19607047963138696,
-   "elapsed_s": 59.5
+   "elapsed_s": 14.4
   },
   {
    "d": 3,
@@ -260,7 +260,7 @@
    "cost": "ion",
    "gate_strength": 0.008867856997591754,
    "success": 0.1872083868035053,
-   "elapsed_s": 53.1
+   "elapsed_s": 14.6
   },
   {
    "d": 5,
@@ -269,7 +269,7 @@
    "cost": "ion",
    "gate_strength": 0.011466511536908213,
    "success": 0.192477394218814,
-   "elapsed_s": 53.6
+   "elapsed_s": 14.9
   },
   {
    "d": 5,
@@ -278,7 +278,7 @@
    "cost": "ion",
    "gate_strength": 0.015380859375,
    "success": 0.17747996323960033,
-   "elapsed_s": 51.6
+   "elapsed_s": 14.6
   },
   {
    "d": 5,
@@ -287,7 +287,7 @@
    "cost": "ion",
    "gate_strength": 0.01929520721309179,
    "success": 0.16603993626425595,
-   "elapsed_s": 47.1
+   "elapsed_s": 14.1
   }
  ],
  "cells": [
@@ -299,9 +299,9 @@
    "f_sigma": 0.8049552990367016,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.6401911219324816,
-    "central": 0.5735197872243668,
-    "hi": 0.5120826671167003
+    "lo": 0.5902098308408688,
+    "central": 0.5209947149578058,
+    "hi": 0.4579683591274443
    },
    "verdict": "SURVIVES"
   },
@@ -313,9 +313,9 @@
    "f_sigma": 3.1314782704734303,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.3183727609838554,
-    "central": 0.228524005523912,
-    "hi": 0.16419931921806083
+    "lo": 0.2389090190322917,
+    "central": 0.16051730869973932,
+    "hi": 0.10883659134919765
    },
    "verdict": "LOST (even at -1 sigma)"
   },
@@ -327,11 +327,11 @@
    "f_sigma": 0.4024776495183508,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.57322839249278,
-    "central": 0.5124351048992334,
-    "hi": 0.45637078645410073
+    "lo": 0.5092175249526438,
+    "central": 0.4480954311519333,
+    "hi": 0.39237522353963394
    },
-   "verdict": "SURVIVES"
+   "verdict": "lost (survives at -1 sigma)"
   },
   {
    "channel": "transmon_cal",
@@ -341,9 +341,9 @@
    "f_sigma": 0.7828695676183576,
    "qubit_signal": 0.5063462901226377,
    "qudit_signal": {
-    "lo": 0.25564850957970026,
-    "central": 0.18380487116776192,
-    "hi": 0.1323229490086583
+    "lo": 0.17530242631291096,
+    "central": 0.11878906578701645,
+    "hi": 0.08140287783083294
    },
    "verdict": "LOST (even at -1 sigma)"
   },

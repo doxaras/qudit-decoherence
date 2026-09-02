@@ -53,7 +53,14 @@ from qudit_shor import (apply_channel, apply_unitary, apply_unitary_vec,
 
 
 def optimal_iterations(M: int) -> int:
-    """The standard (pi/4) sqrt(M) rounded to the nearest integer."""
+    """The standard (pi/4) sqrt(M) rounded to the nearest integer.
+
+    NOTE: this differs from the exact optimum round((pi/2-theta)/(2theta)),
+    theta = arcsin(1/sqrt(M)), at M = 125, 128, 256, 343, 512, 625, 3125
+    (one extra iteration). Applied identically to every base at matched M
+    and to the floor-correction baseline, so it cancels out of every
+    cross-base comparison in this study.
+    """
     return max(1, int(round(np.pi / 4.0 * np.sqrt(M))))
 
 

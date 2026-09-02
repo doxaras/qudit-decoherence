@@ -40,13 +40,26 @@ POINTS = [("transmon_cal", 0.003), ("depolarizing", 0.005)]
 COSTS = {"uniform": lambda d: 1.0, "ion": lambda d: float(d - 1)}
 QUDITS = [3, 5]
 
-# Published f* from results/noise_inflation.json (paper Sec. VII).
-F_STAR = {
-    ("transmon_cal", "uniform", 3): 2.05, ("transmon_cal", "uniform", 5): 2.46,
-    ("transmon_cal", "ion", 3): 1.21, ("transmon_cal", "ion", 5): None,
-    ("depolarizing", "uniform", 3): 2.65, ("depolarizing", "uniform", 5): 4.50,
-    ("depolarizing", "ion", 3): 1.56, ("depolarizing", "ion", 5): 1.62,
-}
+# f* labels are read from results/noise_inflation.json (its `crossings`
+# block is computed under the current channel). A hardcoded copy here
+# went stale when the relaxation form changed; the verdicts never
+# depended on it, only the labels. Run noise_inflation.py first.
+def _load_f_star():
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        "results", "noise_inflation.json")
+    cr = json.load(open(path))["crossings"]
+    out = {}
+    for m in ("transmon_cal", "depolarizing"):
+        for c in ("uniform", "ion"):
+            for d in (3, 5):
+                key = f"{m}_{c}_d{d}"
+                out[(m, c, d)] = (round(cr[key]["f_star"], 4)
+                                  if key in cr and cr[key]["f_star"]
+                                  is not None else None)
+    return out
+
+
+F_STAR = _load_f_star()
 
 RESULTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
 

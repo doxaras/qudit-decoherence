@@ -1,0 +1,49 @@
+== Parts A/B (cost models) and E (exponent 0.8), exact rho ==
+  d=3 transmon_cal  pavlidis3  signal=0.119 layers=68.8 (12.1s)
+  d=5 transmon_cal  pavlidis3  signal=0.004 layers=146.6 (12.5s)
+  d=3 depolarizing  pavlidis3  signal=0.326 layers=68.8 (12.0s)
+  d=5 depolarizing  pavlidis3  signal=0.096 layers=146.6 (12.6s)
+  d=3 transmon_cal  timed_ls   signal=0.398 layers=35.0 (11.8s)
+  d=5 transmon_cal  timed_ls   signal=0.299 layers=28.5 (12.6s)
+  d=3 depolarizing  timed_ls   signal=0.576 layers=35.0 (14.4s)
+  d=5 depolarizing  timed_ls   signal=0.627 layers=28.5 (14.3s)
+  d=2 transmon_cal  exp0.8     signal=0.282 layers=57.0 (31.8s)
+  d=3 transmon_cal  exp0.8     signal=0.534 layers=26.0 (14.6s)
+  d=5 transmon_cal  exp0.8     signal=0.589 layers=15.0 (14.7s)
+  d=2 transmon_cal  exp0.8     signal=0.282 layers=57.0 (31.9s)
+  d=3 transmon_cal  exp0.8     signal=0.320 layers=44.0 (16.3s)
+  d=5 transmon_cal  exp0.8     signal=0.212 layers=42.0 (16.8s)
+  d=2 transmon_cal  exp0.8     signal=0.282 layers=57.0 (29.6s)
+  d=3 transmon_cal  exp0.8     signal=0.279 layers=48.5 (16.3s)
+  d=5 transmon_cal  exp0.8     signal=0.101 layers=62.2 (11.5s)
+== Part C: state-preparation error sweep, exact rho ==
+  eps=0     uniform  transmon_cal  0.282/0.517/0.544
+  eps=0     uniform  depolarizing  0.331/0.667/0.782
+  eps=0     ion      transmon_cal  0.282/0.302/0.167
+  eps=0     ion      depolarizing  0.331/0.497/0.502
+  eps=0.01  uniform  transmon_cal  0.240/0.483/0.502
+  eps=0.01  uniform  depolarizing  0.292/0.626/0.727
+  eps=0.01  ion      transmon_cal  0.240/0.278/0.152
+  eps=0.01  ion      depolarizing  0.292/0.464/0.465
+  eps=0.02  uniform  transmon_cal  0.201/0.449/0.463
+  eps=0.02  uniform  depolarizing  0.257/0.586/0.673
+  eps=0.02  ion      transmon_cal  0.201/0.254/0.138
+  eps=0.02  ion      depolarizing  0.257/0.432/0.429
+  eps=0.04  uniform  transmon_cal  0.135/0.386/0.389
+  eps=0.04  uniform  depolarizing  0.196/0.509/0.573
+  eps=0.04  ion      transmon_cal  0.135/0.210/0.111
+  eps=0.04  ion      depolarizing  0.196/0.372/0.363
+== Part D: shelving-readout charge on the QPE prediction pairs ==
+  b=4 d=5 m=2 s=0.001  0.785 -> 0.734  (0.1s)
+  b=4 d=5 m=2 s=0.005  0.674 -> 0.632  (0.1s)
+  b=4 d=2 m=5 s=0.001  0.807 -> 0.700  (0.4s)
+  b=4 d=2 m=5 s=0.005  0.500 -> 0.441  (0.4s)
+  b=5 d=5 m=3 s=0.001  0.855 -> 0.747  (7.8s)
+  b=5 d=5 m=3 s=0.005  0.575 -> 0.508  (7.7s)
+  b=5 d=2 m=7 s=0.001  0.778 -> 0.628  (20.6s)
+  b=5 d=2 m=7 s=0.005  0.328 -> 0.273  (20.3s)
+  b=6 d=5 m=4 s=0.001  0.817 -> 0.649  (395.0s)
+  b=6 d=5 m=4 s=0.005  0.414 -> 0.337  (388.3s)
+  b=6 d=2 m=9 s=0.001  0.666 -> 0.518  (609.9s)
+  b=6 d=2 m=9 s=0.005  0.190 -> 0.156  (608.5s)
+wrote /Volumes/External Home/Workspace/ai-qutrits/results/roundfive_closures.json

@@ -76,10 +76,11 @@ RESULTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
 def one(job):
     d, m, model, s, rep = job
     t0 = time.time()
-    # Deterministic, process-independent seeds. NOTE: the production
-    # scripts seed with hash((label, d, m)), and Python randomises str
-    # hashing per process unless PYTHONHASHSEED is pinned -- so those
-    # seeds are not reproducible across runs. Flagged in the report.
+    # Deterministic, process-independent seeds. NOTE (historical): the
+    # production scripts originally seeded with hash((label, d, m)),
+    # which Python randomises per process; they have since moved to
+    # crc32-based seeding and are reproducible across runs. This
+    # script's own seeds were always deterministic.
     seed = (rep + 1) * 1_000_003 + d * 10_007 + m * 101 + len(model)
     r = shor_trajectories(d, m, model, s, n_traj=M_TRAJ, seed=seed,
                           a=A, N=N)
